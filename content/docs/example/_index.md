@@ -6,7 +6,7 @@ title: "Documentation"
 
 # Introduction
 
-## Ferre hinnitibus erat accipitrem dixi Troiae tollens
+## Some header
 
 Lorem markdownum, a quoque nutu est *quodcumque mandasset* veluti. Passim
 inportuna totidemque nympha fert; repetens pendent, poenarum guttura sed vacet
