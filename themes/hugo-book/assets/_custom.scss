@@ -1,0 +1,84 @@
+/* You can add custom styles here. */
+
+// @import "plugins/numbered";
+// @import "plugins/scrollbars";
+
+.book-menu {
+  background-color: aliceblue;
+}
+
+.book-toc {
+  background-color: aliceblue;
+}
+
+body {
+  background-color: white;
+}
+
+main {
+  background-color: aliceblue;
+}
+
+.book-search input {
+  background-color: white;
+}
+
+.book-menu nav {
+  margin-top: 35px;
+}
+
+.book-toc nav {
+  margin-top: 50px;
+}
+
+.book-brand a {
+  color: white;
+  font-weight: 700;
+}
+
+.book-brand {
+  margin: 0;
+}
+
+.book-search {
+  margin: 0;
+}
+
+.custom-header {
+  background-color: #343a40;
+}
+
+#book-search-results {
+  z-index: 9999;
+  background-color: aliceblue;
+  position: absolute;
+  margin: 3px;
+  border-radius: 5px;
+  width: 100%;
+  list-style: none;
+  padding-inline-start: 10px;
+}
+
+#book-search-results li {
+  padding: 10px;
+}
+
+.book-page {
+  background-color: white;
+  min-height: calc(100vh - 45px);
+  padding: 10px 20px 10px 20px;
+}
+
+.book-page .markdown {
+  min-height: calc(100vh - 129px);
+}
+
+@media screen and (max-width: 56rem) {
+  .book-page .markdown {
+    min-height: calc(100vh - 169px);
+  }
+}
+
+.book-menu nav, .book-toc nav {
+    padding: 10px;
+}

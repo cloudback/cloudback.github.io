@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+  {{ partial "docs/html-head" . }}
+  {{ partial "docs/inject/head" . }}
+</head>
+
+<body style="min-height: 100vh;">
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main>
+    <header class="custom-header" style="width: 100%; position: fixed; height: 45px; z-index: 9999">
+      <div class="container flex">
+        <div style="padding: 5px; max-width: 16rem;">
+          <div style="margin-left: auto; margin-right: auto;">
+            {{ partial "docs/brand" . }}
+          </div>
+        </div>
+        <div style="padding: 5px; max-width: 16rem; margin-left: auto; margin-right: 0;">
+          <div style="margin-left: auto; margin-right: auto;">
+            {{ partial "docs/search" . }}
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container" style="padding-top: 45px;">
+      <div class="flex">
+	    <aside class="book-menu">
+          {{ template "menu" . }} <!-- Left menu Content -->
+        </aside>
+	    
+        <div class="book-page">
+          <header class="book-header">
+            {{ template "header" . }} <!-- Mobile layout header -->
+          </header>
+	    
+          {{ partial "docs/inject/content-before" . }}
+          {{ template "main" . }} <!-- Page Content -->
+          {{ partial "docs/inject/content-after" . }}
+	    
+          <footer class="book-footer">
+            {{ template "footer" . }} <!-- Footer under page content -->
+            {{ partial "docs/inject/footer" . }}
+          </footer>
+	    
+          <div class="book-footer">
+            <div style="font-size: smaller;">&copy; Cloudback 2019 - <a>Privacy</a></div>
+          </div>
+          {{ template "comments" . }} <!-- Comments block -->
+	    
+          <label for="menu-control" class="hidden book-menu-overlay"></label>
+		</div>
+        {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+        <aside class="book-toc">
+          {{ template "toc" . }} <!-- Table of Contents -->
+        </aside>
+        {{ end }}
+	  </div>
+    </div>
+  </main>
+
+  {{ partial "docs/inject/body" . }}
+</body>
+
+</html>
+
+{{ define "menu" }}
+  {{ partial "docs/menu" . }}
+{{ end }}
+
+{{ define "header" }}
+  {{ partial "docs/header" . }}
+
+  {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      {{ template "toc" . }}
+    </aside>
+  {{ end }}
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "docs/footer" . }}
+{{ end }}
+
+{{ define "comments" }}
+  {{ if and .Content (default true (default .Site.Params.BookComments .Params.BookComments)) }}
+  <div class="book-comments">
+    {{- partial "docs/comments" . -}}
+  </div>
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  <article class="markdown">
+    {{- .Content -}}
+  </article>
+{{ end }}
+
+{{ define "toc" }}
+  {{ partial "docs/toc" . }}
+{{ end }}
