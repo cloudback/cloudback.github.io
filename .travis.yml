@@ -18,7 +18,9 @@ deploy:
   repo: cloudback/cloudback.github.io # This is the slug of the repo you want to deploy your site to
   target_branch: master # GitHub pages branch to deploy to (in other cases it can be gh-pages)
   provider: pages
-  skip_cleanup: true
+  edge: true
+  keep_history: true
+  cleanup: false
   github_token: $GITHUB_TOKEN # This is the authentication which you will setup in the next step in travis-ci dashboard
   on:
     branch: master
