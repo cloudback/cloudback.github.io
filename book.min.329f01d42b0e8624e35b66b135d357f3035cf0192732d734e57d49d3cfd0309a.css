@@ -837,5 +837,10 @@ main {
   .book-page .markdown {
     min-height: calc(100vh - 169px); } }
 
+@media screen and (max-width: 400px) {
+  /*hide title text for small screen resolution*/
+  .book-brand a span {
+    display: none; } }
+
 .book-menu nav, .book-toc nav {
   padding: 10px; }
