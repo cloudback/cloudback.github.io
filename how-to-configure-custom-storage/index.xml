@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Overview on Cloudback</title>
-    <link>https://cloudback.github.io/</link>
-    <description>Recent content in Overview on Cloudback</description>
+    <title>Cloudback</title>
+    <link>https://cloudback.github.io/how-to-configure-custom-storage/</link>
+    <description>Recent content on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://cloudback.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cloudback.github.io/how-to-configure-custom-storage/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
