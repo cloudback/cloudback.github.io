@@ -10,12 +10,13 @@
     
     
     <item>
-      <title>Data Breach Response Policy</title>
-      <link>https://cloudback.github.io/security/data-breach-response-policy/</link>
+      <title>Incident Response Plan Policy</title>
+      <link>https://cloudback.github.io/security/incident-response-plan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/security/data-breach-response-policy/</guid>
-      <description>Data Breach Response Policy Purpose The purpose of the policy is to establish the goals and the vision for the breach response process in the MYRTLECONSULTING S.A. (&amp;ldquo;we&amp;rdquo; or &amp;ldquo;Cloudback&amp;rdquo;). This policy will clearly define to whom it applies and under what circumstances, and it will include the definition of a breach, staff roles and responsibilities, standards and metrics (e.g., to enable prioritization of the incidents), as well as reporting, remediation, and feedback mechanisms.</description>
+      <guid>https://cloudback.github.io/security/incident-response-plan/</guid>
+      <description>Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document provides guidance for employees or incident responders who believe they have discovered or are responding to an incident related to the Cloudback.
+Escalation Email to support@cloudback.it should be used to notify the support team of run-of-the mill issues. Be a good witness.</description>
     </item>
     
     <item>
@@ -25,6 +26,15 @@
       
       <guid>https://cloudback.github.io/security/disaster-recovery-plan-policy/</guid>
       <description>Disaster Recovery Plan Policy Overview The purpose of the policy is to establish the goals and the vision for the disaster recovery process in the MYRTLECONSULTING S.A. (&amp;ldquo;we&amp;rdquo; or &amp;ldquo;Cloudback&amp;rdquo;). It is important to understand that having a contingency plan in the event of a disaster gives Cloudback a competitive advantage. This policy requires management to financially support and diligently attend to disaster contingency planning efforts. Disasters are not limited to adverse weather conditions.</description>
+    </item>
+    
+    <item>
+      <title>Data Breach Response Policy</title>
+      <link>https://cloudback.github.io/security/data-breach-response-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/security/data-breach-response-policy/</guid>
+      <description>Data Breach Response Policy Purpose The purpose of the policy is to establish the goals and the vision for the breach response process in the MYRTLECONSULTING S.A. (&amp;ldquo;we&amp;rdquo; or &amp;ldquo;Cloudback&amp;rdquo;). This policy will clearly define to whom it applies and under what circumstances, and it will include the definition of a breach, staff roles and responsibilities, standards and metrics (e.g., to enable prioritization of the incidents), as well as reporting, remediation, and feedback mechanisms.</description>
     </item>
     
   </channel>

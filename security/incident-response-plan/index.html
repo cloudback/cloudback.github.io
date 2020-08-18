@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document provides guidance for employees or incident responders who believe they have discovered or are responding to an incident related to the Cloudback.
+Escalation Email to support@cloudback.it should be used to notify the support team of run-of-the mill issues. Be a good witness."><meta property="og:title" content="Incident Response Plan Policy" />
+<meta property="og:description" content="Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document provides guidance for employees or incident responders who believe they have discovered or are responding to an incident related to the Cloudback.
+Escalation Email to support@cloudback.it should be used to notify the support team of run-of-the mill issues. Be a good witness." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudback.github.io/security/incident-response-plan/" />
+<meta property="article:modified_time" content="2020-08-18T18:32:58+03:00" />
+<title>Incident Response Plan Policy | Cloudback</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/book.min.9a66640992032abc7f25ed18a1fd33776b1cd1425afd924f7756878fd7f14ee0.css" integrity="sha256-mmZkCZIDKrx/Je0Yof0zd2sc0UJa/ZJPd1aHj9fxTuA=">
+
+
+<script defer src="/en.search.min.691141131b1a6ee2c37879c101e425c78958b51ac5da0c9b8eb5b2c33f2ce7f8.js" integrity="sha256-aRFBExsabuLDeHnBAeQlx4lYtRrF2gybjrWywz8s5/g="></script>
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body style="min-height: 100vh;">
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main>
+    <header class="custom-header" style="width: 100%; position: fixed; height: 45px; z-index: 9999">
+      <div class="container flex">
+        <div style="padding: 5px; max-width: 16rem;">
+          <div style="margin-left: auto; margin-right: auto;">
+            <h2 class="book-brand">
+  <a href="/"><img src="/logo.svg" alt="Logo" /><span>Cloudback</span>
+  </a>
+</h2>
+
+          </div>
+        </div>
+        <div style="padding: 5px; max-width: 16rem; margin-left: auto; margin-right: 0;">
+          <div style="margin-left: auto; margin-right: auto;">
+            
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container" style="padding-top: 45px;">
+      <div class="flex">
+	    <aside class="book-menu">
+          
+  <nav>
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <ul>
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/how-to-configure-custom-storage/" class="">How to Configure Custom Storage</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/how-to-configure-custom-storage/microsoft-azure-blob-container/" class="">Micosoft Azure Blob Container</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/security/" class="">Security</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/security/incident-response-plan/" class="active">Incident Response Plan Policy</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/security/disaster-recovery-plan-policy/" class="">Disaster Recovery Plan Policy</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/security/data-breach-response-policy/" class="">Data Breach Response Policy</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/terms/" class="">Terms of Service</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/privacy/" class="">Privacy Policy</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/contact-us/" class="">Contact us</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+        </aside>
+	    
+        <div class="book-page">
+          <header class="book-header">
+            
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Incident Response Plan Policy</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#incident-response-plan">Incident Response Plan</a>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#escalation">Escalation</a></li>
+            <li><a href="#severity">Severity</a></li>
+            <li><a href="#internal-issues">Internal Issues</a></li>
+            <li><a href="#compromised-communications">Compromised Communications</a></li>
+            <li><a href="#response-steps">Response Steps</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+          </header>
+	    
+          
+          
+  <article class="markdown"><h2 id="incident-response-plan">Incident Response Plan</h2>
+<h3 id="introduction">Introduction</h3>
+<p>The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”).
+This document provides guidance for employees or incident responders who believe they have discovered or are responding to an incident related to the Cloudback.</p>
+<h3 id="escalation">Escalation</h3>
+<p>Email to <a href="mailto:support@cloudback.it">support@cloudback.it</a> should be used to notify the support team of run-of-the mill issues. Be a good witness. Behave as if you were reporting a crime and include lots of specific details about what you have discovered.</p>
+<h3 id="severity">Severity</h3>
+<h4 id="low-and-medium-severity">Low and Medium Severity</h4>
+<p>Issues meeting this severity are simply suspicions or odd behaviors. They are not verified and require further investigation. There is no clear indicator that systems have tangible risk and do not require emergency response. This includes suspicious emails, outages, strange activity on a laptop.</p>
+<h4 id="high-severity">High Severity</h4>
+<p>High severity issues relate to problems where an adversary or active exploitation hasn’t been proven yet, and may not have happened, but likely to happen. This may include vulnerabilities with direct risk of exploitation, threats with risk or adversarial persistence on our systems (eg: backdoors, malware), malicious access of business data (eg: passwords, vulnerability data, payments information), or threats that put any individual at risk of physical harm.</p>
+<p>High severity issues should include an email to <a href="mailto:support@cloudback.it">support@cloudback.it</a> with “Urgent” in the subject line to alert incident responders.</p>
+<h4 id="critical-severity">Critical Severity</h4>
+<p>Critical issues relate to actively exploited risks and involve a malicious actor. Identification of active exploitation is critical to this severity category.</p>
+<p>Critical severity issues should involve all the support team to investigate the issue as soon as possible. Continue escalation until you receive acknowledgement.</p>
+<h3 id="internal-issues">Internal Issues</h3>
+<p>Issues where the malicious actor is an internal employee, contractor, vendor, or partner requires sensitive handling. Please contact the <a href="mailto:team@cloudback.it">team@cloudback.it</a> directly. These are critical issues and must be pushed to follow up.</p>
+<h3 id="compromised-communications">Compromised Communications</h3>
+<p>If there are IT communication risks, the support team will announce an out of band solution within the company, and will communicate this to team over cell phones.</p>
+<h3 id="response-steps">Response Steps</h3>
+<p>For critical issues, the support team will follow an iterative response process designed to investigate, contain exploitation, remediate our vulnerability, and document a post-mortem with the lessons of an incident.</p>
+<ol>
+<li>The support team will determine if a lawyer be included and attorney client privilege between responders will begin.</li>
+<li>The investigation meeting involving support and development teams will take place.</li>
+<li>The following meeting will occur at regular intervals until the incident is resolved:</li>
+</ol>
+<h4 id="incident-response-meeting--agenda">Incident Response Meeting — Agenda</h4>
+<ul>
+<li>Incident Timeline</li>
+<li>Indicators of the Incident</li>
+<li>Investigative Q&amp;A</li>
+<li>Emergency Mitigations</li>
+<li>Long Term Mitigations (including Root Cause Analysis)</li>
+<li>Everything Else</li>
+</ul>
+<p>The support team will <em>Incident Timeline</em> with all known temporal data related to the incident. All <em>Indicators of the Incident</em> will be updated and shared among incident responders. The group will add new knowns and unknowns to the <em>Investigative Q&amp;A</em>. A list of tactical <em>Emergency Mitigations</em> will be updated. A list of long term, post incident <em>Long Term Mitigations</em> will be updated. Once items related to response are covered, technical responders may leave the meeting and meta-topics (<em>Everything Else</em>) related to the incident are discussed (communications, legal issues, blog posts, etc) with leadership.</p>
+</article>
+ 
+          
+	    
+          <footer class="book-footer">
+            
+  <div class="flex justify-between">
+
+
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/4c4937ae289d5a886b29d37927029998fa6b3234" title='Last modified by Evgeniy Kosjakov | Aug 18, 2020' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>Aug 18, 2020</span>
+    </a>
+  </div>
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/cloudback/docs/edit/master/content/security/incident-response-plan.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+            
+          </footer>
+	    
+          <div class="book-footer">
+            <div style="font-size: smaller;">&copy; Cloudback 2020 - <a href="/privacy">Privacy</a></div>
+          </div>
+          
+  
+ 
+	    
+          <label for="menu-control" class="hidden book-menu-overlay"></label>
+		</div>
+        
+        <aside class="book-toc">
+          
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#incident-response-plan">Incident Response Plan</a>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#escalation">Escalation</a></li>
+            <li><a href="#severity">Severity</a></li>
+            <li><a href="#internal-issues">Internal Issues</a></li>
+            <li><a href="#compromised-communications">Compromised Communications</a></li>
+            <li><a href="#response-steps">Response Steps</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+        </aside>
+        
+	  </div>
+    </div>
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
