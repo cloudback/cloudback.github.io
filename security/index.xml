@@ -10,13 +10,13 @@
     
     
     <item>
-      <title>Incident Response Plan Policy</title>
+      <title>Incident Response Plan</title>
       <link>https://cloudback.github.io/security/incident-response-plan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudback.github.io/security/incident-response-plan/</guid>
-      <description>Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document provides guidance for employees or incident responders who believe they have discovered or are responding to an incident related to the Cloudback.
-Escalation Email to support@cloudback.it should be used to notify the support team of run-of-the mill issues. Be a good witness.</description>
+      <description>Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document discusses the steps taken during an incident response plan.
+Incident Response Process  The person who discovers the incident should contact Cloudback by one of the following ways:   Send an email to the support@cloudback.it Raise a request in the Cloudback issue tracker Use any contacts from Contact Us web page   If the person discovering the incident is a member of the Cloudback team, they will proceed to step four (4).</description>
     </item>
     
     <item>

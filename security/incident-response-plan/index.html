@@ -4,21 +4,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document provides guidance for employees or incident responders who believe they have discovered or are responding to an incident related to the Cloudback.
-Escalation Email to support@cloudback.it should be used to notify the support team of run-of-the mill issues. Be a good witness."><meta property="og:title" content="Incident Response Plan Policy" />
-<meta property="og:description" content="Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document provides guidance for employees or incident responders who believe they have discovered or are responding to an incident related to the Cloudback.
-Escalation Email to support@cloudback.it should be used to notify the support team of run-of-the mill issues. Be a good witness." />
+<meta name="description" content="Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document discusses the steps taken during an incident response plan.
+Incident Response Process  The person who discovers the incident should contact Cloudback by one of the following ways:   Send an email to the support@cloudback.it Raise a request in the Cloudback issue tracker Use any contacts from Contact Us web page   If the person discovering the incident is a member of the Cloudback team, they will proceed to step four (4)."><meta property="og:title" content="Incident Response Plan" />
+<meta property="og:description" content="Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document discusses the steps taken during an incident response plan.
+Incident Response Process  The person who discovers the incident should contact Cloudback by one of the following ways:   Send an email to the support@cloudback.it Raise a request in the Cloudback issue tracker Use any contacts from Contact Us web page   If the person discovering the incident is a member of the Cloudback team, they will proceed to step four (4)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cloudback.github.io/security/incident-response-plan/" />
-<meta property="article:modified_time" content="2020-08-18T18:32:58+03:00" />
-<title>Incident Response Plan Policy | Cloudback</title>
+<meta property="article:modified_time" content="2020-08-23T17:56:51+03:00" />
+<title>Incident Response Plan | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/book.min.9a66640992032abc7f25ed18a1fd33776b1cd1425afd924f7756878fd7f14ee0.css" integrity="sha256-mmZkCZIDKrx/Je0Yof0zd2sc0UJa/ZJPd1aHj9fxTuA=">
 
 
-<script defer src="/en.search.min.691141131b1a6ee2c37879c101e425c78958b51ac5da0c9b8eb5b2c33f2ce7f8.js" integrity="sha256-aRFBExsabuLDeHnBAeQlx4lYtRrF2gybjrWywz8s5/g="></script>
+<script defer src="/en.search.min.5f49811ed08dd8226e8b47a86eef775da68ca2b0db01fee50870c50c6dd55968.js" integrity="sha256-X0mBHtCN2CJui0eobu93XaaMorDbAf7lCHDFDG3VWWg="></script>
 
 <!--
 Made with Book Theme
@@ -139,7 +139,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/security/incident-response-plan/" class="active">Incident Response Plan Policy</a>
+  <a href="/security/incident-response-plan/" class="active">Incident Response Plan</a>
   
 
 </li>
@@ -291,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Incident Response Plan Policy</strong>
+  <strong>Incident Response Plan</strong>
 
   <label for="toc-control">
     <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -310,13 +310,9 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#incident-response-plan">Incident Response Plan</a>
           <ul>
             <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#escalation">Escalation</a></li>
-            <li><a href="#severity">Severity</a></li>
-            <li><a href="#internal-issues">Internal Issues</a></li>
-            <li><a href="#compromised-communications">Compromised Communications</a></li>
-            <li><a href="#response-steps">Response Steps</a></li>
           </ul>
         </li>
+        <li><a href="#incident-response-process">Incident Response Process</a></li>
       </ul>
     </li>
   </ul>
@@ -333,39 +329,141 @@ https://github.com/alex-shpak/hugo-book
   <article class="markdown"><h2 id="incident-response-plan">Incident Response Plan</h2>
 <h3 id="introduction">Introduction</h3>
 <p>The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”).
-This document provides guidance for employees or incident responders who believe they have discovered or are responding to an incident related to the Cloudback.</p>
-<h3 id="escalation">Escalation</h3>
-<p>Email to <a href="mailto:support@cloudback.it">support@cloudback.it</a> should be used to notify the support team of run-of-the mill issues. Be a good witness. Behave as if you were reporting a crime and include lots of specific details about what you have discovered.</p>
-<h3 id="severity">Severity</h3>
-<h4 id="low-and-medium-severity">Low and Medium Severity</h4>
-<p>Issues meeting this severity are simply suspicions or odd behaviors. They are not verified and require further investigation. There is no clear indicator that systems have tangible risk and do not require emergency response. This includes suspicious emails, outages, strange activity on a laptop.</p>
-<h4 id="high-severity">High Severity</h4>
-<p>High severity issues relate to problems where an adversary or active exploitation hasn’t been proven yet, and may not have happened, but likely to happen. This may include vulnerabilities with direct risk of exploitation, threats with risk or adversarial persistence on our systems (eg: backdoors, malware), malicious access of business data (eg: passwords, vulnerability data, payments information), or threats that put any individual at risk of physical harm.</p>
-<p>High severity issues should include an email to <a href="mailto:support@cloudback.it">support@cloudback.it</a> with “Urgent” in the subject line to alert incident responders.</p>
-<h4 id="critical-severity">Critical Severity</h4>
-<p>Critical issues relate to actively exploited risks and involve a malicious actor. Identification of active exploitation is critical to this severity category.</p>
-<p>Critical severity issues should involve all the support team to investigate the issue as soon as possible. Continue escalation until you receive acknowledgement.</p>
-<h3 id="internal-issues">Internal Issues</h3>
-<p>Issues where the malicious actor is an internal employee, contractor, vendor, or partner requires sensitive handling. Please contact the <a href="mailto:team@cloudback.it">team@cloudback.it</a> directly. These are critical issues and must be pushed to follow up.</p>
-<h3 id="compromised-communications">Compromised Communications</h3>
-<p>If there are IT communication risks, the support team will announce an out of band solution within the company, and will communicate this to team over cell phones.</p>
-<h3 id="response-steps">Response Steps</h3>
-<p>For critical issues, the support team will follow an iterative response process designed to investigate, contain exploitation, remediate our vulnerability, and document a post-mortem with the lessons of an incident.</p>
+This document discusses the steps taken during an incident response plan.</p>
+<h2 id="incident-response-process">Incident Response Process</h2>
 <ol>
-<li>The support team will determine if a lawyer be included and attorney client privilege between responders will begin.</li>
-<li>The investigation meeting involving support and development teams will take place.</li>
-<li>The following meeting will occur at regular intervals until the incident is resolved:</li>
+<li>The person who discovers the incident should contact Cloudback by one of the following ways:</li>
 </ol>
-<h4 id="incident-response-meeting--agenda">Incident Response Meeting — Agenda</h4>
 <ul>
-<li>Incident Timeline</li>
-<li>Indicators of the Incident</li>
-<li>Investigative Q&amp;A</li>
-<li>Emergency Mitigations</li>
-<li>Long Term Mitigations (including Root Cause Analysis)</li>
-<li>Everything Else</li>
+<li>Send an email to the <a href="mailto:support@cloudback.it">support@cloudback.it</a></li>
+<li>Raise a request in the Cloudback 
+  <a href="https://github.com/cloudback/issue-tracker/issues/new?template=bug_report.md">issue tracker</a></li>
+<li>Use any contacts from 
+  <a href="https://docs.cloudback.it/contact-us/">Contact Us</a> web page</li>
 </ul>
-<p>The support team will <em>Incident Timeline</em> with all known temporal data related to the incident. All <em>Indicators of the Incident</em> will be updated and shared among incident responders. The group will add new knowns and unknowns to the <em>Investigative Q&amp;A</em>. A list of tactical <em>Emergency Mitigations</em> will be updated. A list of long term, post incident <em>Long Term Mitigations</em> will be updated. Once items related to response are covered, technical responders may leave the meeting and meta-topics (<em>Everything Else</em>) related to the incident are discussed (communications, legal issues, blog posts, etc) with leadership.</p>
+<ol start="2">
+<li>
+<p>If the person discovering the incident is a member of the Cloudback team, they will proceed to step four (4).</p>
+</li>
+<li>
+<p>Once contacted the Support Team will log:</p>
+</li>
+</ol>
+<ul>
+<li>The name of the person discovering the incident.</li>
+<li>Time the person discovering the incident contacted Cloudback.</li>
+<li>Contact information about the person discovering the incident.</li>
+<li>The nature of the incident.</li>
+<li>When the event was first noticed, supporting the idea that the incident occurred.</li>
+</ul>
+<ol start="4">
+<li>The Support Team member who receives the email (or discovered the incident) will refer to their contact list for both management personnel to be contacted and incident response members to be contacted. The staff member will contact those designated on the list. The staff member could possibly add the following:</li>
+</ol>
+<ul>
+<li>Is the system affected business critical?</li>
+<li>What is the severity of the potential impact?</li>
+<li>Name of system being targeted, along with operating system, Internet Protocol (IP) address, and location.</li>
+<li>IP address and any information about the origin of the attack.</li>
+</ul>
+<ol start="5">
+<li>Contacted members of the support team will meet or discuss the situation over the telephone and determine a response strategy. The following question to be discussed:</li>
+</ol>
+<ul>
+<li>Is the incident real or perceived?</li>
+<li>Is the incident still in progress?</li>
+<li>What data or property is threatened and how critical is it?</li>
+<li>What is the impact on the business should the attack succeed? Minimal, serious, or critical?</li>
+<li>What system or systems are targeted, where are they located physically and on the network?</li>
+<li>Is the incident inside the trusted network?</li>
+<li>Is the response urgent?</li>
+<li>Can the incident be quickly contained?</li>
+<li>Will the response alert the attacker and do we care?</li>
+<li>What type of incident is this? Example: virus, worm, intrusion, abuse, damage.</li>
+</ul>
+<ol start="6">
+<li>An incident ticket will be created. The incident will be categorized into the highest applicable level of one of the following categories:</li>
+</ol>
+<ul>
+<li>Category one - A threat to public safety or life.</li>
+<li>Category two - A threat to sensitive data.</li>
+<li>Category three - A threat to computer systems.</li>
+<li>Category four - A disruption of services.</li>
+</ul>
+<ol start="7">
+<li>Team members will establish and follow one of the following procedures basing their response on the incident assessment:</li>
+</ol>
+<ul>
+<li>Worm response procedure.</li>
+<li>Virus response procedure.</li>
+<li>System failure procedure.</li>
+<li>Active intrusion response procedure - Is critical or sensitive data (Personally Identifiable Information (PII), etc.) at risk?</li>
+<li>Inactive Intrusion response procedure.</li>
+<li>System abuse procedure.</li>
+<li>Property theft response procedure.</li>
+<li>Website denial of service response procedure.</li>
+<li>Database or file denial of service response procedure.</li>
+<li>Spyware response procedure.</li>
+</ul>
+<p>The team may create additional procedures which are not foreseen in this document. If there is no applicable procedure in place, the team must document what was done and later establish a procedure for the incident.</p>
+<ol start="8">
+<li>
+<p>Team members will use forensic techniques, including reviewing system logs, looking for gaps in logs, reviewing intrusion detection logs, and interviewing witnesses and the incident victim to determine how the incident was caused. Only authorized personnel should be performing interviews or examining evidence, and the authorized personnel may vary by situation and the organization.</p>
+</li>
+<li>
+<p>Team members will recommend changes to prevent the occurrence from happening again or infecting other systems.</p>
+</li>
+<li>
+<p>Upon management approval, the changes will be implemented.</p>
+</li>
+<li>
+<p>Team members will restore the affected system(s) to the uninfected state. They may do any or more of the following:</p>
+</li>
+</ol>
+<ul>
+<li>Reinstall the affected system(s) from scratch and restore data from backups if necessary. Preserve evidence before doing this.</li>
+<li>Make users change passwords if passwords may have been sniffed.</li>
+<li>Be sure the system has been hardened by turning off or uninstalling unused services.</li>
+<li>Be sure the system is fully patched.</li>
+<li>Be sure real time virus protection and intrusion detection is running.</li>
+<li>Be sure the system is logging the correct events and to the proper level.</li>
+</ul>
+<ol start="12">
+<li>Documentation. The following shall be documented:</li>
+</ol>
+<ul>
+<li>How the incident was discovered.</li>
+<li>The category of the incident.</li>
+<li>How the incident occurred, whether through email, firewall, etc.</li>
+<li>Where the attack came from, such as IP addresses and other related information about the attacker.</li>
+<li>What the response plan was.</li>
+<li>What was done in response?</li>
+<li>Whether the response was effective.</li>
+</ul>
+<ol start="13">
+<li>
+<p>Evidence Preservation. Make copies of logs, email, and other communication. Keep lists of witnesses. Keep evidence as long as necessary to complete prosecution and beyond, in case of an appeal.</p>
+</li>
+<li>
+<p>Notify proper external agencies. Notify the police and other appropriate agencies if prosecution of the intruder is possible. List the agencies and contact numbers here.</p>
+</li>
+<li>
+<p>Assess damage and cost—assess the damage to the organization and estimate both the damage cost and the cost of the containment efforts.</p>
+</li>
+<li>
+<p>Review response and update policies. Plan and take preventative steps so the intrusion can&rsquo;t happen again.</p>
+</li>
+</ol>
+<ul>
+<li>Consider whether an additional policy could have prevented the intrusion.</li>
+<li>Consider whether a procedure or policy was not followed which allowed the intrusion, and then consider what could be changed to ensure that the procedure or policy is followed in the future.</li>
+<li>Was the incident response appropriate? How could it be improved?</li>
+<li>Was every appropriate party informed in a timely manner?</li>
+<li>Were the incident response procedures detailed, and did they cover the entire situation? How can they be improved?</li>
+<li>Have changes been made to prevent a reinfection? Have all systems been patched, systems locked down, passwords changed, antivirus updated, email policies set, etc.?</li>
+<li>Have changes been made to prevent a new and similar infection?</li>
+<li>Should any security policies be updated?</li>
+<li>What lessons have been learned from this experience?</li>
+</ul>
 </article>
  
           
@@ -378,9 +476,9 @@ This document provides guidance for employees or incident responders who believe
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/4c4937ae289d5a886b29d37927029998fa6b3234" title='Last modified by Evgeniy Kosjakov | Aug 18, 2020' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/07930dd957554cfd7d6d79c3deef3d878c5123c5" title='Last modified by Evgeniy Kosjakov | Aug 23, 2020' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Aug 18, 2020</span>
+      <span>Aug 23, 2020</span>
     </a>
   </div>
 
@@ -417,13 +515,9 @@ This document provides guidance for employees or incident responders who believe
         <li><a href="#incident-response-plan">Incident Response Plan</a>
           <ul>
             <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#escalation">Escalation</a></li>
-            <li><a href="#severity">Severity</a></li>
-            <li><a href="#internal-issues">Internal Issues</a></li>
-            <li><a href="#compromised-communications">Compromised Communications</a></li>
-            <li><a href="#response-steps">Response Steps</a></li>
           </ul>
         </li>
+        <li><a href="#incident-response-process">Incident Response Process</a></li>
       </ul>
     </li>
   </ul>
