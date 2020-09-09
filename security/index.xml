@@ -43,7 +43,8 @@ Incident Response Process  The person who discovers the incident should contact 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudback.github.io/security/vulnerability-management-workflow/</guid>
-      <description>Vulnerability Management Workflow Introduction The purpose of the document is to describe the established vulnerability management workflow in the MYRTLECONSULTING S.A. (“we” or “Cloudback”).</description>
+      <description>Vulnerability Management Workflow Introduction The purpose of the document is to describe the established vulnerability management workflow in the MYRTLECONSULTING S.A. (“we” or “Cloudback”).
+Overview Vulnerability Management is the recurring process of identifying, classifying, prioritizing, mitigating, and remediating vulnerabilities. This document will focus on infrastructure vulnerabilities and the vulnerability management process. This process is designed to provide informationregarding Cloudback vulnerability workflow, promote healthy patch management among other preventative best-practices, and remediate risk; all with the end goal to better secure our environments.</description>
     </item>
     
   </channel>
