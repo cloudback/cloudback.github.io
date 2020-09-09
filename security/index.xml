@@ -37,5 +37,14 @@ Incident Response Process  The person who discovers the incident should contact 
       <description>Data Breach Response Policy Purpose The purpose of the policy is to establish the goals and the vision for the breach response process in the MYRTLECONSULTING S.A. (&amp;ldquo;we&amp;rdquo; or &amp;ldquo;Cloudback&amp;rdquo;). This policy will clearly define to whom it applies and under what circumstances, and it will include the definition of a breach, staff roles and responsibilities, standards and metrics (e.g., to enable prioritization of the incidents), as well as reporting, remediation, and feedback mechanisms.</description>
     </item>
     
+    <item>
+      <title>Vulnerability Management Workflow</title>
+      <link>https://cloudback.github.io/security/vulnerability-management-workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/security/vulnerability-management-workflow/</guid>
+      <description>Vulnerability Management Workflow Introduction The purpose of the document is to describe the established vulnerability management workflow in the MYRTLECONSULTING S.A. (“we” or “Cloudback”).</description>
+    </item>
+    
   </channel>
 </rss>
