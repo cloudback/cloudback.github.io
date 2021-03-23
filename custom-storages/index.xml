@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudback</title>
+    <link>https://cloudback.github.io/custom-storages/</link>
+    <description>Recent content on Cloudback</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://cloudback.github.io/custom-storages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Micosoft Azure Blob Container</title>
+      <link>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/</guid>
+      <description>Micosoft Azure Blob Container Page is under development</description>
+    </item>
+    
+    <item>
+      <title>Amazon S3 Bucket</title>
+      <link>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</guid>
+      <description>Amazon S3 Bucket Page is under development</description>
+    </item>
+    
+    <item>
+      <title>Amazon S3 Glacier</title>
+      <link>https://cloudback.github.io/custom-storages/amazon-s3-glacier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/amazon-s3-glacier/</guid>
+      <description>Amazon S3 Glacier Page is under development</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Storage Bucket</title>
+      <link>https://cloudback.github.io/custom-storages/google-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/google-cloud/</guid>
+      <description>Google Cloud Storage Bucket Page is under development</description>
+    </item>
+    
+    <item>
+      <title>Alibaba Cloud Object Storage Service</title>
+      <link>https://cloudback.github.io/custom-storages/alibaba-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/alibaba-cloud/</guid>
+      <description>Alibaba Cloud Object Storage Service Page is under development</description>
+    </item>
+    
+  </channel>
+</rss>

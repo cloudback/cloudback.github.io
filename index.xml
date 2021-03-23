@@ -11,11 +11,47 @@
     
     <item>
       <title>Micosoft Azure Blob Container</title>
-      <link>https://cloudback.github.io/how-to-configure-custom-storage/microsoft-azure-blob-container/</link>
+      <link>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/how-to-configure-custom-storage/microsoft-azure-blob-container/</guid>
+      <guid>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/</guid>
       <description>Micosoft Azure Blob Container Page is under development</description>
+    </item>
+    
+    <item>
+      <title>Amazon S3 Bucket</title>
+      <link>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</guid>
+      <description>Amazon S3 Bucket Page is under development</description>
+    </item>
+    
+    <item>
+      <title>Amazon S3 Glacier</title>
+      <link>https://cloudback.github.io/custom-storages/amazon-s3-glacier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/amazon-s3-glacier/</guid>
+      <description>Amazon S3 Glacier Page is under development</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Storage Bucket</title>
+      <link>https://cloudback.github.io/custom-storages/google-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/google-cloud/</guid>
+      <description>Google Cloud Storage Bucket Page is under development</description>
+    </item>
+    
+    <item>
+      <title>Alibaba Cloud Object Storage Service</title>
+      <link>https://cloudback.github.io/custom-storages/alibaba-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/alibaba-cloud/</guid>
+      <description>Alibaba Cloud Object Storage Service Page is under development</description>
     </item>
     
     <item>
