@@ -36,12 +36,13 @@
     }
   </script>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Getting started" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://cloudback.github.io/getting-started/" />
-
-<title>Getting started | Cloudback</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="How to create a new shared access signature (SAS)" />
+<meta property="og:description" content="How to create a new shared access signature About shared access signatures A shared access signature (SAS) provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
+ What resources the client may access What permissions they have to those resources How long the SAS is valid  This page describes how to create a new SAS for your storage container." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudback.github.io/how-to/create-shared-access-signature/" />
+<meta property="article:modified_time" content="2021-04-24T14:12:56+03:00" />
+<title>How to create a new shared access signature (SAS) | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -50,7 +51,6 @@
 
 <script defer src="/en.search.min.efd53279f64842a71179ae9f4272f9d98518b8dea0a1654770717a3b282b6a75.js" integrity="sha256-79UyefZIQqcRea6fQnL52YUYuN6goWVHcHF6OygranU="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://cloudback.github.io/getting-started/index.xml" title="Cloudback" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -117,7 +117,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/getting-started/" class="active">Getting started</a>
+  <a href="/getting-started/" class="">Getting started</a>
   
 
 
@@ -247,7 +247,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/how-to/create-shared-access-signature/" class="">How to create a new shared access signature (SAS)</a>
+  <a href="/how-to/create-shared-access-signature/" class="active">How to create a new shared access signature (SAS)</a>
   
 
 </li>
@@ -446,7 +446,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Getting started</strong>
+  <strong>How to create a new shared access signature (SAS)</strong>
 
   <label for="toc-control">
     <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -460,13 +460,10 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#how-to-create-a-new-shared-access-signature">How to create a new shared access signature</a>
       <ul>
-        <li><a href="#getting-started">Getting started</a>
-          <ul>
-            <li><a href="#installation">Installation</a></li>
-          </ul>
-        </li>
+        <li><a href="#about-shared-access-signatures">About shared access signatures</a></li>
+        <li><a href="#create-a-new-sas">Create a new SAS</a></li>
       </ul>
     </li>
   </ul>
@@ -480,52 +477,44 @@ https://github.com/alex-shpak/hugo-book
 	    
           
           
-  <article class="markdown"><h2 id="getting-started">Getting started</h2>
-<p>This is a short instruction describing how to start creating backups for your GitHub repositories.</p>
-<h3 id="installation">Installation</h3>
-<p>Follow these simple steps below to start using Cloudback.</p>
-<p><strong>Step 1:</strong> Set up a new plan from the GitHub Marketplace</p>
-<p>Open Cloudback&rsquo;s page on the GitHub Marketplace by clicking on the 
-  <a href="https://github.com/marketplace/cloudback">following link</a>.
-Click on the <code>Set up a plan</code> button.</p>
+  <article class="markdown"><h1 id="how-to-create-a-new-shared-access-signature">How to create a new shared access signature</h1>
+<h2 id="about-shared-access-signatures">About shared access signatures</h2>
+<p>A shared access signature (SAS) provides secure delegated access to resources in your storage account.
+With a SAS, you have granular control over how a client can access your data. For example:</p>
+<ul>
+<li>What resources the client may access</li>
+<li>What permissions they have to those resources</li>
+<li>How long the SAS is valid</li>
+</ul>
+<p>This page describes how to create a new SAS for your storage container. If you don&rsquo;t have the Azure Blob Container you need to create one.</p>
+<p>
+  <a href="https://docs.cloudback.it/how-to/create-microsoft-azure-blob-container/">Learn more</a> about how to create a new Azure Blob Container.</p>
+<h2 id="create-a-new-sas">Create a new SAS</h2>
+<p>To be able to create a new Blob Container it is required to have a storage account. If you don&rsquo;t have a storage account you need to create it first.</p>
+<ul>
+<li>Open Azure Portal 
+  <a href="https://portal.azure.com/#home">home page</a></li>
+<li>Open the storage account page that has the container you want to work with</li>
+<li>Open page of the container for which you want to create a shared access signature</li>
+<li>In the left menu click on the <code>Shared access signature</code> menu item:</li>
+</ul>
 <p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot1.png?raw=true" alt="social img" class="screenshot">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-3-container-page.png" alt="azure container page" title="azure container page" class="screenshot">
 </p>
-<p>In the <em>Pricing and Setup</em> section select the account for which the Cloudback application will be installed and then click on the <code>Install it for free</code> button.</p>
+<ul>
+<li>Sep up SAS permissions and Start and expiry date/time:</li>
+</ul>
 <p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot2.png?raw=true" alt="social img" class="screenshot">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-4-container-shared-access-signature.png" alt="azure container page" title="azure container page" class="screenshot">
 </p>
-<p>Review your order to make sure you&rsquo;ve selected the correct plan and account. After that click on the <code>Complete order and begin installation</code>.</p>
+<ul>
+<li>Click on the <code>Generate SAS token and URL</code> button</li>
+<li>After the SAS is generated you will see &lsquo;Blob SAS token&rsquo; and &lsquo;Blob SAS URL&rsquo; are ready to use</li>
+</ul>
 <p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot3.png?raw=true" alt="social img" class="screenshot">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-5-container-shared-access-signature-created.png" alt="azure container page" title="azure container page" class="screenshot">
 </p>
-<p>You will be redirected to the Cloudback application installation page.</p>
-<p><strong>Step 2:</strong> Install GitHub application</p>
-<p>On the Cloudback installation page, select the repositories you want to backup by providing Cloudback the access to them. Click on the <code>Install</code> button.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot4.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>Wait until you will be redirected to authorization page. Click on the <code>Authorize Cloudback</code> button.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot5.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>You then will be redirected to the Cloudback Dashboard.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot6.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p><strong>Step 3:</strong> Complete installation on Cloudback Dashboard</p>
-<p>On the Cloudback Dashboard page review the default settings that will be used for creating repository backups. Accept the Cloudback&rsquo;s Terms of Service and Privacy Policy by clicking on the corresponding checkboxes, then click on the <code>Next step: select repositories</code> button.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot7.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>Enable the repositories you want to backup. Please note that you can&rsquo;t enable more repositories than you have purchased earlier.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot8.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>Click on the <code>Start backuping!</code> button. That&rsquo;s it, you now have completed the installation.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot9.png?raw=true" alt="social img" class="screenshot">
-</p>
+<p>Now you can use &lsquo;Blob SAS URL&rsquo; to provide Cloudback access to your own Azure Blob Container. Please note that after the SAS is expired Cloudback will no longer be able to upload backups of your GitHub repositories to your storage.</p>
 </article>
  
           
@@ -538,15 +527,15 @@ Click on the <code>Set up a plan</code> button.</p>
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/d5eeac8bf01ddd21e65f8a7bddc6d9dea3da4afb" title='Last modified by Evgeniy Kosjakov | Sep 26, 2020' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/d419f0488f0934e3873cffaca6a6d986dae60e0c" title='Last modified by Evgeniy Kosjakov | Apr 24, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Sep 26, 2020</span>
+      <span>Apr 24, 2021</span>
     </a>
   </div>
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/cloudback/docs/edit/master/content/getting-started/_index.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/edit/master/content/how-to/create-shared-access-signature.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -572,13 +561,10 @@ Click on the <code>Set up a plan</code> button.</p>
           
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#how-to-create-a-new-shared-access-signature">How to create a new shared access signature</a>
       <ul>
-        <li><a href="#getting-started">Getting started</a>
-          <ul>
-            <li><a href="#installation">Installation</a></li>
-          </ul>
-        </li>
+        <li><a href="#about-shared-access-signatures">About shared access signatures</a></li>
+        <li><a href="#create-a-new-sas">Create a new SAS</a></li>
       </ul>
     </li>
   </ul>

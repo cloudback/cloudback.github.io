@@ -37,10 +37,11 @@
   </script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Micosoft Azure Blob Container" />
-<meta property="og:description" content="Micosoft Azure Blob Container Page is under development" />
+<meta property="og:description" content="Micosoft Azure Blob Container About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.
+This page describes how to set up your own Azure Blob Container as a custom storage for Cloudback backups." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/" />
-<meta property="article:modified_time" content="2021-03-23T20:00:40+03:00" />
+<meta property="article:modified_time" content="2021-04-24T14:12:56+03:00" />
 <title>Micosoft Azure Blob Container | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -48,7 +49,7 @@
 <link rel="stylesheet" href="/book.min.912ce3bde8feca31c415056f6bc5438f58f6e5b7277fc176f8e67c5f60c41b11.css" integrity="sha256-kSzjvej&#43;yjHEFQVva8VDj1j25bcnf8F2&#43;OZ8X2DEGxE=">
 
 
-<script defer src="/en.search.min.97686552115b8a91ca0b4755841910554e758b7c4b0be78f6acee8422a1801e9.js" integrity="sha256-l2hlUhFbipHKC0dVhBkQVU51i3xLC&#43;ePas7oQioYAek="></script>
+<script defer src="/en.search.min.efd53279f64842a71179ae9f4272f9d98518b8dea0a1654770717a3b282b6a75.js" integrity="sha256-79UyefZIQqcRea6fQnL52YUYuN6goWVHcHF6OygranU="></script>
 
 <!--
 Made with Book Theme
@@ -200,6 +201,53 @@ https://github.com/alex-shpak/hugo-book
 
   
   <a href="/custom-storages/alibaba-cloud/" class="">Alibaba Cloud Object Storage Service</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/how-to/" class="">How To</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/how-to/create-microsoft-azure-blob-container/" class="">How to create a new Microsoft Azure Blob Container</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/how-to/create-shared-access-signature/" class="">How to create a new shared access signature (SAS)</a>
   
 
 </li>
@@ -412,7 +460,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#micosoft-azure-blob-container">Micosoft Azure Blob Container</a></li>
+    <li><a href="#micosoft-azure-blob-container">Micosoft Azure Blob Container</a>
+      <ul>
+        <li><a href="#about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</a></li>
+        <li><a href="#set-up-microsoft-azure-blob-containers-as-a-custom-storage">Set up Microsoft Azure Blob Containers as a custom storage</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -425,7 +478,56 @@ https://github.com/alex-shpak/hugo-book
           
           
   <article class="markdown"><h1 id="micosoft-azure-blob-container">Micosoft Azure Blob Container</h1>
-<p>Page is under development</p>
+<h2 id="about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</h2>
+<p>Azure Blob storage is Microsoft&rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.</p>
+<p>This page describes how to set up your own Azure Blob Container as a custom storage for Cloudback backups.
+To be able to use your Azure Blob Container as custom storage, you need to have a storage or create a new one. Also, you should create a new shared access signature for that storage.</p>
+<ul>
+<li>
+  <a href="https://docs.cloudback.it/how-to/create-microsoft-azure-blob-container/">How to create a new Microsoft Azure Blob Container</a></li>
+<li>
+  <a href="https://docs.cloudback.it/how-to/create-shared-access-signature/">How to create a new shared access signature</a></li>
+</ul>
+<h2 id="set-up-microsoft-azure-blob-containers-as-a-custom-storage">Set up Microsoft Azure Blob Containers as a custom storage</h2>
+<ul>
+<li>In the Cloudback Dashboard open the repository settings by clicking on the settings icon:</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/cloudback-1-open-settings.png" alt="open cloudback repository settings" title="open cloudback repository settings" class="screenshot">
+</p>
+<ul>
+<li>Click on the <code>+ New storage</code> button:</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/cloudback-2-new-storage.png" alt="add new storage" title="add new storage" class="screenshot">
+</p>
+<ul>
+<li>Type a storage name</li>
+<li>Select &lsquo;Microsoft Azure Blob Container&rsquo; as a storage provider</li>
+<li>Insert Blob SAS URL and click on the <code>Save</code> button:</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/cloudback-3-new-storage-details.png" alt="new storage details" title="new storage details" class="screenshot">
+</p>
+<ul>
+<li>The new storage will automatically be selected as a storage for this repository</li>
+<li>Click on the &lsquo;Save changes&rsquo; button to apply the changes for the repository:</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/cloudback-4-new-storage-added.png" alt="new storage added" title="new storage added" class="screenshot">
+</p>
+<ul>
+<li>After the changes are saved you should be able to see that the new storage is selected as a default storage for this repository:</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/cloudback-5-new-storage-added-2.png" alt="new storage added" title="new storage added" class="screenshot">
+</p>
+<ul>
+<li>When the backup is created you should be able to see it in the Azure Blob Container page:</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-6-container-backup-uploaded.png" alt="backup uploaded" title="backup uploaded" class="screenshot">
+</p>
 </article>
  
           
@@ -438,9 +540,9 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/942716933b3fa542232301420ff6a6341a4ee57c" title='Last modified by Evgeniy Kosjakov | Mar 23, 2021' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/d419f0488f0934e3873cffaca6a6d986dae60e0c" title='Last modified by Evgeniy Kosjakov | Apr 24, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Mar 23, 2021</span>
+      <span>Apr 24, 2021</span>
     </a>
   </div>
 
@@ -472,7 +574,12 @@ https://github.com/alex-shpak/hugo-book
           
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#micosoft-azure-blob-container">Micosoft Azure Blob Container</a></li>
+    <li><a href="#micosoft-azure-blob-container">Micosoft Azure Blob Container</a>
+      <ul>
+        <li><a href="#about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</a></li>
+        <li><a href="#set-up-microsoft-azure-blob-containers-as-a-custom-storage">Set up Microsoft Azure Blob Containers as a custom storage</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

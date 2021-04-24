@@ -36,12 +36,12 @@
     }
   </script>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Getting started" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://cloudback.github.io/getting-started/" />
-
-<title>Getting started | Cloudback</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="How to create a new Microsoft Azure Blob Container" />
+<meta property="og:description" content="How to create a new Microsoft Azure Blob Container About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudback.github.io/how-to/create-microsoft-azure-blob-container/" />
+<meta property="article:modified_time" content="2021-04-24T14:12:56+03:00" />
+<title>How to create a new Microsoft Azure Blob Container | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -50,7 +50,6 @@
 
 <script defer src="/en.search.min.efd53279f64842a71179ae9f4272f9d98518b8dea0a1654770717a3b282b6a75.js" integrity="sha256-79UyefZIQqcRea6fQnL52YUYuN6goWVHcHF6OygranU="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://cloudback.github.io/getting-started/index.xml" title="Cloudback" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -117,7 +116,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/getting-started/" class="active">Getting started</a>
+  <a href="/getting-started/" class="">Getting started</a>
   
 
 
@@ -237,7 +236,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/how-to/create-microsoft-azure-blob-container/" class="">How to create a new Microsoft Azure Blob Container</a>
+  <a href="/how-to/create-microsoft-azure-blob-container/" class="active">How to create a new Microsoft Azure Blob Container</a>
   
 
 </li>
@@ -446,7 +445,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Getting started</strong>
+  <strong>How to create a new Microsoft Azure Blob Container</strong>
 
   <label for="toc-control">
     <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -460,11 +459,13 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#how-to-create-a-new-microsoft-azure-blob-container">How to create a new Microsoft Azure Blob Container</a>
       <ul>
-        <li><a href="#getting-started">Getting started</a>
+        <li><a href="#about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</a></li>
+        <li><a href="#create-a-new-microsoft-azure-blob-container">Create a new Microsoft Azure Blob Container</a>
           <ul>
-            <li><a href="#installation">Installation</a></li>
+            <li><a href="#create-a-storage-account">Create a storage account</a></li>
+            <li><a href="#create-a-new-container">Create a new container</a></li>
           </ul>
         </li>
       </ul>
@@ -480,51 +481,33 @@ https://github.com/alex-shpak/hugo-book
 	    
           
           
-  <article class="markdown"><h2 id="getting-started">Getting started</h2>
-<p>This is a short instruction describing how to start creating backups for your GitHub repositories.</p>
-<h3 id="installation">Installation</h3>
-<p>Follow these simple steps below to start using Cloudback.</p>
-<p><strong>Step 1:</strong> Set up a new plan from the GitHub Marketplace</p>
-<p>Open Cloudback&rsquo;s page on the GitHub Marketplace by clicking on the 
-  <a href="https://github.com/marketplace/cloudback">following link</a>.
-Click on the <code>Set up a plan</code> button.</p>
+  <article class="markdown"><h1 id="how-to-create-a-new-microsoft-azure-blob-container">How to create a new Microsoft Azure Blob Container</h1>
+<h2 id="about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</h2>
+<p>Azure Blob storage is Microsoft&rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.</p>
+<p>This page describes how to create a new Azure Blob Container.</p>
+<h2 id="create-a-new-microsoft-azure-blob-container">Create a new Microsoft Azure Blob Container</h2>
+<h3 id="create-a-storage-account">Create a storage account</h3>
+<p>To be able to create a new Blob Container it is required to have a storage account. If you don&rsquo;t have a storage account you need to create it first.</p>
+<ul>
+<li>Open Azure Portal 
+  <a href="https://portal.azure.com/#home">home page</a></li>
+<li>Click on <code>Storage accounts</code> button</li>
+<li>Follow the steps in the &lsquo;Create a storage account&rsquo; wizard:</li>
+</ul>
 <p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot1.png?raw=true" alt="social img" class="screenshot">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-1-create-a-storage-account.png" alt="create a storage account" title="create a storage account" class="screenshot">
 </p>
-<p>In the <em>Pricing and Setup</em> section select the account for which the Cloudback application will be installed and then click on the <code>Install it for free</code> button.</p>
+<h3 id="create-a-new-container">Create a new container</h3>
+<p>After the storage account is created, follow the steps below to create a new container:</p>
+<ul>
+<li>Open the storage account page</li>
+<li>In the left menu select <code>Containers</code> option</li>
+<li>Click on the <code>+ Container</code> button</li>
+<li>Type a name of your container and set up Public access level</li>
+<li>Click on the <code>Create</code> button</li>
+</ul>
 <p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot2.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>Review your order to make sure you&rsquo;ve selected the correct plan and account. After that click on the <code>Complete order and begin installation</code>.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot3.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>You will be redirected to the Cloudback application installation page.</p>
-<p><strong>Step 2:</strong> Install GitHub application</p>
-<p>On the Cloudback installation page, select the repositories you want to backup by providing Cloudback the access to them. Click on the <code>Install</code> button.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot4.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>Wait until you will be redirected to authorization page. Click on the <code>Authorize Cloudback</code> button.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot5.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>You then will be redirected to the Cloudback Dashboard.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot6.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p><strong>Step 3:</strong> Complete installation on Cloudback Dashboard</p>
-<p>On the Cloudback Dashboard page review the default settings that will be used for creating repository backups. Accept the Cloudback&rsquo;s Terms of Service and Privacy Policy by clicking on the corresponding checkboxes, then click on the <code>Next step: select repositories</code> button.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot7.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>Enable the repositories you want to backup. Please note that you can&rsquo;t enable more repositories than you have purchased earlier.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot8.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>Click on the <code>Start backuping!</code> button. That&rsquo;s it, you now have completed the installation.</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot9.png?raw=true" alt="social img" class="screenshot">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-2-create-a-new-container.png" alt="create a storage account" title="create a storage account" class="screenshot">
 </p>
 </article>
  
@@ -538,15 +521,15 @@ Click on the <code>Set up a plan</code> button.</p>
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/d5eeac8bf01ddd21e65f8a7bddc6d9dea3da4afb" title='Last modified by Evgeniy Kosjakov | Sep 26, 2020' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/d419f0488f0934e3873cffaca6a6d986dae60e0c" title='Last modified by Evgeniy Kosjakov | Apr 24, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Sep 26, 2020</span>
+      <span>Apr 24, 2021</span>
     </a>
   </div>
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/cloudback/docs/edit/master/content/getting-started/_index.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/edit/master/content/how-to/create-microsoft-azure-blob-container.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -572,11 +555,13 @@ Click on the <code>Set up a plan</code> button.</p>
           
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#how-to-create-a-new-microsoft-azure-blob-container">How to create a new Microsoft Azure Blob Container</a>
       <ul>
-        <li><a href="#getting-started">Getting started</a>
+        <li><a href="#about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</a></li>
+        <li><a href="#create-a-new-microsoft-azure-blob-container">Create a new Microsoft Azure Blob Container</a>
           <ul>
-            <li><a href="#installation">Installation</a></li>
+            <li><a href="#create-a-storage-account">Create a storage account</a></li>
+            <li><a href="#create-a-new-container">Create a new container</a></li>
           </ul>
         </li>
       </ul>
