@@ -15,7 +15,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</guid>
-      <description>How to create a new Microsoft Azure Blob Container About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&amp;rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.</description>
+      <description>Backup GitHub repository using Azure: How to create a new Microsoft Azure Blob Container When creating GitHub repository backup using Cloudback you can set up your own Azure Storage where the backups will be saved. This article describes how to create a new Azure Blob Container for GitHub repository backups.
+About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data.</description>
     </item>
     
     <item>
@@ -24,8 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</guid>
-      <description>How to create a new shared access signature About shared access signatures A shared access signature (SAS) provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
- What resources the client may access What permissions they have to those resources How long the SAS is valid  This page describes how to create a new SAS for your storage container.</description>
+      <description>Backup GitHub repository using Azure: How to create a new shared access signature When creating GitHub repository backup using Cloudback you can set up your own Azure Storage where the backups will be saved. If you want to use Azure Storage for backups created by Cloudback you need to provide Cloudback access to your storage, which should be done by creating a new Shared Access Signature (SAS) inside your Azure Container.</description>
     </item>
     
   </channel>

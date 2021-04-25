@@ -48,7 +48,7 @@
 <link rel="stylesheet" href="/book.min.912ce3bde8feca31c415056f6bc5438f58f6e5b7277fc176f8e67c5f60c41b11.css" integrity="sha256-kSzjvej&#43;yjHEFQVva8VDj1j25bcnf8F2&#43;OZ8X2DEGxE=">
 
 
-<script defer src="/en.search.min.ac29260d685eb1635dac0ac0baf989552eee2572fff60af8b702771084671ed4.js" integrity="sha256-rCkmDWhesWNdrArAuvmJVS7uJXL/9gr4twJ3EIRnHtQ="></script>
+<script defer src="/en.search.min.13630c470020035ecea289065eca2380a948cf241d7a383d04d50a2c13353a53.js" integrity="sha256-E2MMRwAgA17OookGXsojgKlIzyQdejg9BNUKLBM1OlM="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/index.xml" title="Cloudback" />
 <!--
@@ -110,6 +110,43 @@ https://github.com/alex-shpak/hugo-book
 
 
   <ul>
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/how-to/" class="">How to</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/how-to/how-to-backup-github-repository/" class="">How to backup GitHub repository</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
   
     
 
@@ -452,7 +489,7 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#micosoft-azure-blob-container">Micosoft Azure Blob Container</a>
+    <li><a href="#backup-github-repository-using-microsoft-azure-blob-container">Backup GitHub repository using Microsoft Azure Blob Container</a>
       <ul>
         <li><a href="#about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</a></li>
         <li><a href="#set-up-microsoft-azure-blob-containers-as-a-custom-storage">Set up Microsoft Azure Blob Containers as a custom storage</a></li>
@@ -469,17 +506,19 @@ https://github.com/alex-shpak/hugo-book
 	    
           
           
-  <article class="markdown"><h1 id="micosoft-azure-blob-container">Micosoft Azure Blob Container</h1>
-<h2 id="about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</h2>
-<p>Azure Blob storage is Microsoft&rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.</p>
-<p>This page describes how to set up your own Azure Blob Container as a custom storage for Cloudback backups.
-To be able to use your Azure Blob Container as custom storage, you need to have a storage or create a new one. Also, you should create a new shared access signature for that storage.</p>
+  <article class="markdown"><h1 id="backup-github-repository-using-microsoft-azure-blob-container">Backup GitHub repository using Microsoft Azure Blob Container</h1>
+<p>One of the ways to 
+  <a href="https://docs.cloudback.it/how-to/how-to-backup-GitHub-repository/">backup GitHub repository</a> using custom storage is to use your own Azure Container. Azure Blob Storage is Microsoft&rsquo;s object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data, therefore it can be used as a storage for GitHub repository backups created by Cloudback.</p>
+<p>This page describes how to set up your own Azure Blob Container as a custom storage for Cloudback backups of your GitHub repositories.
+To be able to use your Azure Blob Container as custom storage, you need to have an existing Azure storage or create a new one. Also, you should create a new shared access signature for that storage.</p>
 <ul>
 <li>
   <a href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/">How to create a new Microsoft Azure Blob Container</a></li>
 <li>
   <a href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/">How to create a new shared access signature</a></li>
 </ul>
+<h2 id="about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</h2>
+<p>Azure Blob storage is Microsoft&rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.</p>
 <h2 id="set-up-microsoft-azure-blob-containers-as-a-custom-storage">Set up Microsoft Azure Blob Containers as a custom storage</h2>
 <ul>
 <li>In the Cloudback Dashboard open the repository settings by clicking on the settings icon:</li>
@@ -532,7 +571,7 @@ To be able to use your Azure Blob Container as custom storage, you need to have 
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/d157431976da54cc20b1c5458ce60f8704b97f6d" title='Last modified by Evgeniy Kosjakov | Apr 25, 2021' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/29605446045a9adeda6f4c6d14cc8a058cd4ac35" title='Last modified by Evgeniy Kosjakov | Apr 25, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>Apr 25, 2021</span>
     </a>
@@ -566,7 +605,7 @@ To be able to use your Azure Blob Container as custom storage, you need to have 
           
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#micosoft-azure-blob-container">Micosoft Azure Blob Container</a>
+    <li><a href="#backup-github-repository-using-microsoft-azure-blob-container">Backup GitHub repository using Microsoft Azure Blob Container</a>
       <ul>
         <li><a href="#about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</a></li>
         <li><a href="#set-up-microsoft-azure-blob-containers-as-a-custom-storage">Set up Microsoft Azure Blob Containers as a custom storage</a></li>

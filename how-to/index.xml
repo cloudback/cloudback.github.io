@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How to on Cloudback</title>
+    <link>https://cloudback.github.io/how-to/</link>
+    <description>Recent content in How to on Cloudback</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://cloudback.github.io/how-to/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to backup GitHub repository</title>
+      <link>https://cloudback.github.io/how-to/how-to-backup-github-repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/how-to/how-to-backup-github-repository/</guid>
+      <description>How to backup GitHub repository Automatically created backups There are two ways how Cloudback creates GitHub repository backups. The first way is automatically created backups that are displayed in the repository card in the Cloudback Dashboard. The backups are created using the schedule that is set up in the repository settings. The repository status &amp;lsquo;Scheduled&amp;rsquo; indicates that Cloudback will automatically create GitHub repository backup using the schedule. Automatically created backups are marked with the &amp;lsquo;Clock&amp;rsquo; icon.</description>
+    </item>
+    
+  </channel>
+</rss>
