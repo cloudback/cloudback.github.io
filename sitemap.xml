@@ -8,13 +8,8 @@
   </url>
   
   <url>
-    <loc>https://cloudback.github.io/how-to/</loc>
-    <lastmod>2021-04-25T22:55:14+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/</loc>
-    <lastmod>2021-04-25T22:55:14+03:00</lastmod>
+    <lastmod>2021-04-25T23:03:55+03:00</lastmod>
   </url>
   
   <url>
@@ -29,7 +24,7 @@
   
   <url>
     <loc>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</loc>
-    <lastmod>2021-04-25T22:55:14+03:00</lastmod>
+    <lastmod>2021-04-25T23:03:55+03:00</lastmod>
   </url>
   
   <url>
@@ -39,7 +34,7 @@
   
   <url>
     <loc>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</loc>
-    <lastmod>2021-04-25T22:55:14+03:00</lastmod>
+    <lastmod>2021-04-25T23:03:55+03:00</lastmod>
   </url>
   
   <url>
@@ -55,6 +50,11 @@
   <url>
     <loc>https://cloudback.github.io/getting-started/</loc>
     <lastmod>2021-04-24T14:23:02+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/how-to/</loc>
+    <lastmod>2021-04-25T23:03:55+03:00</lastmod>
   </url>
   
   <url>
