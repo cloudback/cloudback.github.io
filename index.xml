@@ -11,21 +11,20 @@
     
     <item>
       <title>How to create a new Microsoft Azure Blob Container</title>
+      <link>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</guid>
+      <description>How to create a new Microsoft Azure Blob Container About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&amp;rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.</description>
+    </item>
+    
+    <item>
+      <title>How to create a new Microsoft Azure Blob Container</title>
       <link>https://cloudback.github.io/how-to/create-microsoft-azure-blob-container/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudback.github.io/how-to/create-microsoft-azure-blob-container/</guid>
       <description>How to create a new Microsoft Azure Blob Container About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&amp;rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.</description>
-    </item>
-    
-    <item>
-      <title>Micosoft Azure Blob Container</title>
-      <link>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/</guid>
-      <description>Micosoft Azure Blob Container About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&amp;rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.
-This page describes how to set up your own Azure Blob Container as a custom storage for Cloudback backups.</description>
     </item>
     
     <item>
@@ -35,6 +34,16 @@ This page describes how to set up your own Azure Blob Container as a custom stor
       
       <guid>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</guid>
       <description>Amazon S3 Bucket Page is under development</description>
+    </item>
+    
+    <item>
+      <title>How to create a new shared access signature (SAS)</title>
+      <link>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</guid>
+      <description>How to create a new shared access signature About shared access signatures A shared access signature (SAS) provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
+ What resources the client may access What permissions they have to those resources How long the SAS is valid  This page describes how to create a new SAS for your storage container.</description>
     </item>
     
     <item>

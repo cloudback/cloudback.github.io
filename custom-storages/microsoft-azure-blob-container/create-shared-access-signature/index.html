@@ -36,12 +36,13 @@
     }
   </script>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Data Breach Response Policy" />
-<meta property="og:description" content="Data Breach Response Policy Purpose The purpose of the policy is to establish the goals and the vision for the breach response process in the MYRTLECONSULTING S.A. (&ldquo;we&rdquo; or &ldquo;Cloudback&rdquo;). This policy will clearly define to whom it applies and under what circumstances, and it will include the definition of a breach, staff roles and responsibilities, standards and metrics (e.g., to enable prioritization of the incidents), as well as reporting, remediation, and feedback mechanisms." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="How to create a new shared access signature (SAS)" />
+<meta property="og:description" content="How to create a new shared access signature About shared access signatures A shared access signature (SAS) provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
+ What resources the client may access What permissions they have to those resources How long the SAS is valid  This page describes how to create a new SAS for your storage container." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cloudback.github.io/security/data-breach-response-policy/" />
-<meta property="article:modified_time" content="2020-08-18T18:32:58+03:00" />
-<title>Data Breach Response Policy | Cloudback</title>
+<meta property="og:url" content="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/" />
+<meta property="article:modified_time" content="2021-04-25T11:35:33+03:00" />
+<title>How to create a new shared access signature (SAS) | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -188,7 +189,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/" class="">How to create a new shared access signature (SAS)</a>
+  <a href="/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/" class="active">How to create a new shared access signature (SAS)</a>
   
 
 </li>
@@ -342,7 +343,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/security/data-breach-response-policy/" class="active">Data Breach Response Policy</a>
+  <a href="/security/data-breach-response-policy/" class="">Data Breach Response Policy</a>
   
 
 </li>
@@ -484,7 +485,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Data Breach Response Policy</strong>
+  <strong>How to create a new shared access signature (SAS)</strong>
 
   <label for="toc-control">
     <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -498,18 +499,10 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#how-to-create-a-new-shared-access-signature">How to create a new shared access signature</a>
       <ul>
-        <li><a href="#data-breach-response-policy">Data Breach Response Policy</a>
-          <ul>
-            <li><a href="#purpose">Purpose</a></li>
-            <li><a href="#background">Background</a></li>
-            <li><a href="#scope">Scope</a></li>
-            <li><a href="#policy-confirmed-theft-data-breach-or-exposure-of-cloudback-protected-data-or-cloudback-sensitive-data">Policy Confirmed theft, data breach or exposure of Cloudback Protected data or Cloudback Sensitive data</a></li>
-            <li><a href="#enforcement">Enforcement</a></li>
-            <li><a href="#definitions">Definitions</a></li>
-          </ul>
-        </li>
+        <li><a href="#about-shared-access-signatures">About shared access signatures</a></li>
+        <li><a href="#create-a-new-sas">Create a new SAS</a></li>
       </ul>
     </li>
   </ul>
@@ -523,26 +516,44 @@ https://github.com/alex-shpak/hugo-book
 	    
           
           
-  <article class="markdown"><h2 id="data-breach-response-policy">Data Breach Response Policy</h2>
-<h3 id="purpose">Purpose</h3>
-<p>The purpose of the policy is to establish the goals and the vision for the breach response process in the MYRTLECONSULTING S.A. (&ldquo;we&rdquo; or &ldquo;Cloudback&rdquo;). This policy will clearly define to whom it applies and under what circumstances, and it will include the definition of a breach, staff roles and responsibilities, standards and metrics (e.g., to enable prioritization of the incidents), as well as reporting, remediation, and feedback mechanisms. The policy shall be well publicized and made easily available to all personnel whose duties involve data privacy and security protection.</p>
-<p>Cloudback Information Security&rsquo;s intentions for publishing a Data Breach Response Policy are to focus significant attention on data security and data security breaches and how Cloudback’s established culture of openness, trust and integrity should respond to such activity. Cloudback Information Security is committed to protecting Cloudback&rsquo;s employees, partners and the company from illegal or damaging actions by individuals, either knowingly or unknowingly.</p>
-<h3 id="background">Background</h3>
-<p>This policy mandates that any individual who suspects that a theft, breach or exposure of Cloudback Protected data or Cloudback Sensitive data has occurred must immediately provide a description of what occurred via email to <a href="mailto:support@cloudback.it">support@cloudback.it</a> or using other options mentioned on the 
-  <a href="https://docs.cloudback.it/contact-us/">Contact Us</a> web page. This email address and Cloudback&rsquo;s issue tracker are monitored by the Cloudback’s Support Team. The team will investigate all reported thefts, data breaches and exposures to confirm if a theft, breach or exposure has occurred. If a theft, breach or exposure has occurred, the Cloudback&rsquo;s Support Team will follow the appropriate procedure in place.</p>
-<h3 id="scope">Scope</h3>
-<p>This policy applies to all whom collect, access, maintain, distribute, process, protect, store, use, transmit, dispose of, or otherwise handle personally identifiable information of Cloudback members and end users.</p>
-<h3 id="policy-confirmed-theft-data-breach-or-exposure-of-cloudback-protected-data-or-cloudback-sensitive-data">Policy Confirmed theft, data breach or exposure of Cloudback Protected data or Cloudback Sensitive data</h3>
-<p>As soon as a theft, data breach or exposure containing Cloudback Protected data or Cloudback Sensitive data is identified, the process of removing all access to that resource will begin. The Cloudback Suport team will handle the breach or exposure. The team will analyze the breach or exposure to determine the root cause and work with Cloudback communications, legal and human resource departments to decide how to communicate the breach to: a) internal employees, b) the public, and c) those directly affected.</p>
-<h3 id="enforcement">Enforcement</h3>
-<p>Any Cloudback personnel found in violation of this policy may be subject to disciplinary action, up to and including termination of employment. Any third party partner company found in violation may have their network connection terminated.</p>
-<h3 id="definitions">Definitions</h3>
-<p><em>Encryption or encrypted data</em> – The most effective way to achieve data security. To read an encrypted file, you must have access to a secret key or password that enables you to decrypt it. Unencrypted data is called plain text; </br>
-<em>Plain text</em> – Unencrypted data. </br>
-<em>Personally Identifiable Information (PII)</em> - Any data that could potentially identify a specific individual. Any information that can be used to distinguish one person from another and can be used for de-anonymizing anonymous data can be considered </br>
-<em>Protected data</em> - See PII </br>
-<em>Information Resource</em> - The data and information assets of an organization, department or unit. </br>
-<em>Sensitive data</em> - Data that is encrypted or in plain text and contains PII data. </br></p>
+  <article class="markdown"><h1 id="how-to-create-a-new-shared-access-signature">How to create a new shared access signature</h1>
+<h2 id="about-shared-access-signatures">About shared access signatures</h2>
+<p>A shared access signature (SAS) provides secure delegated access to resources in your storage account.
+With a SAS, you have granular control over how a client can access your data. For example:</p>
+<ul>
+<li>What resources the client may access</li>
+<li>What permissions they have to those resources</li>
+<li>How long the SAS is valid</li>
+</ul>
+<p>This page describes how to create a new SAS for your storage container. If you don&rsquo;t have the Azure Blob Container you need to create one.</p>
+<p>
+  <a href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/">Learn more</a> about how to create a new Azure Blob Container.</p>
+<h2 id="create-a-new-sas">Create a new SAS</h2>
+<p>To be able to create a new Blob Container it is required to have a storage account. If you don&rsquo;t have a storage account you need to create it first.</p>
+<ul>
+<li>Open Azure Portal 
+  <a href="https://portal.azure.com/#home">home page</a></li>
+<li>Open the storage account page that has the container you want to work with</li>
+<li>Open page of the container for which you want to create a shared access signature</li>
+<li>In the left menu click on the <code>Shared access signature</code> menu item:</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-3-container-page.png" alt="azure container page" title="azure container page" class="screenshot">
+</p>
+<ul>
+<li>Sep up SAS permissions and Start and expiry date/time:</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-4-container-shared-access-signature.png" alt="azure container page" title="azure container page" class="screenshot">
+</p>
+<ul>
+<li>Click on the <code>Generate SAS token and URL</code> button</li>
+<li>After the SAS is generated you will see &lsquo;Blob SAS token&rsquo; and &lsquo;Blob SAS URL&rsquo; are ready to use</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-5-container-shared-access-signature-created.png" alt="azure container page" title="azure container page" class="screenshot">
+</p>
+<p>Now you can use &lsquo;Blob SAS URL&rsquo; to provide Cloudback access to your own Azure Blob Container. Please note that after the SAS is expired Cloudback will no longer be able to upload backups of your GitHub repositories to your storage.</p>
 </article>
  
           
@@ -555,15 +566,15 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/4c4937ae289d5a886b29d37927029998fa6b3234" title='Last modified by Evgeniy Kosjakov | Aug 18, 2020' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/d157431976da54cc20b1c5458ce60f8704b97f6d" title='Last modified by Evgeniy Kosjakov | Apr 25, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Aug 18, 2020</span>
+      <span>Apr 25, 2021</span>
     </a>
   </div>
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/cloudback/docs/edit/master/content/security/data-breach-response-policy.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/edit/master/content/custom-storages/microsoft-azure-blob-container/create-shared-access-signature.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -589,18 +600,10 @@ https://github.com/alex-shpak/hugo-book
           
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#how-to-create-a-new-shared-access-signature">How to create a new shared access signature</a>
       <ul>
-        <li><a href="#data-breach-response-policy">Data Breach Response Policy</a>
-          <ul>
-            <li><a href="#purpose">Purpose</a></li>
-            <li><a href="#background">Background</a></li>
-            <li><a href="#scope">Scope</a></li>
-            <li><a href="#policy-confirmed-theft-data-breach-or-exposure-of-cloudback-protected-data-or-cloudback-sensitive-data">Policy Confirmed theft, data breach or exposure of Cloudback Protected data or Cloudback Sensitive data</a></li>
-            <li><a href="#enforcement">Enforcement</a></li>
-            <li><a href="#definitions">Definitions</a></li>
-          </ul>
-        </li>
+        <li><a href="#about-shared-access-signatures">About shared access signatures</a></li>
+        <li><a href="#create-a-new-sas">Create a new SAS</a></li>
       </ul>
     </li>
   </ul>

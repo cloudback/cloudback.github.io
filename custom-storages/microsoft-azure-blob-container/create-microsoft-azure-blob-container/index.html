@@ -36,12 +36,12 @@
     }
   </script>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Data Breach Response Policy" />
-<meta property="og:description" content="Data Breach Response Policy Purpose The purpose of the policy is to establish the goals and the vision for the breach response process in the MYRTLECONSULTING S.A. (&ldquo;we&rdquo; or &ldquo;Cloudback&rdquo;). This policy will clearly define to whom it applies and under what circumstances, and it will include the definition of a breach, staff roles and responsibilities, standards and metrics (e.g., to enable prioritization of the incidents), as well as reporting, remediation, and feedback mechanisms." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="How to create a new Microsoft Azure Blob Container" />
+<meta property="og:description" content="How to create a new Microsoft Azure Blob Container About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cloudback.github.io/security/data-breach-response-policy/" />
-<meta property="article:modified_time" content="2020-08-18T18:32:58+03:00" />
-<title>Data Breach Response Policy | Cloudback</title>
+<meta property="og:url" content="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/" />
+<meta property="article:modified_time" content="2021-04-25T11:35:33+03:00" />
+<title>How to create a new Microsoft Azure Blob Container | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -178,7 +178,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/" class="">How to create a new Microsoft Azure Blob Container</a>
+  <a href="/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/" class="active">How to create a new Microsoft Azure Blob Container</a>
   
 
 </li>
@@ -342,7 +342,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/security/data-breach-response-policy/" class="active">Data Breach Response Policy</a>
+  <a href="/security/data-breach-response-policy/" class="">Data Breach Response Policy</a>
   
 
 </li>
@@ -484,7 +484,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Data Breach Response Policy</strong>
+  <strong>How to create a new Microsoft Azure Blob Container</strong>
 
   <label for="toc-control">
     <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -498,16 +498,13 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#how-to-create-a-new-microsoft-azure-blob-container">How to create a new Microsoft Azure Blob Container</a>
       <ul>
-        <li><a href="#data-breach-response-policy">Data Breach Response Policy</a>
+        <li><a href="#about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</a></li>
+        <li><a href="#create-a-new-microsoft-azure-blob-container">Create a new Microsoft Azure Blob Container</a>
           <ul>
-            <li><a href="#purpose">Purpose</a></li>
-            <li><a href="#background">Background</a></li>
-            <li><a href="#scope">Scope</a></li>
-            <li><a href="#policy-confirmed-theft-data-breach-or-exposure-of-cloudback-protected-data-or-cloudback-sensitive-data">Policy Confirmed theft, data breach or exposure of Cloudback Protected data or Cloudback Sensitive data</a></li>
-            <li><a href="#enforcement">Enforcement</a></li>
-            <li><a href="#definitions">Definitions</a></li>
+            <li><a href="#create-a-storage-account">Create a storage account</a></li>
+            <li><a href="#create-a-new-container">Create a new container</a></li>
           </ul>
         </li>
       </ul>
@@ -523,26 +520,34 @@ https://github.com/alex-shpak/hugo-book
 	    
           
           
-  <article class="markdown"><h2 id="data-breach-response-policy">Data Breach Response Policy</h2>
-<h3 id="purpose">Purpose</h3>
-<p>The purpose of the policy is to establish the goals and the vision for the breach response process in the MYRTLECONSULTING S.A. (&ldquo;we&rdquo; or &ldquo;Cloudback&rdquo;). This policy will clearly define to whom it applies and under what circumstances, and it will include the definition of a breach, staff roles and responsibilities, standards and metrics (e.g., to enable prioritization of the incidents), as well as reporting, remediation, and feedback mechanisms. The policy shall be well publicized and made easily available to all personnel whose duties involve data privacy and security protection.</p>
-<p>Cloudback Information Security&rsquo;s intentions for publishing a Data Breach Response Policy are to focus significant attention on data security and data security breaches and how Cloudback’s established culture of openness, trust and integrity should respond to such activity. Cloudback Information Security is committed to protecting Cloudback&rsquo;s employees, partners and the company from illegal or damaging actions by individuals, either knowingly or unknowingly.</p>
-<h3 id="background">Background</h3>
-<p>This policy mandates that any individual who suspects that a theft, breach or exposure of Cloudback Protected data or Cloudback Sensitive data has occurred must immediately provide a description of what occurred via email to <a href="mailto:support@cloudback.it">support@cloudback.it</a> or using other options mentioned on the 
-  <a href="https://docs.cloudback.it/contact-us/">Contact Us</a> web page. This email address and Cloudback&rsquo;s issue tracker are monitored by the Cloudback’s Support Team. The team will investigate all reported thefts, data breaches and exposures to confirm if a theft, breach or exposure has occurred. If a theft, breach or exposure has occurred, the Cloudback&rsquo;s Support Team will follow the appropriate procedure in place.</p>
-<h3 id="scope">Scope</h3>
-<p>This policy applies to all whom collect, access, maintain, distribute, process, protect, store, use, transmit, dispose of, or otherwise handle personally identifiable information of Cloudback members and end users.</p>
-<h3 id="policy-confirmed-theft-data-breach-or-exposure-of-cloudback-protected-data-or-cloudback-sensitive-data">Policy Confirmed theft, data breach or exposure of Cloudback Protected data or Cloudback Sensitive data</h3>
-<p>As soon as a theft, data breach or exposure containing Cloudback Protected data or Cloudback Sensitive data is identified, the process of removing all access to that resource will begin. The Cloudback Suport team will handle the breach or exposure. The team will analyze the breach or exposure to determine the root cause and work with Cloudback communications, legal and human resource departments to decide how to communicate the breach to: a) internal employees, b) the public, and c) those directly affected.</p>
-<h3 id="enforcement">Enforcement</h3>
-<p>Any Cloudback personnel found in violation of this policy may be subject to disciplinary action, up to and including termination of employment. Any third party partner company found in violation may have their network connection terminated.</p>
-<h3 id="definitions">Definitions</h3>
-<p><em>Encryption or encrypted data</em> – The most effective way to achieve data security. To read an encrypted file, you must have access to a secret key or password that enables you to decrypt it. Unencrypted data is called plain text; </br>
-<em>Plain text</em> – Unencrypted data. </br>
-<em>Personally Identifiable Information (PII)</em> - Any data that could potentially identify a specific individual. Any information that can be used to distinguish one person from another and can be used for de-anonymizing anonymous data can be considered </br>
-<em>Protected data</em> - See PII </br>
-<em>Information Resource</em> - The data and information assets of an organization, department or unit. </br>
-<em>Sensitive data</em> - Data that is encrypted or in plain text and contains PII data. </br></p>
+  <article class="markdown"><h1 id="how-to-create-a-new-microsoft-azure-blob-container">How to create a new Microsoft Azure Blob Container</h1>
+<h2 id="about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</h2>
+<p>Azure Blob storage is Microsoft&rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.</p>
+<p>This page describes how to create a new Azure Blob Container.</p>
+<h2 id="create-a-new-microsoft-azure-blob-container">Create a new Microsoft Azure Blob Container</h2>
+<h3 id="create-a-storage-account">Create a storage account</h3>
+<p>To be able to create a new Blob Container it is required to have a storage account. If you don&rsquo;t have a storage account you need to create it first.</p>
+<ul>
+<li>Open Azure Portal 
+  <a href="https://portal.azure.com/#home">home page</a></li>
+<li>Click on <code>Storage accounts</code> button</li>
+<li>Follow the steps in the &lsquo;Create a storage account&rsquo; wizard:</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-1-create-a-storage-account.png" alt="create a storage account" title="create a storage account" class="screenshot">
+</p>
+<h3 id="create-a-new-container">Create a new container</h3>
+<p>After the storage account is created, follow the steps below to create a new container:</p>
+<ul>
+<li>Open the storage account page</li>
+<li>In the left menu select <code>Containers</code> option</li>
+<li>Click on the <code>+ Container</code> button</li>
+<li>Type a name of your container and set up Public access level</li>
+<li>Click on the <code>Create</code> button</li>
+</ul>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cloudback/docs/master/static/azure/azure-2-create-a-new-container.png" alt="create a storage account" title="create a storage account" class="screenshot">
+</p>
 </article>
  
           
@@ -555,15 +560,15 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/4c4937ae289d5a886b29d37927029998fa6b3234" title='Last modified by Evgeniy Kosjakov | Aug 18, 2020' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/d157431976da54cc20b1c5458ce60f8704b97f6d" title='Last modified by Evgeniy Kosjakov | Apr 25, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Aug 18, 2020</span>
+      <span>Apr 25, 2021</span>
     </a>
   </div>
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/cloudback/docs/edit/master/content/security/data-breach-response-policy.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/edit/master/content/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -589,16 +594,13 @@ https://github.com/alex-shpak/hugo-book
           
   <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#how-to-create-a-new-microsoft-azure-blob-container">How to create a new Microsoft Azure Blob Container</a>
       <ul>
-        <li><a href="#data-breach-response-policy">Data Breach Response Policy</a>
+        <li><a href="#about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</a></li>
+        <li><a href="#create-a-new-microsoft-azure-blob-container">Create a new Microsoft Azure Blob Container</a>
           <ul>
-            <li><a href="#purpose">Purpose</a></li>
-            <li><a href="#background">Background</a></li>
-            <li><a href="#scope">Scope</a></li>
-            <li><a href="#policy-confirmed-theft-data-breach-or-exposure-of-cloudback-protected-data-or-cloudback-sensitive-data">Policy Confirmed theft, data breach or exposure of Cloudback Protected data or Cloudback Sensitive data</a></li>
-            <li><a href="#enforcement">Enforcement</a></li>
-            <li><a href="#definitions">Definitions</a></li>
+            <li><a href="#create-a-storage-account">Create a storage account</a></li>
+            <li><a href="#create-a-new-container">Create a new container</a></li>
           </ul>
         </li>
       </ul>
