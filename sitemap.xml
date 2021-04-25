@@ -8,16 +8,6 @@
   </url>
   
   <url>
-    <loc>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</loc>
-    <lastmod>2021-04-25T11:35:33+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cloudback.github.io/how-to/create-microsoft-azure-blob-container/</loc>
-    <lastmod>2021-04-24T14:12:56+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/</loc>
     <lastmod>2021-04-25T11:35:33+03:00</lastmod>
   </url>
@@ -28,18 +18,18 @@
   </url>
   
   <url>
-    <loc>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</loc>
-    <lastmod>2021-04-25T11:35:33+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cloudback.github.io/how-to/create-shared-access-signature/</loc>
-    <lastmod>2021-04-24T14:12:56+03:00</lastmod>
+    <loc>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</loc>
+    <lastmod>2021-04-25T12:06:51+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://cloudback.github.io/custom-storages/amazon-s3-glacier/</loc>
     <lastmod>2021-03-23T20:00:40+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</loc>
+    <lastmod>2021-04-25T12:06:51+03:00</lastmod>
   </url>
   
   <url>
@@ -65,11 +55,6 @@
   <url>
     <loc>https://cloudback.github.io/security/incident-response-plan/</loc>
     <lastmod>2020-08-23T17:56:51+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cloudback.github.io/how-to/</loc>
-    <lastmod>2021-04-24T14:12:56+03:00</lastmod>
   </url>
   
   <url>
