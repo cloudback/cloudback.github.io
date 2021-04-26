@@ -778,6 +778,14 @@ a.book-btn {
 .markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
   font-weight: 500; }
 
+.markdown h1:before, .markdown h2:before, .markdown h3:before, .markdown h4:before, .markdown h5:before, .markdown h6:before {
+  display: block;
+  content: " ";
+  margin-top: -50px;
+  height: 50px;
+  visibility: hidden;
+  pointer-events: none; }
+
 .book-menu {
   background-color: aliceblue; }
 
