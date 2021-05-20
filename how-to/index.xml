@@ -18,5 +18,25 @@
       <description>How to backup GitHub repository Automatically created backups There are two ways how Cloudback creates GitHub repository backups. The first way is automatically created backups that are displayed in the repository card in the Cloudback Dashboard. The backups are created using the schedule that is set up in the repository settings. The repository status &amp;lsquo;Scheduled&amp;rsquo; indicates that Cloudback will automatically create GitHub repository backup using the schedule. Automatically created backups are marked with the &amp;lsquo;Clock&amp;rsquo; icon.</description>
     </item>
     
+    <item>
+      <title>How to restore backup</title>
+      <link>https://cloudback.github.io/how-to/how-to-restore-backup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/how-to/how-to-restore-backup/</guid>
+      <description>How to restore a backup of your GitHub repository After Cloudback created a backup of your GitHub repository, you may need to restore the backup at some point. The page describes the steps that should be taken to restore the backup.
+To restore a backup, click on the restore icon on the repository card:
+Cloudback uses a separate GitHub application to restore the backups. You can install the application manually using the following https://github.</description>
+    </item>
+    
+    <item>
+      <title>How to download backup</title>
+      <link>https://cloudback.github.io/how-to/how-to-download-backup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/how-to/how-to-download-backup/</guid>
+      <description>How to download a backup of your GitHub repository After Cloudback created a backup of your GitHub repository, you may need to download the backup at some point. For example, the backup can be used if you want to manually restore it by pushing the code back to GitHub or to another Git repository management tool. Also, the backup can be downloaded in case you want to use the metadata somehow, such as labels, issues, comments, and milestones.</description>
+    </item>
+    
   </channel>
 </rss>
