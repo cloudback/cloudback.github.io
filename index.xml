@@ -63,7 +63,7 @@ About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;
       <guid>https://cloudback.github.io/how-to/how-to-restore-backup/</guid>
       <description>How to restore a backup of your GitHub repository After Cloudback created a backup of your GitHub repository, you may need to restore the backup at some point. The page describes the steps that should be taken to restore the backup.
 To restore a backup, click on the restore icon on the repository card:
-Cloudback uses a separate GitHub application to restore the backups. You can install the application manually using the following https://github.</description>
+Cloudback uses a separate GitHub application to restore the backups. You can install the application manually using the following link.</description>
     </item>
     
     <item>
