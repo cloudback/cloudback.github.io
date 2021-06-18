@@ -36,10 +36,11 @@
   </script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Amazon S3 Glacier" />
-<meta property="og:description" content="Amazon S3 Glacier Page is under development" />
+<meta property="og:description" content="Backup GitHub repository using Amazon S3 Glacier About Amazon S3 Glacier Amazon S3 Glacier and S3 Glacier Deep Archive are secure, durable, and extremely low-cost Amazon S3 cloud storage classes for data archiving and long-term backup. They are designed to deliver 99.999999999% durability, and provide comprehensive security and compliance capabilities that can help meet even the most stringent regulatory requirements.
+ Set up Amazon S3 Glacier as a custom storage  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the &#43; New storage button:     Type a storage name" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cloudback.github.io/custom-storages/amazon-s3-glacier/" />
-<meta property="article:modified_time" content="2021-03-23T20:00:40+03:00" />
+<meta property="article:modified_time" content="2021-06-15T20:01:20+03:00" />
 <title>Amazon S3 Glacier | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -47,7 +48,7 @@
 <link rel="stylesheet" href="/book.min.2c26d9e5b83028d33e63f4ba3fe34f8ad1da7a501a7695ee6afbda8bcc23f001.css" integrity="sha256-LCbZ5bgwKNM&#43;Y/S6P&#43;NPitHaelAadpXuavvai8wj8AE=">
 
 
-<script defer src="/en.search.min.0fc5b34d95843374067d7293cac62cd540e4dbdd6300b918d5e7ae2a73794d58.js" integrity="sha256-D8WzTZWEM3QGfXKTysYs1UDk291jALkY1eeuKnN5TVg="></script>
+<script defer src="/en.search.min.181012eb5e2bf021bd9b52decaf27f2f1d8fbea518b01f9a632c4d6eb79b3b02.js" integrity="sha256-GBAS614r8CG9m1LeyvJ/Lx2PvqUYsB&#43;aYyxNbrebOwI="></script>
 
 <!--
 Made with Book Theme
@@ -274,6 +275,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
+  <a href="/custom-storages/amazon-s3-bucket-access-key/" class="">Amazon S3 Bucket Access Key</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
   <a href="/custom-storages/amazon-s3-glacier/" class="active">Amazon S3 Glacier</a>
   
 
@@ -285,6 +296,16 @@ https://github.com/alex-shpak/hugo-book
 
   
   <a href="/custom-storages/google-cloud/" class="">Google Cloud Storage Bucket</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/onedrive/" class="">Microsoft OneDrive</a>
   
 
 </li>
@@ -507,7 +528,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#amazon-s3-glacier">Amazon S3 Glacier</a></li>
+    <li><a href="#backup-github-repository-using-amazon-s3-glacier">Backup GitHub repository using Amazon S3 Glacier</a>
+      <ul>
+        <li><a href="#about-amazon-s3-glacier">About Amazon S3 Glacier</a></li>
+        <li><a href="#set-up-amazon-s3-glacier-as-a-custom-storage">Set up Amazon S3 Glacier as a custom storage</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -519,8 +545,67 @@ https://github.com/alex-shpak/hugo-book
 	    
           
           
-  <article class="markdown"><h1 id="amazon-s3-glacier">Amazon S3 Glacier</h1>
-<p>Page is under development</p>
+  <article class="markdown"><h1 id="backup-github-repository-using-amazon-s3-glacier">Backup GitHub repository using Amazon S3 Glacier</h1>
+<h2 id="about-amazon-s3-glacier">About Amazon S3 Glacier</h2>
+<p>Amazon S3 Glacier and S3 Glacier Deep Archive are secure, durable, and extremely low-cost Amazon S3 cloud storage classes for data archiving and long-term backup. They are designed to deliver 99.999999999% durability, and provide comprehensive security and compliance capabilities that can help meet even the most stringent regulatory requirements.</p>
+<hr>
+<h2 id="set-up-amazon-s3-glacier-as-a-custom-storage">Set up Amazon S3 Glacier as a custom storage</h2>
+<ul>
+<li>In the Cloudback Dashboard open the repository settings by clicking on the settings icon:</li>
+</ul>
+<p>
+  <img src="/static/bucket/0001-Dashboard.png" alt="Click-on-repository-settings" /></p>
+<ul>
+<li>Click on the <code>+ New storage</code> button:</li>
+</ul>
+<p>
+  <img src="/static/bucket/001-Add-new-storage.png" alt="Click-on-new-storage" /></p>
+<ul>
+<li>
+<p>Type a storage name</p>
+</li>
+<li>
+<p>Select ‘Amazon S3 Glacier’ as a storage provider:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/glacier/01-storage-name.png" alt="storage-name" /></p>
+<ul>
+<li>Create 
+  <a href="https://docs.aws.amazon.com/amazonglacier/latest/dev/getting-started-create-vault.html">Amazon S3 Glacier Storage Vault</a>:</li>
+</ul>
+<p>
+  <img src="/static/glacier/02-create-vault.png" alt="create-vault" /></p>
+<ul>
+<li>Click on the your vault name and copy ARN:</li>
+</ul>
+<p>
+  <img src="/static/glacier/03-copy-arn.png" alt="copy-arn" /></p>
+<ul>
+<li>Past ARN in to <code>Step 1</code> field on the Cloudback and copy policy from <code>Step 3</code>:</li>
+</ul>
+<p>
+  <img src="/static/glacier/04-copy-policy.png" alt="copy-policy" /></p>
+<ul>
+<li>Click on <code>Permissions</code> in your Glacier vault and then click <code>Edit policy document</code>:</li>
+</ul>
+<p>
+  <img src="/static/glacier/05-edit-policy.png" alt="edit-policy" /></p>
+<ul>
+<li>Paste policy document from <code>Step 3</code>:</li>
+</ul>
+<p>
+  <img src="/static/glacier/06-paste-policy.png" alt="paste-policy" /></p>
+<ul>
+<li>Click <code>Save</code> button on the Cloudback site:</li>
+</ul>
+<p>
+  <img src="/static/glacier/07-save.png" alt="save" /></p>
+<ul>
+<li>Save changes:</li>
+</ul>
+<p>
+  <img src="/static/glacier/08-save-cloudback.png" alt="save-changes" /></p>
 </article>
  
           
@@ -533,9 +618,9 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/942716933b3fa542232301420ff6a6341a4ee57c" title='Last modified by Evgeniy Kosjakov | Mar 23, 2021' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/55d0401e90e86ea5d1094ad114b88dd279bc131a" title='Last modified by MoreraQA | Jun 15, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Mar 23, 2021</span>
+      <span>Jun 15, 2021</span>
     </a>
   </div>
 
@@ -567,7 +652,12 @@ https://github.com/alex-shpak/hugo-book
           
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#amazon-s3-glacier">Amazon S3 Glacier</a></li>
+    <li><a href="#backup-github-repository-using-amazon-s3-glacier">Backup GitHub repository using Amazon S3 Glacier</a>
+      <ul>
+        <li><a href="#about-amazon-s3-glacier">About Amazon S3 Glacier</a></li>
+        <li><a href="#set-up-amazon-s3-glacier-as-a-custom-storage">Set up Amazon S3 Glacier as a custom storage</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

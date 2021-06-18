@@ -36,10 +36,11 @@
   </script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Google Cloud Storage Bucket" />
-<meta property="og:description" content="Google Cloud Storage Bucket Page is under development" />
+<meta property="og:description" content="Backup GitHub repository using Google Cloud Storage Bucket About Google Cloud Storage Bucket Cloud Storage allows world-wide storage and retrieval of any amount of data at any time. You can use Cloud Storage for a range of scenarios including serving website content, storing data for archival and disaster recovery, or distributing large data objects to users via direct download.
+ Set up Google Cloud Storage Bucket  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the &#43; New storage button:     Type a storage name" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cloudback.github.io/custom-storages/google-cloud/" />
-<meta property="article:modified_time" content="2021-03-23T20:00:40+03:00" />
+<meta property="article:modified_time" content="2021-06-16T13:19:14+03:00" />
 <title>Google Cloud Storage Bucket | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -47,7 +48,7 @@
 <link rel="stylesheet" href="/book.min.2c26d9e5b83028d33e63f4ba3fe34f8ad1da7a501a7695ee6afbda8bcc23f001.css" integrity="sha256-LCbZ5bgwKNM&#43;Y/S6P&#43;NPitHaelAadpXuavvai8wj8AE=">
 
 
-<script defer src="/en.search.min.0fc5b34d95843374067d7293cac62cd540e4dbdd6300b918d5e7ae2a73794d58.js" integrity="sha256-D8WzTZWEM3QGfXKTysYs1UDk291jALkY1eeuKnN5TVg="></script>
+<script defer src="/en.search.min.181012eb5e2bf021bd9b52decaf27f2f1d8fbea518b01f9a632c4d6eb79b3b02.js" integrity="sha256-GBAS614r8CG9m1LeyvJ/Lx2PvqUYsB&#43;aYyxNbrebOwI="></script>
 
 <!--
 Made with Book Theme
@@ -274,6 +275,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
+  <a href="/custom-storages/amazon-s3-bucket-access-key/" class="">Amazon S3 Bucket Access Key</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
   <a href="/custom-storages/amazon-s3-glacier/" class="">Amazon S3 Glacier</a>
   
 
@@ -285,6 +296,16 @@ https://github.com/alex-shpak/hugo-book
 
   
   <a href="/custom-storages/google-cloud/" class="active">Google Cloud Storage Bucket</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/onedrive/" class="">Microsoft OneDrive</a>
   
 
 </li>
@@ -507,7 +528,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#google-cloud-storage-bucket">Google Cloud Storage Bucket</a></li>
+    <li><a href="#backup-github-repository-using-google-cloud-storage-bucket">Backup GitHub repository using Google Cloud Storage Bucket</a>
+      <ul>
+        <li><a href="#about-google-cloud-storage-bucket">About Google Cloud Storage Bucket</a></li>
+        <li><a href="#set-up-google-cloud-storage-bucket">Set up Google Cloud Storage Bucket</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -519,8 +545,71 @@ https://github.com/alex-shpak/hugo-book
 	    
           
           
-  <article class="markdown"><h1 id="google-cloud-storage-bucket">Google Cloud Storage Bucket</h1>
-<p>Page is under development</p>
+  <article class="markdown"><h1 id="backup-github-repository-using-google-cloud-storage-bucket">Backup GitHub repository using Google Cloud Storage Bucket</h1>
+<h2 id="about-google-cloud-storage-bucket">About Google Cloud Storage Bucket</h2>
+<p>Cloud Storage allows world-wide storage and retrieval of any amount of data at any time. You can use Cloud Storage for a range of scenarios including serving website content, storing data for archival and disaster recovery, or distributing large data objects to users via direct download.</p>
+<hr>
+<h2 id="set-up-google-cloud-storage-bucket">Set up Google Cloud Storage Bucket</h2>
+<ul>
+<li>In the Cloudback Dashboard open the repository settings by clicking on the settings icon:</li>
+</ul>
+<p>
+  <img src="/static/bucket/0001-Dashboard.png" alt="Click-on-repository-settings" /></p>
+<ul>
+<li>Click on the <code>+ New storage</code> button:</li>
+</ul>
+<p>
+  <img src="/static/bucket/001-Add-new-storage.png" alt="Click-on-new-storage" /></p>
+<ul>
+<li>
+<p>Type a storage name</p>
+</li>
+<li>
+<p>Select <code>Google Cloud Storage Bucket</code></p>
+</li>
+<li>
+<p>Create 
+  <a href="https://cloud.google.com/storage/docs/creating-buckets">Google Cloud Storage Bucket</a></p>
+</li>
+<li>
+<p>Click on the name of your bucket</p>
+</li>
+<li>
+<p>Select <code>Permissons</code> tab and click on <code>+ADD</code>:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/google/01-add-permissions.png" alt="add-permissions" /></p>
+<ul>
+<li>Copy Service Account information from <code>Step 2</code>:</li>
+</ul>
+<p>
+  <img src="/static/google/02-copy.png" alt="copy-service-account" /></p>
+<ul>
+<li>
+<p>Paste it to the <code>New members</code> field</p>
+</li>
+<li>
+<p>Select <code>Storage Object Admin</code> as <code>Role</code> and click on <code>Save</code>:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/google/03-save-new-member.png" alt="save-member" /></p>
+<ul>
+<li>In Step 3 type your bucket name and click on <code>Save</code>:</li>
+</ul>
+<p>
+  <img src="/static/google/04-type-name.png" alt="type-name" /></p>
+<ul>
+<li>
+<p>The new storage will be selected as a storage for this repository</p>
+</li>
+<li>
+<p>Click on the ‘Save changes’ button to apply the changes for the repository:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/google/05-save-changes.png" alt="save-changes" /></p>
 </article>
  
           
@@ -533,9 +622,9 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/942716933b3fa542232301420ff6a6341a4ee57c" title='Last modified by Evgeniy Kosjakov | Mar 23, 2021' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/a84adfa03b1680c1fe2cdb523c0a24e2b8f427c1" title='Last modified by MoreraQA | Jun 16, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Mar 23, 2021</span>
+      <span>Jun 16, 2021</span>
     </a>
   </div>
 
@@ -567,7 +656,12 @@ https://github.com/alex-shpak/hugo-book
           
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#google-cloud-storage-bucket">Google Cloud Storage Bucket</a></li>
+    <li><a href="#backup-github-repository-using-google-cloud-storage-bucket">Backup GitHub repository using Google Cloud Storage Bucket</a>
+      <ul>
+        <li><a href="#about-google-cloud-storage-bucket">About Google Cloud Storage Bucket</a></li>
+        <li><a href="#set-up-google-cloud-storage-bucket">Set up Google Cloud Storage Bucket</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

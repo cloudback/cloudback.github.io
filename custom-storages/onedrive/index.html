@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Cloudback secures your GitHub repositories with recurrent data backup. With Cloudback you can use your favorite cloud storage provider or a built-in one.">
+  <meta property="og:title" content="GitHub Repository Backup | Cloudback Documentation">
+  <meta property="og:site_name" content="Cloudback">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://cloudback.it">
+  <meta property="og:image" content="https://cloudback.it/lib/logo/social.png">
+  <meta property="og:description" content="Cloudback secures your GitHub repositories with recurrent data backup. With Cloudback you can use your favorite cloud storage provider or a built-in one.">
+  <meta name="twitter:title" content="GitHub Repository Backup | Cloudback Documentation">
+  <meta name="twitter:description" content="Cloudback secures your GitHub repositories with recurrent data backup. With Cloudback you can use your favorite cloud storage provider or a built-in one.">
+  <meta name="twitter:image" content="https://cloudback.it/lib/logo/social.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="github backup">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Cloudback",
+      "abstract": "Backups your GitHub repositories, fast and secure",
+      "text": "Cloudback secures your repositories with recurrent data backups. With Cloudback you can use your favorite cloud storage or in-build storage powered by Azure Cold Blob Storage.",
+      "url": "https://cloudback.it/",
+      "image": "https://cloudback.it/lib/logo/social.png",
+      "installUrl": "https://github.com/apps/cloudback/installations/new",
+      "downloadUrl": "https://github.com/marketplace/cloudback",
+      "screenshot": "https://marketplace-screenshots.githubusercontent.com/7736/3848af80-eb9a-11ea-98b5-fe5cbfe991f7?auto=webp&format=jpeg",
+      "applicationCategory": "SecurityApplication"
+    }
+  </script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Microsoft OneDrive" />
+<meta property="og:description" content="Backup GitHub repository using Microsoft OneDrive About Microsoft OneDrive OneDrive is the cloud storage service that Microsoft offers to store all your files securely in one place, which you can then access from virtually anywhere.
+ Set up Microsoft OneDrive Personal:App&rsquo;s Folder  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the &#43; New storage button:    Type a storage name:     Select Microsoft OneDrive Personal:App&#39;s Folder" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cloudback.github.io/custom-storages/onedrive/" />
+<meta property="article:modified_time" content="2021-06-18T17:03:58+03:00" />
+<title>Microsoft OneDrive | Cloudback</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/book.min.2c26d9e5b83028d33e63f4ba3fe34f8ad1da7a501a7695ee6afbda8bcc23f001.css" integrity="sha256-LCbZ5bgwKNM&#43;Y/S6P&#43;NPitHaelAadpXuavvai8wj8AE=">
+
+
+<script defer src="/en.search.min.181012eb5e2bf021bd9b52decaf27f2f1d8fbea518b01f9a632c4d6eb79b3b02.js" integrity="sha256-GBAS614r8CG9m1LeyvJ/Lx2PvqUYsB&#43;aYyxNbrebOwI="></script>
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body style="min-height: 100vh;">
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main>
+    <header class="custom-header" style="width: 100%; position: fixed; height: 45px; z-index: 9999">
+      <div class="container flex">
+        <div style="padding: 5px; max-width: 16rem;">
+          <div style="margin-left: auto; margin-right: auto;">
+            <h2 class="book-brand">
+  <a href="/"><img src="/logo.svg" alt="Logo" /><span>Cloudback</span>
+  </a>
+</h2>
+
+          </div>
+        </div>
+        <div style="padding: 5px; max-width: 16rem; margin-left: auto; margin-right: 0;">
+          <div style="margin-left: auto; margin-right: auto;">
+            
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container" style="padding-top: 45px;">
+      <div class="flex">
+	    <aside class="book-menu">
+          
+  <nav>
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <ul>
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/getting-started/" class="">Getting started</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/how-to/" class="">How to</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/how-to/how-to-backup-github-repository/" class="">How to backup GitHub repository</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/how-to/how-to-restore-backup/" class="">How to restore backup</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/how-to/how-to-download-backup/" class="">How to download backup</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/custom-storages/" class="">Custom Storages</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/custom-storages/microsoft-azure-blob-container/" class="">Micosoft Azure Blob Container</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/" class="">How to create a new Microsoft Azure Blob Container</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/" class="">How to create a new shared access signature (SAS)</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/amazon-s3-bucket/" class="">Amazon S3 Bucket</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/amazon-s3-bucket-access-key/" class="">Amazon S3 Bucket Access Key</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/amazon-s3-glacier/" class="">Amazon S3 Glacier</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/google-cloud/" class="">Google Cloud Storage Bucket</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/onedrive/" class="active">Microsoft OneDrive</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/alibaba-cloud/" class="">Alibaba Cloud Object Storage Service</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/security/" class="">Security</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/security/incident-response-plan/" class="">Incident Response Plan</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/security/disaster-recovery-plan-policy/" class="">Disaster Recovery Plan Policy</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/security/data-breach-response-policy/" class="">Data Breach Response Policy</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/security/vulnerability-management-workflow/" class="">Vulnerability Management Workflow</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/terms/" class="">Terms of Service</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/privacy/" class="">Privacy Policy</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+    
+
+  <li>
+    
+
+  
+  <a href="/contact-us/" class="">Contact us</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+  
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+        </aside>
+	    
+        <div class="book-page">
+          <header class="book-header">
+            
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Microsoft OneDrive</strong>
+
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#backup-github-repository-using-microsoft-onedrive">Backup GitHub repository using Microsoft OneDrive</a>
+      <ul>
+        <li><a href="#about-microsoft-onedrive">About Microsoft OneDrive</a></li>
+        <li><a href="#set-up-microsoft-onedrive-personalapps-folder">Set up Microsoft OneDrive Personal:App&rsquo;s Folder</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+          </header>
+	    
+          
+          
+  <article class="markdown"><h1 id="backup-github-repository-using-microsoft-onedrive">Backup GitHub repository using Microsoft OneDrive</h1>
+<h2 id="about-microsoft-onedrive">About Microsoft OneDrive</h2>
+<p>OneDrive is the cloud storage service that Microsoft offers to store all your files securely in one place, which you can then access from virtually anywhere.</p>
+<hr>
+<h2 id="set-up-microsoft-onedrive-personalapps-folder">Set up Microsoft OneDrive Personal:App&rsquo;s Folder</h2>
+<ul>
+<li>In the Cloudback Dashboard open the repository settings by clicking on the settings icon:</li>
+</ul>
+<p>
+  <img src="/static/bucket/0001-Dashboard.png" alt="Click-on-repository-settings" /></p>
+<ul>
+<li>Click on the <code>+ New storage</code> button:</li>
+</ul>
+<p>
+  <img src="/static/bucket/001-Add-new-storage.png" alt="Click-on-new-storage" /></p>
+<ul>
+<li>Type a storage name:</li>
+</ul>
+<p>
+  <img src="/static/onedrive/01-storage-name.png" alt="storage-name" /></p>
+<ul>
+<li>
+<p>Select <code>Microsoft OneDrive Personal:App's Folder</code></p>
+</li>
+<li>
+<p>Create 
+  <a href="https://support.microsoft.com/en-us/office/video-sign-in-or-create-an-account-for-onedrive-personal-6c63b4e3-c92f-4f52-80e2-237c798cec1e">Microsoft OneDrive Personal:App&rsquo;s Folder</a></p>
+</li>
+<li>
+<p>Grant Cloudback a permission to write to the app&rsquo;s folder, by clicking on <code>Grant permission</code> button:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/onedrive/02-grant-permission.png" alt="grant-permission" /></p>
+<ul>
+<li>Save your new storage:</li>
+</ul>
+<p>
+  <img src="/static/onedrive/04-save.png" alt="save" /></p>
+<ul>
+<li>Save changes:</li>
+</ul>
+<p>
+  <img src="/static/onedrive/05-save-changes.png" alt="save-changes" /></p>
+<ul>
+<li>You will able to see your OneDrive storage as the backups storage for your repository:</li>
+</ul>
+<p>
+  <img src="/static/onedrive/06-onedrive.png" alt="storage" /></p>
+</article>
+ 
+          
+	    
+          <footer class="book-footer">
+            
+  <div class="flex justify-between">
+
+
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/8cb82d8785079197a3bebb780ae71153722f46fa" title='Last modified by MoreraQA | Jun 18, 2021' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>Jun 18, 2021</span>
+    </a>
+  </div>
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/cloudback/docs/edit/master/content/custom-storages/onedrive.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+            
+          </footer>
+	    
+          <div class="book-footer">
+            <div style="font-size: smaller;">&copy; Cloudback 2020 - <a href="/privacy">Privacy</a></div>
+          </div>
+          
+  
+ 
+	    
+          <label for="menu-control" class="hidden book-menu-overlay"></label>
+		</div>
+        
+        <aside class="book-toc">
+          
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#backup-github-repository-using-microsoft-onedrive">Backup GitHub repository using Microsoft OneDrive</a>
+      <ul>
+        <li><a href="#about-microsoft-onedrive">About Microsoft OneDrive</a></li>
+        <li><a href="#set-up-microsoft-onedrive-personalapps-folder">Set up Microsoft OneDrive Personal:App&rsquo;s Folder</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+        </aside>
+        
+	  </div>
+    </div>
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -36,10 +36,10 @@
   </script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Amazon S3 Bucket" />
-<meta property="og:description" content="Amazon S3 Bucket Page is under development" />
+<meta property="og:description" content="Backup GitHub repository using Amazon S3 Bucket About Amazon S3 Bucket Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cloudback.github.io/custom-storages/amazon-s3-bucket/" />
-<meta property="article:modified_time" content="2021-03-23T20:00:40+03:00" />
+<meta property="article:modified_time" content="2021-06-15T19:06:56+03:00" />
 <title>Amazon S3 Bucket | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -47,7 +47,7 @@
 <link rel="stylesheet" href="/book.min.2c26d9e5b83028d33e63f4ba3fe34f8ad1da7a501a7695ee6afbda8bcc23f001.css" integrity="sha256-LCbZ5bgwKNM&#43;Y/S6P&#43;NPitHaelAadpXuavvai8wj8AE=">
 
 
-<script defer src="/en.search.min.0fc5b34d95843374067d7293cac62cd540e4dbdd6300b918d5e7ae2a73794d58.js" integrity="sha256-D8WzTZWEM3QGfXKTysYs1UDk291jALkY1eeuKnN5TVg="></script>
+<script defer src="/en.search.min.181012eb5e2bf021bd9b52decaf27f2f1d8fbea518b01f9a632c4d6eb79b3b02.js" integrity="sha256-GBAS614r8CG9m1LeyvJ/Lx2PvqUYsB&#43;aYyxNbrebOwI="></script>
 
 <!--
 Made with Book Theme
@@ -274,6 +274,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
+  <a href="/custom-storages/amazon-s3-bucket-access-key/" class="">Amazon S3 Bucket Access Key</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
   <a href="/custom-storages/amazon-s3-glacier/" class="">Amazon S3 Glacier</a>
   
 
@@ -285,6 +295,16 @@ https://github.com/alex-shpak/hugo-book
 
   
   <a href="/custom-storages/google-cloud/" class="">Google Cloud Storage Bucket</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/onedrive/" class="">Microsoft OneDrive</a>
   
 
 </li>
@@ -507,7 +527,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#amazon-s3-bucket">Amazon S3 Bucket</a></li>
+    <li><a href="#backup-github-repository-using-amazon-s3-bucket">Backup GitHub repository using Amazon S3 Bucket</a>
+      <ul>
+        <li><a href="#about-amazon-s3-bucket">About Amazon S3 Bucket</a></li>
+        <li><a href="#set-up-amazon-s3-bucket-as-a-custom-storage">Set up Amazon S3 Bucket as a custom storage</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -519,8 +544,117 @@ https://github.com/alex-shpak/hugo-book
 	    
           
           
-  <article class="markdown"><h1 id="amazon-s3-bucket">Amazon S3 Bucket</h1>
-<p>Page is under development</p>
+  <article class="markdown"><h1 id="backup-github-repository-using-amazon-s3-bucket">Backup GitHub repository using Amazon S3 Bucket</h1>
+<h2 id="about-amazon-s3-bucket">About Amazon S3 Bucket</h2>
+<p>Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.</p>
+<h2 id="set-up-amazon-s3-bucket-as-a-custom-storage">Set up Amazon S3 Bucket as a custom storage</h2>
+<ul>
+<li>In the Cloudback Dashboard open the repository settings by clicking on the settings icon:</li>
+</ul>
+<p>
+  <img src="/static/bucket/0001-Dashboard.png" alt="Click-on-repository-settings" /></p>
+<ul>
+<li>Click on the <code>+ New storage</code> button:</li>
+</ul>
+<p>
+  <img src="/static/bucket/001-Add-new-storage.png" alt="Click-on-new-storage" /></p>
+<ul>
+<li>
+<p>Type a storage name</p>
+</li>
+<li>
+<p>Select ‘Amazon S3 Bucket’ as a storage provider</p>
+</li>
+<li>
+<p>Sign in to 
+  <a href="https://console.aws.amazon.com/s3/">AWS Managment Console</a> and click on the <code>Create bucket</code>:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/bucket/1-create-bucket.png" alt="AS3-create-bucket" /></p>
+<ul>
+<li>Click on the name of your Amazon S3 Bucket:</li>
+</ul>
+<p>
+  <img src="/static/bucket/4-click-on-the-name.png" alt="Click-bucket-name" /></p>
+<ul>
+<li>Click on the <code>Properties</code>:</li>
+</ul>
+<p>
+  <img src="/static/bucket/5-click-properties.png" alt="Click-properties" /></p>
+<ul>
+<li>Copy ARN:</li>
+</ul>
+<p>
+  <img src="/static/bucket/6-copy-arn.png" alt="Copy-ARN" /></p>
+<ul>
+<li>Insert ARN on the Cloudback site to the Step 1. In Step 2 you will recieve generated bucket policy document:</li>
+</ul>
+<p>
+  <img src="/static/bucket/7-past-step1.png" alt="ARN-step-1" /></p>
+<ul>
+<li>Open <code>Permissions</code> on Amazon S3 to find <code>Bucket policy</code> and click <code>Edit</code>:</li>
+</ul>
+<p>
+  <img src="/static/bucket/9-Choose-permissions.png" alt="Permissions" />
+
+  <img src="/static/bucket/10-Edit-bucket-policy.png" alt="Bucket-Policy" /></p>
+<ul>
+<li>Put in opened field generated bucket policy document and click on <code>Save changes</code>:</li>
+</ul>
+<p>
+  <img src="/static/bucket/11-Past-policy-from-step2.png" alt="Policy-doc" /></p>
+<ul>
+<li>Click on the <code>Access points</code>:</li>
+</ul>
+<p>
+  <img src="/static/bucket/13-Choose-access-points.png" alt="Click-on-access" /></p>
+<ul>
+<li>
+<p>Type Access point name</p>
+</li>
+<li>
+<p>Copy Access point ARN and place it in Step 3:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/bucket/15-copy-app.png" alt="Access-point-ARN" />
+
+  <img src="/static/bucket/16-ctrlv-to-step3.png" alt="Cloudback-step3" /></p>
+<ul>
+<li>Copy access point policy from Step 4 and place it in AS3 Policy field:</li>
+</ul>
+<p>
+  <img src="/static/bucket/17-copy-appd.png" alt="Copy-policy" />
+
+  <img src="/static/bucket/18-ctrlv-appd.png" alt="Past-policy" /></p>
+<ul>
+<li>
+<p>Click on <code>Create access point</code></p>
+</li>
+<li>
+<p>Click on <code>Save</code> on Cloudback:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/bucket/19-Save.png" alt="Save" /></p>
+<ul>
+<li>
+<p>The new storage will be selected as a storage for this repository</p>
+</li>
+<li>
+<p>Click on the ‘Save changes’ button to apply the changes for the repository:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/bucket/20-Save-changes.png" alt="Save-changes" /></p>
+<p>
+  <img src="/static/bucket/21-storage-badge.png" alt="Storage-indication" /></p>
+<ul>
+<li>When the backup is created you should be able to see it in the Amazon S3 Bucket page:</li>
+</ul>
+<p>
+  <img src="/static/bucket/22-last-mod.png" alt="Backup" /></p>
 </article>
  
           
@@ -533,9 +667,9 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/942716933b3fa542232301420ff6a6341a4ee57c" title='Last modified by Evgeniy Kosjakov | Mar 23, 2021' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/79220018e196470dbe871669d203fb3875451c69" title='Last modified by MoreraQA | Jun 15, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Mar 23, 2021</span>
+      <span>Jun 15, 2021</span>
     </a>
   </div>
 
@@ -567,7 +701,12 @@ https://github.com/alex-shpak/hugo-book
           
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#amazon-s3-bucket">Amazon S3 Bucket</a></li>
+    <li><a href="#backup-github-repository-using-amazon-s3-bucket">Backup GitHub repository using Amazon S3 Bucket</a>
+      <ul>
+        <li><a href="#about-amazon-s3-bucket">About Amazon S3 Bucket</a></li>
+        <li><a href="#set-up-amazon-s3-bucket-as-a-custom-storage">Set up Amazon S3 Bucket as a custom storage</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 

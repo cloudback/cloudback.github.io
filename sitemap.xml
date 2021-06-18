@@ -14,7 +14,12 @@
   
   <url>
     <loc>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</loc>
-    <lastmod>2021-03-23T20:00:40+03:00</lastmod>
+    <lastmod>2021-06-15T19:06:56+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/custom-storages/amazon-s3-bucket-access-key/</loc>
+    <lastmod>2021-06-18T16:42:34+03:00</lastmod>
   </url>
   
   <url>
@@ -29,7 +34,7 @@
   
   <url>
     <loc>https://cloudback.github.io/custom-storages/amazon-s3-glacier/</loc>
-    <lastmod>2021-03-23T20:00:40+03:00</lastmod>
+    <lastmod>2021-06-15T20:01:20+03:00</lastmod>
   </url>
   
   <url>
@@ -44,7 +49,7 @@
   
   <url>
     <loc>https://cloudback.github.io/custom-storages/google-cloud/</loc>
-    <lastmod>2021-03-23T20:00:40+03:00</lastmod>
+    <lastmod>2021-06-16T13:19:14+03:00</lastmod>
   </url>
   
   <url>
@@ -53,8 +58,13 @@
   </url>
   
   <url>
+    <loc>https://cloudback.github.io/custom-storages/onedrive/</loc>
+    <lastmod>2021-06-18T17:03:58+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cloudback.github.io/custom-storages/alibaba-cloud/</loc>
-    <lastmod>2021-03-23T20:00:40+03:00</lastmod>
+    <lastmod>2021-06-18T16:10:57+03:00</lastmod>
   </url>
   
   <url>
@@ -79,7 +89,7 @@
   
   <url>
     <loc>https://cloudback.github.io/security/</loc>
-    <lastmod>2020-08-09T21:13:12+03:00</lastmod>
+    <lastmod>2020-08-18T18:32:58+03:00</lastmod>
   </url>
   
   <url>

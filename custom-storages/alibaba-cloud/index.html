@@ -36,10 +36,10 @@
   </script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Alibaba Cloud Object Storage Service" />
-<meta property="og:description" content="Alibaba Cloud Object Storage Service Page is under development" />
+<meta property="og:description" content="Backup GitHub repository using Alibaba Cloud Object Storage Service About Alibaba Cloud Object Storage Service Alibaba Cloud Object Storage Service (OSS) is an encrypted, secure, cost-effective, and easy-to-use object storage service that enables you to store, back up, and archive large amounts of data in the cloud, with a guaranteed durability of 99.9999999999%(12 9’s). RESTful APIs allow storage and access to OSS anywhere on the Internet. You can elastically scale the capacity and processing capability and choose from a variety of storage types to optimize the storage cost." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cloudback.github.io/custom-storages/alibaba-cloud/" />
-<meta property="article:modified_time" content="2021-03-23T20:00:40+03:00" />
+<meta property="article:modified_time" content="2021-06-18T16:10:57+03:00" />
 <title>Alibaba Cloud Object Storage Service | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -47,7 +47,7 @@
 <link rel="stylesheet" href="/book.min.2c26d9e5b83028d33e63f4ba3fe34f8ad1da7a501a7695ee6afbda8bcc23f001.css" integrity="sha256-LCbZ5bgwKNM&#43;Y/S6P&#43;NPitHaelAadpXuavvai8wj8AE=">
 
 
-<script defer src="/en.search.min.0fc5b34d95843374067d7293cac62cd540e4dbdd6300b918d5e7ae2a73794d58.js" integrity="sha256-D8WzTZWEM3QGfXKTysYs1UDk291jALkY1eeuKnN5TVg="></script>
+<script defer src="/en.search.min.181012eb5e2bf021bd9b52decaf27f2f1d8fbea518b01f9a632c4d6eb79b3b02.js" integrity="sha256-GBAS614r8CG9m1LeyvJ/Lx2PvqUYsB&#43;aYyxNbrebOwI="></script>
 
 <!--
 Made with Book Theme
@@ -274,6 +274,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
+  <a href="/custom-storages/amazon-s3-bucket-access-key/" class="">Amazon S3 Bucket Access Key</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
   <a href="/custom-storages/amazon-s3-glacier/" class="">Amazon S3 Glacier</a>
   
 
@@ -285,6 +295,16 @@ https://github.com/alex-shpak/hugo-book
 
   
   <a href="/custom-storages/google-cloud/" class="">Google Cloud Storage Bucket</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/custom-storages/onedrive/" class="">Microsoft OneDrive</a>
   
 
 </li>
@@ -507,7 +527,12 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#alibaba-cloud-object-storage-service">Alibaba Cloud Object Storage Service</a></li>
+    <li><a href="#backup-github-repository-using-alibaba-cloud-object-storage-service">Backup GitHub repository using Alibaba Cloud Object Storage Service</a>
+      <ul>
+        <li><a href="#about-alibaba-cloud-object-storage-service">About Alibaba Cloud Object Storage Service</a></li>
+        <li><a href="#set-up-alibaba-cloud-object-storage-service-oss">Set up Alibaba Cloud Object Storage Service (OSS)</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -519,8 +544,88 @@ https://github.com/alex-shpak/hugo-book
 	    
           
           
-  <article class="markdown"><h1 id="alibaba-cloud-object-storage-service">Alibaba Cloud Object Storage Service</h1>
-<p>Page is under development</p>
+  <article class="markdown"><h1 id="backup-github-repository-using-alibaba-cloud-object-storage-service">Backup GitHub repository using Alibaba Cloud Object Storage Service</h1>
+<h2 id="about-alibaba-cloud-object-storage-service">About Alibaba Cloud Object Storage Service</h2>
+<p>Alibaba Cloud Object Storage Service (OSS) is an encrypted, secure, cost-effective, and easy-to-use object storage service that enables you to store, back up, and archive large amounts of data in the cloud, with a guaranteed durability of 99.9999999999%(12 9’s). RESTful APIs allow storage and access to OSS anywhere on the Internet. You can elastically scale the capacity and processing capability and choose from a variety of storage types to optimize the storage cost.</p>
+<hr>
+<h2 id="set-up-alibaba-cloud-object-storage-service-oss">Set up Alibaba Cloud Object Storage Service (OSS)</h2>
+<ul>
+<li>In the Cloudback Dashboard open the repository settings by clicking on the settings icon:</li>
+</ul>
+<p>
+  <img src="/static/bucket/0001-Dashboard.png" alt="Click-on-repository-settings" /></p>
+<ul>
+<li>Click on the <code>+ New storage</code> button:</li>
+</ul>
+<p>
+  <img src="/static/bucket/001-Add-new-storage.png" alt="Click-on-new-storage" /></p>
+<ul>
+<li>
+<p>Type a storage name</p>
+</li>
+<li>
+<p>Select ‘Alibaba Cloud Object Storage Service’ as a storage provider</p>
+</li>
+<li>
+<p>Create 
+  <a href="https://www.alibabacloud.com/help/doc-detail/31885.htm">Alibaba Cloud OSS Bucket</a></p>
+</li>
+<li>
+<p>On the Buckets page, click the name of your bucket to configure bucket policies:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/ali/01-click-name.png" alt="click-name" /></p>
+<ul>
+<li>In the left-side navigation pane, click <code>Files</code>, than click <code>Authorize</code>:</li>
+</ul>
+<p>
+  <img src="/static/ali/02-click-authorize.png" alt="click-authorize" /></p>
+<ul>
+<li>On the GUI tab, click Authorize:</li>
+</ul>
+<p>
+  <img src="/static/ali/03-authorize.png" alt="authorize" /></p>
+<ul>
+<li>
+<p>In the Authorize panel, configure the parameters</p>
+</li>
+<li>
+<p>Copy Cloudback RAM id from <code>Step 2</code>:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/ali/04-copy-ram.png" alt="set-ram-id" /></p>
+<ul>
+<li>
+<p>Paste to <code>Other accounts</code> field:</p>
+</li>
+<li>
+<p>In <code>Authorized Operation</code> click on <code>Any Operation</code>  click <code>OK</code>:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/ali/05-paste-ram.png" alt="any-operations" /></p>
+<ul>
+<li>
+<p>Type your bucket name to the Step 3 field on the Cloudback site</p>
+</li>
+<li>
+<p>Click on <code>Save</code> button:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/ali/06-save.png" alt="save-storage" /></p>
+<ul>
+<li>
+<p>The new storage will be selected as a storage for this repository</p>
+</li>
+<li>
+<p>Click on the ‘Save changes’ button to apply the changes for the repository:</p>
+</li>
+</ul>
+<p>
+  <img src="/static/ali/07-save-storage.png" alt="apply-changes" /></p>
 </article>
  
           
@@ -533,9 +638,9 @@ https://github.com/alex-shpak/hugo-book
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/942716933b3fa542232301420ff6a6341a4ee57c" title='Last modified by Evgeniy Kosjakov | Mar 23, 2021' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/cloudback/docs/commit/f39303489a98455361372e793dce0368648d12e4" title='Last modified by MoreraQA | Jun 18, 2021' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Mar 23, 2021</span>
+      <span>Jun 18, 2021</span>
     </a>
   </div>
 
@@ -567,7 +672,12 @@ https://github.com/alex-shpak/hugo-book
           
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#alibaba-cloud-object-storage-service">Alibaba Cloud Object Storage Service</a></li>
+    <li><a href="#backup-github-repository-using-alibaba-cloud-object-storage-service">Backup GitHub repository using Alibaba Cloud Object Storage Service</a>
+      <ul>
+        <li><a href="#about-alibaba-cloud-object-storage-service">About Alibaba Cloud Object Storage Service</a></li>
+        <li><a href="#set-up-alibaba-cloud-object-storage-service-oss">Set up Alibaba Cloud Object Storage Service (OSS)</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
