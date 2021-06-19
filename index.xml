@@ -10,21 +10,21 @@
     
     
     <item>
-      <title>Amazon S3 Bucket</title>
-      <link>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</guid>
-      <description>Backup GitHub repository using Amazon S3 Bucket About Amazon S3 Bucket Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.</description>
-    </item>
-    
-    <item>
-      <title>Amazon S3 Bucket Access Key</title>
+      <title>Amazon S3 Bucket via Access Key</title>
       <link>https://cloudback.github.io/custom-storages/amazon-s3-bucket-access-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudback.github.io/custom-storages/amazon-s3-bucket-access-key/</guid>
       <description>Backup GitHub repository using Amazon S3 Bucket Access Key About Amazon S3 Bucket Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.</description>
+    </item>
+    
+    <item>
+      <title>Amazon S3 Bucket via Access Point</title>
+      <link>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</guid>
+      <description>Backup GitHub repository using Amazon S3 Bucket About Amazon S3 Bucket Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.</description>
     </item>
     
     <item>
