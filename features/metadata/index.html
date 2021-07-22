@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Cloudback secures your GitHub repositories with recurrent data backup. With Cloudback you can use your favorite cloud storage provider or a built-in one.">
+  <meta property="og:title" content="GitHub Repository Backup | Cloudback Documentation">
+  <meta property="og:site_name" content="Cloudback">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://cloudback.it">
+  <meta property="og:image" content="https://cloudback.it/lib/logo/social.png">
+  <meta property="og:description" content="Cloudback secures your GitHub repositories with recurrent data backup. With Cloudback you can use your favorite cloud storage provider or a built-in one.">
+  <meta name="twitter:title" content="GitHub Repository Backup | Cloudback Documentation">
+  <meta name="twitter:description" content="Cloudback secures your GitHub repositories with recurrent data backup. With Cloudback you can use your favorite cloud storage provider or a built-in one.">
+  <meta name="twitter:image" content="https://cloudback.it/lib/logo/social.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="github backup">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Cloudback",
+      "abstract": "Backups your GitHub repositories, fast and secure",
+      "text": "Cloudback secures your repositories with recurrent data backups. With Cloudback you can use your favorite cloud storage or in-build storage powered by Azure Cold Blob Storage.",
+      "url": "https://cloudback.it/",
+      "image": "https://cloudback.it/lib/logo/social.png",
+      "installUrl": "https://github.com/apps/cloudback/installations/new",
+      "downloadUrl": "https://github.com/marketplace/cloudback",
+      "screenshot": "https://marketplace-screenshots.githubusercontent.com/7736/3848af80-eb9a-11ea-98b5-fe5cbfe991f7?auto=webp&format=jpeg",
+      "applicationCategory": "SecurityApplication"
+    }
+  </script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Metadata Backups | Cloudback</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/book.min.ae12c3246664718d601133988c346aeaebd3590b685ec4fd4c25a6ececb0c830.css" integrity="sha256-rhLDJGZkcY1gETOYjDRq6uvTWQtoXsT9TCWm7OywyDA=">
+<script src="/docs.js"></script>
+
+  
+</head>
+
+
+<body class="body-background">
+  <div class="page d-flex flex-column h-100">
+    
+    <input type="checkbox" class="hidden menu-control" id="menu-control">
+    <main class="page-main container w-100">
+      <input type="checkbox" class="hidden toc-control" id="toc-control">
+      <div class="d-flex h-100">
+        
+        <aside class="docs-menu">
+          <div class="docs-menu-content">
+            <div class="docs-menu-logo">
+              <div class="d-flex h-100 pl-4 pt-4 pb-3 pr-2 flex-grow-1">
+                <a class="d-flex" href="/">
+                  <div class="h36"><img class="h36 w36 rounded" src="/static/Logo.png" alt="menu" /></div>
+                  <div class="h36 d-table">
+                    <h3 class="pl-2 pr-2 menu-header-link d-table-cell v-align-middle fw600">Cloudback</h3>
+                  </div>
+                </a>
+              </div>
+              <div class="close-menu">
+                <div class="p-2">
+                  <label for="menu-control" class="toc-label toc-label-close cursor-pointer p-2">
+                    <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                      <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="p-3" id="menu-search-container">
+              <div class="search-icon" id="search-icon">
+                <svg class="search-icon-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                  <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z">
+                  </path>
+                </svg>
+              </div>
+              <input type="text" class="menu-search-input" id="menu-search" onkeyup="searchMenu(event, this);" 
+                onfocus="onFocus(this);"
+                placeholder="Search by title..." title="Type page title">
+              <div class="search-results-container" id="search-results-container">
+                <ul class="w-100">
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/">Features<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/security/">Security<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Security
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/bulk-operations/">[TBD] Bulk Operations<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Bulk Operations
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/email-notifications/">[TBD] Email Notifications<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Email Notifications
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/filter-repositories/">[TBD] Filter Repositories<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Filter Repositories
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/github-organizations/">[TBD] GitHub Organizations<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Github Organizations
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/invoiced-customers/">[TBD] Invoiced Customers<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Invoiced Customers
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/custom-storages/alibaba-cloud/">Alibaba Cloud Object Storage Service<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Alibaba Cloud
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/custom-storages/amazon-s3-bucket-access-key/">Amazon S3 Bucket via Access Key<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Amazon S3 Bucket Access Key
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/custom-storages/amazon-s3-bucket/">Amazon S3 Bucket via Access Point<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Amazon S3 Bucket
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/custom-storages/amazon-s3-glacier/">Amazon S3 Glacier<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Amazon S3 Glacier
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/automated-daily-backups/">Automated Daily Backups<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Automated Daily Backups
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/categories/">Categories<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Categories
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/contact-us/">Contact us<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Contact Us
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/security/data-breach-response-policy/">Data Breach Response Policy<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Security
+        
+    
+        
+        
+          
+             > 
+          
+          Data Breach Response Policy
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/security/disaster-recovery-plan-policy/">Disaster Recovery Plan Policy<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Security
+        
+    
+        
+        
+          
+             > 
+          
+          Disaster Recovery Plan Policy
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/download-backups/">Download Backups<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Download Backups
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/getting-started/">Getting Started<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Getting Started
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/custom-storages/google-cloud/">Google Cloud Storage Bucket<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Google Cloud
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/">Home<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/">How to create a new Microsoft Azure Blob Container<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Microsoft Azure Blob Container
+        
+    
+        
+        
+          
+             > 
+          
+          Create Microsoft Azure Blob Container
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/">How to create a new shared access signature (SAS)<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Microsoft Azure Blob Container
+        
+    
+        
+        
+          
+             > 
+          
+          Create Shared Access Signature
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/security/incident-response-plan/">Incident Response Plan<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Security
+        
+    
+        
+        
+          
+             > 
+          
+          Incident Response Plan
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/metadata/">Metadata Backups<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Metadata
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/">Microsoft Azure Blob Container<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Microsoft Azure Blob Container
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/custom-storages/onedrive/">Microsoft OneDrive<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Onedrive
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/manual-backups/">One-Click Manual Backups<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Manual Backups
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/privacy/">Privacy Policy<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Privacy
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/restore-to-github/">Restore to GitHub<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Restore to Github
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/custom-storages/">Supported Storages<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/tags/">Tags<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/terms/">Terms of Service<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Terms
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/various-backup-storages/">Various Backup Storages<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Various Backup Storages
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/security/vulnerability-management-workflow/">Vulnerability Management Workflow<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Security
+        
+    
+        
+        
+          
+             > 
+          
+          Vulnerability Management Workflow
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/what-is-cloudback/">What is Cloudback<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          What Is Cloudback
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                  <li class="nothing-found" id="nothing-found">No pages found</li>
+                </ul>
+              </div>
+            </div>
+            <nav class="docs-menu-nav pl-3 pb-3">
+              <nav>
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/what-is-cloudback/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">What is Cloudback</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/getting-started/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Getting Started</span>
+      </div>
+    </a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox" checked />
+    <label for="section-6ec23f89d32660817763f346261794c8">
+      <span class="docs-menu-item">
+        <span class="docs-menu-item-text d-flex flex-grow-1">
+          <a href="https://cloudback.github.io/features/" 
+            class="">Features</a>
+          <span class="docs-menu-item-icon flex-grow-1 text-right">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
+              <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+              </path>
+            </svg>
+          </span>
+        </span>
+      </span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/automated-daily-backups/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Automated Daily Backups</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/various-backup-storages/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Various Backup Storages</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/metadata/" class="docs-menu-item d-flex  active">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Metadata Backups</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/manual-backups/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">One-Click Manual Backups</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/download-backups/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Download Backups</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/restore-to-github/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Restore to GitHub</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/email-notifications/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">[TBD] Email Notifications</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/github-organizations/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">[TBD] GitHub Organizations</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/invoiced-customers/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">[TBD] Invoiced Customers</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/bulk-operations/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">[TBD] Bulk Operations</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/filter-repositories/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">[TBD] Filter Repositories</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input id="section-b0ec2e819329f103ee9e810e29eed2ea" class="custom-input" type="checkbox"  />
+    <label for="section-b0ec2e819329f103ee9e810e29eed2ea">
+      <span class="docs-menu-item">
+        <span class="docs-menu-item-text d-flex flex-grow-1">
+          <a href="https://cloudback.github.io/custom-storages/" 
+            class="">Supported Storages</a>
+          <span class="docs-menu-item-icon flex-grow-1 text-right">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
+              <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+              </path>
+            </svg>
+          </span>
+        </span>
+      </span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input id="section-de558aee27ab4590ca6c33f7ac98de5e" class="custom-input" type="checkbox"  />
+    <label for="section-de558aee27ab4590ca6c33f7ac98de5e">
+      <span class="docs-menu-item">
+        <span class="docs-menu-item-text d-flex flex-grow-1">
+          <a href="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/" 
+            class="">Microsoft Azure Blob Container</a>
+          <span class="docs-menu-item-icon flex-grow-1 text-right">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
+              <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+              </path>
+            </svg>
+          </span>
+        </span>
+      </span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">How to create a new Microsoft Azure Blob Container</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">How to create a new shared access signature (SAS)</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/custom-storages/amazon-s3-bucket-access-key/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Amazon S3 Bucket via Access Key</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/custom-storages/amazon-s3-bucket/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Amazon S3 Bucket via Access Point</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/custom-storages/amazon-s3-glacier/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Amazon S3 Glacier</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/custom-storages/google-cloud/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Google Cloud Storage Bucket</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/custom-storages/onedrive/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Microsoft OneDrive</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/custom-storages/alibaba-cloud/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Alibaba Cloud Object Storage Service</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input id="section-4e896db703975006e00bbc21e8553d62" class="custom-input" type="checkbox"  />
+    <label for="section-4e896db703975006e00bbc21e8553d62">
+      <span class="docs-menu-item">
+        <span class="docs-menu-item-text d-flex flex-grow-1">
+          <a href="https://cloudback.github.io/security/" 
+            class="">Security</a>
+          <span class="docs-menu-item-icon flex-grow-1 text-right">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
+              <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+              </path>
+            </svg>
+          </span>
+        </span>
+      </span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/security/incident-response-plan/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Incident Response Plan</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/security/disaster-recovery-plan-policy/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Disaster Recovery Plan Policy</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/security/data-breach-response-policy/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Data Breach Response Policy</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/security/vulnerability-management-workflow/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Vulnerability Management Workflow</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/terms/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Terms of Service</span>
+      </div>
+    </a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/privacy/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Privacy Policy</span>
+      </div>
+    </a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/contact-us/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Contact us</span>
+      </div>
+    </a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.docs-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+            </nav>
+          </div>
+        </aside>
+        
+        <div class="docs-page docs-content-background d-flex flex-column">
+          
+          <header class="docs-header p-2">
+            <div class="d-flex align-center h32">
+              
+              <div class="docs-header-logo pr-2">
+                <label for="menu-control" class="toc-label toc-label-left cursor-pointer p-2">
+                  <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                  </svg>
+                </label>
+              </div>
+              
+              <div class="flex-grow-1">
+              </div>
+              
+              <div>
+                <label for="toc-control" class="toc-label toc-label-right cursor-pointer p-2">
+                  <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill-rule="evenodd" d="M1.75 2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5zm4 5a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5h-7.5zm0 5a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5h-7.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                    <path d="M13.314 4.918L11.07 2.417A.25.25 0 0111.256 2h4.488a.25.25 0 01.186.417l-2.244 2.5a.25.25 0 01-.372 0z"></path>
+                  </svg>
+                </label>
+              </div>
+              
+            </div>
+          </header>
+          
+          <div class="page-with-toc d-flex flex-grow-1">
+            <div class="flex-column d-flex flex-grow-1">
+              
+              
+              
+			        
+  <article class="markdown-body"><h1 id="metadata-backups">Metadata Backups</h1>
+<p>Cloudback archives not only the whole git repository but GitHub-specific metadata as well. The list of metadata we are able to backup is not complete and is limited by the GitHub API.</p>
+<p>Important things to know:</p>
+<ul>
+<li>We don&rsquo;t backup your GitHub Account</li>
+<li>We don&rsquo;t backup your GitHub Organization</li>
+<li>The resulting backup should never be considered as a complete all-embracing one</li>
+</ul>
+<img src="/static/features/issue-tracker-metadata.png" alt="Metadata" width=600/>
+<h2 id="what-is-included-in-a-backup">What is included in a backup?</h2>
+<p>Here is the list of repository&rsquo;s data in a backup archive:</p>
+<ul>
+<li>A 
+  <a href="https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---bare">bare clone</a> of a git repository</li>
+<li>All 
+  <a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones">Milestones</a></li>
+<li>All 
+  <a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels">Labels</a></li>
+<li>All opened and closed 
+  <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues">Issues</a> with comments</li>
+</ul>
+<p>Metadata is stored as a JSON file per data type in the same format we download it from GitHub. If you want us to add any additional metadata into a backup, please, 
+  <a href="/contact-us/">let us know</a> or just 
+  <a href="https://github.com/cloudback/issue-tracker/issues/new?template=feature_request.md">create a feature request</a> and we will consider implementing it.</p>
+<h2 id="this-metadata-is-not-included-yet-but-will-be-soon">This metadata is not included yet but will be soon</h2>
+<p>We are working right now to support below data to be included as well:</p>
+<ul>
+<li>
+  <a href="https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects">Projects</a></li>
+<li>
+  <a href="https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github/about-releases">Releases</a></li>
+</ul>
+<h2 id="this-metadata-is-not-included-due-to-github-api-restrictions">This metadata is not included due to GitHub API restrictions</h2>
+<ul>
+<li>
+  <a href="https://docs.github.com/en/actions/reference/encrypted-secrets">Encrypted secrets</a>: Justification: there is no 
+  <a href="https://docs.github.com/en/rest/reference/actions#get-a-repository-secret">API</a> to get a stored encrypted value</li>
+<li>
+  <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/about-forks">Forks</a>: Justification: there is no API</li>
+<li>
+  <a href="https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications">Watchers</a>: Justification: there is no API</li>
+<li>
+  <a href="https://docs.github.com/en/rest/reference/activity#starring">Stargazers</a>: Justification: there is no API</li>
+</ul>
+<h2 id="what-is-inside-an-archive">What is inside an archive?</h2>
+<p>The archive represents 
+  <a href="https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-5.2.0.txt">ZIP File Version 5.2</a> with 
+  <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES-256</a> encryption. <strong>Be aware that AES encryption is not widely supported by ZIP tools and archivers.</strong> For instance, Microsoft Windows Compressed Folders 
+  <a href="https://devblogs.microsoft.com/oldnewthing/20180515-00/?p=98755">does not support AES encryption</a> and won&rsquo;t be able to open any AES-encrypted ZIP archive. Please consider using third-party software. We recommend you 
+  <a href="https://www.7-zip.org/">7-Zip</a> which is cross-platform and is free for commercial use (there are limitations, please refer to 
+  <a href="https://www.7-zip.org/license.txt">7-Zip License</a> for details).</p>
+<p>Also, please note that we put one ZIP into another one. This is done to hide filenames inside an archive. Filename encryption is introduced in 
+  <a href="https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-6.2.0.txt">ZIP File Format Specification 6.2</a>. We decided to keep version 5.2 for better compatibility.</p>
+<p>Sample archive presented on screenshots below:
+<br><img src="/static/features/zip-aes.png" alt="Inside a backup 1"/></p>
+<p>Password prompt:
+<br><img src="/static/features/zip-password.png" alt="Inside a backup 2"/></p>
+<p>Archive content:
+<br><img src="/static/features/zip-content.png" alt="Inside a backup 3"/></p>
+<h2 id="learn-more">Learn more</h2>
+<ul>
+<li>
+  <a href="/features/various-backup-storages/">What is a backup storage?</a></li>
+</ul>
+</article>
+
+              
+              <div class="p-4 article-footer">
+                <div class="d-flex flex-justify-between">
+                  <div class="article-footer-btn p-2">
+                    
+                    
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/718dc6526174c640d3790f62864d4b1b04c69b28"
+                       title="Last modified by Victor Vorobyev | Jul 22, 2021" target="_blank" rel="noopener">
+                      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
+                      </svg>
+                      <span class="pl-2">Jul 22, 2021</span>
+                    </a>
+                    
+                  </div>
+                   <div class="article-footer-btn p-2">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/metadata.md" target="_blank" rel="noopener">
+                      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
+                      </svg>
+                      <span class="pl-2">Edit this page</span>
+                    </a>
+                  </div> 
+                </div>   
+              </div>
+              
+              
+              <footer class="page-footer position-relative d-table w-100">
+                <div class="pl-3 d-table-cell v-align-middle h-100">
+                  <span>&copy; Cloudback 2018-2021 - <a href="/privacy" target="_blank" class="custom-link">Privacy</a></span>
+                </div>
+              </footer>
+              
+            </div>
+            
+            <aside class="page-toc">
+              <div class="d-flex">
+                
+                <div class="d-table h32">
+                  <div class="d-table-cell v-align-middle">
+                    <select class="p-1 docs-content-background font-size-small" id="theme-select">
+                      <option>Light theme</option>
+                      <option>Dark theme</option>
+                    </select>  
+                  </div>
+                </div>
+                
+                <div class="flex-grow-1"></div>
+                <div class="pr-2 h32 d-none">
+                  <span class="d-table-cell v-align-middle">Hello, <span class="username">Guest</span>!</span>
+                </div>
+                <div class="h32 mr-0 d-none">
+                  <img class="h32 w32 user-avatar" src="https://mddocs.io/Auth/Avatar" alt="avatar"/>
+                </div>      
+              </div>
+              <div class="pt-2 pb-2 mt-2 mb-2 in-this-article"><h5>In this article</h5></div>
+              <nav class="pt-2">
+                
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#metadata-backups">Metadata Backups</a>
+      <ul>
+        <li><a href="#what-is-included-in-a-backup">What is included in a backup?</a></li>
+        <li><a href="#this-metadata-is-not-included-yet-but-will-be-soon">This metadata is not included yet but will be soon</a></li>
+        <li><a href="#this-metadata-is-not-included-due-to-github-api-restrictions">This metadata is not included due to GitHub API restrictions</a></li>
+        <li><a href="#what-is-inside-an-archive">What is inside an archive?</a></li>
+        <li><a href="#learn-more">Learn more</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+              </nav>
+            </aside>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

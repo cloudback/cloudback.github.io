@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cloudback.github.io/features/automated-daily-backups/</loc>
+    <lastmod>2021-07-22T17:02:21+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cloudback.github.io/</loc>
-    <lastmod>2021-04-29T19:28:31+03:00</lastmod>
+    <lastmod>2021-07-22T16:29:02+03:00</lastmod>
   </url>
   
   <url>
@@ -19,17 +24,22 @@
   
   <url>
     <loc>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</loc>
-    <lastmod>2021-06-19T11:11:23+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cloudback.github.io/how-to/how-to-backup-github-repository/</loc>
-    <lastmod>2021-04-25T22:55:14+03:00</lastmod>
+    <lastmod>2021-07-18T20:40:52+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</loc>
     <lastmod>2021-04-25T23:03:55+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/features/various-backup-storages/</loc>
+    <lastmod>2021-07-22T17:02:21+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/what-is-cloudback/</loc>
+    <lastmod>2021-07-22T15:56:15+03:00</lastmod>
   </url>
   
   <url>
@@ -43,8 +53,8 @@
   </url>
   
   <url>
-    <loc>https://cloudback.github.io/how-to/how-to-restore-backup/</loc>
-    <lastmod>2021-06-10T22:58:14+03:00</lastmod>
+    <loc>https://cloudback.github.io/features/metadata/</loc>
+    <lastmod>2021-07-22T17:02:21+03:00</lastmod>
   </url>
   
   <url>
@@ -53,13 +63,13 @@
   </url>
   
   <url>
-    <loc>https://cloudback.github.io/how-to/how-to-download-backup/</loc>
-    <lastmod>2021-05-20T17:24:22+03:00</lastmod>
+    <loc>https://cloudback.github.io/custom-storages/onedrive/</loc>
+    <lastmod>2021-06-18T17:03:58+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cloudback.github.io/custom-storages/onedrive/</loc>
-    <lastmod>2021-06-18T17:03:58+03:00</lastmod>
+    <loc>https://cloudback.github.io/features/manual-backups/</loc>
+    <lastmod>2021-07-22T17:02:21+03:00</lastmod>
   </url>
   
   <url>
@@ -68,43 +78,78 @@
   </url>
   
   <url>
+    <loc>https://cloudback.github.io/features/download-backups/</loc>
+    <lastmod>2021-07-22T17:02:21+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cloudback.github.io/getting-started/</loc>
-    <lastmod>2021-04-24T14:23:02+03:00</lastmod>
+    <lastmod>2021-07-22T16:59:26+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cloudback.github.io/how-to/</loc>
-    <lastmod>2021-06-28T22:48:59+03:00</lastmod>
+    <loc>https://cloudback.github.io/features/restore-to-github/</loc>
+    <lastmod>2021-07-22T17:02:21+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cloudback.github.io/custom-storages/</loc>
-    <lastmod>2021-06-28T22:48:59+03:00</lastmod>
+    <loc>https://cloudback.github.io/features/email-notifications/</loc>
+    <lastmod>2021-07-22T16:36:37+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/features/</loc>
+    <lastmod>2021-07-22T19:16:12+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/features/github-organizations/</loc>
+    <lastmod>2021-07-22T16:36:37+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/features/invoiced-customers/</loc>
+    <lastmod>2021-07-22T16:36:37+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/features/bulk-operations/</loc>
+    <lastmod>2021-07-22T16:36:37+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://cloudback.github.io/security/incident-response-plan/</loc>
-    <lastmod>2020-09-26T20:10:50+03:00</lastmod>
+    <lastmod>2020-09-26T20:14:32+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/custom-storages/</loc>
+    <lastmod>2021-07-22T16:59:26+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloudback.github.io/features/filter-repositories/</loc>
+    <lastmod>2021-07-22T16:36:37+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://cloudback.github.io/security/</loc>
-    <lastmod>2021-06-28T22:48:59+03:00</lastmod>
+    <lastmod>2021-07-22T16:36:37+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://cloudback.github.io/security/disaster-recovery-plan-policy/</loc>
-    <lastmod>2020-09-26T20:10:50+03:00</lastmod>
+    <lastmod>2020-09-26T20:14:32+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://cloudback.github.io/terms/</loc>
-    <lastmod>2020-09-26T20:10:50+03:00</lastmod>
+    <lastmod>2020-09-26T20:14:32+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://cloudback.github.io/security/data-breach-response-policy/</loc>
-    <lastmod>2020-09-26T20:10:50+03:00</lastmod>
+    <lastmod>2020-09-26T20:14:32+03:00</lastmod>
   </url>
   
   <url>
@@ -119,7 +164,7 @@
   
   <url>
     <loc>https://cloudback.github.io/security/vulnerability-management-workflow/</loc>
-    <lastmod>2020-09-26T20:10:50+03:00</lastmod>
+    <lastmod>2020-09-26T20:14:32+03:00</lastmod>
   </url>
   
   <url>

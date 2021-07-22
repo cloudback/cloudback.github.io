@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cloudback</title>
+    <title>Supported Storages on Cloudback</title>
     <link>https://cloudback.github.io/custom-storages/</link>
-    <description>Recent content on Cloudback</description>
+    <description>Recent content in Supported Storages on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="https://cloudback.github.io/custom-storages/index.xml" rel="self" type="application/rss+xml" />

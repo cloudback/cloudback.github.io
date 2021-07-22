@@ -1,3 +1,9 @@
+  function swapGif(sender) {
+    var src = sender.src 
+    sender.src = sender.getAttribute('data-alt'); 
+    sender.setAttribute('data-alt', src);
+  }
+
   function createCookie(name, value, days) {
     if (days) {
       var date = new Date();
@@ -22,7 +28,7 @@
   function eraseCookie(name) {
     createCookie(name, "", -1);
   }
-  
+    
   function applyStyle(theme) {
     const root = document.documentElement;
     switch (theme) {
@@ -33,13 +39,14 @@
         root.style.setProperty("--docs-menu-background", "aliceblue");
         root.style.setProperty("--docs-content-background", "white");
         root.style.setProperty("--search-results-background", "white");
-        root.style.setProperty("--search-icon-color", "#c0c1d2");
         root.style.setProperty("--search-input-background", "aliceblue");
         root.style.setProperty("--page-border-color", "lightgrey");
         root.style.setProperty("--shadow-color", "#c0c1d2");
         root.style.setProperty("--custom-link-color", "#007bff");
         root.style.setProperty("--link-active-color", "#007bff");
         root.style.setProperty("--text-color", "#24292e");
+        root.style.setProperty("--blur-background", "rgba(255, 255, 255, 0.2)");
+        root.style.setProperty("--blur-background-backdrop", "rgba(255, 255, 255, 0.95)");
         break;
       case "Dark theme":
         root.style.setProperty("--scrollbar-background", "#2F3136");
@@ -48,13 +55,14 @@
         root.style.setProperty("--docs-menu-background", "#2F3136");
         root.style.setProperty("--docs-content-background", "#36393F");
         root.style.setProperty("--search-results-background", "#36393F");
-        root.style.setProperty("--search-icon-color", "#36393F");
         root.style.setProperty("--search-input-background", "#2F3136");
         root.style.setProperty("--page-border-color", "#555555");
         root.style.setProperty("--shadow-color", "#202225");
         root.style.setProperty("--custom-link-color", "#3094ff");
         root.style.setProperty("--link-active-color", "#3094ff");
         root.style.setProperty("--text-color", "#DCDDDE");
+        root.style.setProperty("--blur-background", "rgba(54, 57, 63, 0.2)");
+        root.style.setProperty("--blur-background-backdrop", "rgba(54, 57, 63, 0.95)");
         break;
     }
   }

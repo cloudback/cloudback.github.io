@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudback</title>
+    <link>https://cloudback.github.io/features/</link>
+    <description>Recent content on Cloudback</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://cloudback.github.io/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automated Daily Backups</title>
+      <link>https://cloudback.github.io/features/automated-daily-backups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/automated-daily-backups/</guid>
+      <description>Automated Daily Backups This is why we created Cloudback - to continuously backup a repository and its metadata on a daily basis. Cloudback captures a backup daily at a defined hour according to a defined time zone and puts a resulting archive into defined storage.
+Schedule You can configure the exact hour you want to capture a backup every day. We recommend you to choose an hour when your repositories are not in use.</description>
+    </item>
+    
+    <item>
+      <title>Various Backup Storages</title>
+      <link>https://cloudback.github.io/features/various-backup-storages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/various-backup-storages/</guid>
+      <description>Various Backup Storages Cloudback allows you to store a backup archive in your own storage, leaving no copies to us. That is. Cloudback backs up a repository into an archive, sends the archive to your storage, and wipes the archive from Cloudback&amp;rsquo;s disk leaving no chance to recover any data from the Cloudback servers.
+Also, we offer our in-build storage named just Cloudback. It is an Azure Blob Storage with a Geo-redundant replication.</description>
+    </item>
+    
+    <item>
+      <title>Metadata Backups</title>
+      <link>https://cloudback.github.io/features/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/metadata/</guid>
+      <description>Metadata Backups Cloudback archives not only the whole git repository but GitHub-specific metadata as well. The list of metadata we are able to backup is not complete and is limited by the GitHub API.
+Important things to know:
+ We don&amp;rsquo;t backup your GitHub Account We don&amp;rsquo;t backup your GitHub Organization The resulting backup should never be considered as a complete all-embracing one  What is included in a backup? Here is the list of repository&amp;rsquo;s data in a backup archive:</description>
+    </item>
+    
+    <item>
+      <title>One-Click Manual Backups</title>
+      <link>https://cloudback.github.io/features/manual-backups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/manual-backups/</guid>
+      <description>One-Click Manual Backups Cloudback allows you to trigger a backup process on demand by clicking a single button. There are several use-cases when manual backups are useful:
+ You want to download your up-to-date data, no need to wait for an automatic trigger You want to test your own storage that you configured recently You want to secure your data at a specific point in time  Works only for scheduled repositories The Trigger backup now!</description>
+    </item>
+    
+    <item>
+      <title>Download Backups</title>
+      <link>https://cloudback.github.io/features/download-backups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/download-backups/</guid>
+      <description>Download Backups You can download an archive of any backup of your repositories. There is the Download this backup button in the repository card:
+Download dialog Once you click the Download this backup button the dialog will be shown. The dialog reminds you that the archive&amp;rsquo;s password will be sent to your email right after the download process is initiated.
+Archive&amp;rsquo;s password email You will receive an email with the password each time you download a repository backup:</description>
+    </item>
+    
+    <item>
+      <title>Restore to GitHub</title>
+      <link>https://cloudback.github.io/features/restore-to-github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/restore-to-github/</guid>
+      <description>Restore to GitHub Cloudback allows you to restore a particular backup into a GitHub repository. This is a manual operation accessible from the repository card in the Cloudback Dashboard.
+Prerequisites The restore process requires read-write access to your GitHub data. Permissions are managed by GitHub applications. Cloudback GitHub application has read-only access only, according to the least privilege principle. We published an additional Cloudback Restore GitHub application with read-write access to your data.</description>
+    </item>
+    
+    <item>
+      <title>[TBD] Email Notifications</title>
+      <link>https://cloudback.github.io/features/email-notifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/email-notifications/</guid>
+      <description>Email Notifications This page is under development. Please come back later.</description>
+    </item>
+    
+    <item>
+      <title>[TBD] GitHub Organizations</title>
+      <link>https://cloudback.github.io/features/github-organizations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/github-organizations/</guid>
+      <description>GitHub Organizations This page is under development. Please come back later.</description>
+    </item>
+    
+    <item>
+      <title>[TBD] Invoiced Customers</title>
+      <link>https://cloudback.github.io/features/invoiced-customers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/invoiced-customers/</guid>
+      <description>Invoiced Customers This page is under development. Please come back later.</description>
+    </item>
+    
+    <item>
+      <title>[TBD] Bulk Operations</title>
+      <link>https://cloudback.github.io/features/bulk-operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/bulk-operations/</guid>
+      <description>Bulk Operations This page is under development. Please come back later.</description>
+    </item>
+    
+    <item>
+      <title>[TBD] Filter Repositories</title>
+      <link>https://cloudback.github.io/features/filter-repositories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/filter-repositories/</guid>
+      <description>Filter Repositories This page is under development. Please come back later.</description>
+    </item>
+    
+  </channel>
+</rss>

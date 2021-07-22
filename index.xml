@@ -10,6 +10,16 @@
     
     
     <item>
+      <title>Automated Daily Backups</title>
+      <link>https://cloudback.github.io/features/automated-daily-backups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/automated-daily-backups/</guid>
+      <description>Automated Daily Backups This is why we created Cloudback - to continuously backup a repository and its metadata on a daily basis. Cloudback captures a backup daily at a defined hour according to a defined time zone and puts a resulting archive into defined storage.
+Schedule You can configure the exact hour you want to capture a backup every day. We recommend you to choose an hour when your repositories are not in use.</description>
+    </item>
+    
+    <item>
       <title>Amazon S3 Bucket via Access Key</title>
       <link>https://cloudback.github.io/custom-storages/amazon-s3-bucket-access-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -28,15 +38,6 @@
     </item>
     
     <item>
-      <title>How to backup GitHub repository</title>
-      <link>https://cloudback.github.io/how-to/how-to-backup-github-repository/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloudback.github.io/how-to/how-to-backup-github-repository/</guid>
-      <description>How to backup GitHub repository Automatically created backups There are two ways how Cloudback creates GitHub repository backups. The first way is automatically created backups that are displayed in the repository card in the Cloudback Dashboard. The backups are created using the schedule that is set up in the repository settings. The repository status &amp;lsquo;Scheduled&amp;rsquo; indicates that Cloudback will automatically create GitHub repository backup using the schedule. Automatically created backups are marked with the &amp;lsquo;Clock&amp;rsquo; icon.</description>
-    </item>
-    
-    <item>
       <title>How to create a new Microsoft Azure Blob Container</title>
       <link>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -44,6 +45,27 @@
       <guid>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</guid>
       <description>Backup GitHub repository using Azure: How to create a new Microsoft Azure Blob Container When creating GitHub repository backup using Cloudback you can set up your own Azure Storage where the backups will be saved. This article describes how to create a new Azure Blob Container for GitHub repository backups.
 About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data.</description>
+    </item>
+    
+    <item>
+      <title>Various Backup Storages</title>
+      <link>https://cloudback.github.io/features/various-backup-storages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/various-backup-storages/</guid>
+      <description>Various Backup Storages Cloudback allows you to store a backup archive in your own storage, leaving no copies to us. That is. Cloudback backs up a repository into an archive, sends the archive to your storage, and wipes the archive from Cloudback&amp;rsquo;s disk leaving no chance to recover any data from the Cloudback servers.
+Also, we offer our in-build storage named just Cloudback. It is an Azure Blob Storage with a Geo-redundant replication.</description>
+    </item>
+    
+    <item>
+      <title>What is Cloudback</title>
+      <link>https://cloudback.github.io/what-is-cloudback/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/what-is-cloudback/</guid>
+      <description>What is Cloudback Cloudback is the cloud backup service for GitHub repositories.
+The main feature is the support of various backup storages. When user storage is configured we do not store backup archives inside Cloudback infrastructure at all. All archives are put into your storage. In case you don&amp;rsquo;t have your own storage there is still an option to use our internal storage called Cloudback.
+It uses the official GitHub REST API to access repository metadata for backups.</description>
     </item>
     
     <item>
@@ -66,14 +88,14 @@ About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;
     </item>
     
     <item>
-      <title>How to restore backup</title>
-      <link>https://cloudback.github.io/how-to/how-to-restore-backup/</link>
+      <title>Metadata Backups</title>
+      <link>https://cloudback.github.io/features/metadata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/how-to/how-to-restore-backup/</guid>
-      <description>How to restore a backup of your GitHub repository After Cloudback created a backup of your GitHub repository, you may need to restore the backup at some point. The page describes the steps that should be taken to restore the backup.
-To restore a backup, click on the restore icon on the repository card:
-Cloudback uses a separate GitHub application to restore the backups. You can install the application manually using the following link.</description>
+      <guid>https://cloudback.github.io/features/metadata/</guid>
+      <description>Metadata Backups Cloudback archives not only the whole git repository but GitHub-specific metadata as well. The list of metadata we are able to backup is not complete and is limited by the GitHub API.
+Important things to know:
+ We don&amp;rsquo;t backup your GitHub Account We don&amp;rsquo;t backup your GitHub Organization The resulting backup should never be considered as a complete all-embracing one  What is included in a backup? Here is the list of repository&amp;rsquo;s data in a backup archive:</description>
     </item>
     
     <item>
@@ -87,15 +109,6 @@ Cloudback uses a separate GitHub application to restore the backups. You can ins
     </item>
     
     <item>
-      <title>How to download backup</title>
-      <link>https://cloudback.github.io/how-to/how-to-download-backup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloudback.github.io/how-to/how-to-download-backup/</guid>
-      <description>How to download a backup of your GitHub repository After Cloudback created a backup of your GitHub repository, you may need to download the backup at some point. For example, the backup can be used if you want to manually restore it by pushing the code back to GitHub or to another Git repository management tool. Also, the backup can be downloaded in case you want to use the metadata somehow, such as labels, issues, comments, and milestones.</description>
-    </item>
-    
-    <item>
       <title>Microsoft OneDrive</title>
       <link>https://cloudback.github.io/custom-storages/onedrive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -103,6 +116,16 @@ Cloudback uses a separate GitHub application to restore the backups. You can ins
       <guid>https://cloudback.github.io/custom-storages/onedrive/</guid>
       <description>Backup GitHub repository using Microsoft OneDrive About Microsoft OneDrive OneDrive is the cloud storage service that Microsoft offers to store all your files securely in one place, which you can then access from virtually anywhere.
  Set up Microsoft OneDrive Personal:App&amp;rsquo;s Folder  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the + New storage button:    Type a storage name:     Select Microsoft OneDrive Personal:App&#39;s Folder</description>
+    </item>
+    
+    <item>
+      <title>One-Click Manual Backups</title>
+      <link>https://cloudback.github.io/features/manual-backups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/manual-backups/</guid>
+      <description>One-Click Manual Backups Cloudback allows you to trigger a backup process on demand by clicking a single button. There are several use-cases when manual backups are useful:
+ You want to download your up-to-date data, no need to wait for an automatic trigger You want to test your own storage that you configured recently You want to secure your data at a specific point in time  Works only for scheduled repositories The Trigger backup now!</description>
     </item>
     
     <item>
@@ -115,6 +138,63 @@ Cloudback uses a separate GitHub application to restore the backups. You can ins
     </item>
     
     <item>
+      <title>Download Backups</title>
+      <link>https://cloudback.github.io/features/download-backups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/download-backups/</guid>
+      <description>Download Backups You can download an archive of any backup of your repositories. There is the Download this backup button in the repository card:
+Download dialog Once you click the Download this backup button the dialog will be shown. The dialog reminds you that the archive&amp;rsquo;s password will be sent to your email right after the download process is initiated.
+Archive&amp;rsquo;s password email You will receive an email with the password each time you download a repository backup:</description>
+    </item>
+    
+    <item>
+      <title>Restore to GitHub</title>
+      <link>https://cloudback.github.io/features/restore-to-github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/restore-to-github/</guid>
+      <description>Restore to GitHub Cloudback allows you to restore a particular backup into a GitHub repository. This is a manual operation accessible from the repository card in the Cloudback Dashboard.
+Prerequisites The restore process requires read-write access to your GitHub data. Permissions are managed by GitHub applications. Cloudback GitHub application has read-only access only, according to the least privilege principle. We published an additional Cloudback Restore GitHub application with read-write access to your data.</description>
+    </item>
+    
+    <item>
+      <title>[TBD] Email Notifications</title>
+      <link>https://cloudback.github.io/features/email-notifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/email-notifications/</guid>
+      <description>Email Notifications This page is under development. Please come back later.</description>
+    </item>
+    
+    <item>
+      <title>[TBD] GitHub Organizations</title>
+      <link>https://cloudback.github.io/features/github-organizations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/github-organizations/</guid>
+      <description>GitHub Organizations This page is under development. Please come back later.</description>
+    </item>
+    
+    <item>
+      <title>[TBD] Invoiced Customers</title>
+      <link>https://cloudback.github.io/features/invoiced-customers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/invoiced-customers/</guid>
+      <description>Invoiced Customers This page is under development. Please come back later.</description>
+    </item>
+    
+    <item>
+      <title>[TBD] Bulk Operations</title>
+      <link>https://cloudback.github.io/features/bulk-operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/bulk-operations/</guid>
+      <description>Bulk Operations This page is under development. Please come back later.</description>
+    </item>
+    
+    <item>
       <title>Incident Response Plan</title>
       <link>https://cloudback.github.io/security/incident-response-plan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -122,6 +202,15 @@ Cloudback uses a separate GitHub application to restore the backups. You can ins
       <guid>https://cloudback.github.io/security/incident-response-plan/</guid>
       <description>Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document discusses the steps taken during an incident response plan.
 Incident Response Process  The person who discovers the incident should contact Cloudback by one of the following ways:   Send an email to the support@cloudback.it Raise a request in the Cloudback issue tracker Use any contacts from Contact Us web page   If the person discovering the incident is a member of the Cloudback team, they will proceed to step four (4).</description>
+    </item>
+    
+    <item>
+      <title>[TBD] Filter Repositories</title>
+      <link>https://cloudback.github.io/features/filter-repositories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/filter-repositories/</guid>
+      <description>Filter Repositories This page is under development. Please come back later.</description>
     </item>
     
     <item>
