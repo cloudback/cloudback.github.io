@@ -83,12 +83,14 @@ Why can a backup fail?</description>
     </item>
     
     <item>
-      <title>[TBD] GitHub Organizations</title>
+      <title>GitHub Organizations</title>
       <link>https://cloudback.github.io/features/github-organizations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudback.github.io/features/github-organizations/</guid>
-      <description>GitHub Organizations This page is under development. Please come back later.</description>
+      <description>GitHub Organizations Cloudback supports shared team accounts called GitHub Organization. You can purchase a paid plan in GitHub Marketplace for your organization&amp;rsquo;s account and repositories will appear in Cloudback Dashboard. This way several team members may configure and control backups for your organizations using a single shared dashboard.
+Please note that only organization members with the role Owner will be able to access the organization&amp;rsquo;s repositories in Cloudback.
+Learn more   GitHub: About organizations  GitHub: Permission levels for an organization  </description>
     </item>
     
     <item>
