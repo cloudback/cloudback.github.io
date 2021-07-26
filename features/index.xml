@@ -72,12 +72,14 @@ Prerequisites The restore process requires read-write access to your GitHub data
     </item>
     
     <item>
-      <title>[TBD] Email Notifications</title>
+      <title>Email Notifications</title>
       <link>https://cloudback.github.io/features/email-notifications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudback.github.io/features/email-notifications/</guid>
-      <description>Email Notifications This page is under development. Please come back later.</description>
+      <description>Email Notifications If something goes wrong and a backup process fails we will send you an email notification. We send notifications daily at 22:00 UTC with all failures in the previous 24 hours.
+Once backup is failed our Support Team gets notification as well. Is the issue is not related to storage, the team starts investigation as soon as possible and reports you their findings by email.
+Why can a backup fail?</description>
     </item>
     
     <item>
