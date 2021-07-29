@@ -116,12 +116,14 @@ Wildcard characters:
     </item>
     
     <item>
-      <title>[TBD] Filter Repositories</title>
-      <link>https://cloudback.github.io/features/filter-repositories/</link>
+      <title>Backup Status Badge</title>
+      <link>https://cloudback.github.io/features/status-badges/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/filter-repositories/</guid>
-      <description>Filter Repositories This page is under development. Please come back later.</description>
+      <guid>https://cloudback.github.io/features/status-badges/</guid>
+      <description>Backup Status Badge The badge represents the status of the latest backup created by Cloudback. The badge can be embedded into any web page. Here is the badge:
+ 
+You can find a sample usage in the Cloudback&amp;rsquo;s Documentation repository home page: https://github.com/cloudback/docs#readme</description>
     </item>
     
   </channel>
