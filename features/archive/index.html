@@ -37,12 +37,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Getting Started | Cloudback</title>
+<title>What is inside of an archive? | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/book.min.ae12c3246664718d601133988c346aeaebd3590b685ec4fd4c25a6ececb0c830.css" integrity="sha256-rhLDJGZkcY1gETOYjDRq6uvTWQtoXsT9TCWm7OywyDA=">
-<link rel="alternate" type="application/rss+xml" href="https://cloudback.github.io/getting-started/index.xml" title="Cloudback" />
 <script src="/docs.js"></script>
 
   
@@ -1282,7 +1281,7 @@
   
 
   
-    <a href="https://cloudback.github.io/getting-started/" class="docs-menu-item d-flex  active">
+    <a href="https://cloudback.github.io/getting-started/" class="docs-menu-item d-flex ">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Getting Started</span>
       </div>
@@ -1304,7 +1303,7 @@
   
 
   
-    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox"  />
+    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox" checked />
     <label for="section-6ec23f89d32660817763f346261794c8">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
@@ -1518,7 +1517,7 @@
   
 
   
-    <a href="https://cloudback.github.io/features/archive/" class="docs-menu-item d-flex ">
+    <a href="https://cloudback.github.io/features/archive/" class="docs-menu-item d-flex  active">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">What is inside of an archive?</span>
       </div>
@@ -1960,74 +1959,37 @@
               
               
 			        
-  <article class="markdown-body"><h1 id="getting-started">Getting Started</h1>
-<p>This is a short instruction describing how to start creating backups for your GitHub repositories.</p>
-<h1 id="installation">Installation</h1>
-<p>Follow these simple steps below to start using Cloudback.</p>
-<h2 id="step-1-set-up-a-new-plan-from-the-github-marketplace">Step 1: Set up a new plan from the GitHub Marketplace</h2>
+  <article class="markdown-body"><h1 id="what-is-inside-of-an-archive">What is inside of an archive?</h1>
+<p>The archive represents 
+  <a href="https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-5.2.0.txt">ZIP File Version 5.2</a> with 
+  <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES-256</a> encryption. <strong>Be aware that AES encryption is not widely supported by ZIP tools and archivers.</strong> For instance, Microsoft Windows Compressed Folders 
+  <a href="https://devblogs.microsoft.com/oldnewthing/20180515-00/?p=98755">does not support AES encryption</a> and won&rsquo;t be able to open any AES-encrypted ZIP archive. Please consider using third-party software. We recommend you 
+  <a href="https://www.7-zip.org/">7-Zip</a> which is cross-platform and is free for commercial use (there are limitations, please refer to 
+  <a href="https://www.7-zip.org/license.txt">7-Zip License</a> for details).</p>
+<p>Also, please note that we put one ZIP into another one. This is done to encrypt filenames inside an archive. Filename encryption is introduced in 
+  <a href="https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-6.2.0.txt">ZIP File Format Specification 6.2</a>. We decided to keep version 5.2 for better compatibility.</p>
+<h4 id="sample-archive">Sample archive</h4>
+<p>You can download a sample archive by the link below:</p>
 <ul>
-<li>Open Cloudback&rsquo;s page on the GitHub Marketplace by clicking on the 
-  <a href="https://github.com/marketplace/cloudback">following link</a></li>
-<li>Click on the <code>Set up a plan</code> button.</li>
+<li>
+  <a href="/static/features/bee12062e5d741b1baf334088c2c980d.zip">bee12062e5d741b1baf334088c2c980d.zip</a></li>
 </ul>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot1.png?raw=true" alt="social img" class="screenshot">
-</p>
+<img src="/static/features/zip-aes.png" alt="Inside a backup 1"/>
+<h4 id="password-prompt">Password prompt</h4>
+<p>The archive is password protected in the same way as all Cloudback backups are. A new password is generated every time a new backup is created. Here is a password for this particular archive:</p>
 <ul>
-<li>In the <em>Pricing and Setup</em> section select the account for which the Cloudback application will be installed and then click on the <code>Install it for free</code> button</li>
+<li>c8f42392e86e4f7fbe8b4adf7ec65694</li>
 </ul>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot2.png?raw=true" alt="social img" class="screenshot">
-</p>
+<img src="/static/features/zip-password.png" alt="Inside a backup 2"/>
+<h4 id="archive-content">Archive content</h4>
+<img src="/static/features/zip-content.png" alt="Inside a backup 3"/>
+<h2 id="learn-more">Learn more</h2>
 <ul>
-<li>Review your order to make sure you&rsquo;ve selected the correct plan and account. After that click on the <code>Complete order and begin installation</code></li>
+<li>
+  <a href="/features/metadata/">What is inside of a backup?</a></li>
+<li>
+  <a href="/features/various-backup-storages/">What is a backup storage?</a></li>
 </ul>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot3.png?raw=true" alt="social img" class="screenshot">
-</p>
-<p>You will be redirected to the Cloudback application installation page.</p>
-<h2 id="step-2-install-github-application">Step 2: Install GitHub application</h2>
-<ul>
-<li>On the Cloudback installation page, select the repositories you want to backup by providing Cloudback the access to them</li>
-<li>Click on the <code>Install</code> button</li>
-</ul>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot4.png?raw=true" alt="social img" class="screenshot">
-</p>
-<ul>
-<li>Wait until you will be redirected to authorization page. Click on the <code>Authorize Cloudback</code> button</li>
-</ul>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot5.png?raw=true" alt="social img" class="screenshot">
-</p>
-<ul>
-<li>You then will be redirected to the Cloudback Dashboard</li>
-</ul>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot6.png?raw=true" alt="social img" class="screenshot">
-</p>
-<h2 id="step-3-complete-installation-on-cloudback-dashboard">Step 3: Complete installation on Cloudback Dashboard</h2>
-<ul>
-<li>On the Cloudback Dashboard page review the default settings that will be used for creating repository backups</li>
-<li>Accept the Cloudback&rsquo;s Terms of Service and Privacy Policy by clicking on the corresponding checkboxes</li>
-<li>Click on the <code>Next step: select repositories</code> button</li>
-</ul>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot7.png?raw=true" alt="social img" class="screenshot">
-</p>
-<ul>
-<li>Enable the repositories you want to backup. Please note that you can&rsquo;t enable more repositories than you have purchased earlier</li>
-</ul>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot8.png?raw=true" alt="social img" class="screenshot">
-</p>
-<ul>
-<li>Click on the <code>Start backuping!</code> button.</li>
-</ul>
-<p>That&rsquo;s it, you now have completed the installation</p>
-<p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/screeshot9.png?raw=true" alt="social img" class="screenshot">
-</p>
 </article>
 
               
@@ -2036,17 +1998,17 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/b22950030205811d89c7af156947f9b88f2546d0"
-                       title="Last modified by Victor Vorobyev | Jul 22, 2021" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/2d8695aff1f5cce6254a45d055347ecd967e8179"
+                       title="Last modified by Victor Vorobyev | Aug 14, 2021" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Jul 22, 2021</span>
+                      <span class="pl-2">Aug 14, 2021</span>
                     </a>
                     
                   </div>
                    <div class="article-footer-btn p-2">
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/getting-started/_index.md" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/archive.md" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
                       </svg>
@@ -2090,12 +2052,14 @@
                 
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#installation">Installation</a>
+    <li><a href="#what-is-inside-of-an-archive">What is inside of an archive?</a>
       <ul>
-        <li><a href="#step-1-set-up-a-new-plan-from-the-github-marketplace">Step 1: Set up a new plan from the GitHub Marketplace</a></li>
-        <li><a href="#step-2-install-github-application">Step 2: Install GitHub application</a></li>
-        <li><a href="#step-3-complete-installation-on-cloudback-dashboard">Step 3: Complete installation on Cloudback Dashboard</a></li>
+        <li>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#learn-more">Learn more</a></li>
       </ul>
     </li>
   </ul>

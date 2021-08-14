@@ -1200,6 +1200,40 @@
                       </a>
                     </li>
                   
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/archive/">What is inside of an archive?<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Archive
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
                   <li class="nothing-found" id="nothing-found">No pages found</li>
                 </ul>
               </div>
@@ -1469,6 +1503,23 @@
     <a href="https://cloudback.github.io/features/status-badges/" class="docs-menu-item d-flex ">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Backup Status Badge</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/features/archive/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">What is inside of an archive?</span>
       </div>
     </a>
   
@@ -1917,26 +1968,7 @@
   <a href="/features/various-backup-storages/">your own storage</a> that you configured recently</li>
 <li>You want to secure your data at a specific point in time</li>
 </ul>
-<img src="/static/features/manual-backup.png" alt="Manual Backup" width=500/>
-<h2 id="works-only-for-scheduled-repositories">Works only for scheduled repositories</h2>
-<p>The <code>Trigger backup now!</code> button is enabled only for scheduled repositories. You can schedule a repository in the <code>Repository settings</code> dialog of the card on the dashboard:</p>
-<p align="center">
-  <img src="/static/features/schedule-if-disabled.png" data-alt="/static/features/schedule-if-disabled.gif"
-       alt="Schedule if disabled" onclick="swapGif(this)" style="cursor: pointer;"/>
-</p>
-<h2 id="number-of-scheduled-repositories">Number of scheduled repositories</h2>
-<p>The overall number of scheduled repositories depends on a purchased 
-  <a href="https://github.com/marketplace/cloudback">GitHub Marketplace Plan</a> and a purchased number of <code>units</code>. The detailed information on the available number of <code>units</code> can be found in the <code>Billing profile</code> dialog in the <code>Main menu</code>:</p>
-<ul>
-<li>Repositories section:
-<ul>
-<li><strong>Purchased</strong>: the overall number of purchased repositories</li>
-<li><strong>In use</strong>: the number of scheduled repositories</li>
-<li><strong>Remaining</strong>: the delta between the number of purchased and the number of scheduled</li>
-</ul>
-</li>
-</ul>
-<img src="/static/features/billing-profile.png" alt="Billing Profile"/>
+<img src="/static/features/manual-backup.png" alt="Manual Backup" width=450/>
 <h2 id="trigger-a-backup">Trigger a backup</h2>
 <p>Once your repository is scheduled, just click a button and trigger a backup, that&rsquo;s all:</p>
 <p align="center">
@@ -1952,6 +1984,8 @@
 <li>
   <a href="/features/metadata/">What is inside of a backup?</a></li>
 <li>
+  <a href="/features/archive/">What is inside of an archive?</a></li>
+<li>
   <a href="/features/email-notifications/">What is an email notification?</a></li>
 </ul>
 </article>
@@ -1962,12 +1996,12 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/718dc6526174c640d3790f62864d4b1b04c69b28"
-                       title="Last modified by Victor Vorobyev | Jul 22, 2021" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/2d8695aff1f5cce6254a45d055347ecd967e8179"
+                       title="Last modified by Victor Vorobyev | Aug 14, 2021" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Jul 22, 2021</span>
+                      <span class="pl-2">Aug 14, 2021</span>
                     </a>
                     
                   </div>
@@ -2018,8 +2052,6 @@
   <ul>
     <li><a href="#one-click-manual-backups">One-Click Manual Backups</a>
       <ul>
-        <li><a href="#works-only-for-scheduled-repositories">Works only for scheduled repositories</a></li>
-        <li><a href="#number-of-scheduled-repositories">Number of scheduled repositories</a></li>
         <li><a href="#trigger-a-backup">Trigger a backup</a></li>
         <li><a href="#email-notification-are-disabled-for-manual-backups">Email notification are disabled for manual backups</a></li>
         <li><a href="#learn-more">Learn more</a></li>

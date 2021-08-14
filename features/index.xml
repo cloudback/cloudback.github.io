@@ -47,7 +47,7 @@ Important things to know:
       
       <guid>https://cloudback.github.io/features/manual-backups/</guid>
       <description>One-Click Manual Backups Cloudback allows you to trigger a backup process on demand by clicking a single button. There are several use-cases when manual backups are useful:
- You want to download your up-to-date data, no need to wait for an automatic trigger You want to test your own storage that you configured recently You want to secure your data at a specific point in time  Works only for scheduled repositories The Trigger backup now!</description>
+ You want to download your up-to-date data, no need to wait for an automatic trigger You want to test your own storage that you configured recently You want to secure your data at a specific point in time  Trigger a backup Once your repository is scheduled, just click a button and trigger a backup, that&amp;rsquo;s all:</description>
     </item>
     
     <item>
@@ -124,6 +124,15 @@ Wildcard characters:
       <description>Backup Status Badge The badge represents the status of the latest backup created by Cloudback. The badge can be embedded into any web page. Here is the badge:
  
 You can find a sample usage in the Cloudback&amp;rsquo;s Documentation repository home page: https://github.com/cloudback/docs#readme</description>
+    </item>
+    
+    <item>
+      <title>What is inside of an archive?</title>
+      <link>https://cloudback.github.io/features/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/features/archive/</guid>
+      <description>What is inside of an archive? The archive represents ZIP File Version 5.2 with AES-256 encryption. Be aware that AES encryption is not widely supported by ZIP tools and archivers. For instance, Microsoft Windows Compressed Folders does not support AES encryption and won&amp;rsquo;t be able to open any AES-encrypted ZIP archive. Please consider using third-party software. We recommend you 7-Zip which is cross-platform and is free for commercial use (there are limitations, please refer to 7-Zip License for details).</description>
     </item>
     
   </channel>
