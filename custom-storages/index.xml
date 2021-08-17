@@ -4,11 +4,7 @@
     <title>Supported Storages on Cloudback</title>
     <link>https://cloudback.github.io/custom-storages/</link>
     <description>Recent content in Supported Storages on Cloudback</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://cloudback.github.io/custom-storages/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://cloudback.github.io/custom-storages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Amazon S3 Bucket via Access Key</title>
       <link>https://cloudback.github.io/custom-storages/amazon-s3-bucket-access-key/</link>

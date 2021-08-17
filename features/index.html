@@ -34,6 +34,22 @@
       "applicationCategory": "SecurityApplication"
     }
   </script>
+  <script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+  
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -41,7 +57,7 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/book.min.ae12c3246664718d601133988c346aeaebd3590b685ec4fd4c25a6ececb0c830.css" integrity="sha256-rhLDJGZkcY1gETOYjDRq6uvTWQtoXsT9TCWm7OywyDA=">
+<link rel="stylesheet" href="/book.min.5734e8b3949c41042465186f376f9234c0e4583543e7e87b4bef0a6e2dbc2b54.css" integrity="sha256-VzTos5ScQQQkZRhvN2&#43;SNMDkWDVD5&#43;h7S&#43;8Kbi28K1Q=">
 <link rel="alternate" type="application/rss+xml" href="https://cloudback.github.io/features/index.xml" title="Cloudback" />
 <script src="/docs.js"></script>
 
@@ -49,8 +65,100 @@
 </head>
 
 
+
+
+
 <body class="body-background">
   <div class="page d-flex flex-column h-100">
+    
+      
+        <div class="d-flex flex-column w-100 big-header position-relative">
+            <div class="w-100 flex-grow-1">
+    <svg preserveAspectRatio="xMidYMin meet" class="float-left position-absolute h-100 width-auto svg-background" 
+      width="875" height="500" viewBox="0 0 875 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0L461.5 245.5L875 0H0Z" fill="url(#paint0_linear)" fill-opacity="0.42"/>
+      <path d="M3.96393e-05 499.5L0 0L461.5 245.5L3.96393e-05 499.5Z" fill="var(--docs-menu-background)"/>
+      <defs>
+        <linearGradient id="paint0_linear" x1="-1.14624e-05" y1="615" x2="832.965" y2="487.073" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#7B93AC"/>
+          <stop offset="1" stop-color="#7B93AC" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="w-100 flex-grow-1">
+    <svg preserveAspectRatio="xMidYMax meet" class="float-right position-absolute h-100 bottom-0 right-0 width-auto svg-background" 
+      width="875" height="500" viewBox="0 0 875 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M875 500V0L455 256.147L875 500Z" fill="url(#paint1_linear)" fill-opacity="0.42"/>
+      <path d="M875 500.001H0L455 256.15L875 500.001Z" fill="var(--docs-menu-background)"/>
+      <defs>
+        <linearGradient id="paint1_linear" x1="1076.37" y1="383.956" x2="1115.67" y2="89.6407" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#7B93AC"/>
+          <stop offset="1" stop-color="#7B93AC" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="z-index-10">
+    <div class="m-3">
+      <div class="container d-flex">
+        <a href="/" class="d-flex align-center text-color scale-on-hover">
+          <svg class="h36 w36" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="var(--text-color)">
+            <path d="M18.5263 25.2632C22.247 25.2632 25.2632 22.247 25.2632 18.5263C25.2632 14.8057 22.247 11.7895 18.5263 11.7895C14.8057 11.7895 11.7895 14.8057 11.7895 18.5263C11.7895 22.247 14.8057 25.2632 18.5263 25.2632Z"/>
+            <path d="M18.5263 52.2105C22.247 52.2105 25.2632 49.1943 25.2632 45.4737C25.2632 41.753 22.247 38.7368 18.5263 38.7368C14.8057 38.7368 11.7895 41.753 11.7895 45.4737C11.7895 49.1943 14.8057 52.2105 18.5263 52.2105Z"/>
+            <path d="M45.4737 52.2105C49.1943 52.2105 52.2105 49.1943 52.2105 45.4737C52.2105 41.753 49.1943 38.7368 45.4737 38.7368C41.753 38.7368 38.7368 41.753 38.7368 45.4737C38.7368 49.1943 41.753 52.2105 45.4737 52.2105Z"/>
+            <path d="M15.1579 18.5263H21.8947V45.4737H15.1579V18.5263Z"/>
+            <path d="M15.1579 19.9215L19.9216 15.1578L47.3126 42.5489L42.549 47.3125L15.1579 19.9215Z"/>
+            <path d="M0 10.1053C0 4.52428 4.52428 0 10.1053 0H53.8947C59.4757 0 64 4.52428 64 10.1053V18.5263H57.2632V11.7895C57.2632 8.99898 55.001 6.73684 52.2105 6.73684H11.7895C8.99898 6.73684 6.73684 8.99898 6.73684 11.7895V52.2105C6.73684 55.001 8.99898 57.2632 11.7895 57.2632H52.2105C55.001 57.2632 57.2632 55.001 57.2632 52.2105V45.4737H64V53.8947C64 59.4757 59.4757 64 53.8947 64H10.1053C4.52428 64 0 59.4757 0 53.8947V10.1053Z"/>
+          </svg>
+          <h3 class="align-center fw600 pl-2 hide-768">Cloudback</h3>
+        </a>
+        <div class="flex-grow-1"></div>
+        <a href="http://cloudback.it/" class="d-flex align-center text-color scale-on-hover">
+          <h3 class="align-center fw600 pl-3 pr-3 hide-768">Home</h3>
+        </a>
+        <a href="/" class="d-flex align-center text-color scale-on-hover">
+          <h3 class="align-center fw600 pl-3 pr-3 hide-768">Docs</h3>
+        </a>
+        <a href="/posts" class="d-flex align-center text-color scale-on-hover">
+          <h3 class="align-center fw600 pl-3 pr-3 hide-768">Blog</h3>
+        </a>
+        <div class="d-flex justify-end pr-3 pl-3">
+          <div class="d-table h-100">
+            <div class="d-table-cell v-align-middle">
+              <select class="p-1 docs-content-background font-size-small" id="theme-select">
+                <option>Light theme</option>
+                <option>Dark theme</option>
+              </select>  
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/marketplace/cloudback" class="sign-in-btn shadow-sm d-flex align-center float-right docs-content-background">
+          <svg class="h20 w20" fill="var(--text-color)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+          <span class="pl-2 fw600">Start Free Trial</span>
+        </a>
+      </div>
+      <div class="show-768">
+        <div class="container d-flex pt-3 pb-3">
+          <div class="flex-grow-1"></div>
+          <a href="http://cloudback.it/" class="d-flex align-center text-color scale-on-hover">
+            <h3 class="align-center fw600 pr-3">Home</h3>
+          </a>
+          <a href="/" class="d-flex align-center text-color scale-on-hover">
+            <h3 class="align-center fw600 pl-3 pr-3">Docs</h3>
+          </a>
+          <a href="/posts" class="d-flex align-center text-color scale-on-hover">
+            <h3 class="align-center fw600 pl-3">Blog</h3>
+          </a>
+          <div class="flex-grow-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+      
     
     <input type="checkbox" class="hidden menu-control" id="menu-control">
     <main class="page-main container w-100">
@@ -59,20 +167,13 @@
         
         <aside class="docs-menu">
           <div class="docs-menu-content">
-            <div class="docs-menu-logo">
-              <div class="d-flex h-100 pl-4 pt-4 pb-3 pr-2 flex-grow-1">
-                <a class="d-flex" href="/">
-                  <div class="h36"><img class="h36 w36 rounded" src="/static/Logo.png" alt="menu" /></div>
-                  <div class="h36 d-table">
-                    <h3 class="pl-2 pr-2 menu-header-link d-table-cell v-align-middle fw600">Cloudback</h3>
-                  </div>
-                </a>
-              </div>
+            <div class="d-flex">
               <div class="close-menu">
                 <div class="p-2">
                   <label for="menu-control" class="toc-label toc-label-close cursor-pointer p-2">
                     <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                      <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+                      <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z">
+                      </path>
                     </svg>
                   </label>
                 </div>
@@ -348,6 +449,32 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/posts/">Blog<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/bulk-operations/">Bulk Operations<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -393,6 +520,108 @@
         
           
           Categories
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/categories/cloudback/">Cloudback<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Categories
+        
+    
+        
+        
+          
+             > 
+          
+          Cloudback
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/tags/cloudback/">Cloudback<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+             > 
+          
+          Cloudback
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/posts/paid-plans-announcement/">Cloudback introduces new marketplace plans<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Paid Plans Announcement
         
     
         
@@ -570,6 +799,40 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/posts/first-release/">First public release of Cloudback<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          First Release
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://cloudback.github.io/getting-started/">Getting Started<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -581,6 +844,40 @@
         
           
           Getting Started
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/tags/github-marketplace/">GitHub Marketplace<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+             > 
+          
+          Github Marketplace
         
     
         
@@ -936,6 +1233,74 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/categories/news/">News<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Categories
+        
+    
+        
+        
+          
+             > 
+          
+          News
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/tags/news/">News<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+             > 
+          
+          News
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://cloudback.github.io/features/manual-backups/">One-Click Manual Backups<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -981,6 +1346,74 @@
         
           
           Privacy
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/categories/release-notes/">Release notes<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Categories
+        
+    
+        
+        
+          
+             > 
+          
+          Release Notes
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/tags/release-notes/">Release notes<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+             > 
+          
+          Release Notes
         
     
         
@@ -1176,6 +1609,74 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/posts/onedrive/">We support new storage now: Microsoft OneDrive<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Onedrive
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://cloudback.github.io/posts/openstack-swift/">We support new storage now: OpenStack Swift<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Openstack Swift
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://cloudback.github.io/what-is-cloudback/">What is Cloudback<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -1289,11 +1790,6 @@
     </a>
   
 
-          
-  <ul>
-    
-  </ul>
-
         </li>
       
     
@@ -1308,8 +1804,7 @@
     <label for="section-6ec23f89d32660817763f346261794c8">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
-          <a href="https://cloudback.github.io/features/" 
-            class="active">Features</a>
+          <a href="https://cloudback.github.io/features/" class="active">Features</a>
           <span class="docs-menu-item-icon flex-grow-1 text-right">
             <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
               <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
@@ -1322,6 +1817,7 @@
   
 
           
+            
   <ul>
     
       
@@ -1530,6 +2026,7 @@
     
   </ul>
 
+          
         </li>
       
     
@@ -1544,8 +2041,7 @@
     <label for="section-b0ec2e819329f103ee9e810e29eed2ea">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
-          <a href="https://cloudback.github.io/custom-storages/" 
-            class="">Supported Storages</a>
+          <a href="https://cloudback.github.io/custom-storages/" class="">Supported Storages</a>
           <span class="docs-menu-item-icon flex-grow-1 text-right">
             <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
               <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
@@ -1558,6 +2054,7 @@
   
 
           
+            
   <ul>
     
       
@@ -1571,8 +2068,7 @@
     <label for="section-de558aee27ab4590ca6c33f7ac98de5e">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
-          <a href="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/" 
-            class="">Microsoft Azure Blob Container</a>
+          <a href="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/" class="">Microsoft Azure Blob Container</a>
           <span class="docs-menu-item-icon flex-grow-1 text-right">
             <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
               <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
@@ -1585,6 +2081,7 @@
   
 
           
+            
   <ul>
     
       
@@ -1623,6 +2120,7 @@
     
   </ul>
 
+          
         </li>
       
     
@@ -1730,6 +2228,7 @@
     
   </ul>
 
+          
         </li>
       
     
@@ -1744,8 +2243,7 @@
     <label for="section-4e896db703975006e00bbc21e8553d62">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
-          <a href="https://cloudback.github.io/security/" 
-            class="">Security</a>
+          <a href="https://cloudback.github.io/security/" class="">Security</a>
           <span class="docs-menu-item-icon flex-grow-1 text-right">
             <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
               <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
@@ -1758,6 +2256,7 @@
   
 
           
+            
   <ul>
     
       
@@ -1830,6 +2329,7 @@
     
   </ul>
 
+          
         </li>
       
     
@@ -1848,10 +2348,12 @@
   
 
           
+            
   <ul>
     
   </ul>
 
+          
         </li>
       
     
@@ -1870,10 +2372,12 @@
   
 
           
+            
   <ul>
     
   </ul>
 
+          
         </li>
       
     
@@ -1892,10 +2396,30 @@
   
 
           
+            
   <ul>
     
   </ul>
 
+          
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://cloudback.github.io/posts/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Blog</span>
+      </div>
+    </a>
+  
+
+          
         </li>
       
     
@@ -1919,7 +2443,7 @@
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.docs-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.docs-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
             </nav>
@@ -1928,44 +2452,30 @@
         
         <div class="docs-page docs-content-background d-flex flex-column">
           
-          <header class="docs-header p-2">
-            <div class="d-flex align-center h32">
-              
-              <div class="docs-header-logo pr-2">
-                <label for="menu-control" class="toc-label toc-label-left cursor-pointer p-2">
-                  <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
-                  </svg>
-                </label>
+            <header class="docs-header p-2">
+              <div class="d-flex align-center h32">
+                
+                  <div class="docs-header-logo pr-2">
+                    <label for="menu-control" class="toc-label toc-label-left cursor-pointer p-2">
+                      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                      </svg>
+                    </label>
+                  </div>
+                
+                <div class="flex-grow-1">
+                </div>
+                
               </div>
-              
-              <div class="flex-grow-1">
-              </div>
-              
-            </div>
-          </header>
+            </header>
           
           <div class="page-with-toc d-flex flex-grow-1">
             <div class="flex-column d-flex flex-grow-1">
-              
-              
-                <div class="d-flex justify-end pr-5 pt-2">
-                  <div class="d-table h32">
-                    <div class="d-table-cell v-align-middle">
-                      <select class="p-1 docs-content-background font-size-small" id="theme-select">
-                        <option>Light theme</option>
-                        <option>Dark theme</option>
-                      </select>  
-                    </div>
-                  </div>
-                </div>
-              
-              
 			        
   <article class="markdown-body"><h1 id="cloudback-features">Cloudback Features</h1>
 <div class="flex-row-to-column">
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/automated-daily-backups.png' alt="feature image" title="feature image">
       </div>
@@ -1976,7 +2486,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/automated-daily-backups' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/automated-daily-backups' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -1985,7 +2495,7 @@
       </div>
     </div>
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/various-backup-storages.png' alt="feature image" title="feature image">
       </div>
@@ -1996,7 +2506,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/various-backup-storages' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/various-backup-storages' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2005,7 +2515,7 @@
       </div>
     </div>
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/metadata-backups.png' alt="feature image" title="feature image">
       </div>
@@ -2016,7 +2526,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/metadata' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/metadata' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2027,7 +2537,7 @@
 </div>
 <div class="flex-row-to-column">
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/one-click-manual-backup.png' alt="feature image" title="feature image">
       </div>
@@ -2038,7 +2548,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/manual-backups' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/manual-backups' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2047,7 +2557,7 @@
       </div>
     </div>
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/download-backups.png' alt="feature image" title="feature image">
       </div>
@@ -2058,7 +2568,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/download-backups' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/download-backups' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2067,7 +2577,7 @@
       </div>
     </div>
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/restore-to-github.png' alt="feature image" title="feature image">
       </div>
@@ -2078,7 +2588,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/restore-to-github' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/restore-to-github' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2089,7 +2599,7 @@
 </div>
 <div class="flex-row-to-column">
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/email-notifications.png' alt="feature image" title="feature image">
       </div>
@@ -2100,7 +2610,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/email-notifications' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/email-notifications' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2109,7 +2619,7 @@
       </div>
     </div>
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/organizations.png' alt="feature image" title="feature image">
       </div>
@@ -2120,7 +2630,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/github-organizations' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/github-organizations' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2129,7 +2639,7 @@
       </div>
     </div>
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/invoiced-customers.png' alt="feature image" title="feature image">
       </div>
@@ -2140,7 +2650,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/invoiced-customers' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/invoiced-customers' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2151,7 +2661,7 @@
 </div>
 <div class="flex-row-to-column">
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/bulk-operations.png' alt="feature image" title="feature image">
       </div>
@@ -2162,7 +2672,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/bulk-operations' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/bulk-operations' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2171,7 +2681,7 @@
       </div>
     </div>
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/status-badge.png' alt="feature image" title="feature image">
       </div>
@@ -2182,7 +2692,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/features/status-badges' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/features/status-badges' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2191,7 +2701,7 @@
       </div>
     </div>
 
-    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card d-flex flex-column">
+    <div class="mt-3-to-1dot5 mb-3-to-1dot5 mr-3-to-0 ml-3-to-0 w-33-to-100 p-0 feature-card shadow-m d-flex flex-column">
       <div class="w-100 text-center feature-img-container">
         <img class="feature-img" src='/static/lib/logo/features/security.png' alt="feature image" title="feature image">
       </div>
@@ -2202,7 +2712,7 @@
         
       </div>
       <div class="text-right justify-content-end pb-3 pl-3 pr-3">
-        <a href='/security' class="feature-btn d-flex align-center fw600 float-right">
+        <a href='/security' class="feature-btn shadow-sm d-flex align-center fw600 float-right">
           <span>Read more</span>
           <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
@@ -2219,8 +2729,8 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/4d5572583bb42fb0be9962a392bbea373898c8d7"
-                       title="Last modified by Victor Vorobyev | Jul 29, 2021" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/e54af9a70ae721b1f9a6505882d326814aaa10d7"
+                       title="Last modified by Evgeniy Kosjakov | Jul 29, 2021" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
@@ -2239,30 +2749,89 @@
                 </div>   
               </div>
               
-              
-              <footer class="page-footer position-relative d-table w-100">
-                <div class="pl-3 d-table-cell v-align-middle h-100">
-                  <span>&copy; Cloudback 2018-2021 - <a href="/privacy" target="_blank" class="custom-link">Privacy</a></span>
-                </div>
-              </footer>
-              
             </div>
             
           </div>
         </div>
       </div>
     </main>
-    
+    <footer class="z-index-10 body-background with-border-top">
+  <div class="container big-footer flex-row-to-column p-3">
+    <div class="d-flex flex-grow-1 w-50-to-100">
+      <div class="flex-grow-1 text-color w-50">
+        <div class="d-flex flex-column">
+          <div class="d-flex align-center pb-3">
+            <svg class="h24 w24" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="var(--text-color)">
+              <path d="M18.5263 25.2632C22.247 25.2632 25.2632 22.247 25.2632 18.5263C25.2632 14.8057 22.247 11.7895 18.5263 11.7895C14.8057 11.7895 11.7895 14.8057 11.7895 18.5263C11.7895 22.247 14.8057 25.2632 18.5263 25.2632Z"/>
+              <path d="M18.5263 52.2105C22.247 52.2105 25.2632 49.1943 25.2632 45.4737C25.2632 41.753 22.247 38.7368 18.5263 38.7368C14.8057 38.7368 11.7895 41.753 11.7895 45.4737C11.7895 49.1943 14.8057 52.2105 18.5263 52.2105Z"/>
+              <path d="M45.4737 52.2105C49.1943 52.2105 52.2105 49.1943 52.2105 45.4737C52.2105 41.753 49.1943 38.7368 45.4737 38.7368C41.753 38.7368 38.7368 41.753 38.7368 45.4737C38.7368 49.1943 41.753 52.2105 45.4737 52.2105Z"/>
+              <path d="M15.1579 18.5263H21.8947V45.4737H15.1579V18.5263Z"/>
+              <path d="M15.1579 19.9215L19.9216 15.1578L47.3126 42.5489L42.549 47.3125L15.1579 19.9215Z"/>
+              <path d="M0 10.1053C0 4.52428 4.52428 0 10.1053 0H53.8947C59.4757 0 64 4.52428 64 10.1053V18.5263H57.2632V11.7895C57.2632 8.99898 55.001 6.73684 52.2105 6.73684H11.7895C8.99898 6.73684 6.73684 8.99898 6.73684 11.7895V52.2105C6.73684 55.001 8.99898 57.2632 11.7895 57.2632H52.2105C55.001 57.2632 57.2632 55.001 57.2632 52.2105V45.4737H64V53.8947C64 59.4757 59.4757 64 53.8947 64H10.1053C4.52428 64 0 59.4757 0 53.8947V10.1053Z"/>
+            </svg>
+            <h3 class="align-center fw600 pl-2">Cloudback</h3>
+          </div>
+          <div class="pl-5 font-size-small pb-3">
+            <p>Ecuador, Quito<br>
+              La Armenia, Juan Montalvo<br>
+              Conjunto Prados de la Armenia, casa 73<br>
+              RUC 1792537754001<br>
+              Postal code 170803</p>
+          </div>
+          <div class="pl-2 font-size-small">
+            <p>&copy; Cloudback 2021</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-grow-1 w-50 flex-column">
+        <h3 class="align-center fw600 pl-2 pb-3">Support</h3>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/contact-us">Contact us</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/privacy">Privacy policy</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="https://github.com/cloudback/issue-tracker/issues/new?template=feature_request.md" 
+          target="_blank">Feature request</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="https://github.com/cloudback/issue-tracker/issues/new?template=bug_report.md" 
+          target="_blank">Report issue</a></p></div>
+      </div>
+    </div>
+    <div class="d-flex flex-grow-1 w-50-to-100">
+      <div class="d-flex flex-grow-1 w-50 flex-column">
+        <h3 class="align-center fw600 pl-2 pb-3">Product</h3>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/what-is-cloudback">About</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/getting-started">Getting started</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/features">Features</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/terms">Terms of service</a></p></div>
+      </div>
+      <div class="d-flex flex-grow-1 w-50 flex-column">
+        <h3 class="align-center fw600 pl-2 pb-3">Social</h3>
+        <div class="pl-2 mh36">
+          <a href="https://www.facebook.com/cloudback.it" target="_blank" class="d-flex align-center">
+            <img class="h20 w20" src="/static/lib/logo/footer-facebook.svg"/>
+            <span class="pl-2 text-color">Facebook</span>
+          </a>
+        </div>
+        <div class="pl-2 mh36">
+          <a href="https://www.instagram.com/cloudback.it/" target="_blank" class="d-flex align-center">
+            <img class="h20 w20" src="/static/lib/logo/footer-instagram.svg"/>
+            <span class="pl-2 text-color">Instagram</span>
+          </a>
+        </div>
+        <div class="pl-2 mh36">
+          <a href="https://www.linkedin.com/company/cloudbackit/" target="_blank" class="d-flex align-center">
+            <img class="h20 w20" src="/static/lib/logo/footer-linkedin.svg"/>
+            <span class="pl-2 text-color">LinkedIn</span>
+          </a>
+        </div>
+        <div class="pl-2 mh36">
+          <a href="https://twitter.com/CloudbackIt" target="_blank" class="d-flex align-center">
+            <img class="h20 w20" src="/static/lib/logo/footer-twitter.svg"/>
+            <span class="pl-2 text-color">Twitter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
 

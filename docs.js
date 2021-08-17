@@ -88,15 +88,44 @@
       var theme = this.value;
       createCookie("mddocs-theme", theme, 365);
       applyStyle(theme);
+      var theme = readCookie("mddocs-theme") === "Dark theme" ? "dark" : "light";
+      applyBlogTimeline(twttr, theme);
     });
     document.addEventListener("click", function (e) {
       var searchMenu = document.getElementById("menu-search-container");
-      if (!searchMenu.contains(e.target)) {
+      if (searchMenu !== null && searchMenu !== undefined && !searchMenu.contains(e.target)) {
         var searchResults = document.getElementById("search-results-container");
         searchResults.style.display = "none";
       }
     }, false);
   });
+    
+  twttr.ready(function (twttr) {
+    console.log("ready");
+    var theme = readCookie("mddocs-theme") === "Dark theme" ? "dark" : "light";
+    applyBlogTimeline(twttr, theme);
+  });
+  function applyBlogTimeline(twttr, theme) {
+    var target = document.getElementById("blog-timeline");
+    if (target !== null && target !== undefined){
+      target.innerHTML = "";
+      console.log("apply", theme)
+      twttr.widgets.createTimeline(
+        {
+          sourceType: "profile",
+          screenName: "CloudbackIt"
+        },
+        target, 
+        {
+          id: 'profile:CloudbackIt',
+          theme: theme,
+          tweetLimit: 3,
+          chrome: "noheader, noborders, nofooter"
+        }
+      );
+    }
+  }
+
   function onFocus(input) {
     innerSearch(input);
   }

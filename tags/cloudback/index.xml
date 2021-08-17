@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudback</title>
+    <link>https://cloudback.github.io/tags/cloudback/</link>
+    <description>Recent content on Cloudback</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 19 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cloudback.github.io/tags/cloudback/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudback introduces new marketplace plans</title>
+      <link>https://cloudback.github.io/posts/paid-plans-announcement/</link>
+      <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/posts/paid-plans-announcement/</guid>
+      <description>Today we reached 100+ installations and completed GitHub Marketplace financial onboarding. Now Cloudback meets all the requirements for GitHub Marketplace, including listing, billing, brand, and user experience requirements. It means that we completed the public beta stage, and now Cloudback is in production with no limits.
+We are glad to announce, that our new marketplace plans are available in the GitHub Marketplace!
+ Our Free Plan remains active for all existing accounts but is discontinued and is no longer available for new users.</description>
+    </item>
+    
+  </channel>
+</rss>

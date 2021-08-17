@@ -4,11 +4,7 @@
     <title>Home on Cloudback</title>
     <link>https://cloudback.github.io/</link>
     <description>Recent content in Home on Cloudback</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://cloudback.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://cloudback.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automated Daily Backups</title>
       <link>https://cloudback.github.io/features/automated-daily-backups/</link>
@@ -149,6 +145,17 @@ Archive&amp;rsquo;s password email You will receive an email with the password e
     </item>
     
     <item>
+      <title>Getting Started</title>
+      <link>https://cloudback.github.io/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/getting-started/</guid>
+      <description>Getting Started This is a short instruction describing how to start creating backups for your GitHub repositories.
+Installation Follow these simple steps below to start using Cloudback.
+Step 1: Set up a new plan from the GitHub Marketplace  Open Cloudback&amp;rsquo;s page on the GitHub Marketplace by clicking on the following link Click on the Set up a plan button.   In the Pricing and Setup section select the account for which the Cloudback application will be installed and then click on the Install it for free button   Review your order to make sure you&amp;rsquo;ve selected the correct plan and account.</description>
+    </item>
+    
+    <item>
       <title>Restore to GitHub</title>
       <link>https://cloudback.github.io/features/restore-to-github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -258,6 +265,45 @@ You can find a sample usage in the Cloudback&amp;rsquo;s Documentation repositor
       <guid>https://cloudback.github.io/security/vulnerability-management-workflow/</guid>
       <description>Vulnerability Management Workflow Introduction The purpose of the document is to describe the established vulnerability management workflow in the MYRTLECONSULTING S.A. (“we” or “Cloudback”).
 Overview Vulnerability Management is the recurring process of identifying, classifying, prioritizing, mitigating, and remediating vulnerabilities. This document will focus on infrastructure vulnerabilities and the vulnerability management process. This process is designed to provide informationregarding Cloudback vulnerability workflow, promote healthy patch management among other preventative best-practices, and remediate risk; all with the end goal to better secure our environments.</description>
+    </item>
+    
+    <item>
+      <title>We support new storage now: Microsoft OneDrive</title>
+      <link>https://cloudback.github.io/posts/onedrive/</link>
+      <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/posts/onedrive/</guid>
+      <description>Cloudback provides an easy way to store GitHub repository backups in various storages. And today, we are delighted to announce the support of new storage - Microsoft OneDrive.
+We received a request to support this storage via email, but to make our work more transparent, we created a related issue in our public issue tracker. The development process from the initial request to a production-ready solution took about a month, including two weeks of waiting for the verification from the Microsoft side.</description>
+    </item>
+    
+    <item>
+      <title>We support new storage now: OpenStack Swift</title>
+      <link>https://cloudback.github.io/posts/openstack-swift/</link>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/posts/openstack-swift/</guid>
+      <description>A few weeks ago, we got a new feature request in our issue tracker. One of Cloudback users asked us to add support for the OpenStack Swift storage provider. We discussed the feature request within the team and started development. We decided to use an S3 API gateway of OpenStack Swift. As a side effect, we introduced an S3 access-key-based provider in addition to OpenStack Swift. Now Cloudback supports any S3 API compatible storage provider.</description>
+    </item>
+    
+    <item>
+      <title>Cloudback introduces new marketplace plans</title>
+      <link>https://cloudback.github.io/posts/paid-plans-announcement/</link>
+      <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/posts/paid-plans-announcement/</guid>
+      <description>Today we reached 100+ installations and completed GitHub Marketplace financial onboarding. Now Cloudback meets all the requirements for GitHub Marketplace, including listing, billing, brand, and user experience requirements. It means that we completed the public beta stage, and now Cloudback is in production with no limits.
+We are glad to announce, that our new marketplace plans are available in the GitHub Marketplace!
+ Our Free Plan remains active for all existing accounts but is discontinued and is no longer available for new users.</description>
+    </item>
+    
+    <item>
+      <title>First public release of Cloudback</title>
+      <link>https://cloudback.github.io/posts/first-release/</link>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudback.github.io/posts/first-release/</guid>
+      <description>Our team is proud to announce to you the first public release of Cloudback - GitHub repository backup as a service. The decision to start the Cloudback project has been made a few months ago when we noticed there are no solutions that provide the ability to back up a GitHub repository into private cloud storage. We made this a key feature of our product - the integration with various cloud storage providers.</description>
     </item>
     
   </channel>
