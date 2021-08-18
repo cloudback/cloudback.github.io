@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloudback</title>
-    <link>https://cloudback.github.io/features/</link>
+    <link>https://docs.cloudback.it/features/</link>
     <description>Recent content on Cloudback</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://cloudback.github.io/features/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.cloudback.it/features/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automated Daily Backups</title>
-      <link>https://cloudback.github.io/features/automated-daily-backups/</link>
+      <link>https://docs.cloudback.it/features/automated-daily-backups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/automated-daily-backups/</guid>
+      <guid>https://docs.cloudback.it/features/automated-daily-backups/</guid>
       <description>Automated Daily Backups This is why we created Cloudback - to continuously backup a repository and its metadata on a daily basis. Cloudback captures a backup daily at a defined hour according to a defined time zone and puts a resulting archive into defined storage.
 Schedule You can configure the exact hour you want to capture a backup every day. We recommend you to choose an hour when your repositories are not in use.</description>
     </item>
     
     <item>
       <title>Various Backup Storages</title>
-      <link>https://cloudback.github.io/features/various-backup-storages/</link>
+      <link>https://docs.cloudback.it/features/various-backup-storages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/various-backup-storages/</guid>
+      <guid>https://docs.cloudback.it/features/various-backup-storages/</guid>
       <description>Various Backup Storages Cloudback allows you to store a backup archive in your own storage, leaving no copies to us. That is. Cloudback backs up a repository into an archive, sends the archive to your storage, and wipes the archive from Cloudback&amp;rsquo;s disk leaving no chance to recover any data from the Cloudback servers.
 Also, we offer our in-build storage named just Cloudback. It is an Azure Blob Storage with a Geo-redundant replication.</description>
     </item>
     
     <item>
       <title>Metadata Backups</title>
-      <link>https://cloudback.github.io/features/metadata/</link>
+      <link>https://docs.cloudback.it/features/metadata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/metadata/</guid>
+      <guid>https://docs.cloudback.it/features/metadata/</guid>
       <description>Metadata Backups Cloudback archives not only the whole git repository but GitHub-specific metadata as well. The list of metadata we are able to backup is not complete and is limited by the GitHub API.
 Important things to know:
  We don&amp;rsquo;t backup your GitHub Account We don&amp;rsquo;t backup your GitHub Organization The resulting backup should never be considered as a complete all-embracing one  What is included in a backup? Here is the list of repository&amp;rsquo;s data in a backup archive:</description>
@@ -38,20 +38,20 @@ Important things to know:
     
     <item>
       <title>One-Click Manual Backups</title>
-      <link>https://cloudback.github.io/features/manual-backups/</link>
+      <link>https://docs.cloudback.it/features/manual-backups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/manual-backups/</guid>
+      <guid>https://docs.cloudback.it/features/manual-backups/</guid>
       <description>One-Click Manual Backups Cloudback allows you to trigger a backup process on demand by clicking a single button. There are several use-cases when manual backups are useful:
  You want to download your up-to-date data, no need to wait for an automatic trigger You want to test your own storage that you configured recently You want to secure your data at a specific point in time  Trigger a backup Once your repository is scheduled, just click a button and trigger a backup, that&amp;rsquo;s all:</description>
     </item>
     
     <item>
       <title>Download Backups</title>
-      <link>https://cloudback.github.io/features/download-backups/</link>
+      <link>https://docs.cloudback.it/features/download-backups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/download-backups/</guid>
+      <guid>https://docs.cloudback.it/features/download-backups/</guid>
       <description>Download Backups You can download an archive of any backup of your repositories. There is the Download this backup button in the repository card:
 Download dialog Once you click the Download this backup button the dialog will be shown. The dialog reminds you that the archive&amp;rsquo;s password will be sent to your email right after the download process is initiated.
 Archive&amp;rsquo;s password email You will receive an email with the password each time you download a repository backup:</description>
@@ -59,20 +59,20 @@ Archive&amp;rsquo;s password email You will receive an email with the password e
     
     <item>
       <title>Restore to GitHub</title>
-      <link>https://cloudback.github.io/features/restore-to-github/</link>
+      <link>https://docs.cloudback.it/features/restore-to-github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/restore-to-github/</guid>
+      <guid>https://docs.cloudback.it/features/restore-to-github/</guid>
       <description>Restore to GitHub Cloudback allows you to restore a particular backup into a GitHub repository. This is a manual operation accessible from the repository card in the Cloudback Dashboard.
 Prerequisites The restore process requires read-write access to your GitHub data. Permissions are managed by GitHub applications. Cloudback GitHub application has read-only access only, according to the least privilege principle. We published an additional Cloudback Restore GitHub application with read-write access to your data.</description>
     </item>
     
     <item>
       <title>Email Notifications</title>
-      <link>https://cloudback.github.io/features/email-notifications/</link>
+      <link>https://docs.cloudback.it/features/email-notifications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/email-notifications/</guid>
+      <guid>https://docs.cloudback.it/features/email-notifications/</guid>
       <description>Email Notifications If something goes wrong and a backup process fails we will send you an email notification. We send notifications daily at 22:00 UTC with all failures in the previous 24 hours.
 Once backup is failed our Support Team gets notification as well. Is the issue is not related to storage, the team starts investigation as soon as possible and reports you their findings by email.
 Why can a backup fail?</description>
@@ -80,10 +80,10 @@ Why can a backup fail?</description>
     
     <item>
       <title>GitHub Organizations</title>
-      <link>https://cloudback.github.io/features/github-organizations/</link>
+      <link>https://docs.cloudback.it/features/github-organizations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/github-organizations/</guid>
+      <guid>https://docs.cloudback.it/features/github-organizations/</guid>
       <description>GitHub Organizations Cloudback supports shared team accounts called GitHub Organization. You can purchase a paid plan in GitHub Marketplace for your organization&amp;rsquo;s account and repositories will appear in Cloudback Dashboard. This way several team members may configure and control backups for your organizations using a single shared dashboard.
 Please note that only organization members with the role Owner will be able to access the organization&amp;rsquo;s repositories in Cloudback.
 Learn more   GitHub: About organizations  GitHub: Permission levels for an organization  </description>
@@ -91,20 +91,20 @@ Learn more   GitHub: About organizations  GitHub: Permission levels for an organ
     
     <item>
       <title>Invoiced Customers</title>
-      <link>https://cloudback.github.io/features/invoiced-customers/</link>
+      <link>https://docs.cloudback.it/features/invoiced-customers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/invoiced-customers/</guid>
+      <guid>https://docs.cloudback.it/features/invoiced-customers/</guid>
       <description>Invoiced Customers Cloudback handles paid plans using GitHub Marketplace. As for now, the marketplace is restricted for GitHub invoiced customers. If you have a GitHub Enterprise account and you pay by invoice, you are not able to purchase paid plans using the marketplace. GitHub will show you the error message Unfortunately, invoiced customers cannot purchase paid plans on the GitHub Marketplace..
 We support direct payments to Cloudback using bank transfers. Please contact us and we will arrange a free trial period for you.</description>
     </item>
     
     <item>
       <title>Bulk Operations</title>
-      <link>https://cloudback.github.io/features/bulk-operations/</link>
+      <link>https://docs.cloudback.it/features/bulk-operations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/bulk-operations/</guid>
+      <guid>https://docs.cloudback.it/features/bulk-operations/</guid>
       <description>Bulk Operations If you have a large number of repositories it is not comfortable to manage their settings using Cloudback Dashboard with the card-based user interface. Cloudback offers the Bulk Operations dialog instead. The dialog allows you to apply settings to many repositories with a single click.
 Repository name pattern Repository name pattern accepts wildcard characters and a comma character to join multiple queries:
 Wildcard characters:
@@ -113,10 +113,10 @@ Wildcard characters:
     
     <item>
       <title>Backup Status Badge</title>
-      <link>https://cloudback.github.io/features/status-badges/</link>
+      <link>https://docs.cloudback.it/features/status-badges/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/status-badges/</guid>
+      <guid>https://docs.cloudback.it/features/status-badges/</guid>
       <description>Backup Status Badge The badge represents the status of the latest backup created by Cloudback. The badge can be embedded into any web page. Here is the badge:
  
 You can find a sample usage in the Cloudback&amp;rsquo;s Documentation repository home page: https://github.com/cloudback/docs#readme</description>
@@ -124,10 +124,10 @@ You can find a sample usage in the Cloudback&amp;rsquo;s Documentation repositor
     
     <item>
       <title>What is inside of an archive?</title>
-      <link>https://cloudback.github.io/features/archive/</link>
+      <link>https://docs.cloudback.it/features/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/features/archive/</guid>
+      <guid>https://docs.cloudback.it/features/archive/</guid>
       <description>What is inside of an archive? The archive represents ZIP File Version 5.2 with AES-256 encryption. Be aware that AES encryption is not widely supported by ZIP tools and archivers. For instance, Microsoft Windows Compressed Folders does not support AES encryption and won&amp;rsquo;t be able to open any AES-encrypted ZIP archive. Please consider using third-party software. We recommend you 7-Zip which is cross-platform and is free for commercial use (there are limitations, please refer to 7-Zip License for details).</description>
     </item>
     

@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Microsoft Azure Blob Container on Cloudback</title>
-    <link>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/</link>
+    <link>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/</link>
     <description>Recent content in Microsoft Azure Blob Container on Cloudback</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to create a new Microsoft Azure Blob Container</title>
-      <link>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</link>
+      <link>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</guid>
+      <guid>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</guid>
       <description>Backup GitHub repository using Azure: How to create a new Microsoft Azure Blob Container When creating GitHub repository backup using Cloudback you can set up your own Azure Storage where the backups will be saved. This article describes how to create a new Azure Blob Container for GitHub repository backups.
 About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data.</description>
     </item>
     
     <item>
       <title>How to create a new shared access signature (SAS)</title>
-      <link>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</link>
+      <link>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</guid>
+      <guid>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</guid>
       <description>Backup GitHub repository using Azure: How to create a new shared access signature When creating GitHub repository backup using Cloudback you can set up your own Azure Storage where the backups will be saved. If you want to use Azure Storage for backups created by Cloudback you need to provide Cloudback access to your storage, which should be done by creating a new Shared Access Signature (SAS) inside your Azure Container.</description>
     </item>
     

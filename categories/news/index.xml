@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Cloudback</title>
-    <link>https://cloudback.github.io/categories/news/</link>
+    <link>https://docs.cloudback.it/categories/news/</link>
     <description>Recent content in News on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cloudback.github.io/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>We support new storage now: Microsoft OneDrive</title>
-      <link>https://cloudback.github.io/posts/onedrive/</link>
+      <link>https://docs.cloudback.it/posts/onedrive/</link>
       <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/posts/onedrive/</guid>
+      <guid>https://docs.cloudback.it/posts/onedrive/</guid>
       <description>Cloudback provides an easy way to store GitHub repository backups in various storages. And today, we are delighted to announce the support of new storage - Microsoft OneDrive.
 We received a request to support this storage via email, but to make our work more transparent, we created a related issue in our public issue tracker. The development process from the initial request to a production-ready solution took about a month, including two weeks of waiting for the verification from the Microsoft side.</description>
     </item>
     
     <item>
       <title>We support new storage now: OpenStack Swift</title>
-      <link>https://cloudback.github.io/posts/openstack-swift/</link>
+      <link>https://docs.cloudback.it/posts/openstack-swift/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/posts/openstack-swift/</guid>
+      <guid>https://docs.cloudback.it/posts/openstack-swift/</guid>
       <description>A few weeks ago, we got a new feature request in our issue tracker. One of Cloudback users asked us to add support for the OpenStack Swift storage provider. We discussed the feature request within the team and started development. We decided to use an S3 API gateway of OpenStack Swift. As a side effect, we introduced an S3 access-key-based provider in addition to OpenStack Swift. Now Cloudback supports any S3 API compatible storage provider.</description>
     </item>
     
     <item>
       <title>Cloudback introduces new marketplace plans</title>
-      <link>https://cloudback.github.io/posts/paid-plans-announcement/</link>
+      <link>https://docs.cloudback.it/posts/paid-plans-announcement/</link>
       <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/posts/paid-plans-announcement/</guid>
+      <guid>https://docs.cloudback.it/posts/paid-plans-announcement/</guid>
       <description>Today we reached 100+ installations and completed GitHub Marketplace financial onboarding. Now Cloudback meets all the requirements for GitHub Marketplace, including listing, billing, brand, and user experience requirements. It means that we completed the public beta stage, and now Cloudback is in production with no limits.
 We are glad to announce, that our new marketplace plans are available in the GitHub Marketplace!
  Our Free Plan remains active for all existing accounts but is discontinued and is no longer available for new users.</description>
@@ -38,10 +38,10 @@ We are glad to announce, that our new marketplace plans are available in the Git
     
     <item>
       <title>First public release of Cloudback</title>
-      <link>https://cloudback.github.io/posts/first-release/</link>
+      <link>https://docs.cloudback.it/posts/first-release/</link>
       <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/posts/first-release/</guid>
+      <guid>https://docs.cloudback.it/posts/first-release/</guid>
       <description>Our team is proud to announce to you the first public release of Cloudback - GitHub repository backup as a service. The decision to start the Cloudback project has been made a few months ago when we noticed there are no solutions that provide the ability to back up a GitHub repository into private cloud storage. We made this a key feature of our product - the integration with various cloud storage providers.</description>
     </item>
     

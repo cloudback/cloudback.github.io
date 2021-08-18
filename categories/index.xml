@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Cloudback</title>
-    <link>https://cloudback.github.io/categories/</link>
+    <link>https://docs.cloudback.it/categories/</link>
     <description>Recent content in Categories on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cloudback.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>News</title>
-      <link>https://cloudback.github.io/categories/news/</link>
+      <link>https://docs.cloudback.it/categories/news/</link>
       <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/categories/news/</guid>
+      <guid>https://docs.cloudback.it/categories/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Release notes</title>
-      <link>https://cloudback.github.io/categories/release-notes/</link>
+      <link>https://docs.cloudback.it/categories/release-notes/</link>
       <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/categories/release-notes/</guid>
+      <guid>https://docs.cloudback.it/categories/release-notes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloudback</title>
-      <link>https://cloudback.github.io/categories/cloudback/</link>
+      <link>https://docs.cloudback.it/categories/cloudback/</link>
       <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/categories/cloudback/</guid>
+      <guid>https://docs.cloudback.it/categories/cloudback/</guid>
       <description></description>
     </item>
     

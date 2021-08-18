@@ -2,63 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Supported Storages on Cloudback</title>
-    <link>https://cloudback.github.io/custom-storages/</link>
+    <link>https://docs.cloudback.it/custom-storages/</link>
     <description>Recent content in Supported Storages on Cloudback</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://cloudback.github.io/custom-storages/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.cloudback.it/custom-storages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Amazon S3 Bucket via Access Key</title>
-      <link>https://cloudback.github.io/custom-storages/amazon-s3-bucket-access-key/</link>
+      <link>https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/custom-storages/amazon-s3-bucket-access-key/</guid>
+      <guid>https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/</guid>
       <description>Backup GitHub repository using Amazon S3 Bucket Access Key About Amazon S3 Bucket Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.</description>
     </item>
     
     <item>
       <title>Amazon S3 Bucket via Access Point</title>
-      <link>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</link>
+      <link>https://docs.cloudback.it/custom-storages/amazon-s3-bucket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/custom-storages/amazon-s3-bucket/</guid>
+      <guid>https://docs.cloudback.it/custom-storages/amazon-s3-bucket/</guid>
       <description>Backup GitHub repository using Amazon S3 Bucket About Amazon S3 Bucket Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.</description>
     </item>
     
     <item>
       <title>Amazon S3 Glacier</title>
-      <link>https://cloudback.github.io/custom-storages/amazon-s3-glacier/</link>
+      <link>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/custom-storages/amazon-s3-glacier/</guid>
+      <guid>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</guid>
       <description>Backup GitHub repository using Amazon S3 Glacier About Amazon S3 Glacier Amazon S3 Glacier and S3 Glacier Deep Archive are secure, durable, and extremely low-cost Amazon S3 cloud storage classes for data archiving and long-term backup. They are designed to deliver 99.999999999% durability, and provide comprehensive security and compliance capabilities that can help meet even the most stringent regulatory requirements.
  Set up Amazon S3 Glacier as a custom storage  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the + New storage button:     Type a storage name</description>
     </item>
     
     <item>
       <title>Google Cloud Storage Bucket</title>
-      <link>https://cloudback.github.io/custom-storages/google-cloud/</link>
+      <link>https://docs.cloudback.it/custom-storages/google-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/custom-storages/google-cloud/</guid>
+      <guid>https://docs.cloudback.it/custom-storages/google-cloud/</guid>
       <description>Backup GitHub repository using Google Cloud Storage Bucket About Google Cloud Storage Bucket Cloud Storage allows world-wide storage and retrieval of any amount of data at any time. You can use Cloud Storage for a range of scenarios including serving website content, storing data for archival and disaster recovery, or distributing large data objects to users via direct download.
  Set up Google Cloud Storage Bucket  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the + New storage button:     Type a storage name</description>
     </item>
     
     <item>
       <title>Microsoft OneDrive</title>
-      <link>https://cloudback.github.io/custom-storages/onedrive/</link>
+      <link>https://docs.cloudback.it/custom-storages/onedrive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/custom-storages/onedrive/</guid>
+      <guid>https://docs.cloudback.it/custom-storages/onedrive/</guid>
       <description>Backup GitHub repository using Microsoft OneDrive About Microsoft OneDrive OneDrive is the cloud storage service that Microsoft offers to store all your files securely in one place, which you can then access from virtually anywhere.
  Set up Microsoft OneDrive Personal:App&amp;rsquo;s Folder  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the + New storage button:    Type a storage name:     Select Microsoft OneDrive Personal:App&#39;s Folder</description>
     </item>
     
     <item>
       <title>Alibaba Cloud Object Storage Service</title>
-      <link>https://cloudback.github.io/custom-storages/alibaba-cloud/</link>
+      <link>https://docs.cloudback.it/custom-storages/alibaba-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudback.github.io/custom-storages/alibaba-cloud/</guid>
+      <guid>https://docs.cloudback.it/custom-storages/alibaba-cloud/</guid>
       <description>Backup GitHub repository using Alibaba Cloud Object Storage Service About Alibaba Cloud Object Storage Service Alibaba Cloud Object Storage Service (OSS) is an encrypted, secure, cost-effective, and easy-to-use object storage service that enables you to store, back up, and archive large amounts of data in the cloud, with a guaranteed durability of 99.9999999999%(12 9’s). RESTful APIs allow storage and access to OSS anywhere on the Internet. You can elastically scale the capacity and processing capability and choose from a variety of storage types to optimize the storage cost.</description>
     </item>
     
