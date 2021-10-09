@@ -2485,6 +2485,16 @@
 <p>Once backup is failed our Support Team gets notification as well. Is the issue is not related to 
   <a href="/features/email-notifications/#1-storage-issue">storage</a>, the team starts investigation as soon as possible and reports you their findings by email.</p>
 <img src="/static/features/email-failure-notification.png" alt="Email notification"/>
+<h2 id="email-address">Email address</h2>
+<ul>
+<li>All emails and email notification are sent to a GitHub account 
+  <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/changing-your-primary-email-address">primary email address</a>.</li>
+<li>Email address for failed backup notifications can be changed in <code>Account Settings</code> menu:</li>
+</ul>
+<p align="center">
+  <img src="/static/features/email-override.png" data-alt="/static/features/email-override.gif"
+       alt="Change Failed Backups Notifications Email" onclick="swapGif(this)" style="cursor: pointer;"/>
+</p>
 <h2 id="why-can-a-backup-fail">Why can a backup fail?</h2>
 <p>A backup can fail for various reasons, almost all of them fall into four categories:</p>
 <h3 id="1-storage-issue">1. Storage issue</h3>
@@ -2496,10 +2506,7 @@
 </ul>
 <p>In order to troubleshoot a storage issue please verify your storage settings in the repository card using the <code>Edit storage</code> button:</p>
 <img src="/static/features/edit-storage.png" alt="Edit storage" width=500/>
-<h3 id="2-github-outage">2. GitHub outage</h3>
-<p>GitHub itself may go offline, sometimes it happens and may last a few hours. Cloudback will try to backup 6 times in 6 hours. If nothing works a backup will fail. There is a 
-  <a href="https://www.githubstatus.com/">GitHub Status</a> page where you can check the <code>API Requests</code> operational status.</p>
-<h3 id="3-github-account-issue">3. GitHub account issue</h3>
+<h3 id="2-github-account-issue">2. GitHub account issue</h3>
 <p>There may be two types of issues related to your GitHub account:</p>
 <ul>
 <li>
@@ -2507,8 +2514,12 @@
 <li>Repository may be deleted or inaccessible to Cloudback App</li>
 <li>Your GitHub account may be locked or suspended. It is rare but happens. Please check your account is accessible.</li>
 </ul>
-<h3 id="4-cloudback-issue">4. Cloudback issue</h3>
-<p>Sometimes backup software itself can fail. It happens and our Cloudback Support Team is in charge to recover the backup, analyze a root cause and implement all necessary changes to prevent it from happening in the future.</p>
+<h3 id="3-cloudback-issue">3. Cloudback issue</h3>
+<p>Sometimes backup software itself can fail. It happens and our Cloudback Support Team is in charge to recover the backup, analyze a root cause and implement all necessary changes to prevent it from happening in the future. Please 
+  <a href="/contact-us/">contact us</a> if you think it is the case.</p>
+<h3 id="4-github-outage">4. GitHub outage</h3>
+<p>GitHub itself may go offline, sometimes it happens and may last a few hours. Cloudback will try to backup 6 times in 6 hours. If nothing works a backup will fail. There is a 
+  <a href="https://www.githubstatus.com/">GitHub Status</a> page where you can check the <code>API Requests</code> operational status.</p>
 <h2 id="notifications-on-a-successful-backup">Notifications on a successful backup</h2>
 <p>As for now, we support failure notifications only. Please let us know if you need daily notifications of all your successful backups and we will consider implementing this feature.</p>
 <h2 id="learn-more">Learn more</h2>
@@ -2526,12 +2537,12 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/1a40e0ff4f53e9213690061487fdc06f98d4166c"
-                       title="Last modified by Victor Vorobyev | Jul 26, 2021" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/a16a97840617b459958b155719b64a2a1f5ce4f9"
+                       title="Last modified by Victor Vorobyev | Oct 9, 2021" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Jul 26, 2021</span>
+                      <span class="pl-2">Oct 9, 2021</span>
                     </a>
                     
                   </div>
@@ -2559,12 +2570,13 @@
   <ul>
     <li><a href="#email-notifications">Email Notifications</a>
       <ul>
+        <li><a href="#email-address">Email address</a></li>
         <li><a href="#why-can-a-backup-fail">Why can a backup fail?</a>
           <ul>
             <li><a href="#1-storage-issue">1. Storage issue</a></li>
-            <li><a href="#2-github-outage">2. GitHub outage</a></li>
-            <li><a href="#3-github-account-issue">3. GitHub account issue</a></li>
-            <li><a href="#4-cloudback-issue">4. Cloudback issue</a></li>
+            <li><a href="#2-github-account-issue">2. GitHub account issue</a></li>
+            <li><a href="#3-cloudback-issue">3. Cloudback issue</a></li>
+            <li><a href="#4-github-outage">4. GitHub outage</a></li>
           </ul>
         </li>
         <li><a href="#notifications-on-a-successful-backup">Notifications on a successful backup</a></li>
