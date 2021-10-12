@@ -268,6 +268,26 @@ Overview Vulnerability Management is the recurring process of identifying, class
     </item>
     
     <item>
+      <title>We added custom email address for notifications</title>
+      <link>https://docs.cloudback.it/posts/notifications-email/</link>
+      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/notifications-email/</guid>
+      <description>Cloudback sends an email notification to the user if the backup fails. By default, we are using the primary email address taken from the GitHub profile.
+We received a feature request to support custom emails for notifications. This may be useful when you have a separate email for such kinds of notifications. We decided to provide such functionality for every account where the Cloudback GitHub Application is installed. Now you can set up a new email address for failed backup notifications for each account using the Account Settings dialog:</description>
+    </item>
+    
+    <item>
+      <title>5 crucial features of Backup Software that will benefit your Business</title>
+      <link>https://docs.cloudback.it/posts/5-crucial-features-of-backup-software-that-will-benefit-your-business/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/5-crucial-features-of-backup-software-that-will-benefit-your-business/</guid>
+      <description>Your business can be susceptible to losing data. Worse, it can sometimes catch you off guard, causing delays and disruptions in your operations. Prevent that from happening by investing in the enterprise backup software for your business.
+According to a report by Varonis, companies have over 1,000 sensitive files and 100,000 folders accessible and open to their employees. Businesses are vulnerable from data corruption, deletion, leaks, and breaches—whether intentional or accidental.</description>
+    </item>
+    
+    <item>
       <title>We support new storage now: Microsoft OneDrive</title>
       <link>https://docs.cloudback.it/posts/onedrive/</link>
       <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>

@@ -5,11 +5,11 @@
     <link>https://docs.cloudback.it/categories/</link>
     <description>Recent content in Categories on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>News</title>
       <link>https://docs.cloudback.it/categories/news/</link>
-      <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/categories/news/</guid>
       <description></description>
@@ -18,7 +18,7 @@
     <item>
       <title>Release notes</title>
       <link>https://docs.cloudback.it/categories/release-notes/</link>
-      <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/categories/release-notes/</guid>
       <description></description>
@@ -27,9 +27,18 @@
     <item>
       <title>Cloudback</title>
       <link>https://docs.cloudback.it/categories/cloudback/</link>
-      <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/categories/cloudback/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>General</title>
+      <link>https://docs.cloudback.it/categories/general/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/categories/general/</guid>
       <description></description>
     </item>
     

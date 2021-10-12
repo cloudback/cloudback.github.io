@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Cloudback</title>
+    <link>https://docs.cloudback.it/categories/general/</link>
+    <description>Recent content in General on Cloudback</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5 crucial features of Backup Software that will benefit your Business</title>
+      <link>https://docs.cloudback.it/posts/5-crucial-features-of-backup-software-that-will-benefit-your-business/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/5-crucial-features-of-backup-software-that-will-benefit-your-business/</guid>
+      <description>Your business can be susceptible to losing data. Worse, it can sometimes catch you off guard, causing delays and disruptions in your operations. Prevent that from happening by investing in the enterprise backup software for your business.
+According to a report by Varonis, companies have over 1,000 sensitive files and 100,000 folders accessible and open to their employees. Businesses are vulnerable from data corruption, deletion, leaks, and breaches—whether intentional or accidental.</description>
+    </item>
+    
+  </channel>
+</rss>
