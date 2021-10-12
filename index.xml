@@ -141,7 +141,7 @@ Important things to know:
       <guid>https://docs.cloudback.it/features/download-backups/</guid>
       <description>Download Backups You can download an archive of any backup of your repositories. There is the Download this backup button in the repository card:
 Download dialog Once you click the Download this backup button the dialog will be shown. The dialog reminds you that the archive&amp;rsquo;s password will be sent to your email right after the download process is initiated.
-Archive&amp;rsquo;s password email You will receive an email with the password each time you download a repository backup:</description>
+Archive&amp;rsquo;s password email You will receive an email with the password each time you download a password-protected archive of a repository backup:</description>
     </item>
     
     <item>
@@ -231,12 +231,12 @@ You can find a sample usage in the Cloudback&amp;rsquo;s Documentation repositor
     </item>
     
     <item>
-      <title>What is inside of an archive?</title>
+      <title>Password-Protected Archives</title>
       <link>https://docs.cloudback.it/features/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/features/archive/</guid>
-      <description>What is inside of an archive? The archive represents ZIP File Version 5.2 with AES-256 encryption. Be aware that AES encryption is not widely supported by ZIP tools and archivers. For instance, Microsoft Windows Compressed Folders does not support AES encryption and won&amp;rsquo;t be able to open any AES-encrypted ZIP archive. Please consider using third-party software. We recommend you 7-Zip which is cross-platform and is free for commercial use (there are limitations, please refer to 7-Zip License for details).</description>
+      <description>Password-Protected Archives The archive represents ZIP File Version 5.2 with AES-256 encryption. Be aware that AES encryption is not widely supported by ZIP tools and archivers. For instance, Microsoft Windows Compressed Folders does not support AES encryption and isn&amp;rsquo;t able to open any AES-encrypted ZIP archive. Please consider using third-party software. We recommend you 7-Zip which is cross-platform and is free for commercial use (there are limitations, please refer to 7-Zip License for details).</description>
     </item>
     
     <item>

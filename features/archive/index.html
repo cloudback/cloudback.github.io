@@ -53,7 +53,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>What is inside of an archive? | Cloudback</title>
+<title>Password-Protected Archives | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -1436,6 +1436,40 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/archive/">Password-Protected Archives<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Archive
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/privacy/">Privacy Policy<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -1837,40 +1871,6 @@
                       </a>
                     </li>
                   
-                    <li class="search-result-item flex-column">
-                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/archive/">What is inside of an archive?<br/>
-                            <span class="search-result-breadcrumbs">
-    
-    
-        
-        
-    
-        
-        
-          
-          Features
-        
-    
-        
-        
-          
-             > 
-          
-          Archive
-        
-    
-        
-        
-          
-            
-          
-          
-        
-    
-    </span>
-                      </a>
-                    </li>
-                  
                   <li class="nothing-found" id="nothing-found">No pages found</li>
                 </ul>
               </div>
@@ -2151,7 +2151,7 @@
   
     <a href="https://docs.cloudback.it/features/archive/" class="docs-menu-item d-flex  active">
       <div class="d-flex flex-grow-1">
-        <span class="docs-menu-item-text d-flex flex-grow-1">What is inside of an archive?</span>
+        <span class="docs-menu-item-text d-flex flex-grow-1">Password-Protected Archives</span>
       </div>
     </a>
   
@@ -2616,17 +2616,25 @@
           <div class="page-with-toc d-flex flex-grow-1">
             <div class="flex-column d-flex flex-grow-1">
 			        
-  <article class="markdown-body"><h1 id="what-is-inside-of-an-archive">What is inside of an archive?</h1>
+  <article class="markdown-body"><h1 id="password-protected-archives">Password-Protected Archives</h1>
 <p>The archive represents 
   <a href="https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-5.2.0.txt">ZIP File Version 5.2</a> with 
   <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES-256</a> encryption. <strong>Be aware that AES encryption is not widely supported by ZIP tools and archivers.</strong> For instance, Microsoft Windows Compressed Folders 
-  <a href="https://devblogs.microsoft.com/oldnewthing/20180515-00/?p=98755">does not support AES encryption</a> and won&rsquo;t be able to open any AES-encrypted ZIP archive. Please consider using third-party software. We recommend you 
+  <a href="https://devblogs.microsoft.com/oldnewthing/20180515-00/?p=98755">does not support AES encryption</a> and isn&rsquo;t able to open any AES-encrypted ZIP archive. Please consider using third-party software. We recommend you 
   <a href="https://www.7-zip.org/">7-Zip</a> which is cross-platform and is free for commercial use (there are limitations, please refer to 
   <a href="https://www.7-zip.org/license.txt">7-Zip License</a> for details).</p>
-<p>Also, please note that we put one ZIP into another one. This is done to encrypt filenames inside an archive. Filename encryption is introduced in 
+<p>Also, please note that we put one ZIP archive into another one. This is done to encrypt filenames inside an archive. Filename encryption is introduced in 
   <a href="https://pkware.cachefly.net/webdocs/APPNOTE/APPNOTE-6.2.0.txt">ZIP File Format Specification 6.2</a>. We decided to keep version 5.2 for better compatibility.</p>
-<h3 id="sample-archive">Sample archive</h3>
-<p>You can download a sample archive by the link below:</p>
+<h3 id="zip-archives-without-password-protection">ZIP archives without password protection</h3>
+<p>There is an option to disable archive encryption and switch to an unencrypted ZIP archive. This option is available for 
+  <a href="/features/various-backup-storages/">custom storage</a> only. The <code>Cloudback</code> build-in storage is password-protected and this behavior can&rsquo;t be changed.</p>
+<blockquote>
+<p><strong>WARNING</strong>: If you disable archive encryption, please take all necessary precautions to protect your backups inside your own storage from unauthorized access.</p>
+</blockquote>
+<p>The option resides in the <code>Storage Editor</code> dialog and can be set when you create or edit your own custom storage:</p>
+<img src="/static/features/optional-password.png" alt="Open restored" width="500"/>
+<h3 id="sample-of-an-archive">Sample of an archive</h3>
+<p>You can download a sample password-protected archive by the link below:</p>
 <ul>
 <li>
   <a href="/static/features/bee12062e5d741b1baf334088c2c980d.zip">bee12062e5d741b1baf334088c2c980d.zip</a></li>
@@ -2639,13 +2647,15 @@
 </ul>
 <img src="/static/features/zip-password.png" alt="Inside a backup 2"/>
 <h3 id="archive-content">Archive content</h3>
+<p>For a brief description of content please refer 
+  <a href="/features/metadata/">Metadata Backups</a></p>
 <img src="/static/features/zip-content.png" alt="Inside a backup 3"/>
 <h2 id="learn-more">Learn more</h2>
 <ul>
 <li>
-  <a href="/features/metadata/">What is inside of a backup?</a></li>
-<li>
   <a href="/features/various-backup-storages/">What is a backup storage?</a></li>
+<li>
+  <a href="/features/restore-to-github/">Restore to GitHub</a></li>
 </ul>
 </article>
 
@@ -2655,12 +2665,12 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/8284f826e533fad229767bdb6e1634f1a4c05255"
-                       title="Last modified by Victor Vorobyev | Aug 14, 2021" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/5abf817067456950cb5f12bebb4d57363b652caf"
+                       title="Last modified by Victor Vorobyev | Oct 12, 2021" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Aug 14, 2021</span>
+                      <span class="pl-2">Oct 12, 2021</span>
                     </a>
                     
                   </div>
@@ -2686,11 +2696,12 @@
   <nav class="pt-2">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-is-inside-of-an-archive">What is inside of an archive?</a>
+    <li><a href="#password-protected-archives">Password-Protected Archives</a>
       <ul>
         <li>
           <ul>
-            <li><a href="#sample-archive">Sample archive</a></li>
+            <li><a href="#zip-archives-without-password-protection">ZIP archives without password protection</a></li>
+            <li><a href="#sample-of-an-archive">Sample of an archive</a></li>
             <li><a href="#password-prompt">Password prompt</a></li>
             <li><a href="#archive-content">Archive content</a></li>
           </ul>
