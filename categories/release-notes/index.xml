@@ -5,7 +5,17 @@
     <link>https://docs.cloudback.it/categories/release-notes/</link>
     <description>Recent content in Release notes on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 12 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archive encryption is now optional</title>
+      <link>https://docs.cloudback.it/posts/optional-password-protection/</link>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/optional-password-protection/</guid>
+      <description>For security reasons, Cloudback uses AES-256 encryption for all backup archives. If you download a specific backup, you can access its content using the password. The password is sent automatically to your GitHub account primary email. However, some people may find this approach a little bit overcomplicated, especially when using custom storage somewhere inside your own secure infrastructure.
+We are glad to announce that it is possible to opt-out of password-based encryption now.</description>
+    </item>
+    
     <item>
       <title>We added custom email address for notifications</title>
       <link>https://docs.cloudback.it/posts/notifications-email/</link>
