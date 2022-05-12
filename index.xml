@@ -239,6 +239,17 @@ You can find a sample usage in the Cloudback&amp;rsquo;s Documentation repositor
     </item>
     
     <item>
+      <title>Data Deduplication</title>
+      <link>https://docs.cloudback.it/features/deduplication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/features/deduplication/</guid>
+      <description>Data Deduplication With data deduplication, you can save a significant amount of cloud storage space and reduce operational costs. Cloudback offers a simple but efficient technique of data deduplication.
+How deduplication works Our backup archives are deterministic. If nothing has changed in a GitHub repository, we create the same archive before encrypting it. Once the archive is encrypted, the AES encryption makes it non-deterministic.
+Cloudback compares the checksum of a new deterministic backup with a previous deterministic backup before being encrypted.</description>
+    </item>
+    
+    <item>
       <title>Disaster Recovery Plan Policy</title>
       <link>https://docs.cloudback.it/security/disaster-recovery-plan-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -264,6 +275,16 @@ You can find a sample usage in the Cloudback&amp;rsquo;s Documentation repositor
       <guid>https://docs.cloudback.it/security/vulnerability-management-workflow/</guid>
       <description>Vulnerability Management Workflow Introduction The purpose of the document is to describe the established vulnerability management workflow in the MYRTLECONSULTING S.A. (“we” or “Cloudback”).
 Overview Vulnerability Management is the recurring process of identifying, classifying, prioritizing, mitigating, and remediating vulnerabilities. This document will focus on infrastructure vulnerabilities and the vulnerability management process. This process is designed to provide informationregarding Cloudback vulnerability workflow, promote healthy patch management among other preventative best-practices, and remediate risk; all with the end goal to better secure our environments.</description>
+    </item>
+    
+    <item>
+      <title>New feature: You can enable data deduplication to reduce storage costs</title>
+      <link>https://docs.cloudback.it/posts/data-deduplication/</link>
+      <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/data-deduplication/</guid>
+      <description>The Cloudback team is pleased to announce a new feature: Data deduplication for custom storage. The use case is a daily backup for a GitHub repository that&amp;rsquo;s not changed every day. The feature prevents wasting storage space just because Cloudback saves backup archives with the same content every day, even though nothing has changed in your GitHub repository. In certain scenarios, the feature can drastically reduce storage costs.
+ The configuration of all existing custom storages remains unchanged and data deduplication is disabled.</description>
     </item>
     
     <item>

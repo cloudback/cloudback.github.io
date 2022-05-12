@@ -130,5 +130,16 @@ You can find a sample usage in the Cloudback&amp;rsquo;s Documentation repositor
       <description>Password-Protected Archives The archive represents ZIP File Version 5.2 with AES-256 encryption. Be aware that AES encryption is not widely supported by ZIP tools and archivers. For instance, Microsoft Windows Compressed Folders does not support AES encryption and isn&amp;rsquo;t able to open any AES-encrypted ZIP archive. Please consider using third-party software. We recommend you 7-Zip which is cross-platform and is free for commercial use (there are limitations, please refer to 7-Zip License for details).</description>
     </item>
     
+    <item>
+      <title>Data Deduplication</title>
+      <link>https://docs.cloudback.it/features/deduplication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/features/deduplication/</guid>
+      <description>Data Deduplication With data deduplication, you can save a significant amount of cloud storage space and reduce operational costs. Cloudback offers a simple but efficient technique of data deduplication.
+How deduplication works Our backup archives are deterministic. If nothing has changed in a GitHub repository, we create the same archive before encrypting it. Once the archive is encrypted, the AES encryption makes it non-deterministic.
+Cloudback compares the checksum of a new deterministic backup with a previous deterministic backup before being encrypted.</description>
+    </item>
+    
   </channel>
 </rss>

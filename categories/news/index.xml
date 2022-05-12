@@ -5,7 +5,17 @@
     <link>https://docs.cloudback.it/categories/news/</link>
     <description>Recent content in News on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 19 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New feature: You can enable data deduplication to reduce storage costs</title>
+      <link>https://docs.cloudback.it/posts/data-deduplication/</link>
+      <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/data-deduplication/</guid>
+      <description>The Cloudback team is pleased to announce a new feature: Data deduplication for custom storage. The use case is a daily backup for a GitHub repository that&amp;rsquo;s not changed every day. The feature prevents wasting storage space just because Cloudback saves backup archives with the same content every day, even though nothing has changed in your GitHub repository. In certain scenarios, the feature can drastically reduce storage costs.
+ The configuration of all existing custom storages remains unchanged and data deduplication is disabled.</description>
+    </item>
+    
     <item>
       <title>Archive encryption is now optional</title>
       <link>https://docs.cloudback.it/posts/optional-password-protection/</link>

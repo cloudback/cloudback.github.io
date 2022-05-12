@@ -53,7 +53,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Google Cloud Storage Bucket | Cloudback</title>
+<title>Data Deduplication | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -2037,7 +2037,7 @@
   
 
   
-    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox"  />
+    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox" checked />
     <label for="section-6ec23f89d32660817763f346261794c8">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
@@ -2268,7 +2268,7 @@
   
 
   
-    <a href="https://docs.cloudback.it/features/deduplication/" class="docs-menu-item d-flex ">
+    <a href="https://docs.cloudback.it/features/deduplication/" class="docs-menu-item d-flex  active">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Data Deduplication</span>
       </div>
@@ -2291,7 +2291,7 @@
   
 
   
-    <input id="section-b0ec2e819329f103ee9e810e29eed2ea" class="custom-input" type="checkbox" checked />
+    <input id="section-b0ec2e819329f103ee9e810e29eed2ea" class="custom-input" type="checkbox"  />
     <label for="section-b0ec2e819329f103ee9e810e29eed2ea">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
@@ -2436,7 +2436,7 @@
   
 
   
-    <a href="https://docs.cloudback.it/custom-storages/google-cloud/" class="docs-menu-item d-flex  active">
+    <a href="https://docs.cloudback.it/custom-storages/google-cloud/" class="docs-menu-item d-flex ">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Google Cloud Storage Bucket</span>
       </div>
@@ -2735,71 +2735,37 @@
           <div class="page-with-toc d-flex flex-grow-1">
             <div class="flex-column d-flex flex-grow-1">
 			        
-  <article class="markdown-body"><h1 id="backup-github-repository-using-google-cloud-storage-bucket">Backup GitHub repository using Google Cloud Storage Bucket</h1>
-<h2 id="about-google-cloud-storage-bucket">About Google Cloud Storage Bucket</h2>
-<p>Cloud Storage allows world-wide storage and retrieval of any amount of data at any time. You can use Cloud Storage for a range of scenarios including serving website content, storing data for archival and disaster recovery, or distributing large data objects to users via direct download.</p>
-<hr>
-<h2 id="set-up-google-cloud-storage-bucket">Set up Google Cloud Storage Bucket</h2>
+  <article class="markdown-body"><h1 id="data-deduplication">Data Deduplication</h1>
+<p>With data deduplication, you can save a significant amount of cloud storage space and reduce operational costs. Cloudback offers a simple but efficient technique of data deduplication.</p>
+<h2 id="how-deduplication-works">How deduplication works</h2>
+<p>Our backup archives are deterministic. If nothing has changed in a GitHub repository, we create the same archive before encrypting it. Once the archive is encrypted, the AES encryption makes it non-deterministic.</p>
+<p>Cloudback compares the checksum of a new deterministic backup with a previous deterministic backup before being encrypted. If the archives match, Cloudback doesn&rsquo;t upload a new archive to storage, but stores a link to the previous archive.</p>
+<p>Deduplication occurs when certain conditions are met:</p>
 <ul>
-<li>In the Cloudback Dashboard open the repository settings by clicking on the settings icon:</li>
+<li>Deduplication is enabled for cloud storage in the <code>New storage</code> or the <code>Edit storage</code> dialogs</li>
+<li>The previous backup of a repository is stored in the same cloud storage</li>
+<li>The checksum of a previous backup matches the checksum of a new backup</li>
 </ul>
-<p>
-  <img src="/static/bucket/0001-Dashboard.png" alt="Click-on-repository-settings" /></p>
+<h2 id="how-to-enable-deduplication">How to enable deduplication</h2>
+<blockquote>
+<p>The feature is released on 06 May 2022, please note that:</p>
 <ul>
-<li>Click on the <code>+ New storage</code> button:</li>
+<li>Deduplication is disabled by default for all custom storage created before 06 May 2022; you must enable it manually if you want to use this feature.</li>
+<li>Deduplication is enabled by default for all custom storage created after 06 May 2022; you must manually disable it if you don&rsquo;t want to use this feature.</li>
 </ul>
-<p>
-  <img src="/static/bucket/001-Add-new-storage.png" alt="Click-on-new-storage" /></p>
-<ul>
-<li>
-<p>Type a storage name</p>
-</li>
-<li>
-<p>Select <code>Google Cloud Storage Bucket</code></p>
-</li>
-<li>
-<p>Create 
-  <a href="https://cloud.google.com/storage/docs/creating-buckets">Google Cloud Storage Bucket</a></p>
-</li>
-<li>
-<p>Click on the name of your bucket</p>
-</li>
-<li>
-<p>Select <code>Permissons</code> tab and click on <code>+ADD</code>:</p>
-</li>
-</ul>
-<p>
-  <img src="/static/google/01-add-permissions.png" alt="add-permissions" /></p>
-<ul>
-<li>Copy Service Account information from <code>Step 2</code>:</li>
-</ul>
-<p>
-  <img src="/static/google/02-copy.png" alt="copy-service-account" /></p>
+</blockquote>
+<p>Data deduplication is a custom storage setting. It&rsquo;s configured separately for each custom storage. Use an additional <code>Deduplication Type</code> combo box in the <code>New Storage</code> and <code>Edit Storage</code> dialogs to control the behavior of data deduplication:</p>
+<img src="/static/features/data-deduplication.png" alt="Data Deduplication"/>
+<h2 id="how-to-check-if-a-backup-is-deduplicated">How to check if a backup is deduplicated</h2>
+<p>In the dashboard, on the repository card, you&rsquo;ll find the <code>Backup Information</code> tooltip available for all backups. Within the tooltip there&rsquo;s an additional label <code>Deduplication</code>. There it says <code>Yes</code> if the backup has been deduplicated. See the screenshot below:</p>
+<img src="/static/features/data-deduplication-label.png" alt="Data Deduplication Label"/>
+<h2 id="learn-more">Learn more</h2>
 <ul>
 <li>
-<p>Paste it to the <code>New members</code> field</p>
-</li>
+  <a href="/features/metadata/">What is inside of a backup?</a></li>
 <li>
-<p>Select <code>Storage Object Admin</code> as <code>Role</code> and click on <code>Save</code>:</p>
-</li>
+  <a href="/features/archive/">Password-Protected Archives</a></li>
 </ul>
-<p>
-  <img src="/static/google/03-save-new-member.png" alt="save-member" /></p>
-<ul>
-<li>In Step 3 type your bucket name and click on <code>Save</code>:</li>
-</ul>
-<p>
-  <img src="/static/google/04-type-name.png" alt="type-name" /></p>
-<ul>
-<li>
-<p>The new storage will be selected as a storage for this repository</p>
-</li>
-<li>
-<p>Click on the ‘Save changes’ button to apply the changes for the repository:</p>
-</li>
-</ul>
-<p>
-  <img src="/static/google/05-save-changes.png" alt="save-changes" /></p>
 </article>
 
               
@@ -2808,17 +2774,17 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/c798b3e02750ff6c4cebb7e266240d67d284eb1a"
-                       title="Last modified by Victor Vorobyev | Jul 20, 2021" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/0d8fd77c528b893e2be59fc38fed8cc3f3625307"
+                       title="Last modified by Victor Vorobyev | May 12, 2022" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Jul 20, 2021</span>
+                      <span class="pl-2">May 12, 2022</span>
                     </a>
                     
                   </div>
                    <div class="article-footer-btn p-2">
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/custom-storages/google-cloud.md" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/deduplication.md" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
                       </svg>
@@ -2839,10 +2805,12 @@
   <nav class="pt-2">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#backup-github-repository-using-google-cloud-storage-bucket">Backup GitHub repository using Google Cloud Storage Bucket</a>
+    <li><a href="#data-deduplication">Data Deduplication</a>
       <ul>
-        <li><a href="#about-google-cloud-storage-bucket">About Google Cloud Storage Bucket</a></li>
-        <li><a href="#set-up-google-cloud-storage-bucket">Set up Google Cloud Storage Bucket</a></li>
+        <li><a href="#how-deduplication-works">How deduplication works</a></li>
+        <li><a href="#how-to-enable-deduplication">How to enable deduplication</a></li>
+        <li><a href="#how-to-check-if-a-backup-is-deduplicated">How to check if a backup is deduplicated</a></li>
+        <li><a href="#learn-more">Learn more</a></li>
       </ul>
     </li>
   </ul>
