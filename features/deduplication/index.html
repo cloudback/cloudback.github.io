@@ -2739,7 +2739,7 @@
 <p>With data deduplication, you can save a significant amount of cloud storage space and reduce operational costs. Cloudback offers a simple but efficient technique of data deduplication.</p>
 <h2 id="how-deduplication-works">How deduplication works</h2>
 <p>Our backup archives are deterministic. If nothing has changed in a GitHub repository, we create the same archive before encrypting it. Once the archive is encrypted, the AES encryption makes it non-deterministic.</p>
-<p>Cloudback compares the checksum of a new deterministic backup with a previous deterministic backup before being encrypted. If the archives match, Cloudback doesn&rsquo;t upload a new archive to storage, but stores a link to the previous archive.</p>
+<p>Cloudback compares the checksum of a new deterministic backup with a previous deterministic backup before encrypting it. If the archives match, Cloudback doesn&rsquo;t upload a new archive to storage, but instead stores a link to the previous archive. The retention policy is extended for the previous archive, it&rsquo;s not deleted until there are valid linked backups.</p>
 <p>Deduplication occurs when certain conditions are met:</p>
 <ul>
 <li>Deduplication is enabled for cloud storage in the <code>New storage</code> or the <code>Edit storage</code> dialogs</li>
@@ -2774,7 +2774,7 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/0d8fd77c528b893e2be59fc38fed8cc3f3625307"
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/258fd56f08f28be088566b934ba4b3fd587325af"
                        title="Last modified by Victor Vorobyev | May 12, 2022" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
