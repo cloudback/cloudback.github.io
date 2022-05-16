@@ -11,7 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/security/incident-response-plan/</guid>
-      <description>Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLECONSULTING S.A. (“we” or “Cloudback”). This document discusses the steps taken during an incident response plan.
+      <description>Incident Response Plan Introduction The purpose of the document is to establish the goals and the vision for the incident management process in the MYRTLE GROUP S.A. (“we” or “Cloudback”). This document discusses the steps taken during an incident response plan.
 Incident Response Process  The person who discovers the incident should contact Cloudback by one of the following ways:   Send an email to the support@cloudback.it Raise a request in the Cloudback issue tracker Use any contacts from Contact Us web page   If the person discovering the incident is a member of the Cloudback team, they will proceed to step four (4).</description>
     </item>
     
@@ -21,7 +21,7 @@ Incident Response Process  The person who discovers the incident should contact 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/security/disaster-recovery-plan-policy/</guid>
-      <description>Disaster Recovery Plan Policy Overview The purpose of the policy is to establish the goals and the vision for the disaster recovery process in the MYRTLECONSULTING S.A. (&amp;ldquo;we&amp;rdquo; or &amp;ldquo;Cloudback&amp;rdquo;). It is important to understand that having a contingency plan in the event of a disaster gives Cloudback a competitive advantage. This policy requires management to financially support and diligently attend to disaster contingency planning efforts. Disasters are not limited to adverse weather conditions.</description>
+      <description>Disaster Recovery Plan Policy Overview The purpose of the policy is to establish the goals and the vision for the disaster recovery process in the MYRTLE GROUP S.A. (&amp;ldquo;we&amp;rdquo; or &amp;ldquo;Cloudback&amp;rdquo;). It is important to understand that having a contingency plan in the event of a disaster gives Cloudback a competitive advantage. This policy requires management to financially support and diligently attend to disaster contingency planning efforts. Disasters are not limited to adverse weather conditions.</description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@ Incident Response Process  The person who discovers the incident should contact 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/security/data-breach-response-policy/</guid>
-      <description>Data Breach Response Policy Purpose The purpose of the policy is to establish the goals and the vision for the breach response process in the MYRTLECONSULTING S.A. (&amp;ldquo;we&amp;rdquo; or &amp;ldquo;Cloudback&amp;rdquo;). This policy will clearly define to whom it applies and under what circumstances, and it will include the definition of a breach, staff roles and responsibilities, standards and metrics (e.g., to enable prioritization of the incidents), as well as reporting, remediation, and feedback mechanisms.</description>
+      <description>Data Breach Response Policy Purpose The purpose of the policy is to establish the goals and the vision for the breach response process in the MYRTLE GROUP S.A. (&amp;ldquo;we&amp;rdquo; or &amp;ldquo;Cloudback&amp;rdquo;). This policy will clearly define to whom it applies and under what circumstances, and it will include the definition of a breach, staff roles and responsibilities, standards and metrics (e.g., to enable prioritization of the incidents), as well as reporting, remediation, and feedback mechanisms.</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@ Incident Response Process  The person who discovers the incident should contact 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/security/vulnerability-management-workflow/</guid>
-      <description>Vulnerability Management Workflow Introduction The purpose of the document is to describe the established vulnerability management workflow in the MYRTLECONSULTING S.A. (“we” or “Cloudback”).
+      <description>Vulnerability Management Workflow Introduction The purpose of the document is to describe the established vulnerability management workflow in the MYRTLE GROUP S.A. (“we” or “Cloudback”).
 Overview Vulnerability Management is the recurring process of identifying, classifying, prioritizing, mitigating, and remediating vulnerabilities. This document will focus on infrastructure vulnerabilities and the vulnerability management process. This process is designed to provide informationregarding Cloudback vulnerability workflow, promote healthy patch management among other preventative best-practices, and remediate risk; all with the end goal to better secure our environments.</description>
     </item>
     
