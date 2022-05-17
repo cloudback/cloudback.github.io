@@ -22,7 +22,8 @@ Schedule You can configure the exact hour you want to capture a backup every day
       
       <guid>https://docs.cloudback.it/features/various-backup-storages/</guid>
       <description>Various Backup Storages Cloudback allows you to store a backup archive in your own storage, leaving no copies to us. That is. Cloudback backs up a repository into an archive, sends the archive to your storage, and wipes the archive from Cloudback&amp;rsquo;s disk leaving no chance to recover any data from the Cloudback servers.
-Also, we offer our in-build storage named just Cloudback. It is an Azure Blob Storage with a Geo-redundant replication.</description>
+Also, we offer our in-build storage named just Cloudback.
+Register your storage In order to tell Cloudback to store backups into your own storage, please use the + New storage button in the settings of the repository card.</description>
     </item>
     
     <item>
