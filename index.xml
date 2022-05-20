@@ -198,6 +198,16 @@ The good news is that there is a workaround and Cloudback supports direct paymen
     </item>
     
     <item>
+      <title>Wasabi</title>
+      <link>https://docs.cloudback.it/custom-storages/wasabi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/custom-storages/wasabi/</guid>
+      <description>Backup GitHub repository using Wasabi About Wasabi Wasabi Storage Service is an object storage service with full S3 API support.
+Set up Wasabi as a custom storage  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the + New storage button:    Type a storage name:     Select ‘Wasabi S3 Bucket: Access Key’ as a storage provider</description>
+    </item>
+    
+    <item>
       <title>Bulk Operations</title>
       <link>https://docs.cloudback.it/features/bulk-operations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
