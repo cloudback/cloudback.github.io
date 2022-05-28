@@ -60,12 +60,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Supported Storages | Cloudback</title>
+<title>Instant Notifications | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/book.min.de41e9442d23b7b3b3365e5c9a081326aabcb7ac51bd3d30782cc02bc9f1ad8f.css" integrity="sha256-3kHpRC0jt7OzNl5cmggTJqq8t6xRvT0weCzAK8nxrY8=">
-<link rel="alternate" type="application/rss+xml" href="https://docs.cloudback.it/custom-storages/index.xml" title="Cloudback" />
 <script src="/docs.js"></script>
 
   
@@ -2113,7 +2112,7 @@
   
 
   
-    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox"  />
+    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox" checked />
     <label for="section-6ec23f89d32660817763f346261794c8">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
@@ -2259,7 +2258,7 @@
   
 
   
-    <a href="https://docs.cloudback.it/features/instant-notifications/" class="docs-menu-item d-flex ">
+    <a href="https://docs.cloudback.it/features/instant-notifications/" class="docs-menu-item d-flex  active">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Instant Notifications</span>
       </div>
@@ -2384,11 +2383,11 @@
   
 
   
-    <input id="section-b0ec2e819329f103ee9e810e29eed2ea" class="custom-input" type="checkbox" checked />
+    <input id="section-b0ec2e819329f103ee9e810e29eed2ea" class="custom-input" type="checkbox"  />
     <label for="section-b0ec2e819329f103ee9e810e29eed2ea">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
-          <a href="https://docs.cloudback.it/custom-storages/" class="active">Supported Storages</a>
+          <a href="https://docs.cloudback.it/custom-storages/" class="">Supported Storages</a>
           <span class="docs-menu-item-icon flex-grow-1 text-right">
             <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
               <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
@@ -2845,57 +2844,61 @@
           <div class="page-with-toc d-flex flex-grow-1">
             <div class="flex-column d-flex flex-grow-1">
               
-  <article class="markdown-body"><h1 id="supported-storages">Supported Storages</h1>
-<h2 id="cloudback-default-storage">Cloudback default storage</h2>
-<p>By default, Cloudback uses its own storage to backup GitHub repositories. The storage is available for all Cloudback users without any additional payments.</p>
-<h2 id="your-own-storages">Your own storages</h2>
-<p>Cloudback provides you the ability to set up your own storage that will be used to save repository backups.</p>
-<p>
-  <img src="/static/storages.svg" alt="supported-storages" /></p>
-<p>There are several options available for Cloudback users:</p>
+  <article class="markdown-body"><h1 id="instant-notifications">Instant Notifications</h1>
+<p>Cloudback supports real-time notifications via messenger services. Notifications about successful and failed backups are supported and can be configured per account in the <code>Notification Settings</code> dialog of the main menu. All notifications are webhook based - you need to configure your messenger service and get a special webhook URL.</p>
+<p>Supported messengers:</p>
 <ul>
-<li>Microsoft Azure Blob Storage</li>
-<li>Microsoft OneDrive Personal</li>
-<li>Microsoft OneDrive For Business</li>
-<li>Amazon S3 Bucket</li>
-<li>Amazon S3 Glacier</li>
-<li>Google Cloud Storage Bucket</li>
-<li>Alibaba Cloud Object Storage Service</li>
-<li>OpenStack Swift Container via S3 API</li>
-<li>Wasabi Bucket (S3)</li>
+<li>
+  <a href="/features/instant-notifications/#slack">Slack</a></li>
+<li>
+  <a href="/features/instant-notifications/#microsoft-teams">Microsoft Teams</a></li>
+<li>
+  <a href="/features/instant-notifications/#discord">Discord</a></li>
+<li>Need another one? Please raise a feature request: 
+  <a href="https://github.com/cloudback/issue-tracker/issues/new?template=feature_request.md">link</a></li>
 </ul>
-<p>Each of the options can be used as a custom storage for the repository backups. You can use any of your custom storage for each of your GitHub repositories. Please be aware that the user-defined storages are provided by third-party companies may require additional expenses which are not included in Cloudback&rsquo;s pricing.</p>
-<h2 id="setting-up-a-custom-storage">Setting up a custom storage</h2>
-<p>You can set up custom storage using the steps below.</p>
-<p><strong>Step 1:</strong> Open repository settings</p>
-<p>Open repository settings by clicking on the <code>Settings</code> button in the top right corner of your repository card</p>
 <p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/custom_storage_screeshot1.png?raw=true" alt="img" class="screenshot">
+  <img src="/static/features/instant-notifications.png" data-alt="/static/features/instant-notifications.gif"
+       alt="Instant Notifications Settings" onclick="swapGif(this)" style="cursor: pointer;"/>
 </p>
-<p><strong>Step 2:</strong> Open the &lsquo;New Storage&rsquo; window</p>
-<p>Click on the <code>+ New storage</code> button in the middle of the repository card settings</p>
+<h2 id="slack">Slack</h2>
+<ul>
+<li>Website: 
+  <a href="https://slack.com">https://slack.com</a></li>
+<li>Webhook guide: 
+  <a href="https://api.slack.com/messaging/webhooks">https://api.slack.com/messaging/webhooks</a></li>
+</ul>
 <p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/custom_storage_screeshot2.png?raw=true" alt="img" class="screenshot">
+  <img src="/static/features/instant-notifications-slack.png" alt="Discord Notification"/>
 </p>
-<p><strong>Step 3:</strong> Fill in storage details</p>
-<p>Type the name of the storage you want to create, select the storage provider, fill in other required details for the storage and click on the <code>Save</code> button.</p>
+<h2 id="microsoft-teams">Microsoft Teams</h2>
+<ul>
+<li>Website: 
+  <a href="https://www.microsoft.com/en-us/microsoft-teams">https://www.microsoft.com/en-us/microsoft-teams</a></li>
+<li>Webhook guide: 
+  <a href="https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook">https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook</a></li>
+</ul>
 <p align="center">
-  <img src="https://github.com/cloudback/docs/blob/master/static/custom_storage_screeshot3.png?raw=true" alt="img" class="screenshot">
+  <img src="/static/features/instant-notifications-msteams.png" alt="Discord Notification"/>
 </p>
-<p>Read more about setting up the custom storages:</p>
+<h2 id="discord">Discord</h2>
+<ul>
+<li>Website: 
+  <a href="https://discord.com">https://discord.com</a></li>
+<li>Webhook guide: 
+  <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks">https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks</a></li>
+</ul>
+<p align="center">
+  <img src="/static/features/instant-notifications-discord.png" alt="Discord Notification"/>
+</p>
+<h2 id="learn-more">Learn more</h2>
 <ul>
 <li>
-  <a href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/">Set up new storage using Microsoft Azure Blob Container</a></li>
+  <a href="/features/email-notifications/">Email notifications</a></li>
 <li>
-  <a href="https://docs.cloudback.it/custom-storages/amazon-s3-bucket/">Set up new storage using Amazon S3 Bucket</a></li>
+  <a href="/features/metadata/">What is inside of a backup?</a></li>
 <li>
-  <a href="https://docs.cloudback.it/custom-storages/amazon-s3-glacier/">Set up new storage using Amazon S3 Glacier</a></li>
-<li>
-  <a href="https://docs.cloudback.it/custom-storages/google-cloud/">Set up new storage using Google Cloud Storage Bucket</a></li>
-<li>
-  <a href="https://docs.cloudback.it/custom-storages/alibaba-cloud/">Set up new storage using Alibaba Cloud Object Storage Service</a></li>
-<li>
-  <a href="https://docs.cloudback.it/custom-storages/wasabi/">Set up new storage using Wasabi Storage Service</a></li>
+  <a href="/features/various-backup-storages/">What is a backup storage?</a></li>
 </ul>
 </article>
 
@@ -2905,17 +2908,17 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/adfff342c0bca3ede0493c7df742380b30334d1d"
-                       title="Last modified by Victor Vorobyev | May 12, 2022" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/92b94e9d079ac20c3f8e028d3ebe901ea38b5bdb"
+                       title="Last modified by Victor Vorobyev | May 28, 2022" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">May 12, 2022</span>
+                      <span class="pl-2">May 28, 2022</span>
                     </a>
                     
                   </div>
                    <div class="article-footer-btn p-2">
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/custom-storages/_index.md" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/instant-notifications.md" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
                       </svg>
@@ -2939,11 +2942,12 @@
   <nav class="pt-2">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#supported-storages">Supported Storages</a>
+    <li><a href="#instant-notifications">Instant Notifications</a>
       <ul>
-        <li><a href="#cloudback-default-storage">Cloudback default storage</a></li>
-        <li><a href="#your-own-storages">Your own storages</a></li>
-        <li><a href="#setting-up-a-custom-storage">Setting up a custom storage</a></li>
+        <li><a href="#slack">Slack</a></li>
+        <li><a href="#microsoft-teams">Microsoft Teams</a></li>
+        <li><a href="#discord">Discord</a></li>
+        <li><a href="#learn-more">Learn more</a></li>
       </ul>
     </li>
   </ul>

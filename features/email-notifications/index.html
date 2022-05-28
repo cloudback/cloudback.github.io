@@ -1273,6 +1273,40 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/instant-notifications/">Instant Notifications<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Instant Notifications
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/invoiced-customers/">Invoiced Customers<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -2224,6 +2258,23 @@
   
 
   
+    <a href="https://docs.cloudback.it/features/instant-notifications/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Instant Notifications</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="https://docs.cloudback.it/features/github-organizations/" class="docs-menu-item d-flex ">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">GitHub Organizations</span>
@@ -2794,23 +2845,20 @@
             <div class="flex-column d-flex flex-grow-1">
               
   <article class="markdown-body"><h1 id="email-notifications">Email Notifications</h1>
-<p>If something goes wrong and a backup process fails we will send you an email notification. We send notifications daily at 22:00 UTC with all failures of automated backups in the previous 24 hours.</p>
-<p>Once any backup is failed our Support Team gets notification as well. Is the issue is not related to 
-  <a href="/features/email-notifications/#1-storage-issue">storage</a>, the team starts investigation as soon as possible and reports you their findings by email.</p>
-<p>Please note: email notifications are enabled for automated backups only. Cloudback doesn&rsquo;t send email notifications for manual on-demand backups.</p>
+<p>If something goes wrong and a backup process fails, we will send you an email notification. We send a daily notification at 22:00 UTC with all failed automatic backups in the last 24 hours.</p>
+<p>Once a backup has failed, our support team will also be notified. If the problem is not related to 
+  <a href="/features/email-notifications/#1-storage-issue">storage</a>, the team will start investigating as soon as possible and notify you of the results via email.</p>
+<p>Please note: Email notifications are only enabled for automatic backups. Cloudback does not send email notifications for manual on-demand backups.</p>
 <img src="/static/features/email-failure-notification.png" alt="Email notification"/>
 <h2 id="email-address">Email address</h2>
-<ul>
-<li>All emails and email notification are sent to a GitHub account 
-  <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/changing-your-primary-email-address">primary email address</a>.</li>
-<li>Email address for failed backup notifications can be changed in <code>Account Settings</code> menu:</li>
-</ul>
+<p>All emails and email notifications are sent to the 
+  <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/changing-your-primary-email-address">primary email address</a> of a GitHub account by default. However, the email address for failed backup notifications can be changed in the <code>Notification Settings</code> menu:</p>
 <p align="center">
   <img src="/static/features/email-override.png" data-alt="/static/features/email-override.gif"
        alt="Change Failed Backups Notifications Email" onclick="swapGif(this)" style="cursor: pointer;"/>
 </p>
 <h2 id="why-can-a-backup-fail">Why can a backup fail?</h2>
-<p>A backup can fail for various reasons, almost all of them fall into four categories:</p>
+<p>A backup can fail for a number of reasons, almost all of which fall into four categories:</p>
 <h3 id="1-storage-issue">1. Storage issue</h3>
 <p>The issue related to storage is the most frequent cause of backup failures. Usually, Cloudback loses access to your storage and is unable to upload an archive. Below are typical situations:</p>
 <ul>
@@ -2821,23 +2869,26 @@
 <p>In order to troubleshoot a storage issue please verify your storage settings in the repository card using the <code>Edit storage</code> button:</p>
 <img src="/static/features/edit-storage.png" alt="Edit storage" width=500/>
 <h3 id="2-github-account-issue">2. GitHub account issue</h3>
-<p>There may be two types of issues related to your GitHub account:</p>
+<p>There can be two types of issues related to your GitHub account:</p>
 <ul>
-<li>
-  <a href="github.com/apps/cloudback">Cloudback App</a> installation may be suspended or uninstalled from your account. If the application is uninstalled, Cloudback cannot access your data so backup fails.</li>
-<li>Repository may be deleted or inaccessible to Cloudback App</li>
-<li>Your GitHub account may be locked or suspended. It is rare but happens. Please check your account is accessible.</li>
+<li>The installation of 
+  <a href="https://github.com/apps/cloudback">Cloudback App</a> may be suspended or uninstalled from your account. If the app is uninstalled, Cloudback will not be able to access your data, so the backup will fail.</li>
+<li>The repository may be deleted or inaccessible to the Cloudback App.</li>
+<li>Your GitHub account may be locked or suspended. This is rare, but does happen. Please check if your account is accessible.</li>
 </ul>
 <h3 id="3-cloudback-issue">3. Cloudback issue</h3>
-<p>Sometimes backup software itself can fail. It happens and our Cloudback Support Team is in charge to recover the backup, analyze a root cause and implement all necessary changes to prevent it from happening in the future. Please 
-  <a href="/contact-us/">contact us</a> if you think it is the case.</p>
+<p>Sometimes the backup software itself can fail. This happens and our Cloudback Support Team is responsible for restoring the backup, analyzing the cause and making any necessary changes to prevent this from happening in the future. Please 
+  <a href="/contact-us/">contact us</a> if you believe this is the case.</p>
 <h3 id="4-github-outage">4. GitHub outage</h3>
-<p>GitHub itself may go offline, sometimes it happens and may last a few hours. Cloudback will try to backup 6 times in 6 hours. If nothing works a backup will fail. There is a 
-  <a href="https://www.githubstatus.com/">GitHub Status</a> page where you can check the <code>API Requests</code> operational status.</p>
+<p>GitHub itself can go offline. This happens sometimes and can take a few hours. Cloudback will try to backup 6 times in 6 hours. If nothing works, a backup will fail. There is a page 
+  <a href="https://www.githubstatus.com/">GitHub Status</a> where you can check the operational status of the &lsquo;API Requests&rsquo;.</p>
 <h2 id="notifications-on-a-successful-backup">Notifications on a successful backup</h2>
-<p>As for now, we support failure notifications only. Please let us know if you need daily notifications of all your successful backups and we will consider implementing this feature.</p>
+<p>At the moment, you will be notified by email of failures only. Take a look at 
+  <a href="/features/instant-notifications/">Instant Notification</a> - notifications about successful backups are supported there.</p>
 <h2 id="learn-more">Learn more</h2>
 <ul>
+<li>
+  <a href="/features/instant-notifications/">Instant notifications</a></li>
 <li>
   <a href="/features/metadata/">What is inside of a backup?</a></li>
 <li>
@@ -2851,12 +2902,12 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/96f50d72b5dc96b67f808ad90034213cbafa348c"
-                       title="Last modified by Victor Vorobyev | Jan 28, 2022" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/92b94e9d079ac20c3f8e028d3ebe901ea38b5bdb"
+                       title="Last modified by Victor Vorobyev | May 28, 2022" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Jan 28, 2022</span>
+                      <span class="pl-2">May 28, 2022</span>
                     </a>
                     
                   </div>

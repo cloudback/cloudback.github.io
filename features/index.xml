@@ -74,8 +74,19 @@ Prerequisites The restore process requires read-write access to your GitHub data
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/features/email-notifications/</guid>
-      <description>Email Notifications If something goes wrong and a backup process fails we will send you an email notification. We send notifications daily at 22:00 UTC with all failures of automated backups in the previous 24 hours.
-Once any backup is failed our Support Team gets notification as well. Is the issue is not related to storage, the team starts investigation as soon as possible and reports you their findings by email.</description>
+      <description>Email Notifications If something goes wrong and a backup process fails, we will send you an email notification. We send a daily notification at 22:00 UTC with all failed automatic backups in the last 24 hours.
+Once a backup has failed, our support team will also be notified. If the problem is not related to storage, the team will start investigating as soon as possible and notify you of the results via email.</description>
+    </item>
+    
+    <item>
+      <title>Instant Notifications</title>
+      <link>https://docs.cloudback.it/features/instant-notifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/features/instant-notifications/</guid>
+      <description>Instant Notifications Cloudback supports real-time notifications via messenger services. Notifications about successful and failed backups are supported and can be configured per account in the Notification Settings dialog of the main menu. All notifications are webhook based - you need to configure your messenger service and get a special webhook URL.
+Supported messengers:
+  Slack  Microsoft Teams  Discord Need another one? Please raise a feature request: link  Slack  Website: https://slack.</description>
     </item>
     
     <item>
