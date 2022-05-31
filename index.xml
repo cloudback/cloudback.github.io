@@ -162,8 +162,8 @@ Step 1: Set up a new plan from the GitHub Marketplace  Open Cloudback&amp;rsquo;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/features/restore-to-github/</guid>
-      <description>Restore to GitHub Cloudback allows you to restore a particular backup into a GitHub repository. This is a manual operation accessible from the repository card in the Cloudback Dashboard.
-Prerequisites The restore process requires read-write access to your GitHub data. Permissions are managed by GitHub applications. Cloudback GitHub application has read-only access only, according to the least privilege principle. We published an additional Cloudback Restore GitHub application with read-write access to your data.</description>
+      <description>Restore to GitHub Cloudback allows you to restore any backup to a new GitHub repository. This is a manual process, accessible from the repository card in the Cloudback Dashboard.
+Prerequisites The restore process requires read and write access to your GitHub data, but the Cloudback app has read-only access, following the principle of least privilege. We have released an additional application Cloudback Restore with read and write access to your data.</description>
     </item>
     
     <item>
