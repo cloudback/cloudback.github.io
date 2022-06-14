@@ -183,9 +183,7 @@ Once a backup has failed, our support team will also be notified. If the problem
       
       <guid>https://docs.cloudback.it/features/instant-notifications/</guid>
       <description>Instant Notifications Cloudback supports real-time notifications via messenger services:
-Notifications about successful and failed backups are supported and can be configured per account in the Notification Settings dialog of the main menu. All notifications are webhook based - you need to configure your messenger service and get a special webhook URL.
-Supported messengers:
-  Slack  Microsoft Teams  Discord Need another one? Please raise a feature request using our issue tracker  Slack  Website: https://slack.</description>
+Instant Notifications about successful and failed backups can be configured per account in the &amp;lsquo;Notification Settings&amp;rsquo; dialog of the main menu of Cloudback Dashboard. All notifications are Webhook based. Webhooks are user-defined HTTP URL callbacks. They are usually triggered to facilitate integration of different applications, in our particular case it is Cloudback and a Messenger. Within a Messenger, you can create an Incoming Webhook for a text channel and get a URL for created Webhook.</description>
     </item>
     
     <item>

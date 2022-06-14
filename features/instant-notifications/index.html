@@ -2881,48 +2881,49 @@
   <article class="markdown-body"><h1 id="instant-notifications">Instant Notifications</h1>
 <p>Cloudback supports real-time notifications via messenger services:</p>
 <img src="/static/features/instant-notifications-desktop.png" alt="Instant Notifications"/>
-<p>Notifications about successful and failed backups are supported and can be configured per account in the <code>Notification Settings</code> dialog of the main menu. All notifications are webhook based - you need to configure your messenger service and get a special webhook URL.</p>
-<p>Supported messengers:</p>
-<ul>
-<li>
-  <a href="/features/instant-notifications/#slack">Slack</a></li>
-<li>
-  <a href="/features/instant-notifications/#microsoft-teams">Microsoft Teams</a></li>
-<li>
-  <a href="/features/instant-notifications/#discord">Discord</a></li>
-<li>Need another one? Please raise a feature request using our 
-  <a href="https://github.com/cloudback/issue-tracker/issues/new?template=feature_request.md">issue tracker</a></li>
-</ul>
+<p>Instant Notifications about successful and failed backups can be configured per account in the &lsquo;Notification Settings&rsquo; dialog of the main menu of <strong>Cloudback Dashboard</strong>. All notifications are <strong>Webhook</strong> based. <strong>Webhooks</strong> are user-defined HTTP URL callbacks. They are usually triggered to facilitate integration of different applications, in our particular case it is Cloudback and a Messenger. Within a Messenger, you can create an <strong>Incoming Webhook</strong> for a text channel and get a URL for created <strong>Webhook</strong>. Then you pass that <strong>Webhook URL</strong> to Cloudback, and when Cloudback wants to send a notification, it triggers the <strong>Webhook URL</strong> provided.</p>
+<p>Supported messengers are 
+  <a href="/features/instant-notifications/#slack">Slack</a>, 
+  <a href="/features/instant-notifications/#microsoft-teams">Microsoft Teams</a>, and 
+  <a href="/features/instant-notifications/#discord">Discord</a>. If you need another one - please submit a request via our 
+  <a href="https://github.com/cloudback/issue-tracker/issues/new?template=feature_request.md">issue tracker</a>.</p>
+<p>The steps to configure instant notifications are similar for all messengers:</p>
+<ol>
+<li>Go to your messenger, create <strong>Incoming Webhook</strong>, and get its <strong>Webhook URL</strong>.</li>
+<li>Go to <strong>Cloudback Dashboard</strong> and enter this <strong>Webhook URL</strong> in the &lsquo;Notification Settings&rsquo; dialog.</li>
+</ol>
 <p align="center">
   <img src="/static/features/instant-notifications.png" data-alt="/static/features/instant-notifications.gif"
        alt="Instant Notifications Settings" onclick="swapGif(this)" style="cursor: pointer;"/>
 </p>
 <h2 id="slack">Slack</h2>
 <ul>
-<li>Website: 
+<li>Messenger website: 
   <a href="https://slack.com">https://slack.com</a></li>
-<li>Webhook guide: 
-  <a href="https://api.slack.com/messaging/webhooks">https://api.slack.com/messaging/webhooks</a></li>
+<li>To configure Incoming Webhook please follow the Slack guide: 
+  <a href="https://api.slack.com/messaging/webhooks">Sending messages using Incoming Webhooks</a></li>
 </ul>
 <p align="center">
   <img src="/static/features/instant-notifications-slack.png" alt="Discord Notification"/>
 </p>
 <h2 id="microsoft-teams">Microsoft Teams</h2>
 <ul>
-<li>Website: 
+<li>Messenger website: 
   <a href="https://www.microsoft.com/en-us/microsoft-teams">https://www.microsoft.com/en-us/microsoft-teams</a></li>
-<li>Webhook guide: 
-  <a href="https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook">https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook</a></li>
+<li>An overview of Webhooks for Microsoft Teams: 
+  <a href="https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors">What are webhooks and connectors</a></li>
+<li>Tutorial on how to create an incoming webhook for Microsoft Teams: 
+  <a href="https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook">Add incoming webhook</a></li>
 </ul>
 <p align="center">
   <img src="/static/features/instant-notifications-msteams.png" alt="Discord Notification"/>
 </p>
 <h2 id="discord">Discord</h2>
 <ul>
-<li>Website: 
+<li>Messenger website: 
   <a href="https://discord.com">https://discord.com</a></li>
-<li>Webhook guide: 
-  <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks">https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks</a></li>
+<li>A guide on how to create an Incoming Webhook in Discord: 
+  <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks">Intro to Webhooks</a></li>
 </ul>
 <p align="center">
   <img src="/static/features/instant-notifications-discord.png" alt="Discord Notification"/>
@@ -2944,12 +2945,12 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/7f500683d54af9e9f326c2ff79079701c3dda4b2"
-                       title="Last modified by Victor Vorobyev | May 29, 2022" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/74448fd7ba69c7a7ae78d797d253411ad5f5989d"
+                       title="Last modified by Victor Vorobyev | Jun 12, 2022" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">May 29, 2022</span>
+                      <span class="pl-2">Jun 12, 2022</span>
                     </a>
                     
                   </div>
