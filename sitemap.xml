@@ -12,10 +12,10 @@
     <lastmod>2021-08-18T19:12:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/</loc>
-    <lastmod>2021-07-26T19:50:17+03:00</lastmod>
+    <lastmod>2021-07-26T19:50:29+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/amazon-s3-bucket/</loc>
-    <lastmod>2021-07-26T19:50:17+03:00</lastmod>
+    <lastmod>2021-07-26T19:50:29+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</loc>
     <lastmod>2021-08-18T19:12:37+03:00</lastmod>
@@ -27,7 +27,7 @@
     <lastmod>2021-07-29T22:18:36+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</loc>
-    <lastmod>2021-07-26T19:50:17+03:00</lastmod>
+    <lastmod>2021-07-26T19:50:29+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</loc>
     <lastmod>2022-01-29T16:28:42+03:00</lastmod>
@@ -36,10 +36,10 @@
     <lastmod>2022-05-13T02:24:56+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/google-cloud/</loc>
-    <lastmod>2021-07-26T19:50:17+03:00</lastmod>
+    <lastmod>2021-07-26T19:50:29+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/onedrive/</loc>
-    <lastmod>2021-07-26T19:50:17+03:00</lastmod>
+    <lastmod>2021-07-26T19:50:29+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/manual-backups/</loc>
     <lastmod>2022-05-13T02:24:56+03:00</lastmod>
@@ -63,7 +63,7 @@
     <lastmod>2022-06-12T12:15:43+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/</loc>
-    <lastmod>2022-05-29T12:15:43+03:00</lastmod>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/github-organizations/</loc>
     <lastmod>2021-07-27T01:19:10+03:00</lastmod>
@@ -75,7 +75,7 @@
     <lastmod>2022-06-13T16:31:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/bulk-operations/</loc>
-    <lastmod>2021-07-26T19:50:17+03:00</lastmod>
+    <lastmod>2021-07-26T19:50:29+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/security/incident-response-plan/</loc>
     <lastmod>2022-05-16T21:44:32+03:00</lastmod>
@@ -92,8 +92,17 @@
     <loc>https://docs.cloudback.it/features/deduplication/</loc>
     <lastmod>2022-05-13T02:24:56+03:00</lastmod>
   </url><url>
+    <loc>https://docs.cloudback.it/features/card-view/</loc>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
+  </url><url>
     <loc>https://docs.cloudback.it/security/</loc>
     <lastmod>2022-07-11T22:22:04+03:00</lastmod>
+  </url><url>
+    <loc>https://docs.cloudback.it/features/table-view/</loc>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
+  </url><url>
+    <loc>https://docs.cloudback.it/features/custom-schedule/</loc>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/security/disaster-recovery-plan-policy/</loc>
     <lastmod>2022-05-16T21:44:32+03:00</lastmod>
@@ -114,24 +123,27 @@
     <lastmod>2022-05-16T21:44:32+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/categories/</loc>
-    <lastmod>2022-05-29T12:15:43+03:00</lastmod>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
   </url><url>
-    <loc>https://docs.cloudback.it/posts/instant-notifications/</loc>
-    <lastmod>2022-05-29T12:15:43+03:00</lastmod>
+    <loc>https://docs.cloudback.it/posts/table-view/</loc>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/tags/news/</loc>
-    <lastmod>2022-05-29T12:15:43+03:00</lastmod>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/categories/news/</loc>
-    <lastmod>2022-05-29T12:15:43+03:00</lastmod>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/tags/release-notes/</loc>
-    <lastmod>2022-05-29T12:15:43+03:00</lastmod>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/categories/release-notes/</loc>
-    <lastmod>2022-05-29T12:15:43+03:00</lastmod>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/tags/</loc>
+    <lastmod>2022-07-12T15:49:28+03:00</lastmod>
+  </url><url>
+    <loc>https://docs.cloudback.it/posts/instant-notifications/</loc>
     <lastmod>2022-05-29T12:15:43+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/posts/data-deduplication/</loc>

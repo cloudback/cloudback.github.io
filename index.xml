@@ -270,6 +270,41 @@ Cloudback compares the checksum of a new deterministic backup with a previous de
     </item>
     
     <item>
+      <title>Card View</title>
+      <link>https://docs.cloudback.it/features/card-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/features/card-view/</guid>
+      <description>Card View It is a default view for Cloudback Dashboard, extremely simple and user friendly. Suitable for small number of repositories and basic scenarios.
+Card Controls The schema below depicts all buttons on the card
+Front side of the card Here you can find the next functionality:
+ The status of the repository The list of latest backups Trigger backup manually Restore arbitrary backup Download an archive of arbitrary backup  Back side of the card Here you can find the next functionality:</description>
+    </item>
+    
+    <item>
+      <title>Table View</title>
+      <link>https://docs.cloudback.it/features/table-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/features/table-view/</guid>
+      <description>Table View Advanced screen for managing a large number of repositories.
+Table Controls The schema below depicts all buttons on the table
+Main Grid Here you can find the next functionality:
+ The list of repositories and their statuses Sorting and filtering Checkboxes for triggering multiple backups at once  Repository Settings Here you can find the next functionality:
+ Toggle scheduled/not scheduled  don&amp;rsquo;t forget to press Save button   Set up schedule/retention/storage for the repository  Backups and Restores Here you can find the next functionality:</description>
+    </item>
+    
+    <item>
+      <title>Custom Schedules</title>
+      <link>https://docs.cloudback.it/features/custom-schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/features/custom-schedule/</guid>
+      <description>Custom Schedules Cloudback provides build-in schedules for daily backups out of the box. If you want to backup on a weekly or monthly basis, you can create your own schedule using the Schedule Manager from the Main Menu. Once you create your own schedule, it becomes available in the Schedule dropdown box of repository settings.
+Example: Every Monday Morning Schedule Let&amp;rsquo;s create Every Monday Morning schedule for weekly backups step-by-step:</description>
+    </item>
+    
+    <item>
       <title>Disaster Recovery Plan Policy</title>
       <link>https://docs.cloudback.it/security/disaster-recovery-plan-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -295,6 +330,15 @@ Cloudback compares the checksum of a new deterministic backup with a previous de
       <guid>https://docs.cloudback.it/security/vulnerability-management-workflow/</guid>
       <description>Vulnerability Management Workflow Introduction The purpose of the document is to describe the established vulnerability management workflow in the MYRTLE GROUP S.A. (“we” or “Cloudback”).
 Overview Vulnerability Management is the recurring process of identifying, classifying, prioritizing, mitigating, and remediating vulnerabilities. This document will focus on infrastructure vulnerabilities and the vulnerability management process. This process is designed to provide informationregarding Cloudback vulnerability workflow, promote healthy patch management among other preventative best-practices, and remediate risk; all with the end goal to better secure our environments.</description>
+    </item>
+    
+    <item>
+      <title>New feature: Table View</title>
+      <link>https://docs.cloudback.it/posts/table-view/</link>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/table-view/</guid>
+      <description>The Cloudback team is happy to announce that an alternative view for Cloudback Dashboard is released. It is a Table View. Using table view it is much easier to navigate through a large number of repositories and trigger on-demand backups. We put the Table View Toggle in the header, so it is always easy to switch to the Table View and back to the Card View. It was a feature request of our client and we are glad to deliver it.</description>
     </item>
     
     <item>

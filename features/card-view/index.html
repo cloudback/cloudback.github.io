@@ -1,0 +1,3244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Cloudback secures your GitHub repositories with recurrent data backup. With Cloudback you can use your favorite cloud storage provider or a built-in one.">
+  <meta property="og:title" content="GitHub Repository Backup | Cloudback Documentation">
+  <meta property="og:site_name" content="Cloudback">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://cloudback.it">
+  <meta property="og:image" content="https://cloudback.it/lib/logo/social.png">
+  <meta property="og:description" content="Cloudback secures your GitHub repositories with recurrent data backup. With Cloudback you can use your favorite cloud storage provider or a built-in one.">
+  <meta name="twitter:title" content="GitHub Repository Backup | Cloudback Documentation">
+  <meta name="twitter:description" content="Cloudback secures your GitHub repositories with recurrent data backup. With Cloudback you can use your favorite cloud storage provider or a built-in one.">
+  <meta name="twitter:image" content="https://cloudback.it/lib/logo/social.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="github backup">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Cloudback",
+      "abstract": "Backups your GitHub repositories, fast and secure",
+      "text": "Cloudback secures your repositories with recurrent data backups. With Cloudback you can use your favorite cloud storage or in-build one.",
+      "url": "https://cloudback.it/",
+      "image": "https://cloudback.it/lib/logo/social.png",
+      "installUrl": "https://github.com/apps/cloudback/installations/new",
+      "downloadUrl": "https://github.com/marketplace/cloudback",
+      "screenshot": "https://marketplace-screenshots.githubusercontent.com/7736/3848af80-eb9a-11ea-98b5-fe5cbfe991f7?auto=webp&format=jpeg",
+      "applicationCategory": "SecurityApplication"
+    }
+  </script>
+  <script>
+    var remark_config = {
+      host: 'https://cloudback.it/remark42',
+      site_id: '2e84800d050d41c3a3696581e5f583af',
+    }
+  </script>
+  <script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
+  <script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+  
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Card View | Cloudback</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" href="/book.min.de41e9442d23b7b3b3365e5c9a081326aabcb7ac51bd3d30782cc02bc9f1ad8f.css" integrity="sha256-3kHpRC0jt7OzNl5cmggTJqq8t6xRvT0weCzAK8nxrY8=">
+<script src="/docs.js"></script>
+
+  
+</head>
+
+
+
+
+
+<body class="body-background">
+  <div class="page d-flex flex-column h-100">
+    
+      
+        <div class="d-flex flex-column w-100 big-header position-relative">
+            <div class="w-100 flex-grow-1">
+    <svg preserveAspectRatio="xMidYMin meet" class="float-left position-absolute h-100 width-auto svg-background" 
+      width="875" height="500" viewBox="0 0 875 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0L461.5 245.5L875 0H0Z" fill="url(#paint0_linear)" fill-opacity="0.42"/>
+      <path d="M3.96393e-05 499.5L0 0L461.5 245.5L3.96393e-05 499.5Z" fill="var(--docs-menu-background)"/>
+      <defs>
+        <linearGradient id="paint0_linear" x1="-1.14624e-05" y1="615" x2="832.965" y2="487.073" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#7B93AC"/>
+          <stop offset="1" stop-color="#7B93AC" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="w-100 flex-grow-1">
+    <svg preserveAspectRatio="xMidYMax meet" class="float-right position-absolute h-100 bottom-0 right-0 width-auto svg-background" 
+      width="875" height="500" viewBox="0 0 875 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M875 500V0L455 256.147L875 500Z" fill="url(#paint1_linear)" fill-opacity="0.42"/>
+      <path d="M875 500.001H0L455 256.15L875 500.001Z" fill="var(--docs-menu-background)"/>
+      <defs>
+        <linearGradient id="paint1_linear" x1="1076.37" y1="383.956" x2="1115.67" y2="89.6407" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#7B93AC"/>
+          <stop offset="1" stop-color="#7B93AC" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="z-index-10">
+    <div class="m-3">
+      <div class="container d-flex">
+        <a href="/" class="d-flex align-center text-color scale-on-hover">
+          <svg class="h36 w36" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="var(--text-color)">
+            <path d="M18.5263 25.2632C22.247 25.2632 25.2632 22.247 25.2632 18.5263C25.2632 14.8057 22.247 11.7895 18.5263 11.7895C14.8057 11.7895 11.7895 14.8057 11.7895 18.5263C11.7895 22.247 14.8057 25.2632 18.5263 25.2632Z"/>
+            <path d="M18.5263 52.2105C22.247 52.2105 25.2632 49.1943 25.2632 45.4737C25.2632 41.753 22.247 38.7368 18.5263 38.7368C14.8057 38.7368 11.7895 41.753 11.7895 45.4737C11.7895 49.1943 14.8057 52.2105 18.5263 52.2105Z"/>
+            <path d="M45.4737 52.2105C49.1943 52.2105 52.2105 49.1943 52.2105 45.4737C52.2105 41.753 49.1943 38.7368 45.4737 38.7368C41.753 38.7368 38.7368 41.753 38.7368 45.4737C38.7368 49.1943 41.753 52.2105 45.4737 52.2105Z"/>
+            <path d="M15.1579 18.5263H21.8947V45.4737H15.1579V18.5263Z"/>
+            <path d="M15.1579 19.9215L19.9216 15.1578L47.3126 42.5489L42.549 47.3125L15.1579 19.9215Z"/>
+            <path d="M0 10.1053C0 4.52428 4.52428 0 10.1053 0H53.8947C59.4757 0 64 4.52428 64 10.1053V18.5263H57.2632V11.7895C57.2632 8.99898 55.001 6.73684 52.2105 6.73684H11.7895C8.99898 6.73684 6.73684 8.99898 6.73684 11.7895V52.2105C6.73684 55.001 8.99898 57.2632 11.7895 57.2632H52.2105C55.001 57.2632 57.2632 55.001 57.2632 52.2105V45.4737H64V53.8947C64 59.4757 59.4757 64 53.8947 64H10.1053C4.52428 64 0 59.4757 0 53.8947V10.1053Z"/>
+          </svg>
+          <h3 class="align-center fw600 pl-2 hide-768">Cloudback</h3>
+        </a>
+        <div class="flex-grow-1"></div>
+        <a href="http://cloudback.it/" class="d-flex align-center text-color scale-on-hover">
+          <h3 class="align-center fw600 pl-3 pr-3 hide-768">Home</h3>
+        </a>
+        <a href="/what-is-cloudback/" class="d-flex align-center text-color scale-on-hover">
+          <h3 class="align-center fw600 pl-3 pr-3 hide-768">Docs</h3>
+        </a>
+        <a href="/posts" class="d-flex align-center text-color scale-on-hover">
+          <h3 class="align-center fw600 pl-3 pr-3 hide-768">Blog</h3>
+        </a>
+        <div class="d-flex justify-end pr-3 pl-3">
+          <div class="d-table h-100">
+            <div class="d-table-cell v-align-middle">
+              <select class="p-1 docs-content-background font-size-small" id="theme-select">
+                <option>Light theme</option>
+                <option>Dark theme</option>
+              </select>  
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/marketplace/cloudback" class="sign-in-btn shadow-sm d-flex align-center float-right docs-content-background">
+          <svg class="h20 w20" fill="var(--text-color)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+          <span class="pl-2 fw600">Start Free Trial</span>
+        </a>
+      </div>
+      <div class="show-768">
+        <div class="container d-flex pt-3 pb-3">
+          <div class="flex-grow-1"></div>
+          <a href="http://cloudback.it/" class="d-flex align-center text-color scale-on-hover">
+            <h3 class="align-center fw600 pr-3">Home</h3>
+          </a>
+          <a href="/" class="d-flex align-center text-color scale-on-hover">
+            <h3 class="align-center fw600 pl-3 pr-3">Docs</h3>
+          </a>
+          <a href="/posts" class="d-flex align-center text-color scale-on-hover">
+            <h3 class="align-center fw600 pl-3">Blog</h3>
+          </a>
+          <div class="flex-grow-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+      
+    
+    <input type="checkbox" class="hidden menu-control" id="menu-control">
+    <main class="page-main container w-100">
+      <input type="checkbox" class="hidden toc-control" id="toc-control">
+      <div class="d-flex h-100">
+        
+        <aside class="docs-menu">
+          <div class="docs-menu-content">
+            <div class="d-flex">
+              <div class="close-menu">
+                <div class="p-2">
+                  <label for="menu-control" class="toc-label toc-label-close cursor-pointer p-2">
+                    <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                      <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z">
+                      </path>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="p-3" id="menu-search-container">
+              <div class="search-icon" id="search-icon">
+                <svg class="search-icon-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                  <path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z">
+                  </path>
+                </svg>
+              </div>
+              <input type="text" class="menu-search-input" id="menu-search" onkeyup="searchMenu(event, this);" 
+                onfocus="onFocus(this);"
+                placeholder="Search by title..." title="Type page title">
+              <div class="search-results-container" id="search-results-container">
+                <ul class="w-100">
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/">Features<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/security/">Security<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Security
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/5-crucial-features-of-backup-software-that-will-benefit-your-business/">5 crucial features of Backup Software that will benefit your Business<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          5 Crucial Features of Backup Software That Will Benefit Your Business
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/alibaba-cloud/">Alibaba Cloud Object Storage Service<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Alibaba Cloud
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/">Amazon S3 Bucket via Access Key<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Amazon S3 Bucket Access Key
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/amazon-s3-bucket/">Amazon S3 Bucket via Access Point<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Amazon S3 Bucket
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/amazon-s3-glacier/">Amazon S3 Glacier<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Amazon S3 Glacier
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/optional-password-protection/">Archive encryption is now optional<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Optional Password Protection
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/automated-daily-backups/">Automated Daily Backups<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Automated Daily Backups
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/status-badges/">Backup Status Badge<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Status Badges
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/">Blog<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/bulk-operations/">Bulk Operations<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Bulk Operations
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/card-view/">Card View<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Card View
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/categories/">Categories<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Categories
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/categories/cloudback/">Cloudback<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Categories
+        
+    
+        
+        
+          
+             > 
+          
+          Cloudback
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/tags/cloudback/">Cloudback<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+             > 
+          
+          Cloudback
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/paid-plans-announcement/">Cloudback introduces new marketplace plans<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Paid Plans Announcement
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/contact-us/">Contact us<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Contact Us
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/custom-schedule/">Custom Schedules<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Custom Schedule
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/security/data-breach-response-policy/">Data Breach Response Policy<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Security
+        
+    
+        
+        
+          
+             > 
+          
+          Data Breach Response Policy
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/deduplication/">Data Deduplication<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Deduplication
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/security/disaster-recovery-plan-policy/">Disaster Recovery Plan Policy<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Security
+        
+    
+        
+        
+          
+             > 
+          
+          Disaster Recovery Plan Policy
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/download-backups/">Download Backups<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Download Backups
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/email-notifications/">Email Notifications<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Email Notifications
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/first-release/">First public release of Cloudback<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          First Release
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/categories/general/">General<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Categories
+        
+    
+        
+        
+          
+             > 
+          
+          General
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/tags/general/">General<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+             > 
+          
+          General
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/getting-started/">Getting Started<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Getting Started
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/tags/github-marketplace/">GitHub Marketplace<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+             > 
+          
+          Github Marketplace
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/github-organizations/">GitHub Organizations<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Github Organizations
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/google-cloud/">Google Cloud Storage Bucket<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Google Cloud
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/">Home<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/">How to create a new Microsoft Azure Blob Container<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Microsoft Azure Blob Container
+        
+    
+        
+        
+          
+             > 
+          
+          Create Microsoft Azure Blob Container
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/">How to create a new shared access signature (SAS)<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Microsoft Azure Blob Container
+        
+    
+        
+        
+          
+             > 
+          
+          Create Shared Access Signature
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/security/incident-response-plan/">Incident Response Plan<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Security
+        
+    
+        
+        
+          
+             > 
+          
+          Incident Response Plan
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/instant-notifications/">Instant Notifications<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Instant Notifications
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/instant-notifications/">Instant notifications of successful and failed backups<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Instant Notifications
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/invoiced-customers/">Invoiced Customers<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Invoiced Customers
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/metadata/">Metadata Backups<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Metadata
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/">Microsoft Azure Blob Container<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Microsoft Azure Blob Container
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/onedrive/">Microsoft OneDrive<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Onedrive
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/table-view/">New feature: Table View<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Table View
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/data-deduplication/">New feature: You can enable data deduplication to reduce storage costs<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Data Deduplication
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/categories/news/">News<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Categories
+        
+    
+        
+        
+          
+             > 
+          
+          News
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/tags/news/">News<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+             > 
+          
+          News
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/manual-backups/">One-Click Manual Backups<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Manual Backups
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/archive/">Password-Protected Archives<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Archive
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/privacy/">Privacy Policy<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Privacy
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/categories/release-notes/">Release notes<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Categories
+        
+    
+        
+        
+          
+             > 
+          
+          Release Notes
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/tags/release-notes/">Release notes<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+             > 
+          
+          Release Notes
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/restore-to-github/">Restore to GitHub<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Restore to Github
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/">Supported Storages<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/table-view/">Table View<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Table View
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/tags/">Tags<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Tags
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/terms/">Terms of Service<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Terms
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/various-backup-storages/">Various Backup Storages<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Various Backup Storages
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/security/vulnerability-management-workflow/">Vulnerability Management Workflow<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Security
+        
+    
+        
+        
+          
+             > 
+          
+          Vulnerability Management Workflow
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/wasabi/">Wasabi<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Custom Storages
+        
+    
+        
+        
+          
+             > 
+          
+          Wasabi
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/notifications-email/">We added custom email address for notifications<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Notifications Email
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/onedrive/">We support new storage now: Microsoft OneDrive<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Onedrive
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/openstack-swift/">We support new storage now: OpenStack Swift<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          Openstack Swift
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/what-is-cloudback/">What is Cloudback<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          What Is Cloudback
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                  <li class="nothing-found" id="nothing-found">No pages found</li>
+                </ul>
+              </div>
+            </div>
+            <nav class="docs-menu-nav pl-3 pb-3">
+              <nav>
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/what-is-cloudback/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">What is Cloudback</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/getting-started/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Getting Started</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox" checked />
+    <label for="section-6ec23f89d32660817763f346261794c8">
+      <span class="docs-menu-item">
+        <span class="docs-menu-item-text d-flex flex-grow-1">
+          <a href="https://docs.cloudback.it/features/" class="">Features</a>
+          <span class="docs-menu-item-icon flex-grow-1 text-right">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
+              <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+              </path>
+            </svg>
+          </span>
+        </span>
+      </span>
+    </label>
+  
+
+          
+            
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/automated-daily-backups/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Automated Daily Backups</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/various-backup-storages/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Various Backup Storages</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/metadata/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Metadata Backups</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/manual-backups/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">One-Click Manual Backups</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/download-backups/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Download Backups</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/restore-to-github/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Restore to GitHub</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/email-notifications/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Email Notifications</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/instant-notifications/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Instant Notifications</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/github-organizations/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">GitHub Organizations</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/invoiced-customers/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Invoiced Customers</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/bulk-operations/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Bulk Operations</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/status-badges/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Backup Status Badge</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/archive/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Password-Protected Archives</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/deduplication/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Data Deduplication</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/card-view/" class="docs-menu-item d-flex  active">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Card View</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/table-view/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Table View</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/custom-schedule/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Custom Schedules</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+          
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input id="section-b0ec2e819329f103ee9e810e29eed2ea" class="custom-input" type="checkbox"  />
+    <label for="section-b0ec2e819329f103ee9e810e29eed2ea">
+      <span class="docs-menu-item">
+        <span class="docs-menu-item-text d-flex flex-grow-1">
+          <a href="https://docs.cloudback.it/custom-storages/" class="">Supported Storages</a>
+          <span class="docs-menu-item-icon flex-grow-1 text-right">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
+              <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+              </path>
+            </svg>
+          </span>
+        </span>
+      </span>
+    </label>
+  
+
+          
+            
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input id="section-de558aee27ab4590ca6c33f7ac98de5e" class="custom-input" type="checkbox"  />
+    <label for="section-de558aee27ab4590ca6c33f7ac98de5e">
+      <span class="docs-menu-item">
+        <span class="docs-menu-item-text d-flex flex-grow-1">
+          <a href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/" class="">Microsoft Azure Blob Container</a>
+          <span class="docs-menu-item-icon flex-grow-1 text-right">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
+              <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+              </path>
+            </svg>
+          </span>
+        </span>
+      </span>
+    </label>
+  
+
+          
+            
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">How to create a new Microsoft Azure Blob Container</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">How to create a new shared access signature (SAS)</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+          
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Amazon S3 Bucket via Access Key</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/custom-storages/amazon-s3-bucket/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Amazon S3 Bucket via Access Point</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/custom-storages/amazon-s3-glacier/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Amazon S3 Glacier</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/custom-storages/google-cloud/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Google Cloud Storage Bucket</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/custom-storages/onedrive/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Microsoft OneDrive</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/custom-storages/alibaba-cloud/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Alibaba Cloud Object Storage Service</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/custom-storages/wasabi/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Wasabi</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+          
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input id="section-4e896db703975006e00bbc21e8553d62" class="custom-input" type="checkbox"  />
+    <label for="section-4e896db703975006e00bbc21e8553d62">
+      <span class="docs-menu-item">
+        <span class="docs-menu-item-text d-flex flex-grow-1">
+          <a href="https://docs.cloudback.it/security/" class="">Security</a>
+          <span class="docs-menu-item-icon flex-grow-1 text-right">
+            <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
+              <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+              </path>
+            </svg>
+          </span>
+        </span>
+      </span>
+    </label>
+  
+
+          
+            
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/security/incident-response-plan/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Incident Response Plan</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/security/disaster-recovery-plan-policy/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Disaster Recovery Plan Policy</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/security/data-breach-response-policy/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Data Breach Response Policy</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/security/vulnerability-management-workflow/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Vulnerability Management Workflow</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+          
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/terms/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Terms of Service</span>
+      </div>
+    </a>
+  
+
+          
+            
+  <ul>
+    
+  </ul>
+
+          
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/privacy/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Privacy Policy</span>
+      </div>
+    </a>
+  
+
+          
+            
+  <ul>
+    
+  </ul>
+
+          
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/contact-us/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Contact us</span>
+      </div>
+    </a>
+  
+
+          
+            
+  <ul>
+    
+  </ul>
+
+          
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/posts/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Blog</span>
+      </div>
+    </a>
+  
+
+          
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.docs-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+            </nav>
+          </div>
+        </aside>
+        
+        <div class="docs-page docs-content-background d-flex flex-column">
+          
+            <header class="docs-header p-2">
+              <div class="d-flex align-center h32">
+                
+                  <div class="docs-header-logo pr-2">
+                    <label for="menu-control" class="toc-label toc-label-left cursor-pointer p-2">
+                      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                      </svg>
+                    </label>
+                  </div>
+                
+                <div class="flex-grow-1">
+                </div>
+                
+                  <div>
+                    <label for="toc-control" class="toc-label toc-label-right cursor-pointer p-2">
+                      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M1.75 2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5zm4 5a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5h-7.5zm0 5a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5h-7.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                        <path d="M13.314 4.918L11.07 2.417A.25.25 0 0111.256 2h4.488a.25.25 0 01.186.417l-2.244 2.5a.25.25 0 01-.372 0z"></path>
+                      </svg>
+                    </label>
+                  </div>
+                
+              </div>
+            </header>
+          
+          <div class="page-with-toc d-flex flex-grow-1">
+            <div class="flex-column d-flex flex-grow-1">
+              
+  <article class="markdown-body"><h1 id="card-view">Card View</h1>
+<p>It is a default view for Cloudback Dashboard, extremely simple and user friendly. Suitable for small number of repositories and basic scenarios.</p>
+<img src="/static/features/card-view-1.png" alt="Card View"/>
+<h2 id="card-controls">Card Controls</h2>
+<p>The schema below depicts all buttons on the card</p>
+<h3 id="front-side-of-the-card">Front side of the card</h3>
+<p>Here you can find the next functionality:</p>
+<ul>
+<li>The status of the repository</li>
+<li>The list of latest backups</li>
+<li>Trigger backup manually</li>
+<li>Restore arbitrary backup</li>
+<li>Download an archive of arbitrary backup</li>
+</ul>
+<img src="/static/features/card-view-2.png" alt="Card View"/>
+<h3 id="back-side-of-the-card">Back side of the card</h3>
+<p>Here you can find the next functionality:</p>
+<ul>
+<li>Toggle scheduled/not scheduled
+<ul>
+<li>don&rsquo;t forget to press <code>Save</code> button</li>
+</ul>
+</li>
+<li>Set up schedule/retention/storage for the repository</li>
+<li>Create a new storage</li>
+<li>Get a Badge URL</li>
+</ul>
+<img src="/static/features/card-view-3.png" alt="Card View"/>
+<h2 id="learn-more">Learn more</h2>
+<ul>
+<li>
+  <a href="/features/table-view/">Table View</a></li>
+<li>
+  <a href="/features/metadata/">What is inside of a backup?</a></li>
+</ul>
+</article>
+
+              
+              <div class="p-4 article-footer">
+                <div class="d-flex flex-justify-between">
+                  <div class="article-footer-btn p-2">
+                    
+                    
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/b9387615967a40b6f5f64ef3fe84064e00f3dc66"
+                       title="Last modified by Victor Vorobyev | Jul 12, 2022" target="_blank" rel="noopener">
+                      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
+                      </svg>
+                      <span class="pl-2">Jul 12, 2022</span>
+                    </a>
+                    
+                  </div>
+                   <div class="article-footer-btn p-2">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/card-view.md" target="_blank" rel="noopener">
+                      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
+                      </svg>
+                      <span class="pl-2">Edit this page</span>
+                    </a>
+                  </div> 
+                </div>   
+              </div>
+
+              <div id="remark42"></div>
+
+              
+            </div>
+            
+              <aside class="page-toc">
+  
+    <div class="pt-2 pb-2 mt-2 mb-2 in-this-article">
+      <h5> In this article  </h5>
+    </div>
+  
+  <nav class="pt-2">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#card-view">Card View</a>
+      <ul>
+        <li><a href="#card-controls">Card Controls</a>
+          <ul>
+            <li><a href="#front-side-of-the-card">Front side of the card</a></li>
+            <li><a href="#back-side-of-the-card">Back side of the card</a></li>
+          </ul>
+        </li>
+        <li><a href="#learn-more">Learn more</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </nav>
+</aside>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="z-index-10 body-background with-border-top">
+  <div class="container big-footer flex-row-to-column p-3">
+    <div class="d-flex flex-grow-1 w-50-to-100">
+      <div class="flex-grow-1 text-color w-50">
+        <div class="d-flex flex-column">
+          <div class="d-flex align-center pb-3">
+            <svg class="h24 w24" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="var(--text-color)">
+              <path d="M18.5263 25.2632C22.247 25.2632 25.2632 22.247 25.2632 18.5263C25.2632 14.8057 22.247 11.7895 18.5263 11.7895C14.8057 11.7895 11.7895 14.8057 11.7895 18.5263C11.7895 22.247 14.8057 25.2632 18.5263 25.2632Z"/>
+              <path d="M18.5263 52.2105C22.247 52.2105 25.2632 49.1943 25.2632 45.4737C25.2632 41.753 22.247 38.7368 18.5263 38.7368C14.8057 38.7368 11.7895 41.753 11.7895 45.4737C11.7895 49.1943 14.8057 52.2105 18.5263 52.2105Z"/>
+              <path d="M45.4737 52.2105C49.1943 52.2105 52.2105 49.1943 52.2105 45.4737C52.2105 41.753 49.1943 38.7368 45.4737 38.7368C41.753 38.7368 38.7368 41.753 38.7368 45.4737C38.7368 49.1943 41.753 52.2105 45.4737 52.2105Z"/>
+              <path d="M15.1579 18.5263H21.8947V45.4737H15.1579V18.5263Z"/>
+              <path d="M15.1579 19.9215L19.9216 15.1578L47.3126 42.5489L42.549 47.3125L15.1579 19.9215Z"/>
+              <path d="M0 10.1053C0 4.52428 4.52428 0 10.1053 0H53.8947C59.4757 0 64 4.52428 64 10.1053V18.5263H57.2632V11.7895C57.2632 8.99898 55.001 6.73684 52.2105 6.73684H11.7895C8.99898 6.73684 6.73684 8.99898 6.73684 11.7895V52.2105C6.73684 55.001 8.99898 57.2632 11.7895 57.2632H52.2105C55.001 57.2632 57.2632 55.001 57.2632 52.2105V45.4737H64V53.8947C64 59.4757 59.4757 64 53.8947 64H10.1053C4.52428 64 0 59.4757 0 53.8947V10.1053Z"/>
+            </svg>
+            <h3 class="align-center fw600 pl-2">Cloudback</h3>
+          </div>
+          <div class="pl-5 font-size-small pb-3">
+            <p>Ecuador, Quito<br>
+              La Armenia, Juan Montalvo<br>
+              Conjunto Prados de la Armenia, casa 73<br>
+              RUC 1792537754001<br>
+              Postal code 170803</p>
+          </div>
+          <div class="pl-2 font-size-small">
+            <p>&copy; Cloudback 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-grow-1 w-50 flex-column">
+        <h3 class="align-center fw600 pl-2 pb-3">Support</h3>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/contact-us">Contact us</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/privacy">Privacy policy</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="https://github.com/cloudback/issue-tracker/issues/new?template=feature_request.md" 
+          target="_blank">Feature request</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="https://github.com/cloudback/issue-tracker/issues/new?template=bug_report.md" 
+          target="_blank">Report issue</a></p></div>
+      </div>
+    </div>
+    <div class="d-flex flex-grow-1 w-50-to-100">
+      <div class="d-flex flex-grow-1 w-50 flex-column">
+        <h3 class="align-center fw600 pl-2 pb-3">Product</h3>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/what-is-cloudback">About</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/getting-started">Getting started</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/features">Features</a></p></div>
+        <div class="pl-2 mh36"><p><a class="text-color" href="/terms">Terms of service</a></p></div>
+      </div>
+      <div class="d-flex flex-grow-1 w-50 flex-column">
+        <h3 class="align-center fw600 pl-2 pb-3">Social</h3>
+        <div class="pl-2 mh36">
+          <a href="https://www.facebook.com/cloudback.it" target="_blank" class="d-flex align-center">
+            <img class="h20 w20" src="/static/lib/logo/footer-facebook.svg"/>
+            <span class="pl-2 text-color">Facebook</span>
+          </a>
+        </div>
+        <div class="pl-2 mh36">
+          <a href="https://www.instagram.com/cloudback.it/" target="_blank" class="d-flex align-center">
+            <img class="h20 w20" src="/static/lib/logo/footer-instagram.svg"/>
+            <span class="pl-2 text-color">Instagram</span>
+          </a>
+        </div>
+        <div class="pl-2 mh36">
+          <a href="https://www.linkedin.com/company/cloudbackit/" target="_blank" class="d-flex align-center">
+            <img class="h20 w20" src="/static/lib/logo/footer-linkedin.svg"/>
+            <span class="pl-2 text-color">LinkedIn</span>
+          </a>
+        </div>
+        <div class="pl-2 mh36">
+          <a href="https://twitter.com/CloudbackIt" target="_blank" class="d-flex align-center">
+            <img class="h20 w20" src="/static/lib/logo/footer-twitter.svg"/>
+            <span class="pl-2 text-color">Twitter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+</body>
+</html>
+
