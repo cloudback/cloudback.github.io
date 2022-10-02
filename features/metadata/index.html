@@ -3108,12 +3108,6 @@
 <p>Metadata is stored as a JSON file per data type in the same format we download it from GitHub. If you want us to add any additional metadata into a backup, please, 
   <a href="/contact-us/">let us know</a> or just 
   <a href="https://github.com/cloudback/issue-tracker/issues/new?template=feature_request.md">create a feature request</a> and we will consider implementing it.</p>
-<h2 id="what-metadata-is-not-included">What metadata is not included?</h2>
-<p>The metadata listed below are in our plans for future releases. You can speed up the release if you up-vote by email. Just let us know and we consider changing its priority to a higher one.</p>
-<ul>
-<li>All 
-  <a href="https://docs.github.com/en/graphql/guides/using-the-graphql-api-for-discussions">Discussions</a></li>
-</ul>
 <h2 id="metadata-that-is-not-included-due-to-github-api-restrictions">Metadata that is not included due to GitHub API restrictions</h2>
 <p>We can&rsquo;t backup or restore this data because of GitHub limitations. Please let us know if there is a mistake or API is changed - we will fix it as soon as possible.</p>
 <ul>
@@ -3141,6 +3135,10 @@
   <a href="https://docs.github.com/articles/using-pull-requests">Pull Requests</a> without commits: due to an API restriction: validation is failing with a message <code>No commits between feature-branch and main-branch</code></li>
 <li>
   <a href="https://docs.github.com/articles/using-pull-requests">Pull Requests</a> from forks: a source branch is located in the fork of the old repository. But a new repository is created during a restore process. There is no API the allows us to create a pull-request from an old repository fork into a newly created repository</li>
+<li>
+  <a href="https://docs.github.com/en/graphql/guides/using-the-graphql-api-for-discussions">Discussions</a>: There is no API to restore discussion categories</li>
+<li>
+  <a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-api-to-manage-projects">ProjectV2</a>: There is no API to restore views and columns</li>
 </ul>
 <h2 id="learn-more">Learn more</h2>
 <ul>
@@ -3157,12 +3155,12 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/adfff342c0bca3ede0493c7df742380b30334d1d"
-                       title="Last modified by Victor Vorobyev | May 12, 2022" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/02b1a363501214d1881c59050d91a741f47a65d6"
+                       title="Last modified by Victor Vorobyev | Oct 2, 2022" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">May 12, 2022</span>
+                      <span class="pl-2">Oct 2, 2022</span>
                     </a>
                     
                   </div>
@@ -3194,7 +3192,6 @@
     <li><a href="#metadata-backups">Metadata Backups</a>
       <ul>
         <li><a href="#what-is-included-in-a-backup">What is included in a backup?</a></li>
-        <li><a href="#what-metadata-is-not-included">What metadata is not included?</a></li>
         <li><a href="#metadata-that-is-not-included-due-to-github-api-restrictions">Metadata that is not included due to GitHub API restrictions</a></li>
         <li><a href="#learn-more">Learn more</a></li>
       </ul>
