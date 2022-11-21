@@ -333,6 +333,16 @@ Overview Vulnerability Management is the recurring process of identifying, class
     </item>
     
     <item>
+      <title>We support a new storage now: Wasabi Cloud Storage</title>
+      <link>https://docs.cloudback.it/posts/wasabi/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/wasabi/</guid>
+      <description>Cloudback provides an easy way to store GitHub repository backups in various storages. And today, we are delighted to announce the support of a new storage - Wasabi Cloud Storage.
+Wasabi provides simple, predictable and affordable hot cloud storage for businesses all over the world. It enables organizations to store and instantly access an infinite amount of data at 1/5th the price of the competition with no complex tiers or unpredictable egress fees.</description>
+    </item>
+    
+    <item>
       <title>New feature: Table View</title>
       <link>https://docs.cloudback.it/posts/table-view/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
