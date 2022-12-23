@@ -6,13 +6,13 @@
     <description>Recent content in Home on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.cloudback.it/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Automated Daily Backups</title>
+      <title>Automated Backups</title>
       <link>https://docs.cloudback.it/features/automated-daily-backups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/features/automated-daily-backups/</guid>
-      <description>Automated Daily Backups This is why we created Cloudback - to continuously backup a repository and its metadata on a daily basis. Cloudback captures a backup daily at a defined hour according to a defined time zone and puts a resulting archive into defined storage.
-Schedule You can configure the exact hour you want to capture a backup every day. We recommend you to choose an hour when your repositories are not in use.</description>
+      <description>Automated Daily Backups This is why we created Cloudback - to continuously backup a repository and its metadata on a daily basis. By default, Cloudback captures a backup daily at a defined hour according to a defined time zone and puts a resulting archive into defined storage. You can also create a custom schedule to run your backups on non-daily basis.
+Schedule You can configure the exact hour you want to capture a backup every day, or define your own schedule.</description>
     </item>
     
     <item>
