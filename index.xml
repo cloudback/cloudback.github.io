@@ -60,9 +60,7 @@ Register your storage In order to tell Cloudback to store backups into your own 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/what-is-cloudback/</guid>
-      <description>What is Cloudback Cloudback is the cloud backup service for GitHub repositories.
-The main feature is the support of various backup storages. When user storage is configured we do not store backup archives inside Cloudback infrastructure at all. All archives are put into your storage. In case you don&amp;rsquo;t have your own storage there is still an option to use our internal storage called Cloudback.
-It uses the official GitHub REST API to access repository metadata for backups.</description>
+      <description>Introducing Cloudback Cloudback - the ultimate cloud backup solution for your GitHub repositories. With Cloudback, you have the flexibility to choose from a variety of backup storage options. If you already have your own storage, we&amp;rsquo;ll simply place your backup archives there. No need to worry about using our internal storage, called Cloudback. And, with the power of the official GitHub REST API, we ensure that all repository metadata is accurately backed up on a daily basis, according to your preferred schedule.</description>
     </item>
     
     <item>
