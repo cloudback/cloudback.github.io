@@ -30,7 +30,7 @@
       
       <guid>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</guid>
       <description>Backup GitHub repository using Amazon S3 Glacier About Amazon S3 Glacier Amazon S3 Glacier and S3 Glacier Deep Archive are secure, durable, and extremely low-cost Amazon S3 cloud storage classes for data archiving and long-term backup. They are designed to deliver 99.999999999% durability, and provide comprehensive security and compliance capabilities that can help meet even the most stringent regulatory requirements.
- Set up Amazon S3 Glacier as a custom storage  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the + New storage button:     Type a storage name</description>
+ Set up Amazon S3 Glacier as a customer managed storage  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the + New storage button:     Type a storage name</description>
     </item>
     
     <item>

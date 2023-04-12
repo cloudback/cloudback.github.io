@@ -7,15 +7,15 @@
   <meta http-equiv="content-language" content="en-us">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Establishing a vulnerability management workflow in Cloudback">
-  <meta property="og:title" content="Vulnerability Management Workflow | Cloudback Documentation">
+  <meta name="description" content="Securely store GitHub backups with Cloudback&#39;s self-managed storage option">
+  <meta property="og:title" content="Customer Managed Storages | Cloudback Documentation">
   <meta property="og:site_name" content="Cloudback">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://cloudback.it">
   <meta property="og:image" content="https://cloudback.it/lib/logo/social.png">
-  <meta property="og:description" content="Establishing a vulnerability management workflow in Cloudback">
-  <meta name="twitter:title" content="Vulnerability Management Workflow | Cloudback Documentation">
-  <meta name="twitter:description" content="Establishing a vulnerability management workflow in Cloudback">
+  <meta property="og:description" content="Securely store GitHub backups with Cloudback&#39;s self-managed storage option">
+  <meta name="twitter:title" content="Customer Managed Storages | Cloudback Documentation">
+  <meta name="twitter:description" content="Securely store GitHub backups with Cloudback&#39;s self-managed storage option">
   <meta name="twitter:image" content="https://cloudback.it/lib/logo/social.png">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
@@ -59,7 +59,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vulnerability Management Workflow | Cloudback</title>
+<title>Customer Managed Storages | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -2349,7 +2349,7 @@
   
 
   
-    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox"  />
+    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox" checked />
     <label for="section-6ec23f89d32660817763f346261794c8">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
@@ -2410,7 +2410,7 @@
   
 
   
-    <a href="https://docs.cloudback.it/features/customer-storages/" class="docs-menu-item d-flex ">
+    <a href="https://docs.cloudback.it/features/customer-storages/" class="docs-menu-item d-flex  active">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Customer Managed Storages</span>
       </div>
@@ -2907,7 +2907,7 @@
   
 
   
-    <input id="section-4e896db703975006e00bbc21e8553d62" class="custom-input" type="checkbox" checked />
+    <input id="section-4e896db703975006e00bbc21e8553d62" class="custom-input" type="checkbox"  />
     <label for="section-4e896db703975006e00bbc21e8553d62">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
@@ -2985,7 +2985,7 @@
   
 
   
-    <a href="https://docs.cloudback.it/security/vulnerability-management-workflow/" class="docs-menu-item d-flex  active">
+    <a href="https://docs.cloudback.it/security/vulnerability-management-workflow/" class="docs-menu-item d-flex ">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Vulnerability Management Workflow</span>
       </div>
@@ -3149,77 +3149,59 @@
           <div class="page-with-toc d-flex flex-grow-1">
             <div class="flex-column d-flex flex-grow-1">
               
-  <article class="markdown-body"><h2 id="vulnerability-management-workflow">Vulnerability Management Workflow</h2>
-<h3 id="introduction">Introduction</h3>
-<p>The purpose of the document is to describe the established vulnerability management workflow in the MYRTLE GROUP S.A. (“we” or “Cloudback”).</p>
-<h3 id="overview">Overview</h3>
-<p>Vulnerability Management is the recurring process of identifying, classifying, prioritizing, mitigating, and remediating vulnerabilities. This document will focus on infrastructure vulnerabilities and the vulnerability management process. This process is designed to provide informationregarding Cloudback vulnerability workflow, promote healthy patch management among other preventative best-practices, and remediate risk; all with the end goal to better secure our environments.</p>
-<h3 id="the-vulnerability-management-process">The Vulnerability Management process</h3>
-<p>Arguably the most important step for a successful vulnerability management process is defining the scope that the process will cover. Security and Infrastructure partnered to come up with a scope that would make sure all of our critical environments and systems were covered during deployment.</p>
-<p>Currently, the vulnerability management consists of the following steps:</p>
-<h4 id="1-vulnerability-scanning">1. Vulnerability Scanning</h4>
-<p>This step is where we scan resources in our environments to identify vulnerabilities. Once setup, scans run on regular cadences that meet or exceed our requirements.</p>
-<h4 id="2-reportinganalysis">2. Reporting/Analysis</h4>
-<p>Vulnerability scan results are analyzed to provide consolidated vulnerability data and save the results in the internal bug tracking sustem as a separate issues with corresponding severity and priority.
-These issues are where all discussion and documentation for the vulnerability will occur. Vulnerability remediation issues should be tagged with the vulnerability type label. The following labels exist to track the vulnerability remediation workflow:</p>
-<p><strong>vulnerable</strong>: This label identifies that the vulnerability has been opened, but not validated and is considered impactful to our environments per the assigned priority label. With this label a vulnerability issue should not be closed.</p>
-<p><strong>validated</strong>: This label identifies that the vulnerability has been validated as legitimate and is scheduled for mitigation or remediation. With this label a vulnerability issue should not be closed.</p>
-<p><strong>falsepositive</strong>: This label identifies that the vulnerability has been validated as a false positive and is no longer impactful to our environments. With this label a vulnerability issue can be closed.</p>
-<p><strong>exception</strong>: This label identifies that the vulnerability has been validated as legitimate and has an approved exception issue to account for a business need. In extreme circumstances, a vulnerability issue can be closed with an exception.</p>
-<p><strong>mitigated</strong>: This label identifies that the vulnerability has been validated and triaged. The impact has been reduced through compensating controls, but not remediated (it is still actively identified on vulnerability scans). With this label a vulnerability issue should not be closed.</p>
-<p><strong>remediated</strong>: This label identifies that the vulnerability has been remediated and the remediation has been validated. With this label a vulnerability issue can be closed.</p>
-<h4 id="3-validation">3. Validation</h4>
-<p>Validation is an important part of vulnerability management. This is where we investigate to ensure that the vulnerability being reported has properly been identified.</p>
-<p>Vulnerabilities can sometimes be identified during a scan, but are not actually on the system. These are classified as false positives and would go through the process to be closed as a false positive.</p>
-<h4 id="4-remediation">4. Remediation</h4>
-<p>Remediation is the part of the process in which a validated vulnerability is fixed. The remediation process would be tracked in the corresponding vulnerability issue in the internal issue tracker. SLAs are in place to help prioritize vulnerability based on severity. Once a vulnerability is remediated, we will run followup scans on the impacted systems to validate that the vulnerability is indeed remediated.</p>
-<h4 id="5-feedback">5. Feedback</h4>
-<p>The last step is for the Cloudback team to determine what we can learn from each vulnerability remediated. This may be an improvement on the vulnerability management process itself or establishing preventive mechanisms for a repetitive vulnerability type. This feedback will be documented in the vulnerability issue and could result in additional issues being opened.</p>
-<p>As stated above, this process is a cyclical loop. Vulnerability scans are recurring, providing new vulnerability data that feed new vulnerability remediation and exception issues which then help update/escalate open issues/processes.</p>
-<h3 id="remediation-slas">Remediation SLAs</h3>
-<p>Cloudback team has come up with remediated SLAs based on a multitude of factors, such as severity, scope, impact, etc. All of these factors will be considered when mapping the priority to Cloudback’s priority labels. The SLAs are as follows:</p>
-<table>
-<thead>
-<tr>
-<th>Priority</th>
-<th>Severity Mapping</th>
-<th>Time to mitigate</th>
-<th>Time to remediate</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>severity 1, priority 1</em></td>
-<td>Zero-day</td>
-<td>Within 24 hours</td>
-<td>Within 72 hours (when technically feasible)</td>
-</tr>
-<tr>
-<td><em>severity 2, priority 2</em></td>
-<td>Critical</td>
-<td>N/A</td>
-<td>Within 30 days</td>
-</tr>
-<tr>
-<td><em>severity 3, priority 3</em></td>
-<td>High</td>
-<td>N/A</td>
-<td>Within 60 days</td>
-</tr>
-<tr>
-<td><em>severity 4, priority 4</em></td>
-<td>Medium</td>
-<td>N/A</td>
-<td>Within 90 days</td>
-</tr>
-<tr>
-<td><em>severity 4, priority 4</em></td>
-<td>Low</td>
-<td>N/A</td>
-<td>Best effort</td>
-</tr>
-</tbody>
-</table>
+  <article class="markdown-body"><h1 id="customer-managed-storages">Customer Managed Storages</h1>
+<p>Cloudback allows you to store a backup archive in your own storage, leaving no copies to us. That is. Cloudback backs up a repository into an archive, sends the archive to your storage, and wipes the archive from Cloudback&rsquo;s disk leaving no chance to recover any data from the Cloudback servers.</p>
+<p>Also, we offer our in-build storage named just <code>Cloudback</code>.</p>
+<img src="/static/features/storages-wizard-combobox.png" alt="Storages" width="500"/>
+<h2 id="register-your-storage">Register your storage</h2>
+<p>In order to tell Cloudback to store backups into your own storage, please use the <code>+ New storage</code> button in the settings of the repository card. The button opens a simple wizard that guides you through the registration process. Please refer to a particular storage page to learn about specific steps.</p>
+<p>Please note, that you could apply recently registered storage to all your repositories using the <code>Bulk Operations</code> menu.</p>
+<p align="center">
+  <img src="/static/features/storages-wizard.png" data-alt="/static/features/storages-wizard.gif"
+       alt="Storage Wizard" onclick="swapGif(this)" style="cursor: pointer;"/>
+</p>
+<h2 id="supported-storages">Supported storages</h2>
+<p>Please follow the link below to find additional details about particular storage:</p>
+<ul>
+<li>Cloudback in-build storage</li>
+<li>
+  <a href="/custom-storages/microsoft-azure-blob-container/">Microsoft Azure Blob Storage</a></li>
+<li>
+  <a href="/custom-storages/onedrive/">Microsoft OneDrive Personal</a></li>
+<li>
+  <a href="/custom-storages/onedrive/">Microsoft OneDrive For Business</a></li>
+<li>
+  <a href="/custom-storages/amazon-s3-bucket/">Amazon S3 Bucket via Access Point</a></li>
+<li>
+  <a href="/custom-storages/amazon-s3-bucket-access-key/">Amazon S3 Bucket via Access Key</a></li>
+<li>
+  <a href="/custom-storages/amazon-s3-glacier/">Amazon S3 Glacier</a></li>
+<li>
+  <a href="/custom-storages/google-cloud/">Google Cloud Storage Bucket</a></li>
+<li>
+  <a href="/custom-storages/alibaba-cloud/">Alibaba Cloud Object Storage Service</a></li>
+<li>
+  <a href="/custom-storages/swift">OpenStack Swift Container via S3 API</a></li>
+<li>
+  <a href="/custom-storages/wasabi/">Wasabi Bucket (S3 API)</a></li>
+</ul>
+<h2 id="need-another-storage">Need another storage?</h2>
+<p>We added support of 
+  <a href="https://github.com/cloudback/issue-tracker/issues/6">OpenStack Swift</a> and 
+  <a href="https://github.com/cloudback/issue-tracker/issues/7">Microsoft OneDrive</a> within a feature request of our users. 
+  <a href="/contact-us/">Contact us</a> or 
+  <a href="https://github.com/cloudback/issue-tracker/issues/new?template=feature_request.md">create a feature request</a> and we will consider implementing your storage.</p>
+<h2 id="what-we-upload-to-the-storage">What we upload to the storage?</h2>
+<p>We upload password-protected zip archives. The password is encrypted and stored at our side. The password is well protected behind several security layers. If someone breaks into any storage he will get useless encrypted archives and no chance to access archive content.</p>
+<h2 id="learn-more">Learn more</h2>
+<ul>
+<li>
+  <a href="/features/cloudback-storages/">Cloudback Managed Storages</a></li>
+<li>
+  <a href="/features/metadata/">What is inside of a backup?</a></li>
+<li>
+  <a href="/features/deduplication/">Data Deduplication</a></li>
+</ul>
 </article>
 
               
@@ -3228,17 +3210,17 @@ These issues are where all discussion and documentation for the vulnerability wi
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/3d5f8e6d202d5643892664740267b8155dfa50dc"
-                       title="Last modified by Victor Vorobyev | Mar 9, 2023" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/251c6310e0089b392704d911f39fff28dd63cc0f"
+                       title="Last modified by Victor Vorobyev | Apr 11, 2023" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Mar 9, 2023</span>
+                      <span class="pl-2">Apr 11, 2023</span>
                     </a>
                     
                   </div>
                    <div class="article-footer-btn p-2">
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/security/vulnerability-management-workflow.md" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/customer-storages.md" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
                       </svg>
@@ -3262,16 +3244,13 @@ These issues are where all discussion and documentation for the vulnerability wi
   <nav class="pt-2">
     <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#customer-managed-storages">Customer Managed Storages</a>
       <ul>
-        <li><a href="#vulnerability-management-workflow">Vulnerability Management Workflow</a>
-          <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#the-vulnerability-management-process">The Vulnerability Management process</a></li>
-            <li><a href="#remediation-slas">Remediation SLAs</a></li>
-          </ul>
-        </li>
+        <li><a href="#register-your-storage">Register your storage</a></li>
+        <li><a href="#supported-storages">Supported storages</a></li>
+        <li><a href="#need-another-storage">Need another storage?</a></li>
+        <li><a href="#what-we-upload-to-the-storage">What we upload to the storage?</a></li>
+        <li><a href="#learn-more">Learn more</a></li>
       </ul>
     </li>
   </ul>

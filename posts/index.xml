@@ -39,8 +39,8 @@ Wasabi provides simple, predictable and affordable hot cloud storage for busines
       <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/posts/data-deduplication/</guid>
-      <description>The Cloudback team is pleased to announce a new feature: Data deduplication for custom storage. The use case is a daily backup for a GitHub repository that&amp;rsquo;s not changed every day. The feature prevents wasting storage space just because Cloudback saves backup archives with the same content every day, even though nothing has changed in your GitHub repository. In certain scenarios, the feature can drastically reduce storage costs.
- The configuration of all existing custom storages remains unchanged and data deduplication is disabled.</description>
+      <description>The Cloudback team is pleased to announce a new feature: Data deduplication for customer managed storage. The use case is a daily backup for a GitHub repository that&amp;rsquo;s not changed every day. The feature prevents wasting storage space just because Cloudback saves backup archives with the same content every day, even though nothing has changed in your GitHub repository. In certain scenarios, the feature can drastically reduce storage costs.
+ The configuration of all existing customer managed storages remains unchanged and data deduplication is disabled.</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ Wasabi provides simple, predictable and affordable hot cloud storage for busines
       <pubDate>Tue, 19 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/posts/optional-password-protection/</guid>
-      <description>For security reasons, Cloudback uses AES-256 encryption for all backup archives. If you download a specific backup, you can access its content using the password. The password is sent automatically to your GitHub account primary email. However, some people may find this approach a little bit overcomplicated, especially when using custom storage somewhere inside your own secure infrastructure.
+      <description>For security reasons, Cloudback uses AES-256 encryption for all backup archives. If you download a specific backup, you can access its content using the password. The password is sent automatically to your GitHub account primary email. However, some people may find this approach a little bit overcomplicated, especially when using customer managed storage somewhere inside your own secure infrastructure.
 We are glad to announce that it is possible to opt-out of password-based encryption now.</description>
     </item>
     

@@ -745,6 +745,40 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/cloudback-storages/">Cloudback Managed Storages<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Cloudback Storages
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/contact-us/">Contact us<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -790,6 +824,40 @@
              > 
           
           Custom Schedule
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/customer-storages/">Customer Managed Storages<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Customer Storages
         
     
         
@@ -1989,40 +2057,6 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
-                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/various-backup-storages/">Various Backup Storages<br/>
-                            <span class="search-result-breadcrumbs">
-    
-    
-        
-        
-    
-        
-        
-          
-          Features
-        
-    
-        
-        
-          
-             > 
-          
-          Various Backup Storages
-        
-    
-        
-        
-          
-            
-          
-          
-        
-    
-    </span>
-                      </a>
-                    </li>
-                  
-                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/security/vulnerability-management-workflow/">Vulnerability Management Workflow<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -2360,9 +2394,26 @@
   
 
   
-    <a href="https://docs.cloudback.it/features/various-backup-storages/" class="docs-menu-item d-flex ">
+    <a href="https://docs.cloudback.it/features/cloudback-storages/" class="docs-menu-item d-flex ">
       <div class="d-flex flex-grow-1">
-        <span class="docs-menu-item-text d-flex flex-grow-1">Various Backup Storages</span>
+        <span class="docs-menu-item-text d-flex flex-grow-1">Cloudback Managed Storages</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/customer-storages/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Customer Managed Storages</span>
       </div>
     </a>
   
@@ -3101,9 +3152,9 @@
               
   <article class="markdown-body"><h1 id="backup-github-repository-using-microsoft-azure-blob-container">Backup GitHub repository using Microsoft Azure Blob Container</h1>
 <p>One of the ways to 
-  <a href="https://docs.cloudback.it/features/automated-daily-backups/">backup GitHub repository</a> using custom storage is to use your own Azure Container. Azure Blob Storage is Microsoft&rsquo;s object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data, therefore it can be used as a storage for GitHub repository backups created by Cloudback.</p>
-<p>This page describes how to set up your own Azure Blob Container as a custom storage for Cloudback backups of your GitHub repositories.
-To be able to use your Azure Blob Container as custom storage, you need to have an existing Azure storage or create a new one. Also, you should create a new shared access signature for that storage.</p>
+  <a href="https://docs.cloudback.it/features/automated-daily-backups/">backup GitHub repository</a> using customer managed storage is to use your own Azure Container. Azure Blob Storage is Microsoft&rsquo;s object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data, therefore it can be used as a storage for GitHub repository backups created by Cloudback.</p>
+<p>This page describes how to set up your own Azure Blob Container as a customer managed storage for Cloudback backups of your GitHub repositories.
+To be able to use your Azure Blob Container as customer managed storage, you need to have an existing Azure storage or create a new one. Also, you should create a new shared access signature for that storage.</p>
 <ul>
 <li>
   <a href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/">How to create a new Microsoft Azure Blob Container</a></li>
@@ -3112,7 +3163,7 @@ To be able to use your Azure Blob Container as custom storage, you need to have 
 </ul>
 <h2 id="about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</h2>
 <p>Azure Blob storage is Microsoft&rsquo;s object storage solution for the cloud that is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn&rsquo;t adhere to a particular data model or definition, such as text or binary data. Azure Storage is a Microsoft-managed service that provides highly available, secure, durable, and scalable cloud storage.</p>
-<h2 id="set-up-microsoft-azure-blob-containers-as-a-custom-storage">Set up Microsoft Azure Blob Containers as a custom storage</h2>
+<h2 id="set-up-microsoft-azure-blob-containers-as-a-customer-managed-storage">Set up Microsoft Azure Blob Containers as a customer managed storage</h2>
 <ul>
 <li>In the Cloudback Dashboard open the repository settings by clicking on the settings icon:</li>
 </ul>
@@ -3160,12 +3211,12 @@ To be able to use your Azure Blob Container as custom storage, you need to have 
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/3d5f8e6d202d5643892664740267b8155dfa50dc"
-                       title="Last modified by Victor Vorobyev | Mar 9, 2023" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/251c6310e0089b392704d911f39fff28dd63cc0f"
+                       title="Last modified by Victor Vorobyev | Apr 11, 2023" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Mar 9, 2023</span>
+                      <span class="pl-2">Apr 11, 2023</span>
                     </a>
                     
                   </div>
@@ -3197,7 +3248,7 @@ To be able to use your Azure Blob Container as custom storage, you need to have 
     <li><a href="#backup-github-repository-using-microsoft-azure-blob-container">Backup GitHub repository using Microsoft Azure Blob Container</a>
       <ul>
         <li><a href="#about-microsoft-azure-blob-containers">About Microsoft Azure Blob Containers</a></li>
-        <li><a href="#set-up-microsoft-azure-blob-containers-as-a-custom-storage">Set up Microsoft Azure Blob Containers as a custom storage</a></li>
+        <li><a href="#set-up-microsoft-azure-blob-containers-as-a-customer-managed-storage">Set up Microsoft Azure Blob Containers as a customer managed storage</a></li>
       </ul>
     </li>
   </ul>

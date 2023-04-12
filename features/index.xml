@@ -16,12 +16,22 @@ Schedule You can configure the exact hour you want to capture a backup every day
     </item>
     
     <item>
-      <title>Various Backup Storages</title>
-      <link>https://docs.cloudback.it/features/various-backup-storages/</link>
+      <title>Cloudback Managed Storages</title>
+      <link>https://docs.cloudback.it/features/cloudback-storages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.cloudback.it/features/various-backup-storages/</guid>
-      <description>Various Backup Storages Cloudback allows you to store a backup archive in your own storage, leaving no copies to us. That is. Cloudback backs up a repository into an archive, sends the archive to your storage, and wipes the archive from Cloudback&amp;rsquo;s disk leaving no chance to recover any data from the Cloudback servers.
+      <guid>https://docs.cloudback.it/features/cloudback-storages/</guid>
+      <description>Cloudback Managed Storages Cloudback provides a set of managed storages accessible to all clients. To adhere to data residency regulations, these storage facilities are located in various regions. Clients can freely select the storage option nearest to their location without incurring extra fees. By default all backups are stored in the Cloudback US storage.
+The list of cloudback managed storages    Storage name Region     Cloudback US USA East, N.</description>
+    </item>
+    
+    <item>
+      <title>Customer Managed Storages</title>
+      <link>https://docs.cloudback.it/features/customer-storages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/features/customer-storages/</guid>
+      <description>Customer Managed Storages Cloudback allows you to store a backup archive in your own storage, leaving no copies to us. That is. Cloudback backs up a repository into an archive, sends the archive to your storage, and wipes the archive from Cloudback&amp;rsquo;s disk leaving no chance to recover any data from the Cloudback servers.
 Also, we offer our in-build storage named just Cloudback.
 Register your storage In order to tell Cloudback to store backups into your own storage, please use the + New storage button in the settings of the repository card.</description>
     </item>

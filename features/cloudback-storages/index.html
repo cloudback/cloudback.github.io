@@ -7,15 +7,15 @@
   <meta http-equiv="content-language" content="en-us">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Securely store GitHub backups with Cloudback&#39;s self-managed storage option">
-  <meta property="og:title" content="Various Backup Storages | Cloudback Documentation">
+  <meta name="description" content="Securely store GitHub backups with Cloudback managed storages">
+  <meta property="og:title" content="Cloudback Managed Storages | Cloudback Documentation">
   <meta property="og:site_name" content="Cloudback">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://cloudback.it">
   <meta property="og:image" content="https://cloudback.it/lib/logo/social.png">
-  <meta property="og:description" content="Securely store GitHub backups with Cloudback&#39;s self-managed storage option">
-  <meta name="twitter:title" content="Various Backup Storages | Cloudback Documentation">
-  <meta name="twitter:description" content="Securely store GitHub backups with Cloudback&#39;s self-managed storage option">
+  <meta property="og:description" content="Securely store GitHub backups with Cloudback managed storages">
+  <meta name="twitter:title" content="Cloudback Managed Storages | Cloudback Documentation">
+  <meta name="twitter:description" content="Securely store GitHub backups with Cloudback managed storages">
   <meta name="twitter:image" content="https://cloudback.it/lib/logo/social.png">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
@@ -59,7 +59,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Various Backup Storages | Cloudback</title>
+<title>Cloudback Managed Storages | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -744,6 +744,40 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/cloudback-storages/">Cloudback Managed Storages<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Cloudback Storages
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/contact-us/">Contact us<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -789,6 +823,40 @@
              > 
           
           Custom Schedule
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/customer-storages/">Customer Managed Storages<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             > 
+          
+          Customer Storages
         
     
         
@@ -1988,40 +2056,6 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
-                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/various-backup-storages/">Various Backup Storages<br/>
-                            <span class="search-result-breadcrumbs">
-    
-    
-        
-        
-    
-        
-        
-          
-          Features
-        
-    
-        
-        
-          
-             > 
-          
-          Various Backup Storages
-        
-    
-        
-        
-          
-            
-          
-          
-        
-    
-    </span>
-                      </a>
-                    </li>
-                  
-                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/security/vulnerability-management-workflow/">Vulnerability Management Workflow<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -2359,9 +2393,26 @@
   
 
   
-    <a href="https://docs.cloudback.it/features/various-backup-storages/" class="docs-menu-item d-flex  active">
+    <a href="https://docs.cloudback.it/features/cloudback-storages/" class="docs-menu-item d-flex  active">
       <div class="d-flex flex-grow-1">
-        <span class="docs-menu-item-text d-flex flex-grow-1">Various Backup Storages</span>
+        <span class="docs-menu-item-text d-flex flex-grow-1">Cloudback Managed Storages</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/customer-storages/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Customer Managed Storages</span>
       </div>
     </a>
   
@@ -3098,52 +3149,47 @@
           <div class="page-with-toc d-flex flex-grow-1">
             <div class="flex-column d-flex flex-grow-1">
               
-  <article class="markdown-body"><h1 id="various-backup-storages">Various Backup Storages</h1>
-<p>Cloudback allows you to store a backup archive in your own storage, leaving no copies to us. That is. Cloudback backs up a repository into an archive, sends the archive to your storage, and wipes the archive from Cloudback&rsquo;s disk leaving no chance to recover any data from the Cloudback servers.</p>
-<p>Also, we offer our in-build storage named just <code>Cloudback</code>.</p>
-<img src="/static/features/storages-wizard-combobox.png" alt="Storages" width="500"/>
-<h2 id="register-your-storage">Register your storage</h2>
-<p>In order to tell Cloudback to store backups into your own storage, please use the <code>+ New storage</code> button in the settings of the repository card. The button opens a simple wizard that guides you through the registration process. Please refer to a particular storage page to learn about specific steps.</p>
-<p>Please note, that you could apply recently registered storage to all your repositories using the <code>Bulk Operations</code> menu.</p>
-<p align="center">
-  <img src="/static/features/storages-wizard.png" data-alt="/static/features/storages-wizard.gif"
-       alt="Storage Wizard" onclick="swapGif(this)" style="cursor: pointer;"/>
-</p>
-<h2 id="supported-storages">Supported storages</h2>
-<p>Please follow the link below to find additional details about particular storage:</p>
-<ul>
-<li>Cloudback in-build storage</li>
-<li>
-  <a href="/custom-storages/microsoft-azure-blob-container/">Microsoft Azure Blob Storage</a></li>
-<li>
-  <a href="/custom-storages/onedrive/">Microsoft OneDrive Personal</a></li>
-<li>
-  <a href="/custom-storages/onedrive/">Microsoft OneDrive For Business</a></li>
-<li>
-  <a href="/custom-storages/amazon-s3-bucket/">Amazon S3 Bucket via Access Point</a></li>
-<li>
-  <a href="/custom-storages/amazon-s3-bucket-access-key/">Amazon S3 Bucket via Access Key</a></li>
-<li>
-  <a href="/custom-storages/amazon-s3-glacier/">Amazon S3 Glacier</a></li>
-<li>
-  <a href="/custom-storages/google-cloud/">Google Cloud Storage Bucket</a></li>
-<li>
-  <a href="/custom-storages/alibaba-cloud/">Alibaba Cloud Object Storage Service</a></li>
-<li>
-  <a href="/custom-storages/swift">OpenStack Swift Container via S3 API</a></li>
-<li>
-  <a href="/custom-storages/wasabi/">Wasabi Bucket (S3 API)</a></li>
-</ul>
-<h2 id="need-another-storage">Need another storage?</h2>
-<p>We added support of 
-  <a href="https://github.com/cloudback/issue-tracker/issues/6">OpenStack Swift</a> and 
-  <a href="https://github.com/cloudback/issue-tracker/issues/7">Microsoft OneDrive</a> within a feature request of our users. 
-  <a href="/contact-us/">Contact us</a> or 
-  <a href="https://github.com/cloudback/issue-tracker/issues/new?template=feature_request.md">create a feature request</a> and we will consider implementing your storage.</p>
-<h2 id="what-we-upload-to-the-storage">What we upload to the storage?</h2>
-<p>We upload password-protected zip archives. The password is encrypted and stored at our side. The password is well protected behind several security layers. If someone breaks into any storage he will get useless encrypted archives and no chance to access archive content.</p>
+  <article class="markdown-body"><h1 id="cloudback-managed-storages">Cloudback Managed Storages</h1>
+<p>Cloudback provides a set of managed storages accessible to all clients. To adhere to data residency regulations, these storage facilities are located in various regions. Clients can freely select the storage option nearest to their location without incurring extra fees. By default all backups are stored in the <strong>Cloudback US</strong> storage.</p>
+<h2 id="the-list-of-cloudback-managed-storages">The list of cloudback managed storages</h2>
+<table>
+<thead>
+<tr>
+<th>Storage name</th>
+<th>Region</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cloudback US</td>
+<td>USA East, N. Virginia</td>
+</tr>
+<tr>
+<td>Cloudback EU</td>
+<td>EU Central, Amsterdam</td>
+</tr>
+<tr>
+<td>Cloudback UK</td>
+<td>EU West, London</td>
+</tr>
+<tr>
+<td>Cloudback Sidney</td>
+<td>Asia, Australia, Sidney</td>
+</tr>
+<tr>
+<td>Cloudback Singapore</td>
+<td>Asia, Singapore</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-to-change-the-storage">How to change the storage</h2>
+<p>The storage for the particular repository can be changed in the 
+  <a href="/features/card-view/#back-side-of-the-card">back side</a> of the card view, or in the 
+  <a href="/features/table-view/#repository-settings">repository settings</a> of the table view.</p>
 <h2 id="learn-more">Learn more</h2>
 <ul>
+<li>
+  <a href="/features/customer-storages/">Customer Managed Storages</a></li>
 <li>
   <a href="/features/metadata/">What is inside of a backup?</a></li>
 <li>
@@ -3157,17 +3203,17 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/3d5f8e6d202d5643892664740267b8155dfa50dc"
-                       title="Last modified by Victor Vorobyev | Mar 9, 2023" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/251c6310e0089b392704d911f39fff28dd63cc0f"
+                       title="Last modified by Victor Vorobyev | Apr 11, 2023" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Mar 9, 2023</span>
+                      <span class="pl-2">Apr 11, 2023</span>
                     </a>
                     
                   </div>
                    <div class="article-footer-btn p-2">
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/various-backup-storages.md" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/cloudback-storages.md" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
                       </svg>
@@ -3191,12 +3237,10 @@
   <nav class="pt-2">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#various-backup-storages">Various Backup Storages</a>
+    <li><a href="#cloudback-managed-storages">Cloudback Managed Storages</a>
       <ul>
-        <li><a href="#register-your-storage">Register your storage</a></li>
-        <li><a href="#supported-storages">Supported storages</a></li>
-        <li><a href="#need-another-storage">Need another storage?</a></li>
-        <li><a href="#what-we-upload-to-the-storage">What we upload to the storage?</a></li>
+        <li><a href="#the-list-of-cloudback-managed-storages">The list of cloudback managed storages</a></li>
+        <li><a href="#how-to-change-the-storage">How to change the storage</a></li>
         <li><a href="#learn-more">Learn more</a></li>
       </ul>
     </li>
