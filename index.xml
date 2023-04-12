@@ -341,6 +341,16 @@ Overview Vulnerability Management is the recurring process of identifying, class
     </item>
     
     <item>
+      <title>Cloudback introduces regional storages</title>
+      <link>https://docs.cloudback.it/posts/regions/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/regions/</guid>
+      <description>The Cloudback Team is excited to announce the addition of regional storage options for our clients. If you&amp;rsquo;re utilizing Cloudback Storage for your repositories, you can now select from a variety of storage regions to best suit your needs. See the list of supported storage locations below:
+   Storage name Region     Cloudback US USA East, N. Virginia   Cloudback EU EU Central, Amsterdam   Cloudback UK EU West, London   Cloudback Sidney Asia, Australia, Sidney   Cloudback Singapore Asia, Singapore    By default, all backups are stored in the Cloudback US storage.</description>
+    </item>
+    
+    <item>
       <title>We support a new storage now: Wasabi Cloud Storage</title>
       <link>https://docs.cloudback.it/posts/wasabi/</link>
       <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
