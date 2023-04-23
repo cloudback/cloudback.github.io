@@ -3257,39 +3257,21 @@
 <li>OpenStack Swift Container: S3 API</li>
 <li>Wasabi S3 Bucket: Access Key</li>
 </ul>
+<p>Example screenshot:</p>
+<p>
+  <img src="/static/features/s3-custom-headers.png" alt="Headers" /></p>
+<h3 id="custom-headers-for-s3-object-lock">Custom headers for S3 Object Lock</h3>
 <p>The headers are specified in the the format <code>key:value</code> divided by a new line. Examples:</p>
 <pre><code>x-amz-object-lock-mode:COMPLIANCE
 x-amz-object-lock-retain-until-date:2025-01-01T00:00:00Z
-</code></pre><p>
-  <img src="/static/features/s3-custom-headers.png" alt="Headers" /></p>
-<h3 id="custom-headers-for-s3-object-lock">Custom headers for S3 Object Lock</h3>
-<table>
-<thead>
-<tr>
-<th>Header</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>x-amz-object-lock-mode</code></td>
-<td><code>COMPLIANCE</code></td>
-<td>If you specify <code>x-amz-object-lock-mode</code>, you must also specify <code>x-amz-object-lock-retain-until-date</code></td>
-</tr>
-<tr>
-<td><code>x-amz-object-lock-retain-until-date</code></td>
-<td>yyyy-MM-ddThh:mm:ssZ</td>
-<td>The retain-until-date value must be in the format 2023-04-23T11:28:00Z. Fractional seconds are allowed, but only 3 decimal digits are preserved (milliseconds precision). Other ISO 8601 formats are not allowed. The retain-until-date must be in the future.</td>
-</tr>
-<tr>
-<td><code>x-amz-object-lock-legal-hold</code></td>
-<td><code>ON</code>, <code>OFF</code></td>
-<td>If legal hold is <code>ON</code> (case-sensitive), the object is placed under a legal hold. If legal hold is OFF, no legal hold is placed. Any other value results in a 400 Bad Request (InvalidArgument) error.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="dynamic-values-for-x-amz-object-lock-retain-until-date">Dynamic values for <code>x-amz-object-lock-retain-until-date</code></h3>
+</code></pre><p>Below is the list of S3 Object Lock headers:</p>
+<h4 id="x-amz-object-lock-mode">x-amz-object-lock-mode</h4>
+<p>Must be <code>COMPLIANCE</code> (case sensitive). If you specify <code>x-amz-object-lock-mode</code>, you must also specify <code>x-amz-object-lock-retain-until-date</code>.</p>
+<h4 id="x-amz-object-lock-retain-until-date">x-amz-object-lock-retain-until-date</h4>
+<p>Format <code>yyyy-MM-ddThh:mm:ssZ</code>. The retain-until-date value must be in the format 2023-04-23T11:28:00Z. Fractional seconds are allowed, but only 3 decimal digits are preserved (milliseconds precision). Other ISO 8601 formats are not allowed. The retain-until-date must be in the future.</p>
+<h4 id="x-amz-object-lock-legal-hold">x-amz-object-lock-legal-hold</h4>
+<p>Can be <code>ON</code> or <code>OFF</code> (case-sensitive). If legal hold is <code>ON</code>, the object is placed under a legal hold. If legal hold is OFF, no legal hold is placed. Any other value results in a 400 Bad Request (InvalidArgument) error.</p>
+<h3 id="dynamic-values-for-retain-until-date">Dynamic values for retain-until-date</h3>
 <p>Cloudback allows to calculate the value for <code>x-amz-object-lock-retain-until-date</code> dynamically using <code>liquid</code> templates. Cloudback uses 
   <a href="https://github.com/scriban/scriban">scriban</a> template engine to render the value of the header. Below are few examples:</p>
 <ul>
@@ -3302,7 +3284,16 @@ x-amz-object-lock-retain-until-date:{{ date.now | date.add_months 1 }}
 </ul>
 <pre><code>x-amz-object-lock-mode:COMPLIANCE
 x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
-</code></pre><h2 id="learn-more">Learn more</h2>
+</code></pre><p>Please refer to scriban documentation article to find more about scripting:</p>
+<ul>
+<li>
+  <a href="https://github.com/scriban/scriban/blob/master/doc/builtins.md#binary-operations">Date functions</a></li>
+<li>
+  <a href="https://github.com/scriban/scriban/tree/master/doc">Built-in functions</a></li>
+<li>
+  <a href="https://github.com/scriban/scriban/tree/master/doc">Documentation</a></li>
+</ul>
+<h2 id="learn-more">Learn more</h2>
 <ul>
 <li>
   <a href="/features/customer-storages/">Customer Managed Storages</a></li>
@@ -3319,7 +3310,7 @@ x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/8bc56da64b18dd97432d168f62207865950a2e33"
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/bad80bb28930ce29e9d9877d067df9d401941ca2"
                        title="Last modified by Victor Vorobyev | Apr 23, 2023" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
@@ -3360,7 +3351,7 @@ x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
           <ul>
             <li><a href="#optional-step-in-the-storage-wizard">Optional step in the storage wizard</a></li>
             <li><a href="#custom-headers-for-s3-object-lock">Custom headers for S3 Object Lock</a></li>
-            <li><a href="#dynamic-values-for-x-amz-object-lock-retain-until-date">Dynamic values for <code>x-amz-object-lock-retain-until-date</code></a></li>
+            <li><a href="#dynamic-values-for-retain-until-date">Dynamic values for retain-until-date</a></li>
           </ul>
         </li>
         <li><a href="#learn-more">Learn more</a></li>
