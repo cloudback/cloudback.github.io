@@ -7,15 +7,15 @@
   <meta http-equiv="content-language" content="en-us">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Manage GitHub Backup settings faster with Cloudback&#39;s Bulk Operations">
-  <meta property="og:title" content="Bulk Operations | Cloudback Documentation">
+  <meta name="description" content="Customize GitHub backup schedules with Cloudback&#39;s Schedule Manager">
+  <meta property="og:title" content="Amazon S3 Object Lock | Cloudback Documentation">
   <meta property="og:site_name" content="Cloudback">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://cloudback.it">
   <meta property="og:image" content="https://cloudback.it/lib/logo/social.png">
-  <meta property="og:description" content="Manage GitHub Backup settings faster with Cloudback&#39;s Bulk Operations">
-  <meta name="twitter:title" content="Bulk Operations | Cloudback Documentation">
-  <meta name="twitter:description" content="Manage GitHub Backup settings faster with Cloudback&#39;s Bulk Operations">
+  <meta property="og:description" content="Customize GitHub backup schedules with Cloudback&#39;s Schedule Manager">
+  <meta name="twitter:title" content="Amazon S3 Object Lock | Cloudback Documentation">
+  <meta name="twitter:description" content="Customize GitHub backup schedules with Cloudback&#39;s Schedule Manager">
   <meta name="twitter:image" content="https://cloudback.it/lib/logo/social.png">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
@@ -59,7 +59,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bulk Operations | Cloudback</title>
+<title>Amazon S3 Object Lock | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -2631,7 +2631,7 @@
   
 
   
-    <a href="https://docs.cloudback.it/features/bulk-operations/" class="docs-menu-item d-flex  active">
+    <a href="https://docs.cloudback.it/features/bulk-operations/" class="docs-menu-item d-flex ">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Bulk Operations</span>
       </div>
@@ -2750,7 +2750,7 @@
   
 
   
-    <a href="https://docs.cloudback.it/features/s3-object-lock/" class="docs-menu-item d-flex ">
+    <a href="https://docs.cloudback.it/features/s3-object-lock/" class="docs-menu-item d-flex  active">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Amazon S3 Object Lock</span>
       </div>
@@ -3234,37 +3234,82 @@
           <div class="page-with-toc d-flex flex-grow-1">
             <div class="flex-column d-flex flex-grow-1">
               
-  <article class="markdown-body"><h1 id="bulk-operations">Bulk Operations</h1>
-<p>If you have a large number of repositories it is not comfortable to manage their settings using Cloudback Dashboard with the card-based user interface. Cloudback offers the <code>Bulk Operations</code> dialog instead. The dialog allows you to apply settings to many repositories with a single click.</p>
-<img src="/static/features/bulk-operations.png" alt="Bulk Operations"/>
-<h2 id="repository-name-pattern">Repository name pattern</h2>
-<p>Repository name pattern accepts 
-  <a href="https://en.wikipedia.org/wiki/Wildcard_character">wildcard</a> characters and a comma character to join multiple queries:</p>
-<p>Wildcard characters:<br>
-<code>*</code> - zero or more characters <br>
-<code>?</code> - exactly one character<br>
-<code>,</code> - specify multiple queries separated by a comma<br></p>
-<p>Samples:</p>
-<p>For the account <code>cristobal-martinez</code> with 4 repositories <code>awesome</code>, <code>awesome-repos</code>, <code>books</code> and <code>static-website-example</code>:</p>
+  <article class="markdown-body"><h1 id="amazon-s3-object-lock">Amazon S3 Object Lock</h1>
+<p>
+  <a href="https://aws.amazon.com/s3/features/object-lock/">Amazon S3 Object Lock</a> is a feature provided by Amazon Web Services in their Simple Storage Service. It&rsquo;s designed to help you protect your data from being accidentally or intentionally deleted or overwritten. Cloudback supports S3 Object Lock feature for 
+  <a href="/features/customer-storages/">customer-managed storages</a> and allows you to enable it for your backups.</p>
+<p>To use S3 Object Lock, you follow these basic steps:</p>
+<ol>
+<li>Create a new AWS S3 bucket with Object Lock enabled.</li>
+<li>Configure your Cloudback&rsquo;s storage to apply a retention period or legal hold.</li>
+</ol>
+<h2 id="s3-bucket-configuration-in-aws-console">S3 Bucket Configuration in AWS Console</h2>
+<p>Before you can lock any objects, you have to configure a bucket to use S3 Object Lock. To do this, you specify when you create the bucket that you want to enable Object Lock. After you configure a bucket for Object Lock, you can lock objects in that bucket using retention periods, legal holds, or both. You can find more information in the 
+  <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock-overview.html#object-lock-bucket-config">official documentation</a>.</p>
+<h2 id="storage-configuration-in-cloudback-dashboard">Storage Configuration in Cloudback Dashboard</h2>
+<h3 id="optional-step-in-the-storage-wizard">Optional step in the storage wizard</h3>
+<p>S3 object Lock parameters for backups are specified in the corresponding HTTP headers for the 
+  <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">PutObject</a> API call. There is an additional step in the <code>Storage Wizard</code> where you can provide custom HTTP headers.</p>
+<p>Custom headers are supported for all S3 compatible storages:</p>
 <ul>
-<li><code>*</code> - matches all repositories</li>
-<li><code>awe*</code> - matches <code>awesome</code> and <code>awesome-repos</code><br></li>
-<li><code>awe*,book</code> - matches <code>awesome</code>, <code>awesome-repos</code> and <code>book</code><br></li>
-<li><code>*b*</code> - matches <code>book</code> and <code>static-website-example</code><br></li>
+<li>Amazon S3 Bucket: Access Point</li>
+<li>Amazon S3 Bucket: Access Key</li>
+<li>OpenStack Swift Container: S3 API</li>
+<li>Wasabi S3 Bucket: Access Key</li>
 </ul>
-<h2 id="settings-that-can-be-applied">Settings that can be applied</h2>
+<p>The headers are specified in the the format <code>key:value</code> divided by a new line. Examples:</p>
+<pre><code>x-amz-object-lock-mode:COMPLIANCE
+x-amz-object-lock-retain-until-date:2025-01-01T00:00:00Z
+</code></pre><p>
+  <img src="/static/features/s3-custom-headers.png" alt="Headers" /></p>
+<h3 id="custom-headers-for-s3-object-lock">Custom headers for S3 Object Lock</h3>
+<table>
+<thead>
+<tr>
+<th>Header</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x-amz-object-lock-mode</code></td>
+<td><code>COMPLIANCE</code></td>
+<td>If you specify <code>x-amz-object-lock-mode</code>, you must also specify <code>x-amz-object-lock-retain-until-date</code></td>
+</tr>
+<tr>
+<td><code>x-amz-object-lock-retain-until-date</code></td>
+<td>yyyy-MM-ddThh:mm:ssZ</td>
+<td>The retain-until-date value must be in the format 2023-04-23T11:28:00Z. Fractional seconds are allowed, but only 3 decimal digits are preserved (milliseconds precision). Other ISO 8601 formats are not allowed. The retain-until-date must be in the future.</td>
+</tr>
+<tr>
+<td><code>x-amz-object-lock-legal-hold</code></td>
+<td><code>ON</code>, <code>OFF</code></td>
+<td>If legal hold is <code>ON</code> (case-sensitive), the object is placed under a legal hold. If legal hold is OFF, no legal hold is placed. Any other value results in a 400 Bad Request (InvalidArgument) error.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dynamic-values-for-x-amz-object-lock-retain-until-date">Dynamic values for <code>x-amz-object-lock-retain-until-date</code></h3>
+<p>Cloudback allows to calculate the value for <code>x-amz-object-lock-retain-until-date</code> dynamically using <code>liquid</code> templates. Cloudback uses 
+  <a href="https://github.com/scriban/scriban">scriban</a> template engine to render the value of the header. Below are few examples:</p>
 <ul>
-<li><code>Schedule</code> - an hour for a daily backup trigger</li>
-<li><code>Retention</code> - backup archive retention policy, how many days we store an archive before we delete it</li>
-<li><code>Storage</code> - storage for backup archives, could be <code>Cloudback</code> or created by a user</li>
-<li><code>State</code> - schedule / unschedule, or enable / disable automated daily backups</li>
+<li>Retain the object for 1 month from the current date:</li>
 </ul>
-<h2 id="learn-more">Learn more</h2>
+<pre><code>x-amz-object-lock-mode:COMPLIANCE
+x-amz-object-lock-retain-until-date:{{ date.now | date.add_months 1 }}
+</code></pre><ul>
+<li>Retain the object for 1 year from the current date:</li>
+</ul>
+<pre><code>x-amz-object-lock-mode:COMPLIANCE
+x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
+</code></pre><h2 id="learn-more">Learn more</h2>
 <ul>
-<li>
-  <a href="/features/metadata/">What is inside of a backup?</a></li>
 <li>
   <a href="/features/customer-storages/">Customer Managed Storages</a></li>
+<li>
+  <a href="https://aws.amazon.com/s3/features/object-lock/">Amazon S3 Object Lock</a></li>
+<li>
+  <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html">Using S3 Object Lock</a></li>
 </ul>
 </article>
 
@@ -3274,17 +3319,17 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/251c6310e0089b392704d911f39fff28dd63cc0f"
-                       title="Last modified by Victor Vorobyev | Apr 11, 2023" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/8bc56da64b18dd97432d168f62207865950a2e33"
+                       title="Last modified by Victor Vorobyev | Apr 23, 2023" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Apr 11, 2023</span>
+                      <span class="pl-2">Apr 23, 2023</span>
                     </a>
                     
                   </div>
                    <div class="article-footer-btn p-2">
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/bulk-operations.md" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/s3-object-lock.md" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
                       </svg>
@@ -3308,10 +3353,16 @@
   <nav class="pt-2">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#bulk-operations">Bulk Operations</a>
+    <li><a href="#amazon-s3-object-lock">Amazon S3 Object Lock</a>
       <ul>
-        <li><a href="#repository-name-pattern">Repository name pattern</a></li>
-        <li><a href="#settings-that-can-be-applied">Settings that can be applied</a></li>
+        <li><a href="#s3-bucket-configuration-in-aws-console">S3 Bucket Configuration in AWS Console</a></li>
+        <li><a href="#storage-configuration-in-cloudback-dashboard">Storage Configuration in Cloudback Dashboard</a>
+          <ul>
+            <li><a href="#optional-step-in-the-storage-wizard">Optional step in the storage wizard</a></li>
+            <li><a href="#custom-headers-for-s3-object-lock">Custom headers for S3 Object Lock</a></li>
+            <li><a href="#dynamic-values-for-x-amz-object-lock-retain-until-date">Dynamic values for <code>x-amz-object-lock-retain-until-date</code></a></li>
+          </ul>
+        </li>
         <li><a href="#learn-more">Learn more</a></li>
       </ul>
     </li>
