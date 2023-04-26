@@ -204,8 +204,7 @@ Example: Every Monday Morning Schedule Let&amp;rsquo;s create Every Monday Morni
       
       <guid>https://docs.cloudback.it/features/s3-object-lock/</guid>
       <description>Amazon S3 Object Lock  Amazon S3 Object Lock is a feature provided by Amazon Web Services in their Simple Storage Service. It&amp;rsquo;s designed to help you protect your data from being accidentally or intentionally deleted or overwritten. Cloudback supports S3 Object Lock feature for customer-managed storages and allows you to enable it for your backups.
-To use S3 Object Lock, you follow these basic steps:
- Create a new AWS S3 bucket with Object Lock enabled.</description>
+Key Benefits of Amazon S3 Object Lock Support   Enhanced Data Protection: With Amazon S3 Object Lock, you can implement retention policies to ensure your GitHub repository backups remain untouched during a specified period.</description>
     </item>
     
   </channel>

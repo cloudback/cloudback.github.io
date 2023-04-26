@@ -5,7 +5,17 @@
     <link>https://docs.cloudback.it/categories/release-notes/</link>
     <description>Recent content in Release notes on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudback Introduces Amazon S3 Object Lock Support for Enhanced GitHub Repository Backup Security</title>
+      <link>https://docs.cloudback.it/posts/s3-object-lock/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/s3-object-lock/</guid>
+      <description>Cloudback announces the latest addition to its robust suite of features: support for Amazon S3 Object Lock. This enhancement will enable developers to further strengthen the security and protection of their GitHub repository backups stored on Amazon S3.
+Amazon S3 Object Lock is a feature that provides an additional layer of security by enabling users to enforce retention policies and prevent the accidental or malicious deletion of their critical data. By integrating this functionality, Cloudback users can now benefit from the highest level of data protection available for their repository backups.</description>
+    </item>
+    
     <item>
       <title>Cloudback introduces regional storages</title>
       <link>https://docs.cloudback.it/posts/regions/</link>

@@ -7,15 +7,15 @@
   <meta http-equiv="content-language" content="en-us">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Customize GitHub backup schedules with Cloudback&#39;s Schedule Manager">
+  <meta name="description" content="Cloudback supports S3 Object Lock feature for your backups.">
   <meta property="og:title" content="Amazon S3 Object Lock | Cloudback Documentation">
   <meta property="og:site_name" content="Cloudback">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://cloudback.it">
   <meta property="og:image" content="https://cloudback.it/lib/logo/social.png">
-  <meta property="og:description" content="Customize GitHub backup schedules with Cloudback&#39;s Schedule Manager">
+  <meta property="og:description" content="Cloudback supports S3 Object Lock feature for your backups.">
   <meta name="twitter:title" content="Amazon S3 Object Lock | Cloudback Documentation">
-  <meta name="twitter:description" content="Customize GitHub backup schedules with Cloudback&#39;s Schedule Manager">
+  <meta name="twitter:description" content="Cloudback supports S3 Object Lock feature for your backups.">
   <meta name="twitter:image" content="https://cloudback.it/lib/logo/social.png">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
@@ -729,6 +729,40 @@
              > 
           
           Cloudback
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/s3-object-lock/">Cloudback Introduces Amazon S3 Object Lock Support for Enhanced GitHub Repository Backup Security<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Posts
+        
+    
+        
+        
+          
+             > 
+          
+          S3 Object Lock
         
     
         
@@ -3238,33 +3272,54 @@
 <p>
   <a href="https://aws.amazon.com/s3/features/object-lock/">Amazon S3 Object Lock</a> is a feature provided by Amazon Web Services in their Simple Storage Service. It&rsquo;s designed to help you protect your data from being accidentally or intentionally deleted or overwritten. Cloudback supports S3 Object Lock feature for 
   <a href="/features/customer-storages/">customer-managed storages</a> and allows you to enable it for your backups.</p>
-<p>To use S3 Object Lock, you follow these basic steps:</p>
+<h2 id="key-benefits-of-amazon-s3-object-lock-support">Key Benefits of Amazon S3 Object Lock Support</h2>
+<ul>
+<li>
+<p><strong>Enhanced Data Protection</strong>: With Amazon S3 Object Lock, you can implement retention policies to ensure your GitHub repository backups remain untouched during a specified period. This prevents the accidental or malicious deletion of your backups and offers greater peace of mind.</p>
+</li>
+<li>
+<p><strong>Compliance with Industry Regulations</strong>: For organizations that need to comply with industry-specific regulations such as HIPAA, GDPR, or SEC Rule 17a-4, Amazon S3 Object Lock offers a convenient solution to meet data retention requirements.</p>
+</li>
+</ul>
+<h2 id="get-started-with-amazon-s3-object-lock">Get Started with Amazon S3 Object Lock</h2>
 <ol>
-<li>Create a new AWS S3 bucket with Object Lock enabled.</li>
-<li>Configure your Cloudback&rsquo;s storage to apply a retention period or legal hold.</li>
+<li>Create a AWS S3 bucket with Object Lock enabled:
+<ol>
+<li>Sign in to Amazon S3 Console</li>
+<li>Enable Object Lock for your bucket: 
+  <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock-overview.html#object-lock-bucket-config">Bucket configuration</a></li>
+</ol>
+</li>
+<li>Configure your Cloudback&rsquo;s storage with Object Lock:
+<ol>
+<li>Sign in to your Cloudback account and navigate to repository card</li>
+<li>Open repository settings and click the &lsquo;New Storage&rsquo; button to open the <code>Storage Wizard</code></li>
+<li>Select <code>Amazon S3 Bucket</code> storage provider and fill in <code>Step 5</code> with HTTP headers</li>
+</ol>
+</li>
 </ol>
 <h2 id="s3-bucket-configuration-in-aws-console">S3 Bucket Configuration in AWS Console</h2>
 <p>Before you can lock any objects, you have to configure a bucket to use S3 Object Lock. To do this, you specify when you create the bucket that you want to enable Object Lock. After you configure a bucket for Object Lock, you can lock objects in that bucket using retention periods, legal holds, or both. You can find more information in the 
   <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock-overview.html#object-lock-bucket-config">official documentation</a>.</p>
 <h2 id="storage-configuration-in-cloudback-dashboard">Storage Configuration in Cloudback Dashboard</h2>
-<h3 id="optional-step-in-the-storage-wizard">Optional step in the storage wizard</h3>
-<p>S3 object Lock parameters for backups are specified in the corresponding HTTP headers for the 
-  <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">PutObject</a> API call. There is an additional step in the <code>Storage Wizard</code> where you can provide custom HTTP headers.</p>
-<p>Custom headers are supported for all S3 compatible storages:</p>
+<h3 id="storage-wizard">Storage wizard</h3>
+<p>In general, S3 object Lock parameters are specified using HTTP headers for the 
+  <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">PutObject</a> API call. There is an additional step in the <code>Storage Wizard</code> where you can provide additional HTTP headers for backups.</p>
+<p>Additional HTTP headers are supported for all S3 compatible storages:</p>
 <ul>
 <li>Amazon S3 Bucket: Access Point</li>
 <li>Amazon S3 Bucket: Access Key</li>
 <li>OpenStack Swift Container: S3 API</li>
 <li>Wasabi S3 Bucket: Access Key</li>
 </ul>
-<p>Example screenshot:</p>
+<p>Example <code>Storage Wizard</code> screenshot:</p>
 <p>
   <img src="/static/features/s3-custom-headers.png" alt="Headers" /></p>
-<h3 id="custom-headers-for-s3-object-lock">Custom headers for S3 Object Lock</h3>
-<p>The headers are specified in the the format <code>key:value</code> divided by a new line. Examples:</p>
+<h3 id="http-headers-for-s3-object-lock">HTTP headers for S3 Object Lock</h3>
+<p>The headers are specified in the the format <code>key:value</code> divided by a new line. For example:</p>
 <pre><code>x-amz-object-lock-mode:COMPLIANCE
 x-amz-object-lock-retain-until-date:2025-01-01T00:00:00Z
-</code></pre><p>Below is the list of S3 Object Lock headers:</p>
+</code></pre><p>Below is the list of S3 Object Lock related headers:</p>
 <h4 id="x-amz-object-lock-mode">x-amz-object-lock-mode</h4>
 <p>Must be <code>COMPLIANCE</code> (case sensitive). If you specify <code>x-amz-object-lock-mode</code>, you must also specify <code>x-amz-object-lock-retain-until-date</code>.</p>
 <h4 id="x-amz-object-lock-retain-until-date">x-amz-object-lock-retain-until-date</h4>
@@ -3275,18 +3330,7 @@ x-amz-object-lock-retain-until-date:2025-01-01T00:00:00Z
 <p>The required <code>Content-MD5</code> header is added by Cloudback automatically, no need to specify it manually.</p>
 <h3 id="dynamic-values-for-retain-until-date">Dynamic values for retain-until-date</h3>
 <p>Cloudback allows to calculate the value for <code>x-amz-object-lock-retain-until-date</code> dynamically using <code>liquid</code> templates. Cloudback uses 
-  <a href="https://github.com/scriban/scriban">scriban</a> template engine to render the value of the header. Below are few examples:</p>
-<ul>
-<li>Retain the object for 1 month from the current date:</li>
-</ul>
-<pre><code>x-amz-object-lock-mode:COMPLIANCE
-x-amz-object-lock-retain-until-date:{{ date.now | date.add_months 1 }}
-</code></pre><ul>
-<li>Retain the object for 1 year from the current date:</li>
-</ul>
-<pre><code>x-amz-object-lock-mode:COMPLIANCE
-x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
-</code></pre><p>Please refer to scriban documentation article to find more about scripting:</p>
+  <a href="https://github.com/scriban/scriban">scriban</a> template engine to render the value of the header. Refer to the examples provided below for guidance. If you require additional scripting functionality, please consult the scriban documentation:</p>
 <ul>
 <li>
   <a href="https://github.com/scriban/scriban/blob/master/doc/builtins.md#binary-operations">Date functions</a></li>
@@ -3295,7 +3339,14 @@ x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
 <li>
   <a href="https://github.com/scriban/scriban/tree/master/doc">Documentation</a></li>
 </ul>
-<h2 id="learn-more">Learn more</h2>
+<h3 id="examples-of-http-headers">Examples of HTTP headers</h3>
+<h4 id="retain-the-object-for-1-month-from-the-current-date">Retain the object for 1 month from the current date:</h4>
+<pre><code>x-amz-object-lock-mode:COMPLIANCE
+x-amz-object-lock-retain-until-date:{{ date.now | date.add_months 1 }}
+</code></pre><h4 id="retain-the-object-for-1-year-from-the-current-date">Retain the object for 1 year from the current date:</h4>
+<pre><code>x-amz-object-lock-mode:COMPLIANCE
+x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
+</code></pre><h2 id="learn-more">Learn more</h2>
 <ul>
 <li>
   <a href="/features/customer-storages/">Customer Managed Storages</a></li>
@@ -3312,12 +3363,12 @@ x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/34cda52773980cd62e2b2f71e167f78dc4ebe70e"
-                       title="Last modified by Victor Vorobyev | Apr 25, 2023" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/e133bbd3d1b15312da2f5441d9c09f5cc8b83d29"
+                       title="Last modified by Victor Vorobyev | Apr 26, 2023" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Apr 25, 2023</span>
+                      <span class="pl-2">Apr 26, 2023</span>
                     </a>
                     
                   </div>
@@ -3348,12 +3399,15 @@ x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
   <ul>
     <li><a href="#amazon-s3-object-lock">Amazon S3 Object Lock</a>
       <ul>
+        <li><a href="#key-benefits-of-amazon-s3-object-lock-support">Key Benefits of Amazon S3 Object Lock Support</a></li>
+        <li><a href="#get-started-with-amazon-s3-object-lock">Get Started with Amazon S3 Object Lock</a></li>
         <li><a href="#s3-bucket-configuration-in-aws-console">S3 Bucket Configuration in AWS Console</a></li>
         <li><a href="#storage-configuration-in-cloudback-dashboard">Storage Configuration in Cloudback Dashboard</a>
           <ul>
-            <li><a href="#optional-step-in-the-storage-wizard">Optional step in the storage wizard</a></li>
-            <li><a href="#custom-headers-for-s3-object-lock">Custom headers for S3 Object Lock</a></li>
+            <li><a href="#storage-wizard">Storage wizard</a></li>
+            <li><a href="#http-headers-for-s3-object-lock">HTTP headers for S3 Object Lock</a></li>
             <li><a href="#dynamic-values-for-retain-until-date">Dynamic values for retain-until-date</a></li>
+            <li><a href="#examples-of-http-headers">Examples of HTTP headers</a></li>
           </ul>
         </li>
         <li><a href="#learn-more">Learn more</a></li>

@@ -319,8 +319,7 @@ Example: Every Monday Morning Schedule Let&amp;rsquo;s create Every Monday Morni
       
       <guid>https://docs.cloudback.it/features/s3-object-lock/</guid>
       <description>Amazon S3 Object Lock  Amazon S3 Object Lock is a feature provided by Amazon Web Services in their Simple Storage Service. It&amp;rsquo;s designed to help you protect your data from being accidentally or intentionally deleted or overwritten. Cloudback supports S3 Object Lock feature for customer-managed storages and allows you to enable it for your backups.
-To use S3 Object Lock, you follow these basic steps:
- Create a new AWS S3 bucket with Object Lock enabled.</description>
+Key Benefits of Amazon S3 Object Lock Support   Enhanced Data Protection: With Amazon S3 Object Lock, you can implement retention policies to ensure your GitHub repository backups remain untouched during a specified period.</description>
     </item>
     
     <item>
@@ -349,6 +348,16 @@ To use S3 Object Lock, you follow these basic steps:
       <guid>https://docs.cloudback.it/security/vulnerability-management-workflow/</guid>
       <description>Vulnerability Management Workflow Introduction The purpose of the document is to describe the established vulnerability management workflow in the MYRTLE GROUP S.A. (“we” or “Cloudback”).
 Overview Vulnerability Management is the recurring process of identifying, classifying, prioritizing, mitigating, and remediating vulnerabilities. This document will focus on infrastructure vulnerabilities and the vulnerability management process. This process is designed to provide informationregarding Cloudback vulnerability workflow, promote healthy patch management among other preventative best-practices, and remediate risk; all with the end goal to better secure our environments.</description>
+    </item>
+    
+    <item>
+      <title>Cloudback Introduces Amazon S3 Object Lock Support for Enhanced GitHub Repository Backup Security</title>
+      <link>https://docs.cloudback.it/posts/s3-object-lock/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/s3-object-lock/</guid>
+      <description>Cloudback announces the latest addition to its robust suite of features: support for Amazon S3 Object Lock. This enhancement will enable developers to further strengthen the security and protection of their GitHub repository backups stored on Amazon S3.
+Amazon S3 Object Lock is a feature that provides an additional layer of security by enabling users to enforce retention policies and prevent the accidental or malicious deletion of their critical data. By integrating this functionality, Cloudback users can now benefit from the highest level of data protection available for their repository backups.</description>
     </item>
     
     <item>
