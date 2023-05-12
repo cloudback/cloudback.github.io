@@ -115,8 +115,8 @@ Learn more   GitHub: About organizations  GitHub: Permission levels for an organ
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/features/invoiced-customers/</guid>
-      <description>Invoiced Customers If you have a GitHub Enterprise account and you pay GitHub by invoice - you will not able to purchase Cloudback&amp;rsquo;s paid plans using the GitHub Marketplace. If you try to purchase a paid plan on GitHub Marketplace you will get an error message Unfortunately, invoiced customers cannot purchase paid plans on the GitHub Marketplace.
-The good news is that there is a workaround and Cloudback supports direct payments using bank transfers.</description>
+      <description>Invoiced Customers For those who hold GitHub Enterprise accounts and/or settle their GitHub payments through invoices, it&amp;rsquo;s important to note that you will not be able to acquire paid plans from Cloudback via the GitHub Marketplace. Any attempts to do so will result in an error message Unfortunately, invoiced customers cannot purchase paid plans on the GitHub Marketplace.
+However, there is a positive twist to this situation. Cloudback provides an alternative option in the form of direct bank transfers for payment.</description>
     </item>
     
     <item>
