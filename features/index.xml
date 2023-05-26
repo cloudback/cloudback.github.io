@@ -37,7 +37,7 @@ Register your storage In order to tell Cloudback to store backups into your own 
     </item>
     
     <item>
-      <title>GitHub Repository Metadata Backup</title>
+      <title>Metadata Backup</title>
       <link>https://docs.cloudback.it/features/metadata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -188,7 +188,7 @@ Main Grid Here you can find the next functionality:
     </item>
     
     <item>
-      <title>Custom Schedules for Automatic GitHub Backups</title>
+      <title>Custom Schedules</title>
       <link>https://docs.cloudback.it/features/custom-schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

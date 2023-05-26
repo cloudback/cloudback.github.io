@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Supported Storages For GitHub Repository Backup on Cloudback</title>
+    <title>Supported Storages on Cloudback</title>
     <link>https://docs.cloudback.it/custom-storages/</link>
-    <description>Recent content in Supported Storages For GitHub Repository Backup on Cloudback</description>
+    <description>Recent content in Supported Storages on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.cloudback.it/custom-storages/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Amazon S3 Bucket via Access Key For GitHub Repository Backup</title>
+      <title>Amazon S3 Bucket via Access Key</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -15,7 +15,7 @@
     </item>
     
     <item>
-      <title>Amazon S3 Bucket via Access Point For GitHub Repository Backup</title>
+      <title>Amazon S3 Bucket via Access Point</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-bucket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -24,17 +24,17 @@
     </item>
     
     <item>
-      <title>Amazon S3 Glacier For GitHub Repository Backup</title>
+      <title>Amazon S3 Glacier</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</guid>
       <description>Backup GitHub repository using Amazon S3 Glacier About Amazon S3 Glacier Amazon S3 Glacier and S3 Glacier Deep Archive are secure, durable, and extremely low-cost Amazon S3 cloud storage classes for data archiving and long-term backup. They are designed to deliver 99.999999999% durability, and provide comprehensive security and compliance capabilities that can help meet even the most stringent regulatory requirements.
- Set up Amazon S3 Glacier as a customer managed storage  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the + New storage button:     Type a storage name</description>
+ Requires permissions  glacier:UploadArchive glacier:DeleteArchive glacier:InitiateJob glacier:GetJobOutput glacier:InitiateMultipartUpload glacier:CompleteMultipartUpload glacier:AbortMultipartUpload glacier:UploadMultiPart glacier:UploadMultipartPart glacier:DescribeJob  Set up Amazon S3 Glacier as a customer managed storage  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the + New storage button:     Type a storage name</description>
     </item>
     
     <item>
-      <title>Google Cloud Storage Bucket For GitHub Repository Backup</title>
+      <title>Google Cloud Storage Bucket</title>
       <link>https://docs.cloudback.it/custom-storages/google-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -44,7 +44,7 @@
     </item>
     
     <item>
-      <title>Microsoft OneDrive For GitHub Repository Backup</title>
+      <title>Microsoft OneDrive</title>
       <link>https://docs.cloudback.it/custom-storages/onedrive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -54,7 +54,7 @@
     </item>
     
     <item>
-      <title>Alibaba Cloud Object Storage Service For GitHub Repository Backup</title>
+      <title>Alibaba Cloud Object Storage Service</title>
       <link>https://docs.cloudback.it/custom-storages/alibaba-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -63,7 +63,7 @@
     </item>
     
     <item>
-      <title>Wasabi Customer Managed Storage For GitHub Repository Backup</title>
+      <title>Wasabi Customer Managed Storage</title>
       <link>https://docs.cloudback.it/custom-storages/wasabi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
