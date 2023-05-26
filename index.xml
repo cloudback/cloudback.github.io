@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Cloudback</title>
+    <title>GitHub Repository Backup on Cloudback</title>
     <link>https://docs.cloudback.it/</link>
-    <description>Recent content in Home on Cloudback</description>
+    <description>Recent content in GitHub Repository Backup on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.cloudback.it/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automated Backups</title>
@@ -16,7 +16,7 @@ Schedule You can configure the exact hour you want to capture a backup every day
     </item>
     
     <item>
-      <title>Amazon S3 Bucket via Access Key</title>
+      <title>Amazon S3 Bucket via Access Key For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -25,7 +25,7 @@ Schedule You can configure the exact hour you want to capture a backup every day
     </item>
     
     <item>
-      <title>Amazon S3 Bucket via Access Point</title>
+      <title>Amazon S3 Bucket via Access Point For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-bucket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -65,7 +65,7 @@ About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;
     </item>
     
     <item>
-      <title>What is Cloudback</title>
+      <title>What is Cloudback GitHub Backup?</title>
       <link>https://docs.cloudback.it/what-is-cloudback/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -74,13 +74,24 @@ About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;
     </item>
     
     <item>
-      <title>Amazon S3 Glacier</title>
+      <title>Amazon S3 Glacier For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</guid>
       <description>Backup GitHub repository using Amazon S3 Glacier About Amazon S3 Glacier Amazon S3 Glacier and S3 Glacier Deep Archive are secure, durable, and extremely low-cost Amazon S3 cloud storage classes for data archiving and long-term backup. They are designed to deliver 99.999999999% durability, and provide comprehensive security and compliance capabilities that can help meet even the most stringent regulatory requirements.
  Set up Amazon S3 Glacier as a customer managed storage  In the Cloudback Dashboard open the repository settings by clicking on the settings icon:    Click on the + New storage button:     Type a storage name</description>
+    </item>
+    
+    <item>
+      <title>GitHub Repository Metadata Backup</title>
+      <link>https://docs.cloudback.it/features/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/features/metadata/</guid>
+      <description>Metadata Backups Cloudback archives not only the whole git repository but GitHub-specific metadata as well. The list of metadata we are able to backup is not complete and is limited by the GitHub API.
+Important things to know:
+ We don&amp;rsquo;t backup your GitHub Account We don&amp;rsquo;t backup your GitHub Organization The resulting backup should never be considered as a complete all-embracing one  What is included in a backup? Here is the list of repository&amp;rsquo;s data in a backup archive:</description>
     </item>
     
     <item>
@@ -93,18 +104,7 @@ About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;
     </item>
     
     <item>
-      <title>Metadata Backups</title>
-      <link>https://docs.cloudback.it/features/metadata/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.cloudback.it/features/metadata/</guid>
-      <description>Metadata Backups Cloudback archives not only the whole git repository but GitHub-specific metadata as well. The list of metadata we are able to backup is not complete and is limited by the GitHub API.
-Important things to know:
- We don&amp;rsquo;t backup your GitHub Account We don&amp;rsquo;t backup your GitHub Organization The resulting backup should never be considered as a complete all-embracing one  What is included in a backup? Here is the list of repository&amp;rsquo;s data in a backup archive:</description>
-    </item>
-    
-    <item>
-      <title>Google Cloud Storage Bucket</title>
+      <title>Google Cloud Storage Bucket For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/google-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -114,7 +114,7 @@ Important things to know:
     </item>
     
     <item>
-      <title>Microsoft OneDrive</title>
+      <title>Microsoft OneDrive For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/onedrive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -134,7 +134,7 @@ Important things to know:
     </item>
     
     <item>
-      <title>Alibaba Cloud Object Storage Service</title>
+      <title>Alibaba Cloud Object Storage Service For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/alibaba-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -154,7 +154,7 @@ Archive&amp;rsquo;s password email You will receive an email with the password e
     </item>
     
     <item>
-      <title>Getting Started</title>
+      <title>Getting Started with Cloudback GitHub Backup</title>
       <link>https://docs.cloudback.it/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -216,7 +216,7 @@ However, there is a positive twist to this situation. Cloudback provides an alte
     </item>
     
     <item>
-      <title>Wasabi</title>
+      <title>Wasabi Customer Managed Storage For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/wasabi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -303,7 +303,7 @@ Main Grid Here you can find the next functionality:
     </item>
     
     <item>
-      <title>Custom Schedules</title>
+      <title>Custom Schedules for Automatic GitHub Backups</title>
       <link>https://docs.cloudback.it/features/custom-schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
