@@ -16,7 +16,7 @@ Schedule You can configure the exact hour you want to capture a backup every day
     </item>
     
     <item>
-      <title>Amazon S3 Bucket via Access Key</title>
+      <title>Amazon S3 Bucket via Access Key For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -25,7 +25,7 @@ Schedule You can configure the exact hour you want to capture a backup every day
     </item>
     
     <item>
-      <title>Amazon S3 Bucket via Access Point</title>
+      <title>Amazon S3 Bucket via Access Point For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-bucket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -65,7 +65,7 @@ About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;
     </item>
     
     <item>
-      <title>What is Cloudback?</title>
+      <title>What is Cloudback GitHub Backup?</title>
       <link>https://docs.cloudback.it/what-is-cloudback/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -74,7 +74,7 @@ About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;
     </item>
     
     <item>
-      <title>Amazon S3 Glacier</title>
+      <title>Amazon S3 Glacier For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -93,7 +93,7 @@ About Microsoft Azure Blob Containers Azure Blob storage is Microsoft&amp;rsquo;
     </item>
     
     <item>
-      <title>Metadata Backup</title>
+      <title>GitHub Repository Metadata Backup</title>
       <link>https://docs.cloudback.it/features/metadata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -104,7 +104,7 @@ Important things to know:
     </item>
     
     <item>
-      <title>Google Cloud Storage Bucket</title>
+      <title>Google Cloud Storage Bucket For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/google-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -114,7 +114,7 @@ Important things to know:
     </item>
     
     <item>
-      <title>Microsoft OneDrive</title>
+      <title>Microsoft OneDrive For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/onedrive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -134,7 +134,7 @@ Important things to know:
     </item>
     
     <item>
-      <title>Alibaba Cloud Object Storage Service</title>
+      <title>Alibaba Cloud Object Storage Service For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/alibaba-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -154,7 +154,7 @@ Archive&amp;rsquo;s password email You will receive an email with the password e
     </item>
     
     <item>
-      <title>Getting Started</title>
+      <title>Getting Started with Cloudback GitHub Backup</title>
       <link>https://docs.cloudback.it/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -216,7 +216,7 @@ However, there is a positive twist to this situation. Cloudback provides an alte
     </item>
     
     <item>
-      <title>Wasabi Customer Managed Storage</title>
+      <title>Wasabi Customer Managed Storage For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/wasabi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -303,7 +303,7 @@ Main Grid Here you can find the next functionality:
     </item>
     
     <item>
-      <title>Custom Schedules</title>
+      <title>Custom Schedules for Automatic GitHub Backups</title>
       <link>https://docs.cloudback.it/features/custom-schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

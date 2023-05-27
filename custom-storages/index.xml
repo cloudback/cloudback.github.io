@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Supported Storages on Cloudback</title>
+    <title>Supported Storages For GitHub Repository Backup on Cloudback</title>
     <link>https://docs.cloudback.it/custom-storages/</link>
-    <description>Recent content in Supported Storages on Cloudback</description>
+    <description>Recent content in Supported Storages For GitHub Repository Backup on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.cloudback.it/custom-storages/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Amazon S3 Bucket via Access Key</title>
+      <title>Amazon S3 Bucket via Access Key For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -15,7 +15,7 @@
     </item>
     
     <item>
-      <title>Amazon S3 Bucket via Access Point</title>
+      <title>Amazon S3 Bucket via Access Point For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-bucket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -24,7 +24,7 @@
     </item>
     
     <item>
-      <title>Amazon S3 Glacier</title>
+      <title>Amazon S3 Glacier For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -34,7 +34,7 @@
     </item>
     
     <item>
-      <title>Google Cloud Storage Bucket</title>
+      <title>Google Cloud Storage Bucket For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/google-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -44,7 +44,7 @@
     </item>
     
     <item>
-      <title>Microsoft OneDrive</title>
+      <title>Microsoft OneDrive For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/onedrive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -54,7 +54,7 @@
     </item>
     
     <item>
-      <title>Alibaba Cloud Object Storage Service</title>
+      <title>Alibaba Cloud Object Storage Service For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/alibaba-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -63,7 +63,7 @@
     </item>
     
     <item>
-      <title>Wasabi Customer Managed Storage</title>
+      <title>Wasabi Customer Managed Storage For GitHub Repository Backup</title>
       <link>https://docs.cloudback.it/custom-storages/wasabi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
