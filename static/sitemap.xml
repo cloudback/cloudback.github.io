@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+  <loc>https://docs.cloudback.it/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/what-is-cloudback/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/security/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/alibaba-cloud/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/amazon-s3-bucket/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/amazon-s3-glacier/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/s3-object-lock/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/optional-password-protection/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/automated-daily-backups/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/status-badges/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/bulk-operations/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/card-view/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/categories/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/categories/cloudback/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/tags/cloudback/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/s3-object-lock/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/paid-plans-announcement/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/regions/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/cloudback-storages/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/contact-us/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/custom-schedule/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/customer-storages/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/security/data-breach-response-policy/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/deduplication/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/security/disaster-recovery-plan-policy/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/download-backups/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/email-notifications/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/first-release/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/categories/general/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/tags/general/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/getting-started/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/tags/github-marketplace/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/github-organizations/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/google-cloud/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/security/incident-response-plan/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/instant-notifications/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/instant-notifications/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/invoiced-customers/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/metadata/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/onedrive/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/table-view/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/data-deduplication/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/categories/news/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/tags/news/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/manual-backups/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/archive/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/privacy/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/categories/release-notes/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/tags/release-notes/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/restore-to-github/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/features/table-view/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/tags/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/terms/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/security/vulnerability-management-workflow/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/custom-storages/wasabi/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/notifications-email/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/wasabi/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/onedrive/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/openstack-swift/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/page/2/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/page/3/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/categories/news/page/2/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/categories/news/page/3/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/tags/news/page/2/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/tags/news/page/3/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/categories/release-notes/page/2/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/categories/release-notes/page/3/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/tags/release-notes/page/2/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/tags/release-notes/page/3/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.cloudback.it/posts/5-crucial-features-of-backup-software-that-will-benefit-your-business/</loc>
+  <lastmod>2023-05-13T19:02:03+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+</url>
+</urlset>
