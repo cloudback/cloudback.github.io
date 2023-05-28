@@ -30,7 +30,7 @@
   }
     
   function applyStyle(theme) {
-    const root = document.documentElement;
+    const root = document.body;
     switch (theme) {
       case "Light theme":
         root.style.setProperty("--scrollbar-background", "aliceblue");
