@@ -101,7 +101,6 @@
   });
     
   twttr.ready(function (twttr) {
-    console.log("ready");
     var theme = readCookie("mddocs-theme") === "Dark theme" ? "dark" : "light";
     applyBlogTimeline(twttr, theme);
   });
@@ -109,7 +108,6 @@
     var target = document.getElementById("blog-timeline");
     if (target !== null && target !== undefined){
       target.innerHTML = "";
-      console.log("apply", theme)
       twttr.widgets.createTimeline(
         {
           sourceType: "profile",
