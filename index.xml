@@ -50,8 +50,7 @@ The list of cloudback managed storages    Storage name Region     Cloudback US U
       
       <guid>https://docs.cloudback.it/features/customer-storages/</guid>
       <description>Customer Managed Storages Cloudback allows you to store a backup archive in your own storage, leaving no copies to us. That is. Cloudback backs up a repository into an archive, sends the archive to your storage, and wipes the archive from Cloudback&amp;rsquo;s disk leaving no chance to recover any data from the Cloudback servers.
-Also, we offer our in-build storage named just Cloudback.
-Register your storage In order to tell Cloudback to store backups into your own storage, please use the + New storage button in the settings of the repository card.</description>
+Also, we offer our in-build storages named according to the storage location: Cloudback US, Cloudback EU, Cloudback UK, Cloudback Sidney, and Cloudback Singapore.</description>
     </item>
     
     <item>

@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://docs.cloudback.it/features/automated-daily-backups/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/</loc>
     <lastmod>2023-05-26T13:46:53+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/amazon-s3-bucket-access-key/</loc>
     <lastmod>2023-05-27T14:11:28+03:00</lastmod>
@@ -21,10 +21,10 @@
     <lastmod>2023-05-26T13:17:41+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/customer-storages/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-microsoft-azure-blob-container/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/what-is-cloudback/</loc>
     <lastmod>2023-05-27T14:11:28+03:00</lastmod>
@@ -33,10 +33,10 @@
     <lastmod>2023-05-27T14:11:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/create-shared-access-signature/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/metadata/</loc>
-    <lastmod>2023-05-27T14:11:28+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/google-cloud/</loc>
     <lastmod>2023-05-27T14:11:28+03:00</lastmod>
@@ -45,25 +45,25 @@
     <lastmod>2023-05-27T14:11:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/manual-backups/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/alibaba-cloud/</loc>
     <lastmod>2023-05-27T14:11:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/download-backups/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/getting-started/</loc>
-    <lastmod>2023-05-27T14:11:28+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/restore-to-github/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/email-notifications/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/instant-notifications/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/</loc>
     <lastmod>2023-05-26T15:32:13+03:00</lastmod>
@@ -78,34 +78,34 @@
     <lastmod>2023-05-27T14:11:28+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/bulk-operations/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/security/incident-response-plan/</loc>
     <lastmod>2023-05-26T13:17:41+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/custom-storages/</loc>
-    <lastmod>2023-05-27T14:11:28+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/status-badges/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/archive/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/deduplication/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/card-view/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/security/</loc>
     <lastmod>2023-05-26T13:17:41+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/table-view/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/custom-schedule/</loc>
-    <lastmod>2023-05-27T14:11:28+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/features/s3-object-lock/</loc>
     <lastmod>2023-05-26T13:17:41+03:00</lastmod>
@@ -129,25 +129,25 @@
     <lastmod>2023-05-26T13:17:41+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/categories/</loc>
-    <lastmod>2023-05-26T13:36:47+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/posts/s3-object-lock/</loc>
     <lastmod>2023-05-26T13:17:41+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/tags/news/</loc>
-    <lastmod>2023-05-26T13:36:47+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/categories/news/</loc>
-    <lastmod>2023-05-26T13:36:47+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/tags/release-notes/</loc>
-    <lastmod>2023-05-26T13:36:47+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/categories/release-notes/</loc>
-    <lastmod>2023-05-26T13:36:47+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/tags/</loc>
-    <lastmod>2023-05-26T13:36:47+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/posts/regions/</loc>
     <lastmod>2023-05-26T13:17:41+03:00</lastmod>
@@ -156,34 +156,34 @@
     <lastmod>2023-05-26T13:36:47+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/posts/table-view/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/posts/instant-notifications/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/posts/data-deduplication/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/posts/optional-password-protection/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/posts/notifications-email/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/posts/5-crucial-features-of-backup-software-that-will-benefit-your-business/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/tags/cloudback/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/categories/cloudback/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/tags/general/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/categories/general/</loc>
-    <lastmod>2023-05-26T13:17:41+03:00</lastmod>
+    <lastmod>2023-05-28T16:58:37+03:00</lastmod>
   </url><url>
     <loc>https://docs.cloudback.it/posts/onedrive/</loc>
     <lastmod>2023-05-26T13:17:41+03:00</lastmod>
