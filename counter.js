@@ -7,7 +7,7 @@
   // Get custom data attributes from the current script element
   var id = document.currentScript.getAttribute("data-id");
   var utcoffset = document.currentScript.getAttribute("data-utcoffset");
-  var server = document.currentScript.getAttribute("data-server") || "https://docs.cloudback.it/counter";
+  var server = document.currentScript.getAttribute("data-server") || "https://docs.cloudback.it/cnt";
   
   // Check if '_swa' is not in sessionStorage and if the document referrer doesn't start with the current protocol and host
   if (!sessionStorage.getItem("_swa") && !document.referrer.startsWith(location.protocol + "//" + location.host)) {
