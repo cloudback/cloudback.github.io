@@ -317,7 +317,7 @@ Example: Every Monday Morning Schedule Let&amp;rsquo;s create Every Monday Morni
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/known-issues/</guid>
-      <description>Cloudback Known Issues &amp;lsquo;It is required to install out GitHub Application&amp;rsquo; error occurs right after changing the organization member role to &amp;lsquo;Owner&amp;rsquo; Prerequisites:
+      <description>Cloudback Known Issues &amp;lsquo;It is required to install our GitHub Application&amp;rsquo; error occurs right after changing the organization member role to &amp;lsquo;Owner&amp;rsquo; Prerequisites:
  You have a GitHub organization with at least one non-owner member. You have a GitHub Cloudback application installed in your organization. Cloudback Dashboard is accessible for the organization owners only.  Steps to reproduce:
  Change the organization member role to &amp;lsquo;Owner&amp;rsquo;. Open the Cloudback Dashboard.  Expected result:</description>
     </item>
