@@ -5,19 +5,19 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Easily download GitHub backups with Cloudback&#39;s archive feature">
+  <meta name="description" content="The list of Cloudback known issues">
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Download Backups | Cloudback Documentation">
+  <meta property="og:title" content="Known Issues | Cloudback Documentation">
   <meta property="og:site_name" content="Cloudback">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://cloudback.it">
   <meta property="og:image" content="https://cloudback.it/lib/logo/social.png">
-  <meta property="og:description" content="Easily download GitHub backups with Cloudback&#39;s archive feature">
-  <meta name="twitter:title" content="Download Backups | Cloudback Documentation">
-  <meta name="twitter:description" content="Easily download GitHub backups with Cloudback&#39;s archive feature">
+  <meta property="og:description" content="The list of Cloudback known issues">
+  <meta name="twitter:title" content="Known Issues | Cloudback Documentation">
+  <meta name="twitter:description" content="The list of Cloudback known issues">
   <meta name="twitter:image" content="https://cloudback.it/lib/logo/social.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="[github backup, cloudback, download backups, download, backups, archive, feature]">
+  <meta name="keywords" content="[github backup, cloudback, known issues, issues]">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,7 +56,7 @@
   
     return t;
   }(document, "script", "twitter-wjs"));</script>
-  <title>Download Backups | Cloudback</title>
+  <title>Known Issues | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -2508,7 +2508,7 @@
   
 
   
-    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox" checked />
+    <input id="section-6ec23f89d32660817763f346261794c8" class="custom-input" type="checkbox"  />
     <label for="section-6ec23f89d32660817763f346261794c8">
       <span class="docs-menu-item">
         <span class="docs-menu-item-text d-flex flex-grow-1">
@@ -2620,7 +2620,7 @@
   
 
   
-    <a href="https://docs.cloudback.it/features/download-backups/" class="docs-menu-item d-flex  active">
+    <a href="https://docs.cloudback.it/features/download-backups/" class="docs-menu-item d-flex ">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Download Backups</span>
       </div>
@@ -3201,7 +3201,7 @@
   
 
   
-    <a href="https://docs.cloudback.it/known-issues/" class="docs-menu-item d-flex ">
+    <a href="https://docs.cloudback.it/known-issues/" class="docs-menu-item d-flex  active">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Known Issues</span>
       </div>
@@ -3359,33 +3359,38 @@
           <div class="page-with-toc d-flex flex-grow-1">
             <div class="flex-column d-flex flex-grow-1">
               
-  <article class="markdown-body"><h1 id="download-backups">Download Backups</h1>
-<p>You can download an archive of any backup of your repositories. There is the <code>Download this backup</code> button in the repository card:</p>
-<img src="/static/features/download-this-backup.png" alt="download GitHub repository backup from Cloudback dashboard" width=500/>
-<h2 id="download-dialog">Download dialog</h2>
-<p>Once you click the <code>Download this backup</code> button the dialog will be shown. The dialog reminds you that the archive&rsquo;s password will be sent to your email right after the download process is initiated.</p>
-<img src="/static/features/download-dialog.png" alt="GitHub repository backup download dialog"/>
-<h2 id="archives-password-email">Archive&rsquo;s password email</h2>
-<p>You will receive an email with the password each time you download a 
-  <a href="/features/archive/">password-protected archive</a> of a repository backup:</p>
-<img src="/static/features/password-email.png" alt="password email for a password-protected GitHub repository backup"/>
-<h2 id="what-if-the-file-is-deleted">What if the file is deleted?</h2>
-<p>There are a few situations when we could not download a backup archive:</p>
+  <article class="markdown-body"><h1 id="cloudback-known-issues">Cloudback Known Issues</h1>
+<h2 id="it-is-required-to-install-out-github-application-error-occurs-right-after-changing-the-organization-member-role-to-owner">&lsquo;It is required to install out GitHub Application&rsquo; error occurs right after changing the organization member role to &lsquo;Owner&rsquo;</h2>
+<p>Prerequisites:</p>
 <ul>
-<li>The archive file has been removed from the storage</li>
-<li>The archive file has been moved to another location</li>
-<li>The storage is not available or is not accessible</li>
+<li>You have a GitHub organization with at least one non-owner member.</li>
+<li>You have a GitHub Cloudback application installed in your organization.</li>
+<li>Cloudback Dashboard is accessible for the organization owners only.</li>
 </ul>
-<p>In any of these cases you will get the <code>File not found</code> notification:</p>
-<img src="/static/features/file-not-found.png" alt="GitHub repository backup file not found"/>
-<h2 id="learn-more">Learn more</h2>
+<p>Steps to reproduce:</p>
 <ul>
-<li>
-  <a href="/features/metadata/">What is inside of a backup?</a></li>
-<li>
-  <a href="/features/customer-storages/">Customer Managed Storages</a></li>
-<li>
-  <a href="/features/archive/">Password-Protected Archives</a></li>
+<li>Change the organization member role to &lsquo;Owner&rsquo;.</li>
+<li>Open the Cloudback Dashboard.</li>
+</ul>
+<p>Expected result:</p>
+<ul>
+<li>The Cloudback Dashboard is accessible.</li>
+</ul>
+<p>Actual result:</p>
+<ul>
+<li>The &lsquo;It is required to install out GitHub Application&rsquo; error occurs.</li>
+</ul>
+<p align="center">
+  <img src="https://github.com/cloudback/docs/blob/master/static/issue1.png?raw=true" alt="It is required to install out GitHub Application error" class="screenshot">
+</p>
+<p>Root cause:</p>
+<ul>
+<li>GitHub does not send any notification of a role change of the organization member to the GitHub application. Cloudback uses cached data. It is a known issue, confirmed by GitHub Support Team.</li>
+</ul>
+<p>Workaround:</p>
+<ul>
+<li>Remove the member from the organization.</li>
+<li>Re-add the member to the organization with Owner role.</li>
 </ul>
 </article>
 
@@ -3395,17 +3400,17 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/fc710b4a4ee13e832b9230acbe5b79c3e1f4b2a1"
-                       title="Last modified by Evgeniy.Kosjakov | May 28, 2023" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/27886443aa4ed1fdbe1d61ef08d0326b0c03101e"
+                       title="Last modified by Victor Vorobyev | Dec 6, 2023" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">May 28, 2023</span>
+                      <span class="pl-2">Dec 6, 2023</span>
                     </a>
                     
                   </div>
                    <div class="article-footer-btn p-2">
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/features/download-backups.md" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/edit/master/content/known-issues.md" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
                       </svg>
@@ -3429,12 +3434,9 @@
   <nav class="pt-2">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#download-backups">Download Backups</a>
+    <li><a href="#cloudback-known-issues">Cloudback Known Issues</a>
       <ul>
-        <li><a href="#download-dialog">Download dialog</a></li>
-        <li><a href="#archives-password-email">Archive&rsquo;s password email</a></li>
-        <li><a href="#what-if-the-file-is-deleted">What if the file is deleted?</a></li>
-        <li><a href="#learn-more">Learn more</a></li>
+        <li><a href="#it-is-required-to-install-out-github-application-error-occurs-right-after-changing-the-organization-member-role-to-owner">&lsquo;It is required to install out GitHub Application&rsquo; error occurs right after changing the organization member role to &lsquo;Owner&rsquo;</a></li>
       </ul>
     </li>
   </ul>

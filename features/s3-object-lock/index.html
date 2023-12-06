@@ -451,6 +451,40 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/features/s3-object-tag/">Amazon S3 Object Tagging<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Features
+        
+    
+        
+        
+          
+             &gt; 
+          
+          S3 Object Tag
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/posts/optional-password-protection/">Archive encryption is now optional<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -1643,6 +1677,32 @@
                     </li>
                   
                     <li class="search-result-item flex-column">
+                      <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/known-issues/">Known Issues<br/>
+                            <span class="search-result-breadcrumbs">
+    
+    
+        
+        
+    
+        
+        
+          
+          Known Issues
+        
+    
+        
+        
+          
+            
+          
+          
+        
+    
+    </span>
+                      </a>
+                    </li>
+                  
+                    <li class="search-result-item flex-column">
                       <a class="p-1 flex-grow-1" href="https://docs.cloudback.it/custom-storages/microsoft-azure-blob-container/">Microsoft Azure Blob Container<br/>
                             <span class="search-result-breadcrumbs">
     
@@ -2791,6 +2851,23 @@
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://docs.cloudback.it/features/s3-object-tag/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Amazon S3 Object Tagging</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
   </ul>
 
           
@@ -3124,6 +3201,23 @@
   
 
   
+    <a href="https://docs.cloudback.it/known-issues/" class="docs-menu-item d-flex ">
+      <div class="d-flex flex-grow-1">
+        <span class="docs-menu-item-text d-flex flex-grow-1">Known Issues</span>
+      </div>
+    </a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="https://docs.cloudback.it/terms/" class="docs-menu-item d-flex ">
       <div class="d-flex flex-grow-1">
         <span class="docs-menu-item-text d-flex flex-grow-1">Terms of Service</span>
@@ -3314,8 +3408,8 @@
   <img src="/static/features/s3-custom-headers.png" alt="Headers" /></p>
 <h3 id="http-headers-for-s3-object-lock">HTTP headers for S3 Object Lock</h3>
 <p>The headers are specified in the the format <code>key:value</code> divided by a new line. For example:</p>
-<pre><code>x-amz-object-lock-mode:COMPLIANCE
-x-amz-object-lock-retain-until-date:2025-01-01T00:00:00Z
+<pre><code>x-amz-object-lock-mode: COMPLIANCE
+x-amz-object-lock-retain-until-date: 2025-01-01T00:00:00Z
 </code></pre><p>Below is the list of S3 Object Lock related headers:</p>
 <h4 id="x-amz-object-lock-mode">x-amz-object-lock-mode</h4>
 <ul>
@@ -3328,7 +3422,7 @@ x-amz-object-lock-retain-until-date:2025-01-01T00:00:00Z
 <li>Format <code>yyyy-MM-ddThh:mm:ssZ</code>. The retain-until-date value must be in the format 2023-04-23T11:28:00Z. Fractional seconds are allowed, but only 3 decimal digits are preserved (milliseconds precision). Other ISO 8601 formats are not allowed.</li>
 <li>The retain-until-date must be in the future.</li>
 <li>
-  <a href="/#dynamic-values-for-retain-until-date">Dynamic values for retain-until-date</a> can be used.</li>
+  <a href="/#dynamic-values-for-headers">Dynamic values for retain-until-date</a> can be used.</li>
 </ul>
 <h4 id="x-amz-object-lock-legal-hold">x-amz-object-lock-legal-hold</h4>
 <ul>
@@ -3339,16 +3433,16 @@ x-amz-object-lock-retain-until-date:2025-01-01T00:00:00Z
 <ul>
 <li>The required <code>Content-MD5</code> header is added by Cloudback automatically, no need to specify it manually.</li>
 </ul>
-<h3 id="dynamic-values-for-retain-until-date">Dynamic values for retain-until-date</h3>
-<p>Cloudback allows to calculate the value for <code>x-amz-object-lock-retain-until-date</code> dynamically using <code>liquid</code> templates. Cloudback uses 
-  <a href="https://github.com/scriban/scriban">scriban</a> template engine to render the value of the header. Refer to the examples provided below for guidance. If you require additional scripting functionality, please consult the scriban documentation:</p>
+<h3 id="dynamic-values-for-headers">Dynamic values for headers</h3>
+<p>Cloudback uses <code>liquid</code> templates to dynamically calculate values. The 
+  <a href="https://github.com/scriban">scriban</a> template engine is in use. It evaluates expressions inside braces <code>{{ }}</code>. You can see how it works in the examples given below. If you need more scripting options, you can consult the scriban documentation:</p>
 <ul>
-<li>
-  <a href="https://github.com/scriban/scriban/blob/master/doc/builtins.md#binary-operations">Date functions</a></li>
-<li>
-  <a href="https://github.com/scriban/scriban/tree/master/doc">Built-in functions</a></li>
-<li>
-  <a href="https://github.com/scriban/scriban/tree/master/doc">Documentation</a></li>
+<li>For date functions, visit 
+  <a href="https://github.com/scriban/scriban/blob/master/doc/builtins.md#binary-operations">here</a></li>
+<li>For a list of built-in functions, check 
+  <a href="https://github.com/scriban/scriban/tree/master/doc">this link</a></li>
+<li>General documentation can be found 
+  <a href="https://github.com/scriban/scriban/tree/master/doc">here</a></li>
 </ul>
 <h3 id="examples-of-http-headers">Examples of HTTP headers</h3>
 <h4 id="retain-the-object-for-1-month-from-the-current-date">Retain the object for 1 month from the current date:</h4>
@@ -3374,12 +3468,12 @@ x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/eac1f614ccc0215074e293d06cea5164eb30a0dd"
-                       title="Last modified by Victor Vorobyev | May 31, 2023" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/27886443aa4ed1fdbe1d61ef08d0326b0c03101e"
+                       title="Last modified by Victor Vorobyev | Dec 6, 2023" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">May 31, 2023</span>
+                      <span class="pl-2">Dec 6, 2023</span>
                     </a>
                     
                   </div>
@@ -3417,7 +3511,7 @@ x-amz-object-lock-retain-until-date:{{ date.now | date.add_years 1 }}
           <ul>
             <li><a href="#storage-wizard">Storage wizard</a></li>
             <li><a href="#http-headers-for-s3-object-lock">HTTP headers for S3 Object Lock</a></li>
-            <li><a href="#dynamic-values-for-retain-until-date">Dynamic values for retain-until-date</a></li>
+            <li><a href="#dynamic-values-for-headers">Dynamic values for headers</a></li>
             <li><a href="#examples-of-http-headers">Examples of HTTP headers</a></li>
           </ul>
         </li>

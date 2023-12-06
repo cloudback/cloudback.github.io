@@ -206,5 +206,15 @@ Example: Every Monday Morning Schedule Let&amp;rsquo;s create Every Monday Morni
 Key Benefits of Amazon S3 Object Lock Support   Enhanced Data Protection: With Amazon S3 Object Lock, you can implement retention policies to ensure your GitHub repository backups remain untouched during a specified period.</description>
     </item>
     
+    <item>
+      <title>Amazon S3 Object Tagging</title>
+      <link>https://docs.cloudback.it/features/s3-object-tag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/features/s3-object-tag/</guid>
+      <description>Amazon S3 Object Tagging  Amazon S3 Object Tagging is a feature provided by Amazon Web Services in their Simple Storage Service. It&amp;rsquo;s designed to help you to categorize your storage. Cloudback supports S3 Object Tagging feature using custom HTTP headers for the the PutObject API call.
+Getting Started HTTP headers for S3 Object Tagging x-amz-tagging The tag-set for the object. The tag-set must be encoded as URL Query parameters. (For example, &amp;ldquo;Key1=Value1&amp;rdquo;).</description>
+    </item>
+    
   </channel>
 </rss>
