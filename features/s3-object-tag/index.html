@@ -3367,6 +3367,9 @@
 <h3 id="http-headers-for-s3-object-tagging">HTTP headers for S3 Object Tagging</h3>
 <h4 id="x-amz-tagging">x-amz-tagging</h4>
 <p>The tag-set for the object. The tag-set must be encoded as URL Query parameters. (For example, &ldquo;Key1=Value1&rdquo;).</p>
+<blockquote>
+<p><strong>Important:</strong> <code>s3:PutObjectTagging</code> permission is required. You should grant the permission at a bucket level and at an access point level if applicable.</p>
+</blockquote>
 <p>Example:</p>
 <pre><code>x-amz-tagging: Key1=Value1&amp;Key2=Value2
 </code></pre><h3 id="build-in-variables">Build-in variables</h3>
@@ -3407,12 +3410,12 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/e366b74ea490c4a4b8f1563847debd84ce234e31"
-                       title="Last modified by Victor Vorobyev | Dec 6, 2023" target="_blank" rel="noopener">
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/a39c6dc9cc86b41a80c127131d97a4c1237fb3cf"
+                       title="Last modified by Victor Vorobyev | Dec 11, 2023" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
                       </svg>
-                      <span class="pl-2">Dec 6, 2023</span>
+                      <span class="pl-2">Dec 11, 2023</span>
                     </a>
                     
                   </div>
