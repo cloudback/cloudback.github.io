@@ -3365,8 +3365,10 @@
   <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">PutObject</a> API call.</p>
 <h2 id="getting-started">Getting Started</h2>
 <h3 id="http-headers-for-s3-object-tagging">HTTP headers for S3 Object Tagging</h3>
-<h4 id="x-amz-tagging">x-amz-tagging</h4>
-<p>The tag-set for the object. The tag-set must be encoded as URL Query parameters. (For example, &ldquo;Key1=Value1&rdquo;).</p>
+<p><strong>x-amz-tagging</strong>: The tag-set for the object.</p>
+<ul>
+<li>The tag-set must be encoded as URL Query parameters. (For example, &ldquo;Key1=Value1&rdquo;).</li>
+</ul>
 <blockquote>
 <p><strong>Important:</strong> <code>s3:PutObjectTagging</code> permission is required. You should grant the permission at a bucket level and at an access point level if applicable.</p>
 </blockquote>
@@ -3380,7 +3382,9 @@
 </ul>
 <p>Example:</p>
 <pre><code>x-amz-tagging: RepositoryName={{ context.RepositoryName }}&amp;AccountName={{ context.AccountName }}
-</code></pre><h3 id="storage-wizard">Storage wizard</h3>
+</code></pre><h3 id="configure-your-storage-in-the-storage-wizard-dialog">Configure your storage in the Storage Wizard dialog</h3>
+<p>You can add an additional header using the 
+  <a href="/custom-storages/#setting-up-a-customer-managed-storage">Storage Wizard</a> dialog. Click on the <code>+ New storage</code> or <code>Edit Storage</code> button in the middle of the repository card settings. Fill in the required details for the storage and you will see the <code>Additional HTTP headers</code> section. Add the <code>x-amz-tagging</code> header with the value you need.</p>
 <p>Additional HTTP headers are supported for all S3 compatible storages:</p>
 <ul>
 <li>Amazon S3 Bucket: Access Point</li>
@@ -3410,7 +3414,7 @@
                   <div class="article-footer-btn p-2">
                     
                     
-                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/a39c6dc9cc86b41a80c127131d97a4c1237fb3cf"
+                    <a class="d-flex align-center" href="https://github.com/cloudback/docs/commit/c7b77b37779985ae6a60c9141030b1b80ea1a931"
                        title="Last modified by Victor Vorobyev | Dec 11, 2023" target="_blank" rel="noopener">
                       <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                         <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
@@ -3450,7 +3454,7 @@
           <ul>
             <li><a href="#http-headers-for-s3-object-tagging">HTTP headers for S3 Object Tagging</a></li>
             <li><a href="#build-in-variables">Build-in variables</a></li>
-            <li><a href="#storage-wizard">Storage wizard</a></li>
+            <li><a href="#configure-your-storage-in-the-storage-wizard-dialog">Configure your storage in the Storage Wizard dialog</a></li>
           </ul>
         </li>
         <li><a href="#learn-more">Learn more</a></li>
