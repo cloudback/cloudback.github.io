@@ -27,7 +27,7 @@
     <item>
       <title>Cloudback</title>
       <link>https://docs.cloudback.it/categories/cloudback/</link>
-      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/categories/cloudback/</guid>
       <description></description>
@@ -36,9 +36,18 @@
     <item>
       <title>General</title>
       <link>https://docs.cloudback.it/categories/general/</link>
-      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/categories/general/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://docs.cloudback.it/categories/git/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/categories/git/</guid>
       <description></description>
     </item>
     

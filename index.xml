@@ -402,6 +402,15 @@ Wasabi provides simple, predictable and affordable hot cloud storage for busines
     </item>
     
     <item>
+      <title>What is a bare git repository and how Cloudback uses it?</title>
+      <link>https://docs.cloudback.it/posts/git-bare-repo/</link>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/git-bare-repo/</guid>
+      <description>A Git bare repository represents a specialized form of a Git repository, distinct in structure and function from a conventional Git repository. Platforms like GitHub utilize bare repositories on their servers. Essentially, when a user initiates a clone command from GitHub, they are interacting with a bare repository stored on GitHub&amp;rsquo;s server. This type of repository is optimized for server-side storage and facilitates efficient and secure management and distribution of code, without the direct editing capabilities found in standard repositories.</description>
+    </item>
+    
+    <item>
       <title>New feature: Table View</title>
       <link>https://docs.cloudback.it/posts/table-view/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>

@@ -5,19 +5,19 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="">
+  <meta name="description" content="Cloudback archives your source code as a git bare repository.">
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Cloudback | Cloudback Documentation">
+  <meta property="og:title" content="What is a bare git repository and how Cloudback uses it? | Cloudback Documentation">
   <meta property="og:site_name" content="Cloudback">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://cloudback.it">
   <meta property="og:image" content="https://cloudback.it/lib/logo/social.png">
-  <meta property="og:description" content="">
-  <meta name="twitter:title" content="Cloudback | Cloudback Documentation">
-  <meta name="twitter:description" content="">
+  <meta property="og:description" content="Cloudback archives your source code as a git bare repository.">
+  <meta name="twitter:title" content="What is a bare git repository and how Cloudback uses it? | Cloudback Documentation">
+  <meta name="twitter:description" content="Cloudback archives your source code as a git bare repository.">
   <meta name="twitter:image" content="https://cloudback.it/lib/logo/social.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="[]">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,12 +56,11 @@
   
     return t;
   }(document, "script", "twitter-wjs"));</script>
-  <title>Cloudback | Cloudback</title>
+  <title>What is a bare git repository and how Cloudback uses it? | Cloudback</title>
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/book.min.de41e9442d23b7b3b3365e5c9a081326aabcb7ac51bd3d30782cc02bc9f1ad8f.css" integrity="sha256-3kHpRC0jt7OzNl5cmggTJqq8t6xRvT0weCzAK8nxrY8=">
-<link rel="alternate" type="application/rss+xml" href="https://docs.cloudback.it/categories/cloudback/index.xml" title="Cloudback" />
 <script src="/docs.js"></script>
 
   
@@ -170,33 +169,43 @@
         
         <div class="docs-page docs-content-background d-flex flex-column">
           
+            <header class="docs-header p-2">
+              <div class="d-flex align-center h32">
+                
+                <div class="flex-grow-1">
+                </div>
+                
+                  <div>
+                    <label for="toc-control" class="toc-label toc-label-right cursor-pointer p-2">
+                      <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                        <path fill-rule="evenodd" d="M1.75 2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5zm4 5a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5h-7.5zm0 5a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5h-7.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                        <path d="M13.314 4.918L11.07 2.417A.25.25 0 0111.256 2h4.488a.25.25 0 01.186.417l-2.244 2.5a.25.25 0 01-.372 0z"></path>
+                      </svg>
+                    </label>
+                  </div>
+                
+              </div>
+            </header>
+          
           <div class="page-with-toc d-flex flex-grow-1">
             <div class="flex-column d-flex flex-grow-1">
               
-  <div class="flex-row-to-column">
-    <div class="w-66-to-100 pt-3">
-      <article class="lh-125 blog-body pt-4">
-        
-        <h1 class="pb-4 fw600 mb-3 with-border-bottom">Latest Blog Posts with 'Cloudback' Category</h1>
-        
-      
-      
-        <div class="pt-0 pb-4 mb-4 with-border-bottom">
+<article class="markdown-body">
   
   
-    <div class="font-size-small pt-0 pb-3">
+    <div class="font-size-small">
       
-        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/general/"><span class="opacity-50">General</span></a></span>
+        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/general/">General</a></span>
       
-        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/cloudback/"><span class="opacity-50">Cloudback</span></a></span>
+        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/cloudback/">Cloudback</a></span>
       
-        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/git/"><span class="opacity-50">Git</span></a></span>
+        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/git/">Git</a></span>
       
     </div>
   
-  <h2 class="border-none pb-3 m-0 fw600">
-    <a class="text-color" href="/posts/git-bare-repo/">What is a bare git repository and how Cloudback uses it? </a>
-  </h2>
+  <h1 class="pb-2">
+    <a class="text-color" href="/posts/git-bare-repo/">What is a bare git repository and how Cloudback uses it?</a>
+  </h1>
   <div class="w-100 d-flex pb-3 fw600">
     <div class="opacity-50">
       
@@ -220,135 +229,61 @@
       </span>
     </div>
   </div>
-  <p class="pt-0">A Git bare repository represents a specialized form of a Git repository, distinct in structure and function from a conventional Git repository. Platforms like GitHub utilize bare repositories on their servers. Essentially, when a user initiates a clone command from GitHub, they are interacting with a bare repository stored on GitHub&rsquo;s server. This type of repository is optimized for server-side storage and facilitates efficient and secure management and distribution of code, without the direct editing capabilities found in standard repositories.</p>
-  
-  <div class="w-100 pt-2">
-    <a href="/posts/git-bare-repo/" class="feature-btn shadow-sm d-flex align-center fw600">
-      <span>Read more</span>
-      <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
-      </svg>
-    </a>
-  </div>
-  
-</div>
-      
-        <div class="pt-0 pb-4 mb-4 with-border-bottom">
-  
-  
-    <div class="font-size-small pt-0 pb-3">
-      
-        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/general/"><span class="opacity-50">General</span></a></span>
-      
-        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/cloudback/"><span class="opacity-50">Cloudback</span></a></span>
-      
-    </div>
-  
-  <h2 class="border-none pb-3 m-0 fw600">
-    <a class="text-color" href="/posts/5-crucial-features-of-backup-software-that-will-benefit-your-business/">5 crucial features of Backup Software that will benefit your Business </a>
-  </h2>
-  <div class="w-100 d-flex pb-3 fw600">
-    <div class="opacity-50">
-      
-      
-      <span class="d-flex align-center">
-        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-          <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
-        </svg>
-        <span class="pl-2 font-size-small m-0">Oct 11, 2021</span>
-      </span>
-      
-    </div>
-    <div class="flex-grow-1"></div>
-    <div class="opacity-50">
-      <span class="d-flex align-center">
-        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-          <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z">
-          </path>
-        </svg>
-        <span class="pl-2 font-size-small m-0">4 min read</span>
-      </span>
-    </div>
-  </div>
-  <p class="pt-0">Your business can be susceptible to losing data. Worse, it can sometimes catch you off guard, causing delays and disruptions in your operations. Prevent that from happening by investing in the enterprise backup software for your business.
-According to a report by Varonis, companies have over 1,000 sensitive files and 100,000 folders accessible and open to their employees. Businesses are vulnerable from data corruption, deletion, leaks, and breaches—whether intentional or accidental.</p>
-  
-  <div class="w-100 pt-2">
-    <a href="/posts/5-crucial-features-of-backup-software-that-will-benefit-your-business/" class="feature-btn shadow-sm d-flex align-center fw600">
-      <span>Read more</span>
-      <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
-      </svg>
-    </a>
-  </div>
-  
-</div>
-      
-        <div class="pt-0 pb-4 mb-4 with-border-bottom">
-  
-  
-    <div class="font-size-small pt-0 pb-3">
-      
-        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/news/"><span class="opacity-50">News</span></a></span>
-      
-        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/cloudback/"><span class="opacity-50">Cloudback</span></a></span>
-      
-        <span class="mt-2 mb-2"><a class="blog-tag scale-on-hover" href="/tags/github-marketplace/"><span class="opacity-50">GitHub Marketplace</span></a></span>
-      
-    </div>
-  
-  <h2 class="border-none pb-3 m-0 fw600">
-    <a class="text-color" href="/posts/paid-plans-announcement/">Cloudback introduces new marketplace plans </a>
-  </h2>
-  <div class="w-100 d-flex pb-3 fw600">
-    <div class="opacity-50">
-      
-      
-      <span class="d-flex align-center">
-        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-          <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"></path>
-        </svg>
-        <span class="pl-2 font-size-small m-0">Mar 19, 2021</span>
-      </span>
-      
-    </div>
-    <div class="flex-grow-1"></div>
-    <div class="opacity-50">
-      <span class="d-flex align-center">
-        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-          <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z">
-          </path>
-        </svg>
-        <span class="pl-2 font-size-small m-0">1 min read</span>
-      </span>
-    </div>
-  </div>
-  <p class="pt-0">Today we reached 100+ installations and completed GitHub Marketplace financial onboarding. Now Cloudback meets all the requirements for GitHub Marketplace, including listing, billing, brand, and user experience requirements. It means that we completed the public beta stage, and now Cloudback is in production with no limits.
-We are glad to announce, that our new marketplace plans are available in the GitHub Marketplace!
- Our Free Plan remains active for all existing accounts but is discontinued and is no longer available for new users.</p>
-  
-  <div class="w-100 pt-2">
-    <a href="/posts/paid-plans-announcement/" class="feature-btn shadow-sm d-flex align-center fw600">
-      <span>Read more</span>
-      <svg class="link-icon h20 w20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
-      </svg>
-    </a>
-  </div>
-  
-</div>
-      
-      
-      </article>
-    </div>
-    <div class="w-33-to-100 pt-3 pb-3">
-      <div class="h1 pt-4 pb-5 mb-2 pl-5 lh-125">Latest Tweets</div>    
-      <div id="blog-timeline" class="timeline pl-3 pr-3"></div>
-    </div>
-  </div>
+  <p><p>A Git bare repository represents a specialized form of a Git repository, distinct in structure and function from a conventional Git repository. Platforms like GitHub utilize bare repositories on their servers. Essentially, when a user initiates a clone command from GitHub, they are interacting with a bare repository stored on GitHub&rsquo;s server. This type of repository is optimized for server-side storage and facilitates efficient and secure management and distribution of code, without the direct editing capabilities found in standard repositories. Here&rsquo;s a simplified explanation:</p>
+<ul>
+<li>
+<p><strong>No working directory</strong>: In a standard Git repository, there&rsquo;s a working directory where you can view and edit files. A bare repository doesn&rsquo;t have this working directory. This means you can&rsquo;t directly edit files or run Git commands that require a working copy.</p>
+</li>
+<li>
+<p><strong>Only contains git data</strong>: A bare repository contains only the contents of the .git folder (which is present in a standard repository). This includes all the version history, configurations, branches, etc., but not the actual project files as editable entities.</p>
+</li>
+<li>
+<p><strong>Used for sharing</strong>: Bare repositories are typically used on servers where code is shared among multiple people. Developers don&rsquo;t work directly in a bare repository. Instead, they clone the bare repository to their local machine, make changes, and then push these changes back to the bare repository. This is how services like GitHub work behind the scenes.</p>
+</li>
+<li>
+<p><strong>Prevents direct edits</strong>: Since there&rsquo;s no working directory, it prevents the scenario where someone might directly edit files on the server repository, which could cause conflicts and issues in version control.</p>
+</li>
+<li>
+<p><strong>Simplifies management</strong>: For a server-side repository where you only need to manage the history and branches, not the actual files, a bare repository is more efficient and safer.</p>
+</li>
+</ul>
+<p>In short, think of a Git bare repository as a storage locker for Git data, used primarily for sharing and collaboration, without the capability for direct file editing or viewing.</p>
+<h2 id="how-cloudback-uses-it">How Cloudback uses it?</h2>
+<p>Cloudback takes the whole bare repository from GitHub, including every branch, tag, and all the history, and saves it in an archive. This means it keeps a full copy of everything in the repository.</p>
+<p>Cloudback archives a bare repository, storing it in the path <code>/repo/%REPOSITORY_NAME%.git/</code>. For instance, a repository named <code>demo</code> would be saved as <code>/repo/demo.git/</code> inside a ZIP archive. Furthermore, you have the option to download this ZIP archive, extract it to a local directory, and directly clone the repository from there. To clone the <code>demo</code> repository, you would use a command like</p>
+<p><code>git clone &quot;%FULL-PATH-TO-EXTRACTED-ZIP%/repo/demo.git/&quot;</code></p>
+<p>This allows you to clone the repository straight from the archive into your local folder, which is a convenient and efficient feature!</p>
+<p>Learn more:</p>
+<ul>
+<li>
+  <a href="https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---bare">git clone &ndash;bare</a></li>
+</ul>
+</p>
+  <div id="remark42"></div>
+</article>
+
 
               
             </div>
+            
+              <aside class="page-toc">
+  
+    <div class="pt-2 pb-2 mt-2 mb-2 in-this-article">
+      <h5> In this post </h5>
+    </div>
+  
+  <nav class="pt-2">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#how-cloudback-uses-it">How Cloudback uses it?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </nav>
+</aside>
             
           </div>
         </div>
