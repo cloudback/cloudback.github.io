@@ -5,11 +5,11 @@
     <link>https://docs.cloudback.it/categories/general/</link>
     <description>Recent content in General on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is a bare git repository and how Cloudback uses it?</title>
       <link>https://docs.cloudback.it/posts/git-bare-repo/</link>
-      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/posts/git-bare-repo/</guid>
       <description>A Git bare repository represents a specialized form of a Git repository, distinct in structure and function from a conventional Git repository. Platforms like GitHub utilize bare repositories on their servers. Essentially, when a user initiates a clone command from GitHub, they are interacting with a bare repository stored on GitHub&amp;rsquo;s server. This type of repository is optimized for server-side storage and facilitates efficient and secure management and distribution of code, without the direct editing capabilities found in standard repositories.</description>

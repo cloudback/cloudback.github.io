@@ -6,6 +6,15 @@
     <description>Recent content in Blog on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.cloudback.it/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>What is a bare git repository and how Cloudback uses it?</title>
+      <link>https://docs.cloudback.it/posts/git-bare-repo/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/git-bare-repo/</guid>
+      <description>A Git bare repository represents a specialized form of a Git repository, distinct in structure and function from a conventional Git repository. Platforms like GitHub utilize bare repositories on their servers. Essentially, when a user initiates a clone command from GitHub, they are interacting with a bare repository stored on GitHub&amp;rsquo;s server. This type of repository is optimized for server-side storage and facilitates efficient and secure management and distribution of code, without the direct editing capabilities found in standard repositories.</description>
+    </item>
+    
+    <item>
       <title>Cloudback Introduces Amazon S3 Object Lock Support for Enhanced GitHub Repository Backup Security</title>
       <link>https://docs.cloudback.it/posts/s3-object-lock/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
@@ -33,15 +42,6 @@ Amazon S3 Object Lock is a feature that provides an additional layer of security
       <guid>https://docs.cloudback.it/posts/wasabi/</guid>
       <description>Cloudback provides an easy way to store GitHub repository backups in various storages. And today, we are delighted to announce the support of a new storage - Wasabi Cloud Storage.
 Wasabi provides simple, predictable and affordable hot cloud storage for businesses all over the world. It enables organizations to store and instantly access an infinite amount of data at 1/5th the price of the competition with no complex tiers or unpredictable egress fees.</description>
-    </item>
-    
-    <item>
-      <title>What is a bare git repository and how Cloudback uses it?</title>
-      <link>https://docs.cloudback.it/posts/git-bare-repo/</link>
-      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.cloudback.it/posts/git-bare-repo/</guid>
-      <description>A Git bare repository represents a specialized form of a Git repository, distinct in structure and function from a conventional Git repository. Platforms like GitHub utilize bare repositories on their servers. Essentially, when a user initiates a clone command from GitHub, they are interacting with a bare repository stored on GitHub&amp;rsquo;s server. This type of repository is optimized for server-side storage and facilitates efficient and secure management and distribution of code, without the direct editing capabilities found in standard repositories.</description>
     </item>
     
     <item>

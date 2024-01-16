@@ -5,7 +5,34 @@
     <link>https://docs.cloudback.it/categories/</link>
     <description>Recent content in Categories on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudback</title>
+      <link>https://docs.cloudback.it/categories/cloudback/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/categories/cloudback/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>General</title>
+      <link>https://docs.cloudback.it/categories/general/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/categories/general/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://docs.cloudback.it/categories/git/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/categories/git/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>News</title>
       <link>https://docs.cloudback.it/categories/news/</link>
@@ -21,33 +48,6 @@
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cloudback.it/categories/release-notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cloudback</title>
-      <link>https://docs.cloudback.it/categories/cloudback/</link>
-      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.cloudback.it/categories/cloudback/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>General</title>
-      <link>https://docs.cloudback.it/categories/general/</link>
-      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.cloudback.it/categories/general/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://docs.cloudback.it/categories/git/</link>
-      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://docs.cloudback.it/categories/git/</guid>
       <description></description>
     </item>
     
