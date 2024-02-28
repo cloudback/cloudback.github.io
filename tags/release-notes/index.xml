@@ -5,7 +5,17 @@
     <link>https://docs.cloudback.it/tags/release-notes/</link>
     <description>Recent content in Release notes on Cloudback</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/tags/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cloudback.it/tags/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudback transitions from MYRTLE GROYP S.A. to MYRTLELABS S.A.S. for Enhanced Security</title>
+      <link>https://docs.cloudback.it/posts/myrtlelabs/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.cloudback.it/posts/myrtlelabs/</guid>
+      <description>We&amp;rsquo;re excited to announce the beginning of our transition from MYRTLE GROUP S.A. to a dedicated legal entity, MYRTLELABS S.A.S. as a step towards achieving SOC 2 certification. This transition will further strengthen our security posture and allow us to deliver an even more reliable and secure experience for our customers.
+A step towards SOC2 certification This transition is the first step in our journey towards achieving SOC2 certification, a globally recognized independent auditing standard for security, availability, and confidentiality.</description>
+    </item>
+    
     <item>
       <title>Cloudback Introduces Amazon S3 Object Lock Support for Enhanced GitHub Repository Backup Security</title>
       <link>https://docs.cloudback.it/posts/s3-object-lock/</link>
