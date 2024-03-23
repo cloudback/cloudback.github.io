@@ -4,7 +4,9 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+  branches:
+    include:
+    - master
 name: $(Date:yyyy).$(Date:MM).$(Date:dd).$(BuildID)-$(Build.SourceBranchName)
 resources:
   repositories:
