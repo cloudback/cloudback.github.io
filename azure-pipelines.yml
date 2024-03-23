@@ -5,7 +5,17 @@
 
 trigger:
 - master
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+name: $(Date:yyyy).$(Date:MM).$(Date:dd).$(BuildID)-$(Build.SourceBranchName)
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: master
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    name: default
+  steps:
+  - script: echo Hello, world!
+    displayName: 'Run a one-line script'
